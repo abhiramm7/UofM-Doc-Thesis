@@ -1,0 +1,45 @@
+%************************************************
+\chapter{Introduction}\label{ch:introduction}
+%************************************************
+%What are stormwater systems and why are they needed?
+Stormwater systems are designed to transport the accumulated water away from the urban systems during a stormevent.
+
+
+
+% What is need for your defense ?
+Our existing stormwater infrastructure systems are unable to keep pace with rapidly evolving storm events and changing landscapes.
+These infrastructure systems --- designed for an ``average'' event --- are still proving to be inefficient in tackling dynamic weather conditions and achieving diverse urban sustainability objectives\footnote{e.g.\ improving water quality and minimizing erosion}.
+While existing stormwater systems could be rebuilt to reduce flooding and improve water quality, such an undertaking is often not financially viable, nor guaranteed to work.
+In lieu of new construction, one alternative would be to retrofit  existing stormwater systems with sensors and controllers, so that these systems can be dynamically controlled in real-time to achieve the desired objectives.
+The goal of my dissertation is to make fundamental discoveries that will inform the control of smart stormwater systems, specifically focusing on statistical learning approaches that can be used to generate safe and reliable control algorithms.
+
+%Why cannot we use the existing methods?
+
+\section{Control of Stormwater Systems} 
+% Elaborate more on the need for statistical methods.
+\noindent The state-of-the-art in stormwater control  can be broadly classified under two categories: (1) Control algorithms reliant on parametrized models (e.g.\ model predictive control) for identifying control actions. (2) Search based algorithms (e.g.\ genetic algorithms) that exhaustively simulate physical models for identifying control actions.
+Though these control algorithms have been applied for localized control in stormwater systems\footnote{e.g.\ maintaining constant water levels and flows in individual basins.}, their investigation in the context of coordinated control and targeted removal of pollutants has been limited.
+To fully realize the potential of the stormwater infrastructure and to safeguard our water bodies, we need to synthesize control algorithms that are able to coordinate the response of many distributed control assets in the network, while simultaneously achieving a diverse set of water quality and flow objectives. 
+Technologically, we are at a point where we can monitor and control these assets in real-time, but the development of control algorithms is hampered by a number of fundamental knowledge gaps.
+
+\subsection*{Knowledge Gaps}
+\begin{enumerate}
+	\item We do not know how to design control algorithms that can target pollutants in stormwater runoff, nor do we have the simulation tools necessary for such studies.
+	\item We do not know to how to characterize the controllability of an urban watershed, especially in the context of water quality.
+	\item We do yet know how to synthesize control algorithms for distributed storm-water assets without making explicit dynamical assumptions (e.g.\ linearity).
+	\item We do not know how to quantify the uncertainty of algorithms used in the real-time control of stormwater systems.
+	\item We do not know how to explicitly incorporate and account for hydraulic travel time within a real-time controlled system.
+	\item We do not have open platforms for the systematic evaluation and comparison of different control algorithms.
+\end{enumerate}
+
+%What is the need for new generation of smartstormwater systems?
+\section{Statistical methods}
+
+%What is the goal of your dissertation?
+\section{Dissertation Outline}
+% Describe your dissertation and then seaway into the chapter descriptions.
+\noindent My dissertation addresses these knowledge gaps, leveraging statistical approaches, to develop tools and algorithms for enabling control of stormwater systems. 
+The first chapter of this dissertation focuses on the development of a theoretical framework and the necessary tools for simulating control in stormwater systems. 
+The second chapter demonstrates how a real-world wireless sensor network can be used for shaping the flow response of an entire urban watershed. 
+In the next three chapters, various control algorithms are proposed, and their performance is evaluated across diverse scenarios to quantify the strengths and limitations.
+In the final chapter, I introduce a python-based simulation sandbox, which is being developed specifically for the systematic evaluation and comparison of stormwater control algorithms.
