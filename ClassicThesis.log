@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  10 FEB 2020 13:24
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  12 FEB 2020 14:34
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.105 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -3354,23 +3354,23 @@ Package microtype Info: Character `―' is missing
 
 
 
-]) [2]
+]) [2] [3]
 \openout2 = Chapters/Chapter1.aux
  (./Chapters/Chapter1.tex
 Chapter 2.
-) [3
+[4
 
 
 
 
-] [4
+]) [5] [6
 
 
 
-] [5
+] [7
 
 
-] [6]
+] [8]
 \openout2 = FrontBackmatter/Bibliography.aux
  (./FrontBackmatter/Bibliography.tex
 
@@ -3378,7 +3378,7 @@ LaTeX Warning: Empty bibliography on input line 15.
 
 )
 \openout2 = FrontBackmatter/Declaration.aux
- (./FrontBackmatter/Declaration.tex) [7
+ (./FrontBackmatter/Declaration.tex) [9
 
 
 
@@ -3388,7 +3388,7 @@ LaTeX Warning: Empty bibliography on input line 15.
 
 
 
-] [8
+] [10
 
 
 
@@ -3399,7 +3399,7 @@ Overfull \hbox (42.43343pt too wide) in paragraph at lines 10--13
 \TU/TeXGyrePagella(0)/m/n/10.95 This doc-u-ment was type-set us-ing the ty-po-graph-i-cal look-and-feel \TU/DejaVuSansMono(0)/m/n/10.95 classicthesis
  []
 
-) [9
+) [11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
@@ -3589,19 +3589,19 @@ Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39290 strings out of 494413
+ 39295 strings out of 494413
  100000,1648299 words of node,token memory allocated
- 1618 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 4 glue, 1 kern, 92 glyph, 35 attribute, 124 glue_spec, 35 attribute_list, 3 write, 3 pdf_action nodes
-   avail lists: 1:8,2:397,3:100,4:46,5:413,6:39,7:3089,8:52,9:173,10:14,11:267
- 41469 multiletter control sequences out of 65536+600000
- 111 fonts using 35752839 bytes
- 66i,22n,98p,9091b,2147s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 1629 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 4 glue, 1 kern, 93 glyph, 36 attribute, 124 glue_spec, 36 attribute_list, 3 write, 3 pdf_action nodes
+   avail lists: 1:8,2:395,3:100,4:53,5:426,6:39,7:3308,8:52,9:182,10:14,11:281
+ 41472 multiletter control sequences out of 65536+600000
+ 111 fonts using 35752503 bytes
+ 66i,22n,98p,9091b,2156s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (23 pages, 77587 bytes).
+Output written on ClassicThesis.pdf (25 pages, 78896 bytes).
 
-PDF statistics: 256 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 131072)
+PDF statistics: 264 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 100000000)
 

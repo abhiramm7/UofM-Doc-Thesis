@@ -1,4 +1,4 @@
-PWD /Users/abhiram/Archive/Dissertation/Thesis
+PWD /Users/abhiram/Archive/Dissertation/HagiaSophia
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./ClassicThesis.tex
 OUTPUT ClassicThesis.log
