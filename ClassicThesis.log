@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  12 FEB 2020 14:34
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  27 FEB 2020 15:41
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.122 seconds
+luaotfload | main : initialization completed in 0.111 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -3354,7 +3354,80 @@ Package microtype Info: Character `―' is missing
 
 
 
-]) [2] [3]
+]
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
+(microtype)             Ignoring protrusion settings for this character.
+ [2]) [3]
 \openout2 = Chapters/Chapter1.aux
  (./Chapters/Chapter1.tex
 Chapter 2.
@@ -3589,19 +3662,19 @@ Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39295 strings out of 494413
+ 39299 strings out of 494413
  100000,1648299 words of node,token memory allocated
- 1629 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 4 glue, 1 kern, 93 glyph, 36 attribute, 124 glue_spec, 36 attribute_list, 3 write, 3 pdf_action nodes
-   avail lists: 1:8,2:395,3:100,4:53,5:426,6:39,7:3308,8:52,9:182,10:14,11:281
- 41472 multiletter control sequences out of 65536+600000
- 111 fonts using 35752503 bytes
- 66i,22n,98p,9091b,2156s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (25 pages, 78896 bytes).
+ 1658 words of node memory still in use:
+   6 hlist, 4 vlist, 2 rule, 5 glue, 1 kern, 93 glyph, 37 attribute, 124 glue_spec, 37 attribute_list, 3 write, 3 pdf_action nodes
+   avail lists: 1:8,2:393,3:100,4:64,5:408,6:41,7:3138,8:52,9:197,10:14,11:262
+ 41473 multiletter control sequences out of 65536+600000
+ 112 fonts using 35927623 bytes
+ 68i,22n,98p,9091b,2230s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
+Output written on ClassicThesis.pdf (25 pages, 82481 bytes).
 
-PDF statistics: 264 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
+PDF statistics: 271 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
  52 named destinations out of 1000 (max. 131072)
  137 words of extra memory for PDF output out of 10000 (max. 100000000)
 
