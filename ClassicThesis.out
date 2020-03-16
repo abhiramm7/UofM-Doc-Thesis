@@ -12,6 +12,15 @@
 \BOOKMARK [1][-]{section.1.2}{1.2 Statistical methods}{chapter.1}% 12
 \BOOKMARK [1][-]{section.1.3}{1.3 Dissertation Outline}{chapter.1}% 13
 \BOOKMARK [0][]{chapter.2}{2 Building a Theory for Smart Stormwater Systems}{}% 14
-\BOOKMARK [-1][]{part.1}{ Appendix}{}% 15
-\BOOKMARK [0][]{declaration.0}{Declaration}{part.1}% 16
-\BOOKMARK [0][]{colophon.0}{Colophon}{part.1}% 17
+\BOOKMARK [1][-]{section.2.1}{2.1 Do best local practices achieve the best global outcomes?}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Existing studies on real-time control}{section.2.1}% 16
+\BOOKMARK [1][-]{section.2.2}{2.2 Toward a framework for smart stormwater systems}{chapter.2}% 17
+\BOOKMARK [0][]{chapter.3}{3 Shaping the response in watersheds using a sensor network}{}% 18
+\BOOKMARK [0][]{chapter.4}{4 Deep reinforcement learning for the control of stormwater networks}{}% 19
+\BOOKMARK [0][]{chapter.5}{5 Bayesian optimization for shaping the response of the stormwater systems}{}% 20
+\BOOKMARK [0][]{chapter.6}{6 A simulation sandbox for the development and evaluation of stormwater control algorithms}{}% 21
+\BOOKMARK [0][]{chapter.7}{7 Conclusion}{}% 22
+\BOOKMARK [-1][]{part.1}{ Appendix}{}% 23
+\BOOKMARK [0][]{section*.3}{ Bibliography}{part.1}% 24
+\BOOKMARK [0][]{declaration.0}{Declaration}{part.1}% 25
+\BOOKMARK [0][]{colophon.0}{Colophon}{part.1}% 26

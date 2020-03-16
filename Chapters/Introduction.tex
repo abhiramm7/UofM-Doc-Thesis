@@ -17,38 +17,42 @@ Redesigning and retrofitting these systems to handle the rising demands, such an
 Given the dynamic nature of the systems, such a static solution might not always be the best way to tackle these challenges. 
 Furthermore, given the these systems have to achieve multiple objectives, having them as static systems might not be the best solutions. 
 Also these systems are designed as localized systems, with the intent that localized solutions will eventually scale up and improve the performance of the system as a whole.
-But maryland et al have demonstrated that might not always be the case. 
+But Maryland et al have demonstrated that might not always be the case. 
 Hence, we need a more system scale approach that takes into account all the moving parts and treats the entire network as a single entity. 
 
 \
 
 % How are people trying to solve it?
-Such an wholistic approach requires us to 
+These rising demands can be addressed by rebuilding the infrastructure with larger capacities to handle the increasing inflows. 
+Though adding capacity to the existing system, can help us handle the incoming flows, it is an expensive process and it is not sure that it will work.
+Alternatively, by retrofitting the existing system with sensors and controllers, we can monitor the state of the stormwater network in real-time and control its response to achieve system scale objectives.
+This enables us to dynamically control the stormwater network to fully utilize the existing potential in the stormwater network to handle the incoming stormevents. 
+Dynamics of stormwater networks are inherently complex and given the scale and the impact they can have on general public, we need good algorithms for controlling them.
+Over the past decade, there has been a lot of interest on developing algorithms for the control of stormwater systems.
+
 
 \ 
 
 \section{Control of Stormwater Systems} 
-% Elaborate more on the need for statistical methods.
-The state-of-the-art in stormwater control  can be broadly classified under two categories: (1) Control algorithms reliant on parametrized models (e.g.\ model predictive control) for identifying control actions. (2) Search based algorithms (e.g.\ genetic algorithms) that exhaustively simulate physical models for identifying control actions.
-Though these control algorithms have been applied for localized control in stormwater systems\footnote{e.g.\ maintaining constant water levels and flows in individual basins.}, their investigation in the context of coordinated control and targeted removal of pollutants has been limited.
+% What are the different approaches being used for controlling stormwater systems?
+The state-of-the-art in stormwater control can be broadly classified under two categories, based on how they identify control actions:
+\begin{itemize}
+	\item Control algorithms reliant on parametrized models (e.g.\ Model Predictive Control) for identifying control actions.
+	\item Search based algorithms (e.g.\ evolutionary approaches like Genetic Algorithms) that exhaustively simulate models for identifying control actions.
+	\item Heuristic based approaches that identify the control actions solely based on the state of the system. (e.g. Fuzzy logic controllers). 
+\end{itemize}
+Though these control algorithms have been applied for localized control in stormwater systems\footnote{e.g.\ maintaining constant water levels and flows in individual basins.}, their investigation in the context of coordinated control has been limited.
 To fully realize the potential of the stormwater infrastructure and to safeguard our water bodies, we need to synthesize control algorithms that are able to coordinate the response of many distributed control assets in the network, while simultaneously achieving a diverse set of water quality and flow objectives. 
 Technologically, we are at a point where we can monitor and control these assets in real-time, but the development of control algorithms is hampered by a number of fundamental knowledge gaps.
 
 \
 
-% Different control algorithms being proposed?
-Over the years several control algorithms have been proposed for controlling urban water networks.
-Exisiting stormwater control algorithms can be classifed under three overarching catagories,
-\begin{itemize}
-	\item Parametrized Approches 
-	\item Evolutionary Algorithms
-	\item Model Predictive Control
-\end{itemize}
 
-\graffito{MPC in stormwater control literature is referred as the use of any model of making control decisions. In this dissertation, MPC is the explicit use of process based dynamical models for control.}
+\graffito{MPC in stormwater control literature is broadly. In this dissertation, MPC is the explicit use of process based dynamical models for control.}
 \
 
 % What are the limitations of the existing approaches?
+% Also why you cannot use resorvior optimization based approaches.
 
 \
 

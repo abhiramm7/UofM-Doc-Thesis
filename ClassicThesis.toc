@@ -6,12 +6,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}{Introduction}}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}{Control of Stormwater Systems}}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}{Control of Stormwater Systems}}{2}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}{Statistical methods}}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}{Statistical methods}}{3}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}{Dissertation Outline}}{3}{section.1.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}{Building a Theory for Smart Stormwater Systems}}{5}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {i}{Appendix}}{7}{part.1}
+\contentsline {section}{\numberline {2.1}{Do best local practices achieve the best global outcomes?}}{6}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}{Existing studies on real-time control}}{7}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}{Toward a framework for smart stormwater systems}}{9}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}{Shaping the response in watersheds using a sensor network}}{11}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}{Deep reinforcement learning for the control of stormwater networks}}{13}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}{Bayesian optimization for shaping the response of the stormwater systems}}{15}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}{A simulation sandbox for the development and evaluation of stormwater control algorithms}}{17}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}{Conclusion}}{19}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {i}{Appendix}}{21}{part.1}
+\defcounter {refsection}{0}\relax 
+\vspace {\beforebibskip }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Bibliography}}{23}{section*.3}
