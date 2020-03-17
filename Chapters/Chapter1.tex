@@ -1,13 +1,12 @@
 %************************************************
 \chapter{Building a Theory for Smart Stormwater Systems}\label{ch:theory}
 %************************************************
-%%%MAIN TEXT%%%%
-Rapid advances in sensing, computation, and wireless communications are
-promising to merge the physical with the virtual.
+Rapid advances in sensing, computation, and wireless communications are promising to merge the physical with the virtual.
 Calls to build the ``smart'' city of the future are being embraced by decision makers.
-While the onset of self-driving cars provides a good example that this vision is
-becoming a reality, the role  of information technology in the water sector has yet to be fleshed out.
+While the onset of self-driving cars provides a good example that this vision is becoming a reality, the role  of information technology in the water sector has yet to be fleshed out.
 These technologies stand to enable a leap in innovation in the distributed treatment of urban runoff, one of ourlargest environmental challenges. 
+
+\
 
 Retrofitting stormwater systems with sensors and controllers will allow the city to be controlled in real-time as a distributed treatment plant.
 Unlike static infrastructure, which cannot adapt its operation to individual storms or changing land uses, ``smart'' stormwater systems will use system-level coordination to reduce flooding and maximize watershed pollutant removal. Given the sheer number of storm water control measures in United States, even a small improvement to their performance could lead to a substantial reduction in pollutant loads.
@@ -15,24 +14,28 @@ Intriguingly, such a vision is not limited by technology, which has matured to t
 Rather, the challenge is much more fundamental and rooted in a system-level understanding of environmental science.
 Once stormwater systems become highly instrumented and controlled, how should they actually be operated to achieve desired watershed outcomes?
 The answer to this question demands the development of a theoretical framework for smart stormwater systems. 
-In this paper we lay out the requirements for such a theory.  Acknowledging that the broad adoption these systems may still be years away,  we also present and evaluate a modeling framework to allow for the simulation of smart stormwater systems before they become common place. 
-
-Recent urban floods\cite{Frosch2016}, many of which are driven by flashy events and inadequately sized infrastructure, are all too common example that aging stormwater infrastructure is struggling to keep pace with a dynamic and changing climate. 
+In this paper we lay out the requirements for such a theory.
+Acknowledging that the broad adoption these systems may still be years away,  we also present and evaluate a modeling framework to allow for the simulation of smart stormwater systems before they become common place. 
+Recent urban floods~\cite{Frosch2016}, many of which are driven by flashy events and inadequately sized infrastructure, are all too common example that aging stormwater infrastructure is struggling to keep pace with a dynamic and changing climate. 
 While flood control often emerges as one of the most promising application areas, to illustrate the flexibility of smart stormwater systems this paper will focus on the impacts to urban water quality.
 
+
 \section{Do best local practices achieve the best global outcomes?}
-Pollutants in runoff are threatening the health of downstream ecosystems, as evinced by harmful algal blooms, such as those on Lake Erie\cite{Michalak2013Record-settingConditions} and the Chesapeake Bay\cite{powledge2005chesapeake,Boesch2001ChesapeakeAgriculture}.
+
+Pollutants in runoff are threatening the health of downstream ecosystems, as evinced by harmful algal blooms, such as those on Lake Erie~\cite{Michalak2013Record-settingConditions} and the Chesapeake Bay~\cite{powledge2005chesapeake,Boesch2001ChesapeakeAgriculture}.
 Simultaneously, ``dry'' regions of the country are struggling to find new and clean sources of water.
-By some estimates, the capture of stormwater in Los Angeles\cite{Geosyntec2014} and San Francisco\cite{Garrison2014StormwaterCalifornia} could offset the water used by these cities.
+By some estimates, the capture of stormwater in Los Angeles~\cite{Geosyntec2014} and San Francisco~\cite{Garrison2014StormwaterCalifornia} could offset the water used by these cities.
 This, however, requires at least some level of treatment to ensure that captured stormwater is safe for direct use or aquifer injection.
 In the face of these challenges, novel solutions for stormwater management are needed.
 
-Reductions in hydraulic or pollutant loads are commonly achieved via a set of distributed stormwater solutions\cite{Hamel2013Source-controlReview, Burns2012HydrologicReform}, such as ponds or treatment wetlands.
-Our body of knowledge on the treatment potential of these systems is extensive, showing that significant water quality and hydraulic benefits can be achieved at the level of individual sites\cite{Stanley1996PollutantPond,Carleton2000PerformanceRunoff}.
+\
+
+Reductions in hydraulic or pollutant loads are commonly achieved via a set of distributed stormwater solutions~\cite{Hamel2013Source-controlReview, Burns2012HydrologicReform}, such as ponds or treatment wetlands.
+Our body of knowledge on the treatment potential of these systems is extensive, showing that significant water quality and hydraulic benefits can be achieved at the level of individual sites~\cite{Stanley1996PollutantPond,Carleton2000PerformanceRunoff}.
 Most recently, an exciting and growing research area has formed around smaller-scale and more distributed Green Infrastructure (GI) solutions, such as green roofs or bioswales\cite{Benedict2006GreenCentury}.
-Most of these solutions are grouped under the broader umbrella of Best
-Management Practices\cite{Urbonas1994ASSESSMENTTECHNOLOGY} (BMPs) or
-  Storm Water Control Measures (SCMs)\cite{Cizek201340}.
+Most of these solutions are grouped under the broader umbrella of Best Management Practices\cite{Urbonas1994ASSESSMENTTECHNOLOGY} (BMPs) or Storm Water Control Measures (SCMs)\cite{Cizek201340}.
+
+\
 
 Given the aggressive adoption of these stormwater practices, rarely is the question asked: Does doing the ``best'' at a local scale translate to doing the best at the watershed scale? Research on this question is limited\cite{Petrucci2013DoOutcomes,Sage2015StormwaterPractices,Petrucci2014UrbanHow}, but paints a cautionary picture.
 Unless designed as part of a coordinated, city-scale solution, a system of SCMs may actually worsen watershed-scale outcomes.
@@ -43,12 +46,13 @@ This, in turn, can lead to increased stream erosion and re-suspension of sedimen
 More examples can be given, but there is an urgent need to investigate the
 scalability of SCMs and to ensure that their functionality is tuned in the context of the broader stormwater system. 
 
+\
+
 Even if system-level optimization is used to determine the placement of SCMs\cite{Ciou2012OptimizationWatershed,Zhen2004OptimalScale}, it is difficult to guarantee that the overall system will perform as designed.
 The sheer variability in rainfall\cite{Chaubey1999UncertaintyRainfall}, seasonal pollutant loadings\cite{Ouyang2006AssessmentQuality}, and broader land use changes\cite{Goonetilleke2005UnderstandingManagement} will always push stormwater systems beyond their intended design or the ``average'' storm\cite{DepartmentofEnvironmentalProtection2006PennsylvaniaManual}.
 As such, it becomes imperative to find a way to adapt to these uncertain disturbances.
 One solution relies on real-time sensing and control.
 By equipping stormwater elements with control valves, which can be operated in real-time based on sensor readings, the overall performance of the entire system can be adapted to achieve watershed-scale benefits (Figure.\ref{fgr:vision}a). 
-
 
 %%------------------RTC studies ---------------
 \subsection{Existing studies on real-time control}
@@ -66,11 +70,13 @@ bodies. The authors observed a 90\% improvement in TSS retention. A
 comprehensive review of these and other studies is summarized in Kerkez et al.\cite{Kerkez2016SmarterSystems}, along with additional information on how these solutions are deployed in the field. 
 While these studies demonstrate significant potential to improve water quality at the scale of individual sites, the mechanisms behind the removal of pollutants in controlled SCMs remain a research challenge. This is particularly true in the removal of dissolved pollutants, such as ammonia and nitrate. Furthermore, the scalability of  real-time control must be evaluated to ensure that local benefits do not overshadow watershed-scale benefits. 
 
+
 \begin{figure}
 \includegraphics{gfx/Chapter-1/k-drawing.eps} 
 \caption{Application of control and optimization methods to the real-time operation of stormwater systems will be made possible by abstracting physical models to system-theoretic representations.}
 \label{fgr:vision}
 \end{figure}
+
 
 Since the 2000 European Union's Water Framework Directive \cite{TheEuropeanParliamentandthecouncilofEuropeanUnion2000DirectivePolicy} there has been an increasing emphasis on integrated, system-level control of sewer water distribution systems.
 The resulting control strategies vary in complexity\cite{Benedetti2009AScale,Seggelke2013ImplementationWilhelmshaven,Fiorelli2013OptimisedFunction}  and have since been implemented in a number of urban water networks\cite{Mollerup2016ControllingCities}.
@@ -84,7 +90,7 @@ Many methods have been developed by the operational research and control theory 
 
 Until sensors and controllers become ubiquitously deployed across stormwater systems, which may take years to accomplish, there is enough domain knowledge embedded in existing models to begin answering these questions through simulation. 
 
-\iffalse
+
 %%simulation framework
 \subsection{Limitations of existing simulations approaches}
 Existing stormwater models can be broadly grouped into two categories: those
@@ -112,14 +118,14 @@ Given the need to develop a better understanding of the system-level transport a
 The real-time operation of gates and valves introduces dynamics that impact hydraulics and water quality.
 To that end, the biggest limitation of existing models is their ability to simulate the system-wide impacts of real-time control.
 This includes the ability to dynamically route flows based on a variety of desired control actions, as well as the capacity to simulate a variety of pollutant buildup, washoff, and non-steady state treatment dynamics. 
-While models such as SWMM do have some rudimentary control capabilities, the built-in control logic is limited to site-level control (e.g. maintaining levels or flow in a pond)\cite{Rossman2010Storm5.1}.
+While models such as SWMM do have some rudimentary control capabilities, the built-in control logic is limited to site-level control (e.g.\ maintaining levels or flow in a pond)\cite{Rossman2010Storm5.1}.
 Advanced features, such as system-level control, optimization, or the ability to control around external factors (such as weather forecasts) are not yet implemented\cite{Ria2016MatSWMMSystems}. 
 
 While it would be possible to extend an existing model to capture all this functionality, the effort would be significant. To that end, we contend that a coupled modeling approach\cite{Goodall2011ModelingParadigm}  will be the most flexible way to accomplish this. By coupling models, rather than translating their features in  into one large model, it becomes possible to construct a modeling chain whose complexity varies based on the scientific or management question that needs to be answered. More importantly, if individual models undergo updates by their respective domain experts, these new features would become available to the coupled model as well without much implementation overhead. 
 
-\begin{figure}[H]
+\begin{figure}
 \centering
-  \includegraphics[width=\linewidth]{../gfx/Chapter-1/coupled_model.png}
+  \includegraphics[width=\linewidth]{gfx/Chapter-1/coupled_model.png}
   \caption{Each element in the broader stormwater system can be modeled in a step-wise fashion that simulates hydraulic, water quality and control dynamics.}
 \label{framework}
 \end{figure}
@@ -131,10 +137,8 @@ The node has an outflow $q_{out}$ which, unlike in static hydraulic infrastructu
 A treatment potential $k$ governs the removal or transformation of the pollutant based on a number of hydraulic and water quality states.
  
 Given that control actions change the hydraulic behavior, which in turn affects the treatment of the pollutants, it becomes necessary to implement a modeling cycle that couples these processes in an interconnected, step-wise fashion. 
-In our implementation, the hydraulic simulation can be carried out by any number
-of hydraulic models, ranging
-from simple hydraulic routing schemes, to more complex models such as SWMM or
-MUSIC. Outputs from the hydraulic model are fed to the water quality model, which, depending on the pollutant of interest, can range from simple first-order process-based methods to more complex finite-element models.
+In our implementation, the hydraulic simulation can be carried out by any number of hydraulic models, ranging from simple hydraulic routing schemes, to more complex models such as SWMM or MUSIC.
+Outputs from the hydraulic model are fed to the water quality model, which, depending on the pollutant of interest, can range from simple first-order process-based methods to more complex finite-element models.
 Finally, the control module processes the outputs from the hydraulic and water quality models.
 Based on the objective, which can depend on the states of multiples elements in the overall systems, it sets the discharge rate $q_{out}$  by closing or opening the outlet.
 The benefits of the coupled approach relate to its flexibility since individual elements can be connected together to represent highly complex stormwater networks.
@@ -191,7 +195,7 @@ All simulations were implemented in MATLAB Simulink\cite{TheMathWorksInc.MATLAB}
 The step-wise coupled modeling approach was implemented by representing each  each module (hydraulic, water quality, and control) as an individual Simulink object (Figure.\ref{fgr:simulink}). All of the source code, inputs and implementation details are attached to this paper as supplementary material.
 
 \begin{figure}
-\includegraphics[width=\linewidth]{../gfx/Chapter-1/Model_Individual.png}
+\includegraphics[width=\linewidth]{gfx/Chapter-1/Model_Individual.png}
   \caption{MATLAB Simulink implementation of the first case study. The overall model executed in a step-wise fashion and couples stand-alone hydraulic, water quality, and control models.}
 \label{fgr:simulink}
 \end{figure}
@@ -200,16 +204,16 @@ The step-wise coupled modeling approach was implemented by representing each  ea
 
 \subsection{Case Study 1: Local Control}
 
-\begin{figure}[!ht]
+\begin{figure}
 \centering
-  \includegraphics{../gfx/Chapter-1/local.eps}
+  \includegraphics{gfx/Chapter-1/local.eps}
   \caption{Impact of real-time control to hydraulic behavior and nitrate treatment, showing inflow concentrations (top panel), pond water height and outflows (second panel), nitrate concentrations inside the pond (third panel), and cumulative nitrate loads exiting the pond (bottom panel).}
 \label{fgr:local_control}
 \end{figure}
 
 The first case study is motivated by the objective of controlling a single stormwater basin, which was originally designed for flood remediation as a detention pond (flow-through).  The model parameters and physical attributes are provided in the appendix of this paper. In its original configuration the pond merely serves to attenuate peak flows, with little emphasis on water quality. By equipping this pond with a control valve, its original functionality can remain unaffected during large storms by simply keeping the valve open.  Major water quality benefits can arise, however, by controlling this pond during smaller and more frequent events. 
 
-When enabled, the control algorithm keeps the valve closed and only opens it if the water height exceeds 1.0 m to prevent the pond from overflowing. As a further constraint, when the height exceeds 1.0 m the valve is modulated to ensure that outflows do not exceed $2~m^3/s$, which is the threshold\sout{s} at which downstream sediments are assumed to be re-suspended. Two variations of the control algorithm are also evaluated. The first strategy completely drains the pond before a rain event, thus maximizing captured volumes. Based on the magnitude of the rain event (assumed to be known through a weather forecast), the second strategy only partially drains the pond, maximizing the anaerobic conditions at the soil-water interface and thus speeding up denitrification of the inflows. In this case study, the  height of the partially drained configuration was set to 0.15 m, assuming that this height would be sufficient to maintain the saturated conditions and prevent the diffusion of oxygen into soil \cite{Reddy1989Nitrification-DenitrificationWetlands}. 
+When enabled, the control algorithm keeps the valve closed and only opens it if the water height exceeds 1.0 m to prevent the pond from overflowing. As a further constraint, when the height exceeds 1.0 m the valve is modulated to ensure that outflows do not exceed $2m^3s^{-1}$, which is the threshold at which downstream sediments are assumed to be re-suspended. Two variations of the control algorithm are also evaluated. The first strategy completely drains the pond before a rain event, thus maximizing captured volumes. Based on the magnitude of the rain event (assumed to be known through a weather forecast), the second strategy only partially drains the pond, maximizing the anaerobic conditions at the soil-water interface and thus speeding up denitrification of the inflows. In this case study, the  height of the partially drained configuration was set to 0.15 m, assuming that this height would be sufficient to maintain the saturated conditions and prevent the diffusion of oxygen into soil \cite{Reddy1989Nitrification-DenitrificationWetlands}. 
 
 Compared to the uncontrolled scenario, which only attenuated the peak flow, both
 controlled scenarios retained a water height of 1.0 m after the storm
@@ -246,13 +250,13 @@ The configuration was based on a real-world site currently being retrofitted for
 
 \begin{figure}
 \centering
- \includegraphics{../gfx/Chapter-1/Glo_sys_rep.eps}
+ \includegraphics{gfx/Chapter-1/Glo_sys_rep.eps}
   \caption{System-level control case study: three ponds, two of which are controlled, draining into a treatment wetland.}
 \label{fgr:sys_diagram}
 \end{figure}
 
-\begin{figure*}[!ht]
-\includegraphics{../gfx/Chapter-1/Global.eps}
+\begin{figure*}
+\includegraphics{gfx/Chapter-1/Global.eps}
   \caption{Impact of real-time control to hydraulics and nitrate treatment across a system of stromwater elements: inflow concentrations (top row), pond water height and outflows (second row), nitrate concentrations inside each element (third row), and cumulative nitrate loads exiting the pond (bottom row).}
 \label{fgr:globalcase}
 \end{figure*}
@@ -270,7 +274,7 @@ A natural extension of this control strategy would be the direct control of the 
 %--------------------------- Discussion -----------------
 \begin{figure*}
 \centering
-\includegraphics[width=.9\textwidth]{arch.png}
+\includegraphics[width=.9\textwidth]{gfx/Chapter-1/arch.png}
   \caption{The stormwater \textit{feedback control loop}. A desired watershed outcome is compared, in real-time, to actual watershed state based on sensor measurements. The control logic then adjusts the states of valves, gates and pumps to drive the system toward the desired state. Disturbances, such as precipitation, may drive the system away from the desired outcome and must be controlled against when the feedback loop repeats.}
 \label{fgr:rsch_gaps}
 \end{figure*}
@@ -308,4 +312,3 @@ Presently, it is unclear which real-time control and optimization techniques wil
 
 \section{Conclusions}
 The goal of this paper was to illustrate the need for a "smart" stormwater systems theoretical framework. Before such systems become adopted, much work remains to be conducted on simulating their performance, which can be accomplished by coupling existing hydrologic, hydraulic and water quality models. As demonstrated by our case studies, real-time control of stormwater has the potential to significantly improve the performance of existing infrastructure, introducing new alternatives to tightly manage nutrients, metals and other pollutants in urban watersheds. Considering current funding mechanisms for stormwater, especially in the United States, the cost of retrofitting will provide a more budget-conscious alternative to new construction while achieving similar or better water quality outcomes. Aside from technical or research gaps, which must be addressed before these systems become reality, it will be imperative to encourage a broad community of researchers, engineers, and cities to adopt these technologies as part of their existing toolboxes. To that end, our team has been spearheading the \href{http://open-storm.org}{open-storm.org} portal, a collaborative and open-source initiative aimed at sharing end-to-end blueprints and tutorials on software, hardware and sensors required to instrument and control urban watersheds. As the community grows around this exciting new area of research, \href{http://open-storm.org}{open-storm.org} will track and disseminate its future work.
-\fi
