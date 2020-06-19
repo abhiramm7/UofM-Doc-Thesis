@@ -1,0 +1,167 @@
+% The packages used here are just a sample. You may need others, and may not need some of these. It doesn't hurt to leave them in, unless they start to conflict with other packages you've added. Chapter 2 has example code for equations, figures, tables, citations, abbreviations, etc. If there are sections labeled 'optional' that you don't want, just comment them out. -jg
+
+\documentclass[reqno,12pt,oneside]{report} % right-side equation numbering, 12 point font, print one-sided 
+%\documentclass[reqno,12pt,twoside,openright]{report} % right-side equation numbering, 12 point font, print two-sided, Chapters start on odd pages. Rackham only accepts one-sided, so this is for personal printings.
+
+\usepackage{rac_mod}         % Use Rackham thesis style file
+\usepackage{aas_macros}  % To allow the reading of ADS journal references in the bibliography
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{todonotes}
+\usepackage[intlimits]{amsmath} % Puts the limits of integrals on top and bottom
+\usepackage{amsxtra}     % Use various AMS packages
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{textcomp}
+\usepackage{gensymb}
+\usepackage{threeparttable}
+\usepackage[super]{nth}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{boldline}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{adjustbox}
+\usepackage{rotating}
+\usepackage{bm}
+
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{dirtytalk}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{lscape}
+\usepackage{amsmath,accents}
+\usepackage{csquotes}
+\usepackage{verbatim}
+\usepackage{etoolbox}
+\usepackage[square,numbers,sort&compress]{natbib}      % Allows you to use BibTeX
+\usepackage[printonlyused]{acronym} % For the List of Abbreviations. Read acronym.pdf on ctan.tug.org
+\usepackage{setspace}    % Allows you to specify the line spacing
+%\onehalfspacing        % \onehalfspacing for 1.5 spacing, \doublespacing for 2.0 spacing.
+\linespread{1.25}
+\newcommand{\myvec}[1]{\accentset{\rightharpoonup}{#1}}
+\usepackage{array}
+\newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\renewcommand{\thechapter}{\arabic{chapter}}
+
+\usepackage{titlesec,titletoc}
+\titlecontents{part}%
+[0pt]{\bf\large\protect\addvspace{20pt}}%remove rule if you like
+{}{\partname~}
+{\hfill\contentspage}%replaced with {} if don't want page number for parts
+[\addvspace{1.25ex}]%remove rule if you like
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If printing two-sided, this makes sure that any blank page at the 
+% end of a chapter will not have a page number. 
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother 
+
+\makeatletter  
+\providecommand*{\toclevel@chap}{0}  
+\makeatother
+
+\makeatletter
+\let\oldcite\cite
+\pretocmd{\listoffigures}{\def\cite{\ignorespaces\@gobble}}{}{}
+\apptocmd{\listoffigures}{\let\cite\oldcite}{}{}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%\bibliographystyle{agu04}    % Set the bibliography style. agu04, plain, alpha, etc.
+
+% Title page as required by Rackham dissertation guidelines
+\titlepage{Statistical Learning Approaches for the Control of Stormwater Systems}{Abhiram Mullapudi}{Doctor of Philosophy}
+{Civil Engineering}{2020}
+{Professor Branko Kerkez, Chair\\
+ Professor Neda Masoud\\
+ Professor Andrew Gronewold\\
+ Professor Ramanarayan Vasudevan}
+
+% Begin the front matter as required by Rackham dissertation guidelines
+\initializefrontsections
+
+% Optional Frontispiece
+% \frontispiece{Find a cool picture to go here.}
+
+% Optional, but recommended, Copyright page
+\copyrightpage{Abhiram Mullapudi}{abhiramm@umich.edu}{ORCID iD: 0000-0001-8141-3621}{Abhiram Mullapudi}
+
+% Page numbering. If you don't include a frontispiece or copyright page, you'll need to change this for two-sided printing.
+\makeatletter
+\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
+\makeatother
+ 
+% Optional Dedication page
+\startdedicationpage
+\input{Bookends/Dedication}
+\label{Dedication}
+
+% Optional Acknowledgements page
+\startacknowledgementspage
+\input{Bookends/Acknowledgements}
+\label{Acknowledgements}
+
+% Optional Preface page
+%\startprefacepage
+%\input{Preface}
+%\label{Preface}
+
+% Table of contents, list of figures, etc.
+\tableofcontents     % Required
+\listoffigures       % Required if there is more than one figure
+\listoftables        % Required if there is more than one table
+\listofappendices    % Required if there is more than one appendix
+
+% Optional in-dissertation Abstract Page
+\startabstractpage
+\input{Bookends/Abstract}
+\label{Abstract}
+
+\startthechapters 
+% The individual files for each of the chapters are put here.
+% Save each chapter of your thesis to a separate tex file
+% and then use the \input command to include this file in your
+% thesis.  For instance you can save a file to "intro.tex" and 
+% then type \input{intro}. 
+
+\input{Introduction/Introduction.tex}
+\input{01-SmarterStormwaterSys/Chapter-1.tex}
+\input{02-ShapingStormwater/Chapter-2.tex}
+\input{03-DeepRL/Chapter-3.tex}
+
+\startappendices
+%\input{Appendices/SI_toolchain.tex}
+%\input{Appendices/SI_LBcontrol.tex}
+%\input{Appendices/SI_sewerWRRF.tex}
+%\input{Appendices/additional_act}
+
+\bibliographystyle{unsrtnat}
+\startbibliography
+\begin{singlespace} % Bibliography must be single spaced
+\bibliography{References}   % Use the BibTeX file ``References.bib''.
+\end{singlespace}
+
+% An external Abstract that can be printed at the end of the document, 
+% for separate submission to Rackham. Comment it out when not needed. - jg
+%\startextabstractpage
+%{The Title of Your Dissertation}{Your Name}{Chair: Albert Einstein}
+%\input{Abstract/Abstract}
+%\label{ExtAbstract}
+
+\end{document}

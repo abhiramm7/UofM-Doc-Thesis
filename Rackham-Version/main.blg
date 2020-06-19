@@ -1,0 +1,123 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: References.bib
+Warning--I didn't find a database entry for "Kerkez_2016"
+Warning--I didn't find a database entry for "Wright_2017"
+Warning--I didn't find a database entry for "Montestruque_2015"
+Warning--I didn't find a database entry for "Bronstert_2002"
+Warning--I didn't find a database entry for "stocker_2014"
+Warning--I didn't find a database entry for "Bartos_2018"
+Warning--I didn't find a database entry for "Mullapudi_2017"
+Warning--I didn't find a database entry for "Middleton_2008"
+Warning--I didn't find a database entry for "Roman_2017"
+Warning--I didn't find a database entry for "Klenzendorf_2015"
+Warning--I didn't find a database entry for "Emerson_2005"
+Warning--I didn't find a database entry for "Schutze2004RealToday"
+Warning--I didn't find a database entry for "Mollerup_2016"
+Warning--I didn't find a database entry for "HRWC_2011"
+Warning--I didn't find a database entry for "Wong_2016b"
+Warning--I didn't find a database entry for "kinnmark2012shallow"
+Warning--I didn't find a database entry for "Litrico_2004"
+Warning--I didn't find a database entry for "Marinaki_2003"
+Warning--I didn't find a database entry for "Garcia_2015"
+Warning--I didn't find a database entry for "bledsoe2002stream"
+Warning--I didn't find a database entry for "Michalak2013"
+Warning--I didn't find a database entry for "schilling2008greening"
+Warning--I didn't find a database entry for "wise2008green"
+Warning--I didn't find a database entry for "Wong_2016"
+Warning--I didn't find a database entry for "LarisKarklisBefore-and-afterPost"
+Warning--I didn't find a database entry for "Watson2016TheHypoxia"
+Warning--I didn't find a database entry for "Kerkez2016"
+Warning--I didn't find a database entry for "Mullapudi2017"
+Warning--I didn't find a database entry for "Mnih2015"
+Warning--I didn't find a database entry for "Lillicrap2015ContinuousLearning"
+Warning--I didn't find a database entry for "TheEuropeanParliamentandthecouncilofEuropeanUnion2000"
+Warning--I didn't find a database entry for "Mollerup2016"
+Warning--I didn't find a database entry for "Mahmoodian2017Pollution-basedPropagation"
+Warning--I didn't find a database entry for "pleau2005global"
+Warning--I didn't find a database entry for "Meneses2018CoordinatingDenmark"
+Warning--I didn't find a database entry for "wong2018real"
+Warning--I didn't find a database entry for "van2006model"
+Warning--I didn't find a database entry for "Ogata201"
+Warning--I didn't find a database entry for "Sutton98"
+Warning--I didn't find a database entry for "silver2017masteringgo"
+Warning--I didn't find a database entry for "Silver2017MasteringAlgorithm"
+Warning--I didn't find a database entry for "Kober2013ReinforcementSurvey"
+Warning--I didn't find a database entry for "Ng2006AutonomousLearning"
+Warning--I didn't find a database entry for "abdulhai2003reinforcement"
+Warning--I didn't find a database entry for "bhattacharya2003neural"
+Warning--I didn't find a database entry for "castelletti2010tree"
+Warning--I didn't find a database entry for "sutton2000policy"
+Warning--I didn't find a database entry for "Watkins1992Q-learning"
+Warning--I didn't find a database entry for "sutton1991planning"
+Warning--I didn't find a database entry for "Mnih2013PlayingLearning"
+Warning--I didn't find a database entry for "hornik1989multilayer"
+Warning--I didn't find a database entry for "LeCun2015DeepLearning"
+Warning--I didn't find a database entry for "bartos2017open"
+Warning--I didn't find a database entry for "henderson2017Deep"
+Warning--I didn't find a database entry for "aytar2018playing"
+Warning--I didn't find a database entry for "schutze_sewer_2008"
+Warning--I didn't find a database entry for "Elliott2007ADrainage"
+Warning--I didn't find a database entry for "Riano-Briceno2016MatSWMMSystems"
+Warning--I didn't find a database entry for "aaswmm"
+Warning--I didn't find a database entry for "lecun2015Deep"
+Warning--I didn't find a database entry for "AbadiThisLearning"
+Warning--I didn't find a database entry for "goodfellow2016Deep"
+Warning--I didn't find a database entry for "ioffe2015batch"
+Warning--I didn't find a database entry for "scs1986urban"
+Warning--I didn't find a database entry for "schutze_astlingen_2018"
+Warning--I didn't find a database entry for "ng1999policy"
+Warning--I didn't find a database entry for "larochelle2009exploring"
+Warning--I didn't find a database entry for "osband2016Deep"
+Warning--I didn't find a database entry for "clavera2018model"
+Warning--I didn't find a database entry for "Schulman2017ProximalAlgorithms"
+Warning--I didn't find a database entry for "fu2017learning"
+Warning--I didn't find a database entry for "espeholt2018impala"
+Warning--I didn't find a database entry for "OpenAI_dota"
+Warning--I didn't find a database entry for "depeweg2016learning"
+Warning--I didn't find a database entry for "gu2016continuous"
+Warning--empty year in TheMathWorksInc.MATLAB
+You've used 67 entries,
+            2481 wiz_defined-function locations,
+            1143 strings with 22481 characters,
+and the built_in function-call counts, 27791 in all, are:
+= -- 2298
+> -- 1633
+< -- 34
++ -- 620
+- -- 486
+* -- 2325
+:= -- 4534
+add.period$ -- 224
+call.type$ -- 67
+change.case$ -- 130
+chr.to.int$ -- 67
+cite$ -- 68
+duplicate$ -- 1296
+empty$ -- 2415
+format.name$ -- 581
+if$ -- 5798
+int.to.chr$ -- 1
+int.to.str$ -- 68
+missing$ -- 72
+newline$ -- 365
+num.names$ -- 201
+pop$ -- 517
+preamble$ -- 1
+purify$ -- 67
+quote$ -- 0
+skip$ -- 751
+stack$ -- 0
+substring$ -- 1400
+swap$ -- 173
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 442
+warning$ -- 1
+while$ -- 237
+width$ -- 0
+write$ -- 912
+(There were 76 warnings)

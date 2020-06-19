@@ -1,0 +1,65 @@
+\contentsline {chapter}{DEDICATION}{ii}{Doc-Start}
+\contentsline {chapter}{ACKNOWLEDGEMENTS}{iii}{Doc-Start}
+\contentsline {chapter}{LIST OF FIGURES}{vii}{Doc-Start}
+\contentsline {chapter}{LIST OF TABLES}{xi}{Doc-Start}
+\contentsline {chapter}{LIST OF APPENDICES}{xii}{Doc-Start}
+\contentsline {chapter}{ABSTRACT}{xiii}{Doc-Start}
+\mbox { }\newline \noindent {\bf CHAPTER}\newline 
+\hbox { }
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf 1.\hspace {5pt}}{\bf Introduction}}{1}{chapter.1}
+\hbox { }
+\contentsline {section}{\numberline {1.1}Control of Stormwater Systems}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Statistical methods}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Dissertation Outline}{4}{section.1.3}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf 2.\hspace {5pt}}{\bf Building a Theory for Smart Stormwater Systems}}{5}{chapter.2}
+\hbox { }
+\contentsline {section}{\numberline {2.1}Do best local practices achieve the best global outcomes?}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Existing studies on real-time control}{7}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Toward a framework for smart stormwater systems}{10}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Limitations of existing simulations approaches}{10}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Simulating controlled systems}{11}{section.2.3}
+\contentsline {section}{\numberline {2.4}Simulated Studies}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Model Implementation}{14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Case Study 1: Local Control}{16}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Case Study 2: System-level Control}{19}{subsection.2.4.3}
+\contentsline {section}{\numberline {2.5}Discussion}{22}{section.2.5}
+\contentsline {section}{\numberline {2.6}Knowledge gaps}{24}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Toward a new generation of real-time models}{24}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Control Algorithms}{25}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Conclusions}{26}{section.2.7}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf 3.\hspace {5pt}}{\bf Shaping the response in watersheds using a sensor network}}{27}{chapter.3}
+\hbox { }
+\contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}
+\contentsline {section}{\numberline {3.2}Study area and technologies}{30}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Study area}{30}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Technologies and Architecture}{31}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Characterizing control actions}{34}{section.3.3}
+\contentsline {section}{\numberline {3.4}Set-point hydrographs}{38}{section.3.4}
+\contentsline {section}{\numberline {3.5}Coordinated releases between multiple control sites}{40}{section.3.5}
+\contentsline {section}{\numberline {3.6}Conclusions}{43}{section.3.6}
+\hbox { }
+\contentsline {chap}{\numberline {\hbox { }\hfill \bf 4.\hspace {5pt}}{\bf Deep reinforcement learning for the control of stormwater networks}}{44}{chapter.4}
+\hbox { }
+\contentsline {section}{\numberline {4.1}Introduction}{44}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Real time control of urban drainage systems}{46}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Reinforcement Learning}{47}{section.4.2}
+\contentsline {section}{\numberline {4.3}Methods}{49}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Reinforcement learning for stormwater systems}{49}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Deep Q Learning}{52}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Evaluation}{53}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Study Area}{54}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Analysis}{56}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Scenario 1: Control of a single basin}{56}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}Scenario 2: Controlling multiple basins}{59}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}Simulation, Implementation, and Evaluation}{60}{subsection.4.3.8}
+\contentsline {section}{\numberline {4.4}Results}{64}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Scenario 1: Control of single basin}{64}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Scenario 2: Control of multiple basins}{68}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Discussion}{74}{section.4.5}
+\contentsline {section}{\numberline {4.6}Conclusion}{78}{section.4.6}
+\contentsline {chapter}{APPENDICES}{79}{section.4.6}
+\contentsline {chapter}{BIBLIOGRAPHY}{80}{section.4.6}
+\contentsfinish 
