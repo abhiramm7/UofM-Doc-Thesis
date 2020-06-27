@@ -51,4 +51,15 @@
 \BOOKMARK [1][-]{section.4.5}{Discussion}{chapter.4}% 51
 \BOOKMARK [1][-]{section.4.6}{Conclusion}{chapter.4}% 52
 \BOOKMARK [0][-]{section.4.6}{APPENDICES}{}% 53
-\BOOKMARK [0][-]{section.4.6}{BIBLIOGRAPHY}{}% 54
+\BOOKMARK [1][-]{section.A.1}{Deep Neural Networks}{section.4.6}% 54
+\BOOKMARK [1][-]{section.A.2}{Hyper parameters and architecture}{section.4.6}% 55
+\BOOKMARK [1][-]{section.A.3}{Equal-filling degree algorithm}{section.4.6}% 56
+\BOOKMARK [1][-]{section.A.4}{Scenario 1 \204 Reward function Formulation Sensitivity}{section.4.6}% 57
+\BOOKMARK [1][-]{section.A.5}{Scenario 1 \204 Location sensitivity}{section.4.6}% 58
+\BOOKMARK [1][-]{section.A.6}{Scenario 2 \204 Back-to-back event}{section.4.6}% 59
+\protect \let \reserved@d =[\def {\def !{[1][-]}\futurelet \@let@token \let \@nodocument \def figure{figure}\def tbp{!\par }\edef tbp{tbp}\def !{!}\@floatpenalty -\@Miii \protect \begingroup \immediate \write \@unused   \def \MessageBreak  
+ \let \protect \edef  You've lost some text.  Try typing  <return>  to proceed.\MessageBreak If that doesn't work, type  X <return>  to quit.  \errhelp \let \def \MessageBreak  
+                \def   \errmessage  LaTeX Error: Too many unprocessed floats.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help   \endgroup \global \setbox \bx@Q \vbox \bgroup \color@begingroup \let 0 g 0 G0 g 0 G\pdfextension colorstack\main@pdfcolorstack push{0 g 0 G}\aftergroup \pdfextension colorstack\main@pdfcolorstack pop\relax \vbox \bgroup \hsize \columnwidth \let 

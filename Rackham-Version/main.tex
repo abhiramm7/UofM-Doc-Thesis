@@ -70,9 +70,9 @@
 \if@twocolumn\hbox{}\newpage\fi\fi\fi}
 \makeatother 
 
-\makeatletter  
-\providecommand*{\toclevel@chap}{0}  
-\makeatother
+%\makeatletter  
+%\providecommand*{\toclevel@chap}{0}  
+%\makeatother
 
 \makeatletter
 \let\oldcite\cite
@@ -103,9 +103,9 @@
 \copyrightpage{Abhiram Mullapudi}{abhiramm@umich.edu}{ORCID iD: 0000-0001-8141-3621}{Abhiram Mullapudi}
 
 % Page numbering. If you don't include a frontispiece or copyright page, you'll need to change this for two-sided printing.
-\makeatletter
-\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
-\makeatother
+%\makeatletter
+%\if@twoside \setcounter{page}{4} \else \setcounter{page}{1} \fi
+%\makeatother
  
 % Optional Dedication page
 \startdedicationpage
@@ -146,7 +146,7 @@
 \input{03-DeepRL/Chapter-3.tex}
 
 \startappendices
-%\input{Appendices/SI_toolchain.tex}
+\input{Appendices/RL-SI.tex}
 %\input{Appendices/SI_LBcontrol.tex}
 %\input{Appendices/SI_sewerWRRF.tex}
 %\input{Appendices/additional_act}
@@ -154,7 +154,8 @@
 \bibliographystyle{unsrtnat}
 \startbibliography
 \begin{singlespace} % Bibliography must be single spaced
-\bibliography{References}   % Use the BibTeX file ``References.bib''.
+\bibliography{01-SmarterStormwaterSys/Chapter-1.bib,02-ShapingStormwater/Chapter-2.bib,03-DeepRL/Chapter-3.bib}
+% Use the BibTeX file ``References.bib''.
 \end{singlespace}
 
 % An external Abstract that can be printed at the end of the document, 

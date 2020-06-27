@@ -1,1 +1,4 @@
 \noindent \relax $\@@underline {\hbox {\bf Appendix}}\mathsurround \z@ $\relax \hfill \rm \newline 
+\hbox { }
+\contentsline {appendix}{\numberline {A.}{\ignorespaces \rm Supplementary Information: Deep reinforcement learning for the real time control of stormwater systems}}{80}{appendix.A}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Equal-Filling Control Algorithm: Let $i$ be a basin in the network of $\mathcal {N}$ tanks. In this scenario, $\mathcal {N} = 4$.\relax }}{85}{algorithm.1}
