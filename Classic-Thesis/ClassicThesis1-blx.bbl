@@ -51,8 +51,8 @@
     \field{issn}{2053-1419}
     \field{number}{1}
     \field{pages}{66\bibrangedash 77}
-  \field{title}{\href{https://randomstorms.net/data/papers/stormwatertheory.pdf}{Emerging
-  investigators series: building a theory for smart stormwater systems}}
+    \field{title}{Emerging investigators series: building a theory for smart
+  storm\-water systems}
     \verb{url}
     \verb http://dx.doi.org/10.1039/C6EW00211K
     \endverb
@@ -101,14 +101,57 @@
     \field{issn}{1424-8220}
     \field{number}{7}
     \field{pages}{2259}
-  \field{title}{\href{https://randomstorms.net/data/papers/shapingwater.pdf}{Shaping
-  Streamflow Using a Real-Time Stormwater Control Network}}
+    \field{title}{Shaping Streamflow Using a Real-Time Storm\-water Control
+  Network}
     \verb{url}
     \verb http://dx.doi.org/10.3390/s18072259
     \endverb
     \field{volume}{18}
     \field{journaltitle}{Sensors}
     \field{year}{2018}
+  \endentry
+
+  \entry{Mullapudi_Lewis_Gruden_Kerkez_2020}{article}{}
+    \name{author}{4}{}{%
+      {{hash=t}{%
+         family={\textbf{Mullapudi, Abhiram}},
+         familyi={t\bibinitperiod},
+      }}%
+      {{hash=LMJ}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Matthew\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GCL}{%
+         family={Gruden},
+         familyi={G\bibinitperiod},
+         given={Cyndee\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{t+1}
+    \strng{fullhash}{tLMJGCLKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1016/j.advwatres.2020.103600
+    \endverb
+    \field{issn}{03091708}
+    \field{pages}{103600}
+    \field{title}{Deep reinforcement learning for the real time control of
+  stormwater systems}
+    \field{journaltitle}{Advances in Water Resources}
+    \field{month}{04}
+    \field{year}{2020}
   \endentry
 \enddatalist
 \endinput

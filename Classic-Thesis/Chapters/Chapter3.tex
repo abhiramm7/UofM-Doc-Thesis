@@ -1,24 +1,24 @@
 %************************************************
 \chapter{Deep reinforcement learning for the control of stormwater networks}\label{ch:rl}
 %************************************************
+\vspace{1cm}
 
-\section{Introduction}
 Urban stormwater and sewer systems are being stressed beyond their intended design.
-The resulting symptoms manifest themselves in frequent flash floods \cite{LarisKarklisBefore-and-afterPost} and poor receiving water quality \cite{Watson2016TheHypoxia}.
+The resulting symptoms manifest themselves in frequent flash floods~\cite{LarisKarklisBefore-and-afterPost} and poor receiving water quality~\cite{Watson2016TheHypoxia}.
 Presently, the primary solution to these challenges is the construction of new infrastructure, such as bigger pipes, basins, wetlands, and other distributed storage assets.
-Redesigning and rebuilding the existing stormwater infrastructure to keep in pace with the evolving inputs is cost prohibitive for most communities \cite{Kerkez2016}.
+Redesigning and rebuilding the existing stormwater infrastructure to keep in pace with the evolving inputs is cost prohibitive for most communities~\cite{Kerkez2016SmarterSystems}.
 Furthermore, infrastructure is often upgraded on a site-by-site basis and rarely optimized for system-scale performance.
-Present approaches rely heavily on the assumption that these individual upgrades will add up to cumulative benefits, while the contrary has actually been illustrated by studies evaluating system-level outcomes \cite{Emerson2005Watershed-ScaleBasins}.
+Present approaches rely heavily on the assumption that these individual upgrades will add up to cumulative benefits, while the contrary has actually been illustrated by studies evaluating system-level outcomes~\cite{Emerson2005Watershed-ScaleBasins}.
 The changing and highly variable nature of weather and urban environments demands stormwater solutions that can more rapidly adapt to changing community needs.
 
 
 Instead of relying on new construction, a new generation of smart stormwater systems promises to dynamically re-purpose existing stormwater systems.
-These systems will use streaming sensor data to infer real-time state of a watershed and respond via real-time control of distributed control assets, such as valves, gates, and pumps \cite{Kerkez2016}.
+These systems will use streaming sensor data to infer real-time state of a watershed and respond via real-time control of distributed control assets, such as valves, gates, and pumps~\cite{Kerkez2016SmarterSystems}.
 By achieving system-level coordination between many distributed control points, the size of infrastructure needed to reduce flooding and improve water quality will become smaller.
-This presents a non-trivial control challenge, however, as any automated decisions must be carried with regard to public safety and must account for the physical complexity inherent to urban watersheds \cite{Mullapudi2017, Schutze2004RealToday}.
+This presents a non-trivial control challenge, however, as any automated decisions must be carried with regard to public safety and must account for the physical complexity inherent to urban watersheds~\cite{Mullapudi2017, Schutze2004RealToday}.
 
 In this paper, we investigate \textit{Deep Reinforcement Learning} for the real-time control of stormwater systems.
-This approach builds on very recent advances in the artificial intelligence community, which have primarily focused on the control of complex autonomous systems, such as robots and autonomous vehicles \cite{Mnih2015,Lillicrap2015ContinuousLearning}.
+This approach builds on very recent advances in the artificial intelligence community, which have primarily focused on the control of complex autonomous systems, such as robots and autonomous vehicles~\cite{Mnih2015,Lillicrap2015ContinuousLearning}.
 In this novel formulation, our algorithm will \textit{learn} the best real-time control strategy for a distributed stormwater system by efficiently quantifying the space of all possible control actions.
 In simple terms, the algorithm attempts various control actions until discovering those that have the desired outcomes.
 While such an approach has shown promise across many other domains, it is presently unclear how it will perform and scale when used for the real-time control of water systems, specifically urban drainage networks.
@@ -30,21 +30,21 @@ The results will illustrate the benefits, limitations, and requirement of Reinfo
 To our knowledge, this is the first formulation of Deep Reinforcement Learning for the control of stormwater systems.
 The results of this study stand to support a foundation for future studies on the role of Artificial Intelligence in the control of urban water systems.
 
-\subsection{Real time control of urban drainage systems}
+\section{Real time control of urban drainage systems}
 
 
-Since the European Union’s Directive on water policy \cite{TheEuropeanParliamentandthecouncilofEuropeanUnion2000}, there has been a significant push towards the adoption of real-time control for improving wastewater and sewer systems~\cite{Schutze2004RealToday,Mollerup2016}.
-\edit{Many of these control approaches fall broadly under the categories of real-time control (RTC, control decisions made solely on the real-time state of the system), and Model Predictive Control (MPC, decisions that account for predicted future conditions).}
-During the past decade, MPC has emerged as a state-of-the-art methodology for \edit{developing control strategies and analyzing their potential for} controlling urban drainage and sewer networks \edit{in simulated setting}.
-MPC has been used to regulate dissolved oxygen in the flows to aquatic bodies \cite{Mahmoodian2017Pollution-basedPropagation}, control inflows to wastewater treatment plants \cite{pleau2005global}, and enhance the system-level performance and coordination of sewer network assets \cite{Mollerup2016,Meneses2018CoordinatingDenmark}.
-These and many other \replace{applications} \edit{simulation based studies} \cite{wong2018real} have illustrated the benefits of control, the biggest of which is the ability to cost-effectively re-purpose existing assets in real-time without the need to build more passive infrastructure.
+Since the European Union’s Directive on water policy~\cite{TheEuropeanParliamentandthecouncilofEuropeanUnion2000DirectivePolicy}, there has been a significant push towards the adoption of real-time control for improving wastewater and sewer systems~\cite{Schutze2004RealToday,Mollerup2016}.
+Many of these control approaches fall broadly under the categories of real-time control (RTC, control decisions made solely on the real-time state of the system), and Model Predictive Control (MPC, decisions that account for predicted future conditions).
+During the past decade, MPC has emerged as a state-of-the-art methodology for developing control strategies and analyzing their potential for controlling urban drainage and sewer networks in simulated setting.
+MPC has been used to regulate dissolved oxygen in the flows to aquatic bodies~\cite{Mahmoodian2017Pollution-basedPropagation}, control inflows to wastewater treatment plants~\cite{pleau2005global}, and enhance the system-level performance and coordination of sewer network assets~\cite{Mollerup2016,Meneses2018CoordinatingDenmark}.
+These and many other simulation based studies~\cite{wong2018real} have illustrated the benefits of control, the biggest of which is the ability to cost-effectively re-purpose existing assets in real-time without the need to build more passive infrastructure.
 
-The performance of MPC depends on the extent to which the underlying process can be approximated using a linear model \cite{van2006model}.
-A benefit of this linearity assumption is the ability to analytically evaluate the stability, robustness and convergence properties of the controller \cite{Ogata201}, which is valuable when providing safety and performance guarantees.
+The performance of MPC depends on the extent to which the underlying process can be approximated using a linear model~\cite{van2006model}.
+A benefit of this linearity assumption is the ability to analytically evaluate the stability, robustness and convergence properties of the controller~\cite{Ogata201}, which is valuable when providing safety and performance guarantees.
 Network dynamics of storm and sewer systems and transformations of the pollutants in runoff are known to be heavily non-linear.
 This demands a number of approximations and a high level of expertise when applying Model Predictive Control.
 Furthermore, real-world urban watersheds are prone to experiencing pipes blockages, sensor breakdowns, valve failures, or other adverse conditions.
-Adapting and re-formulating linear control models to such non-linear conditions is difficult, but is being addressed by promising research \cite{wong2018real}.
+Adapting and re-formulating linear control models to such non-linear conditions is difficult, but is being addressed by promising research~\cite{wong2018real}.
 The constraints of linear approximations and the need for adaptive control algorithms open the door to exploring other control methodologies, such as the one presented in this paper.
 
 \section{Reinforcement Learning}
@@ -52,21 +52,20 @@ The constraints of linear approximations and the need for adaptive control algor
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/Chapter-3/RL_main_fig_1_final.eps}
-    \caption{During a storm event, a reinforcement learning controller observes the state (e.g.\ water levels, flows)  of the stormwater network and coordinates the actions of the distributed control assets in real-time to achieve watershed-scale benefits.}
-    \label{fig:1}
+    \caption{During a storm event, a reinforcement learning controller observes the state (e.g.\ water levels, flows)  of the stormwater network and coordinates the actions of the distributed control assets in real-time to achieve watershed-scale benefits.}\label{fig:1}
 \end{figure}
 
 Across the Artificial Intelligence and Behavioral research communities, Reinforcement Learning (RL) has emerged as a state-of-the-art methodology for autonomous control and planning systems.
-Unlike in classical feedback control, where the controller carries out a pre-tuned and analytical control action, an RL controller (i.e.\ an RL agent) learns a control strategy by interacting with the system - effectively trying various control strategies until learning those that work well.
-Rather than just learning one particular control strategy, an RL agent continuously attempts to improve its control strategy by assimilating new information and evaluating new control strategies \cite{Sutton98}.
+Unlike in classical feedback control, where the controller carries out a pre-tuned and analytical control action, an RL controller (i.e.\ an RL agent) learns a control strategy by interacting with the system --- effectively trying various control strategies until learning those that work well.
+Rather than just learning one particular control strategy, an RL agent continuously attempts to improve its control strategy by assimilating new information and evaluating new control strategies~\cite{Sutton98}.
 RL can be used in a model free context since the system’s dynamics are implicitly learned by evaluating various control actions.
-Leveraging the recent advancements in Deep Neural Networks and the computational power afforded by the high performance clusters (HPCs), RL agents have been able to plan complex tasks, such as observing pixels to play video games at a human level \cite{Mnih2015}, defeating world champions in the game of GO \cite{silver2017masteringgo}, achieving “superhuman” performance in chess \cite{Silver2017MasteringAlgorithm}, controlling high speed robots \cite{Kober2013ReinforcementSurvey}, and navigating autonomous vehicles \cite{Ng2006AutonomousLearning}.
-Despite the wide adoption of Deep Neural Network based Reinforcement Learning (Deep RL) in various disciplines of engineering, its adoption in civil engineering disciplines has been limited \cite{abdulhai2003reinforcement,bhattacharya2003neural, castelletti2010tree}.
+Leveraging the recent advancements in Deep Neural Networks and the computational power afforded by the high performance clusters (HPCs), RL agents have been able to plan complex tasks, such as observing pixels to play video games at a human level~\cite{Mnih2015}, defeating world champions in the game of GO~\cite{silver2017masteringgo}, achieving “superhuman” performance in chess~\cite{Silver2017MasteringAlgorithm}, controlling high speed robots~\cite{Kober2013ReinforcementSurvey}, and navigating autonomous vehicles~\cite{Ng2006AutonomousLearning}.
+Despite the wide adoption of Deep Neural Network based Reinforcement Learning (Deep RL) in various disciplines of engineering, its adoption in civil engineering disciplines has been limited~\cite{abdulhai2003reinforcement,bhattacharya2003neural, castelletti2010tree}.
 Deep RL control has yet to be applied to the real-time control of urban drainage systems.
 
-Deep RL agents approximate underlying system dynamics implicitly, hence not requiring a simplified or linearized control model \cite{Sutton98}.
-A Deep RL agent instantaneously identifies a control action by observing the network dynamic, thus reducing delay in the decision process \cite{Mnih2015, Silver2017MasteringAlgorithm}.
-The explorative nature of the Deep RL agents also enables the methodology to adapt its control strategy to changing conditions of the system \cite{Sutton98}.
+Deep RL agents approximate underlying system dynamics implicitly, hence not requiring a simplified or linearized control model~\cite{Sutton98}.
+A Deep RL agent instantaneously identifies a control action by observing the network dynamic, thus reducing delay in the decision process~\cite{Mnih2015, Silver2017MasteringAlgorithm}.
+The explorative nature of the Deep RL agents also enables the methodology to adapt its control strategy to changing conditions of the system~\cite{Sutton98}.
 Hence, Reinforcement Learning shows promise as a potential alternative or supplement to existing control methods for water systems.
 To that end, the goal of this paper is to formulate and evaluate of Reinforcement Learning for the real-time control of urban drainage systems.
 The specific contributions of the paper are:
@@ -193,16 +192,21 @@ To promote transparency and broader adoption, the entire source code, examples, 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{gfx/Chapter-3/casestudy_fig_2.eps}
-    \caption{Stormwater system being controlled in this paper. The urban watershed includes a number of sub-catchments which drain to 11 stormwater basins \edit{of varying storage volumes}. The first control scenario applies RL to the control of a single basin\edit{s}, while the second scenario evaluates control of multiple basins. \edit{The colors colors correspond with the catchment that contributes local runoff into each basin.} Average volumes experienced by the ponds during a 25 year 6 hour storm event are presented.}
-    \label{fig:2}
+    \caption{Stormwater system being controlled in this paper. The urban watershed includes a number of sub-catchments which drain to 11 stormwater basins of varying storage volumes. The first control scenario applies RL to the control of a single basins, while the second scenario evaluates control of multiple basins. The colors correspond with the catchment that contributes local runoff into each basin. Average volumes experienced by the ponds during a 25 year 6 hour storm event are presented.}\label{fig:2}
 \end{figure}
 
-
-Motivated by a real-world system, we apply RL control to a stormwater system inspired by an urban watershed in Ann Arbor, Michigan, USA (\ref{fig:2}). Our choice to use this watershed is motivated by the fact that it has been retrofitted by our group with wireless sensors and control valves already \cite{bartos2017open} and will, in the future, serve as a real-world testbed for the ideas proposed in this paper. This headwater catchment features 11 interconnected stormwater basins that handle the runoff generated across $4km^2$   of predominantly urbanized and impervious sub-catchment areas.   A Stormwater Management Model (SWMM) of the watershed has been developed and calibrated in prior, peer-reviewed studies \cite{wong2018real}. It is assumed that each controlled basin in the system is equipped with a $1m^2$ square gate valve. The valves can be partially opened or closed during the simulation, which represents the action taken by an RL agent. The states of the control problem are given by the water levels and outflows at each controlled location. Given the small size of the study area, as well as the need to constrain this initial study, uniform rainfall across the study area is assumed. Groundwater base flow is assumed to be negligible, which has also been confirmed in prior studies \cite{wong2018real}.
+Motivated by a real-world system, we apply RL control to a stormwater system inspired by an urban watershed in Ann Arbor, Michigan, USA (\ref{fig:2}).
+Our choice to use this watershed is motivated by the fact that it has been retrofitted by our group with wireless sensors and control valves already~\cite{bartos2017open} and will, in the future, serve as a real-world testbed for the ideas proposed in this paper.
+This headwater catchment features 11 interconnected stormwater basins that handle the runoff generated across $4km^2$   of predominantly urbanized and impervious sub-catchment areas.
+A Stormwater Management Model (SWMM) of the watershed has been developed and calibrated in prior, peer-reviewed studies~\cite{wong2018real}.
+It is assumed that each controlled basin in the system is equipped with a $1m^2$ square gate valve.
+The valves can be partially opened or closed during the simulation, which represents the action taken by an RL agent.
+The states of the control problem are given by the water levels and outflows at each controlled location.
+Given the small size of the study area, as well as the need to constrain this initial study, uniform rainfall across the study area is assumed. Groundwater base flow is assumed to be negligible, which has also been confirmed in prior studies~\cite{wong2018real}.
 
 \subsection{Analysis}
-Prior Deep RL studies have revealed that performance is dependent on the formulation of reward function, quality of neural networks approximating action value function, as well as the size of state space \cite{Sutton98, henderson2017Deep}.
-This creates a number of ``knobs", whose sensitivity must be evaluated before any conclusion can be reached regarding the ability to apply Deep RL to control real stormwater systems.
+Prior Deep RL studies have revealed that performance is dependent on the formulation of reward function, quality of neural networks approximating action value function, as well as the size of state space~\cite{Sutton98, henderson2017Deep}.
+This creates a number of ``knobs'', whose sensitivity must be evaluated before any conclusion can be reached regarding the ability to apply Deep RL to control real stormwater systems.
 As such, in this paper, we formulate a series of experiments across two scenarios to characterize Deep RL’s ability to control stormwater systems.
 In the first scenario, we control a single valve at the outlet of the watershed, comparing its particular performance under various reward function formulations.
 Given that Deep RL has not been used to control water systems, this will constrain the size of the state space to establish a baseline assessment of the methodology.
@@ -213,14 +217,14 @@ In this scenario, we train a Deep RL agent to control the most downstream detent
 This basin was chosen because it experiences the total runoff generated in the watershed, and because its actions have direct impact on downstream water bodies.
 At any given point in time, the RL agent is permitted to set the basin’s valve to a position between fully closed or open, in 1\% increments (i.e. 0\%, 1\%, 2\%, $\ldots$, 100\% open) based on the water height in the basin. All other upstream basins remain uncontrolled.
 
-The overall control objective is to keep the water height (state:$\{h_t\}$) in the basin below a flooding threshold $H_{max}$ and the outflows from the basin (state :$\{f_t\}$) below a desired downstream flooding or stream erosion threshold $F$:
+The overall control objective is to keep the water height (state:$\{h_t\}$) in the basin below a flooding threshold $H_{\max}$ and the outflows from the basin (state:$\{f_t\}$) below a desired downstream flooding or stream erosion threshold $F$:
 
 \begin{align}
-    h_t &\leq H_{max} \\
+    h_t &\leq H_{\max} \\
     f_t &\leq F
 \end{align}
 
-Three reward functions are formulated to reach this objective, \edit{each incorporating more explicit guidance (in the form of constraints) to guide the RL agent.}
+Three reward functions are formulated to reach this objective, each incorporating more explicit guidance (in the form of constraints) to guide the RL agent.
 
 
 In the first reward function the RL agent receives a positive reward for maintaining the basin’s outflow below the specified threshold, a negative reward for exceeding the threshold, as well as a larger but less likely negative reward if the basin overflows:
@@ -229,17 +233,17 @@ In the first reward function the RL agent receives a positive reward for maintai
 r_1 (s_t )= \begin{cases}
 		+1, & f_t \leq F\\
 		-1, & f_t > F\\
-		-10,& h_t > H_{max}
+		-10,& h_t > H_{\max}
 	\end{cases}
 \end{equation}
 
 The reward function is represented visually in the first row of figure~\ref{fig:3}.
-This reward function formulation is inspired from the classic inverted pendulum problem \cite{Watkins1992Q-learning} where the agent receives +1 for success and -1 for failure.
+This reward function formulation is inspired from the classic inverted pendulum problem~\cite{Watkins1992Q-learning} where the agent receives +1 for success and -1 for failure.
 
 
 The second reward function is formulated to exhibit a more complex and gradual reward structure.
-In lieu of a jagged or discontinuous ``plus/minus" reward structure, the agent is rewarded for reaching flows that are close to the desired flow threshold.
-It has been shown that more smooth and continuous rewards such as this, may help the agent converge onto a solution faster \cite{Sutton98, aytar2018playing}.
+In lieu of a jagged or discontinuous ``plus/minus'' reward structure, the agent is rewarded for reaching flows that are close to the desired flow threshold.
+It has been shown that more smooth and continuous rewards such as this, may help the agent converge onto a solution faster~\cite{Sutton98, aytar2018playing}.
 Visually, the reward function looks like a parabola (figure~\ref{fig:3}), where the maximum reward is achieved when the flow threshold is met exactly:
 
 \begin{equation}
@@ -267,19 +271,19 @@ r_3 (s_t )= 	\begin{cases}
 \end{equation}
 The penalty rates are governed by a set of five parameters c=$\{c_1,c_2,c_3,c_4,c_5\}$, which were parametrized $\{2.0, 0.25, 1.5, 10, 3\}$ to match the scales of the other two reward functions.
 
-\edit{To illustrate the transferability of the control approach to variable inflows, storage volumes, and the location of a basin in the network, control by an agent trained on the third reward function is evaluated on four basins (basins 1, 4, 6, and 9 in figure~\ref{fig:2}).
+To illustrate the transferability of the control approach to variable inflows, storage volumes, and the location of a basin in the network, control by an agent trained on the third reward function is evaluated on four basins (basins 1, 4, 6, and 9 in figure~\ref{fig:2}).
 These basins are chosen to represent distinct components in the network.
 Basin 1 is located at the outlet of the watershed.
 Basin 4 is the largest in the network and receives flows from the two major branches in the system.
-Basin 6 is the largest of the upstream basins, while basin 9 is a smaller basin in series with larger basins.}
+Basin 6 is the largest of the upstream basins, while basin 9 is a smaller basin in series with larger basins.
 
-\edit{Additionally, to analyze the performance and sensitivity of the agent to the reward function formulation, two variants of the third reward are evaluated in the supplementary information (please see SI section~\ref{SI:reward-math}) section of this paper.
-The goal of this analysis is to determine the sensitivity of the agent's performance to the choice of mathematical equations in the reward function.}
+Additionally, to analyze the performance and sensitivity of the agent to the reward function formulation, two variants of the third reward are evaluated in the supplementary information (please see SI-~\ref{SI:reward-math}) section of this paper.
+The goal of this analysis is to determine the sensitivity of the agent's performance to the choice of mathematical equations in the reward function.
 
 \subsection{Scenario 2: Controlling multiple basins}
 
 This scenario evaluates the ability of an agent to control multiple distributed stormwater basins.
-Specifically, basins 1, 3, and 4 (figure~\ref{fig:2}) are selected for control because they experience the largest average volume during a storm event, \edit{which often corresponds with the larger control potential \cite{schutze_sewer_2008}}.
+Specifically, basins 1, 3, and 4 (figure~\ref{fig:2}) are selected for control because they experience the largest average volume during a storm event, which often corresponds with the larger control potential~\cite{schutze_sewer_2008}.
 It is assumed that at any time step the agent has knowledge of the water levels and valve positions for each of these basins, as well as the basin between them (basin $2$ in figure~\ref{fig:2}), thus quadrupling the number of observed states compared to the control of a single basin.
 The action space must also be reduced to make the problem computationally tractable.
 For the control of the single basin, there are 101 possible actions at any given time step (valve opening with 1\% granularity).
@@ -312,48 +316,48 @@ Beyond the formulation of the reward function, the use of RL for the control of 
 The first relates to the hydrologic and hydraulic simulation framework, which needs to support the integration of a simulation engine that is compatible with modern RL toolchains.
 The second challenge relates to the implementation of the actual RL toolchain, which must include the Deep Neural Network training algorithms.
 
-Most popular stormwater modeling packages, such as the Stormwater Management Model (SWMM) \cite{Rossman2010Storm5.1} and MIKE Urban \cite{Elliott2007ADrainage} are designed for event based or long-term simulation.
+Most popular stormwater modeling packages, such as the Stormwater Management Model (SWMM)~\cite{Rossman2010Storm5.1} and MIKE Urban~\cite{Elliott2007ADrainage} are designed for event based or long-term simulation.
 Namely, the model is initialized, inputs are selected, and the model run continues until the rainfall terminates or simulation times out.
 While these packages support some rudimentary controls, the control logic is pre-configured and limited to simple site-scale action, such as opening a valve when level exceed a certain value.
 The ability to support system-level control logic is limited, let alone the ability to interface with external control algorithms, such as the one proposed in this paper.
-To that end, we implement a step-wise co-simulation approach that was described in one of our prior studies \cite{Mullapudi2017}.
+To that end, we implement a step-wise co-simulation approach that was described in one of our prior studies~\cite{Mullapudi2017}.
 
 Our co-simulation framework separates the hydraulic solver from the control logic by halting the hydraulic model at every time step.
 The states from the model (water levels, flows, etc.) are then transferred to the external control algorithm, which makes recommendation on which actions to take (valves settings, pump speeds, etc.).
-Here, we adopt a python based SWMM package for simulating the stormwater network \cite{Riano-Briceno2016MatSWMMSystems}.
+Here, we adopt a python based SWMM package for simulating the stormwater network~\cite{Riano-Briceno2016MatSWMMSystems}.
 This allows the entire toolchain to be implemented using a high-level programming environment, without requiring any major modifications to hydraulic solvers that are often implemented in low-level programming languages and difficult to fuse with modern libraries and open source packages.
 While other or more complex stormwater or hydrologic models could be substituted, model choice is not necessarily the main contribution of this paper.
 Rather, we content that SWMM adequately captures runoff and flow dynamics for the purposes of this paper.
 SWMM models the flow of water in the network using an implicit dynamic wave equation solver\cite{Rossman2010Storm5.1}.
 This allows it to effectively model the nuanced conditions (e.g.\ back channel flows, flooding) that might develop in the network though real-time control.
-Furthermore, the authors have access to a calibrated version of the model for this particular study area, which has been documented in a prior study \cite{aaswmm,wong2018real}.
+Furthermore, the authors have access to a calibrated version of the model for this particular study area, which has been documented in a prior study~\cite{aaswmm,wong2018real}.
 
 One major task is the implementation of the Deep Neural Network that is used to approximate the RL agent’s action value function.
-Deep Neural Networks are computationally expensive to train \cite{lecun2015Deep}.
+Deep Neural Networks are computationally expensive to train~\cite{LeCun2015DeepLearning}.
 Efficient implementation address this by leveraging a computer's graphical processing unit (GPU) to carry out this training, which is a non-trivial task.
-To that end, a number of open source and community libraries have emerged, the most popular of which is \textit{TensorFlow} \cite{AbadiThisLearning}.
+To that end, a number of open source and community libraries have emerged, the most popular of which is \textit{TensorFlow}~\cite{AbadiThisLearning}.
 This state-of-the-art library has been used in some of the most well-cited RL papers and benchmark problems, which is the reason we choose to adopt it for this study.
 \textit{TensorFlow} is a python library and can be seamlessly interfaced with our python-based stormwater model implementation.
 
-\edit{Multiple} agents are trained and evaluated across the two scenarios: \edit{eight} for the control of individual basins (across multiple reward function variants and basins), and \edit{two} agents for the multi-basin control.
+Multiple agents are trained and evaluated across the two scenarios: eight for the control of individual basins (across multiple reward function variants and basins), and two agents for the multi-basin control.
 A Deep Neural Network is designed and implemented to learn the action-value function of each agent.
 The network contains 2 layers with 50 neurons per layer.
-This network is set up with a \textit{ReLu} activation function \cite{goodfellow2016Deep} in the internal layers and a linear activation function in the final layer.
+This network is set up with a \textit{ReLu} activation function~\cite{goodfellow2016Deep} in the internal layers and a linear activation function in the final layer.
 The full parameters used in the study, including those for gradient descent and the DQN, are provided in the SI-\ref{SI:hyperparams} of this paper.
-A Root Mean Square Propagation (RMSprop) \cite{goodfellow2016Deep} form of stochastic gradient descent is used for updating the neural network as this variant of gradient descent has been observed to improve convergence.
+A Root Mean Square Propagation (RMSprop)~\cite{goodfellow2016Deep} form of stochastic gradient descent is used for updating the neural network as this variant of gradient descent has been observed to improve convergence.
 
 
 One storm event is used to train these agents.
 The SWMM model is forced with a 25-year storm event of $6\ hour$ duration and $63.5\ mm$ intensity (figure~\ref{fig:3}).
 This event generates a total runoff of $3670.639\ m^3$ with a peak flow of $0.35\ m^3 /s$ at the outlet of watershed.
-The agents are provided with an operational water level goal $H$ of $2\ m$, flooding level $H_{max}$ of $3.5\ m$ and outflow exceedance threshold of $F$ of $0.10\ m^3s^{-1}$.
+The agents are provided with an operational water level goal $H$ of $2\ m$, flooding level $H_{\max}$ of $3.5\ m$ and outflow exceedance threshold of $F$ of $0.10\ m^3s^{-1}$.
 It is important to note that the outflow threshold, in particular, serves more as an approximate guide rather than exact requirement, since the discrete valve settings used by the RL agents may not allow the exact setpoint to be physically realizable (e.g.\ throttling a valve by $5\%$ will limit outflow precision correspondingly).
 These setpoints are chosen to reflect realistic flooding and stream erosion goals in the study watershed.
 Agents are trained on a Tesla K20 GPUs on University of Michigan’s advanced research computing's high performance cluster.
 
-\replace{A fifth agent is also trained, focusing specifically on the multi-basin control scenario. The } \edit{The second multi-basin control agent} uses the same neural network architecture of the other multi-basin RL control agent, trained this time, however, using \textit{batch normalization} \cite{ioffe2015batch}.
-Batch normalization is the process of normalizing the signals between the internal layers of the neural network to minimize the internal covariance shift and has been observed to improve  the performance of the Deep RL agents \cite{Lillicrap2015ContinuousLearning}.
-Ioffe et al. (2015) \cite{ioffe2015batch} provides a detailed discussion on batch normalization.
+The second multi-basin control agent uses the same neural network architecture of the other multi-basin RL control agent, trained this time, however, using \textit{batch normalization}~\cite{ioffe2015batch}.
+Batch normalization is the process of normalizing the signals between the internal layers of the neural network to minimize the internal covariance shift and has been observed to improve  the performance of the Deep RL agents~\cite{Lillicrap2015ContinuousLearning}.
+Ioffe et al. (2015)~\cite{ioffe2015batch} provides a detailed discussion on batch normalization.
 
 The performance of each agent is evaluated by comparing the RL controlled hydrographs and water levels to those that are specified in the reward functions.
 For the agents controlling the individual basins, this is used to determine the importance of the reward formulation on performance, reward convergence, and training period duration.
@@ -361,16 +365,17 @@ For the multi-basin control scenario, the same approach is used to quantify over
 
 To evaluate the ability of an RL-agent to control storms that it is not trained on, a final analysis is carried out.
 Since the agent controlling multiple basins presents the most complex of the scenarios, it is first trained on one of storms and evaluated on a spectrum of storm events with varying return periods (1 to 100 years) and durations (5 min to 24 hours).
-These storm events are generated based on the SCS type II curve and historical rainfall intensities for the study region \cite{scs1986urban}.
+These storm events are generated based on the SCS type II curve and historical rainfall intensities for the study region~\cite{scs1986urban}.
 The performance of the agent across these 70 storms is compared to the uncontrolled system to evaluate the boarder benefits of real-time control.
-\edit{For comparison with an other control algorithm, we also implement and compare the performance of RL to an \textit{Equal Filling Degree} controller, which seeks to control the volume in each basin to achieve equal relative filling \cite{schutze_astlingen_2018}. Implementation details of the equal filling algorithm can be found in the SI-\ref{SI:equalfill}.}
-\edit{We also evaluate the performance of the RL controller on a back-to-back storm event (3 hour 5 year event, followed by a 2 hour 2 year event).}
+For comparison with an other control algorithm, we also implement and compare the performance of RL to an \textit{Equal Filling Degree} controller, which seeks to control the volume in each basin to achieve equal relative filling~\cite{schutze_astlingen_2018}.
+Implementation details of the equal filling algorithm can be found in the SI-\ref{SI:equalfill}.
+We also evaluate the performance of the RL controller on a back-to-back storm event (3 hour 5 year event, followed by a 2 hour 2 year event).
 To allow for a comparison between the controlled and uncontrolled system, a non-negative performance metric is introduced to capture the magnitude and time that the system deviates from desired water level and flows thresholds.
 Specifically, across a duration $T$ the final performance $P$ adds together the deviation of all $N$ controlled sites from their desired water level ($P_h$) and flow thresholds ($P_f$), where:
 
 
 \begin{align}
-	P_h(h) &= \begin{cases}h-H, & h>H \\ h-H+100h,  &h>H_{max} \\0, & otherwise\end{cases} \\
+	P_h(h) &= \begin{cases}h-H, & h>H \\ h-H+100h,  &h>H_{\max} \\0, & otherwise\end{cases} \\
 	P_f(f) &= \begin{cases}10(f -F), & f>F \\0, & otherwise\end{cases} \\
 	P &= \sum_{n=1}^N \sum_{i=0}^T P_h (h_i^n ) + P_f (f_i^n ) \label{perf_met}
 \end{align}
@@ -383,14 +388,13 @@ A relatively lower performance value is more desirable, since it implies that th
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/Chapter-3/single_pond.eps}
-    \caption{RL control of a single basin, trained using three reward formations (grouped by column). The first row plots each reward function used during training. The second row plots the average reward received during training (\edit{please note that the scale of Y-axis differers for each reward function}). The third and fourth rows compare the controlled flows and water levels with the uncontrolled, for the episode that resulted in the highest reward. Generally, \replace{more complex reward formulations} \edit{reward function formulations with more explicit guidance} lead to relatively better control performance and improved convergence during raining. Agents trained using relatively simple reward also exhibit a rapidly-changing and unstable control behavior, shown as a close up in the bottom left plot.}
-    \label{fig:3}
+    \caption{RL control of a single basin, trained using three reward formations (grouped by column). The first row plots each reward function used during training. The second row plots the average reward received during training (please note that the scale of Y-axis differers for each reward function). The third and fourth rows compare the controlled flows and water levels with the uncontrolled, for the episode that resulted in the highest reward. Generally, reward function formulations with more explicit guidance lead to relatively better control performance and improved convergence during raining. Agents trained using relatively simple reward also exhibit a rapidly-changing and unstable control behavior, shown as a close up in the bottom left plot.}\label{fig:3}
 \end{figure}
 
 
 
 The ability of an RL agent to control a stormwater basin is highly sensitive to the reward function formulation.
-Generally, a more complex reward function -- one that embeds more information and explicit guidance -- performs better, as illustrated in figure~\ref{fig:3}.
+Generally, a more complex reward function --- one that embeds more information and explicit guidance --- performs better, as illustrated in figure~\ref{fig:3}.
 Each column of the figure corresponds with an individual RL agent, each of which is trained using a different reward function $(r_1,r_2,r_3)$.
 The reward functions are plotted in the first row, while the reward received during training is plotted in the second row.
 The training period is quantified in terms of episodes, each of which corresponds to one full SWMM simulation across an entire storm.
@@ -398,7 +402,7 @@ The third and fourth rows in the figure compare the uncontrolled flows and water
 
 The RL agent that uses the simplest reward function has the relatively worst performance (figure~\ref{fig:3}, first column).
 Even after 5000 training episodes (a week of real-world simulation time), the mean reward does not converge to a stable value.
-Playing back the episode that resulted in the highest reward (figure~\ref{fig:3}, rows 3-4, column 1), reveals that the RL agent does retain more water than would have been held in the uncontrolled basin.
+Playing back the episode that resulted in the highest reward (figure~\ref{fig:3}, rows 3--4, column 1), reveals that the RL agent does retain more water than would have been held in the uncontrolled basin.
 While this lowers the peak flows relative to the uncontrolled basin, the RL agent is generally not able to keep flows below the desired threshold.
 More importantly, the RL agent's control actions begin oscillating and become unstable toward the middle of the simulation.
 In this episode, the agent keeps the water level in the basin relatively constant by opening the valve very briefly to release just a small amount of water.
@@ -407,7 +411,7 @@ For various practical reasons, such rapid control actions are not desirable.
 Since the RL agent never once receives a positive reward, it may have converged onto an undesirable local minimum during the training.
 Providing more time for training does not appear to resolve this issue, which may also suggest that a stable solution cannot be derived using this particular reward formulation.
 
-\replace{Increasing the complexity of the} \edit{Embedding more explicit guidance (harder constraints) into the} reward formulation improves the control performance of the RL agent (figure~\ref{fig:3}, second column).
+Embedding more explicit guidance (harder constraints) into the reward formulation improves the control performance of the RL agent (figure~\ref{fig:3}, second column).
 When the second and more continuous reward function is used by the agent, the highest reward episode reveals that the RL agent is relatively more effective at maintaining flows at a constant value.
 Unlike the RL agent using the simple step-wise reward function, the RL agent using the parabolic reward function has more opportunities to receive smaller, more gradual rewards.
 During most of the episode, this increased flexibility allows the second RL agent to receive positive rewards and keep the outflow below a flow threshold of $0.14\ m^3/s$.
@@ -415,12 +419,12 @@ While relatively improved, the RL agent using the parabolic reward also does not
 However, toward the end of the episode, this RL agent also carries out irregular and sudden control actions by opening and closing the valve in short bursts.
 In this case, the RL agent is oscillating between a maximum (valve open) and minimum (valve closed) reward rather than taking advantage of variable rewards in other configurations.
 This suggests that the agent has either not yet learned a better strategy or, again, that a stable solution cannot be converged upon using this particular reward formulation.
-\edit{This speaks to the need for more explicit constraints as well, since a real-world stormwater system could not be throttled in this fashion. Simply put, the reward formulations used in this case was too simple to achieve realistically desirable outcomes.}
+This speaks to the need for more explicit constraints as well, since a real-world stormwater system could not be throttled in this fashion. Simply put, the reward formulations used in this case was too simple to achieve realistically desirable outcomes.
 
-The RL agent using the third \replace{and most complex reward function} \edit{and most constrained formulation} exhibits the relatively best control performance.
+The RL agent using the third and most constrained formulation exhibits the relatively best control performance.
 This agent regulates flow and water levels in a relatively gradual and smooth manner.
 Unlike in the case of the other two RL agents, after 3500 training episodes, the third agent does converge to a steady reward.
-Evaluating the episode resulting in the highest reward (figure~\ref{fig:3}, rows 3-4, column 3), the desired “flat” outflow hydrograph is achieved.
+Evaluating the episode resulting in the highest reward (figure~\ref{fig:3}, rows 3--4, column 3), the desired “flat” outflow hydrograph is achieved.
 No unstable or oscillatory control actions are evident, as in the case of the other two reward functions.
 The agent is able to maintain flows below a constant threshold of $0.15\ m^3/s$.
 While this is not the exact threshold that was specified ($0.1\ m^3/s$), it is close considering that the achievable threshold is dependent on water levels and the ability to only throttle the valve in 1\% increments.
@@ -429,23 +433,23 @@ Furthermore, the RL agent must balance the desired outflow against the possibili
 Rather, it keeps its valve 54\% open the entire time of the simulation, which allows it to meet a mostly constant outflow given the specific inflows. Overall, the general shape of the outflows is improved compared to the uncontrolled scenario.
 Furthermore, an added benefit of real-time control is that the overall volume of water leaving the basin is also reduced by 50\% due to infiltration.
 
-\edit{Similar to the third reward function, agents trained on the 3a and 3b reward functions are successfully able to maintain the outflows close to the threshold during the stormevent (figure~\ref{fig:new_reward_math} in SI~\ref{SI:reward-math}).
+Similar to the third reward function, agents trained on the 3a and 3b reward functions are successfully able to maintain the outflows close to the threshold during the stormevent (figure~\ref{fig:new_reward_math} in SI~\ref{SI:reward-math}).
 While these reward functions may appear similar, the solution identified by their respective agents differs.
 This is a result of the difference between the decay rates in the exponential and squared terms.
-Performance of the agent trained on the 3a and 3b reward functions (SI~\ref{SI:reward-math}) indicates that the ability of the agent to identify a viable control strategy is not dependent on the choice of equations used for the creating the reward functions, but rather on the  general shape of the reward function in the domain.}
+Performance of the agent trained on the 3a and 3b reward functions (SI~\ref{SI:reward-math}) indicates that the ability of the agent to identify a viable control strategy is not dependent on the choice of equations used for the creating the reward functions, but rather on the  general shape of the reward function in the domain.
 
-\edit{The agent using the third reward function (trained on basin 1), is able to control basins 4,6 and 9 without any further modifications (SI~\ref{SI:reward-loc}, figure~\ref{fig:9}).
+The agent using the third reward function (trained on basin 1), is able to control basins 4,6 and 9 without any further modifications (SI~\ref{SI:reward-loc}, figure~\ref{fig:9}).
 The agent in this formulation makes its control decisions only based on the depth at the current time step and does not incorporate any predictions.
 Hence, the ability of the controller to shape of outflows should not dependent on the location of the basin in the network, magnitude of inflows or the storage curves.
 Our simulation results indicate the same.
 Though the degree to which the agent is able to achieve the objective is governed by these physical constraints, its ability to discover a solution is not influenced by them.
-}
+
 
 This scenario, which focuses on the control of a single site, emphasizes the importance of the reward function formulation in RL-based control of stormwater systems.
 The complexity of the reward formulation plays an important role in allowing the RL agent to learn a control policy to meet the desired hydrologic outcomes.
 The importance of reward formulations has been acknowledged in prior studies\cite{Sutton98, ng1999policy}.
-Generally, \replace{more complex} reward functions \edit{with more explicit guidance} lead to a more rapid convergence of a control policy, while avoiding unintended control actions, such as the chattering behavior seen in figure~\ref{fig:3}.
-In fact, prior studies have attributed such erratic control actions to the use of oversimplified reward functions \cite{ng1999policy}, but have offered little specificity or concrete design recommendations that could be used to avoid such actions.
+Generally, reward functions with more explicit guidance lead to a more rapid convergence of a control policy, while avoiding unintended control actions, such as the chattering behavior seen in figure~\ref{fig:3}.
+In fact, prior studies have attributed such erratic control actions to the use of oversimplified reward functions~\cite{ng1999policy}, but have offered little specificity or concrete design recommendations that could be used to avoid such actions.
 As such, our approach heuristically evaluates reward formulations of increasing complexity until arriving at one that mostly meets desired outcomes.
 This introduces an element of design into the use of RL for the real-time control of stormwater, as one cannot simply rely on the implicit black box nature of neural networks to solve a control problem under complex system dynamics.
 The reward function needs to embed enough information to help guide the RL agent to a stable solution.
@@ -462,8 +466,7 @@ Taking the baseline lessons learned during the control of a single basin, the se
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/Chapter-3/system_tarining.eps}
-    \caption{Average reward earned by the RL agent when learning to control multiple basins. The use of neural network batch normalization (blue) leads to consistently higher rewards when compared to the use of a generic neural network (orange).  The batch normalized network also leads to higher rewards earlier in the training process.}
-    \label{fig:4}
+    \caption{Average reward earned by the RL agent when learning to control multiple basins. The use of neural network batch normalization (blue) leads to consistently higher rewards when compared to the use of a generic neural network (orange).  The batch normalized network also leads to higher rewards earlier in the training process.}\label{fig:4}
 \end{figure}
 
 
@@ -474,12 +477,12 @@ Not only did the learning procedure not converge to a stable reward, but the vas
 Given this observation, this ineffective neural network was then replaced with one that was batch normalized.
 The agent using the batch normalized neural network achieved a higher average reward than the agent with a generic feed forward neural network (figure~\ref{fig:4}).
 Furthermore, the agent using the batch normalized neural network achieved a relatively high rewards early on in the training process, thus making it more computationally favorable.
-\edit{While beyond the scope of this study, this suggests that the choice of neural network architecture is likely a major design factor in the successful implementation of RL-based stormwater control.}
+While beyond the scope of this study, this suggests that the choice of neural network architecture is likely a major design factor in the successful implementation of RL-based stormwater control.
 
 Even with batch normalization, the RL agent did not consistently return to the same reward or improve its performance when perturbed.
 The exploration in its policy caused the RL agent to oscillate between local reward maxima.
-Similar outcomes have been observed in a number of RL benchmark problems\cite{henderson2017Deep, Mnih2015}, which exhibited a high degree of sensitivity to their exploration policy.
-Prior studies have noted that the exploration-exploitation balance is difficult to parameterize because neural networks tend to latch onto a local optimum \cite{larochelle2009exploring}.
+Similar outcomes have been observed in a number of RL benchmark problems~\cite{henderson2017Deep, Mnih2015}, which exhibited a high degree of sensitivity to their exploration policy.
+Prior studies have noted that the exploration-exploitation balance is difficult to parameterize because neural networks tend to latch onto a local optimum~\cite{larochelle2009exploring}.
 As such, it is likely that the lack of convergence observed in this scenario was caused by the use of a neural network as a function approximator.
 Forcing neural networks to escape local minima is still an ongoing problem of research~\cite{osband2016Deep}.
 Nonetheless, even without a consistent optimum, the maximum reward obtained during this scenario can still be used as part of an effective control approach.
@@ -493,7 +496,7 @@ Nonetheless, even without a consistent optimum, the maximum reward obtained duri
 
 Selecting the episode with the highest reward revealed the actions taken by the RL agent during the training storm (figure~\ref{fig:ch3-fig5}).
 The figure compares the controlled and uncontrolled states of the four basins during a 25-year 6-hour storm event, showing the depth in each basin, inflows, outflows, and control actions taken by the RL agent.
-\edit{Though basin 2 is not explicitly controlled by the controller, given that the water level and outflows in this basin are impacted by the actions taken in the upstream basin, we have chosen to present its response.}
+Though basin 2 is not explicitly controlled by the controller, given that the water level and outflows in this basin are impacted by the actions taken in the upstream basin, we have chosen to present its response.
 No flooding occurred during this simulation, which means that the reward received by the RL agent was entirely obtained by meeting outflow objectives.
 The valves on basins 1 and 3 throttled between 100\% and 95\% open, which for all practical considerations could be considered uncontrolled.
 As such, the RL agent in this scenario earned its reward by only controlling the most upstream basin in this network.
@@ -512,9 +515,9 @@ Increasing the opportunity to obtain rewards thus increases the occurrence of lo
 In the single basin control scenario, the RL agent can immediately observe the impact of its control actions.
 In the system scale scenario more time is needed to observe water flows through the broader system, which means that the impact of a control action may not be observed until later timesteps.
 This introduces a challenge, as the RL agent has to learn the temporal dynamics of the system.
-This challenge has been observed in other RL studies, which have shown better performance for reactive RL problems, as opposed to those that are based on the need to plan for future outcomes \cite{aytar2018playing}.
+This challenge has been observed in other RL studies, which have shown better performance for reactive RL problems, as opposed to those that are based on the need to plan for future outcomes~\cite{aytar2018playing}.
 The need to include planning is still an active area of RL research.
-Potential emerging solutions include adversarial play\cite{silver2017masteringgo,Silver2017MasteringAlgorithm}, model-based RL\cite{clavera2018model}, and policy-based learning \cite{Schulman2017ProximalAlgorithms}.
+Potential emerging solutions include adversarial play~\cite{silver2017masteringgo,Silver2017MasteringAlgorithm}, model-based RL~\cite{clavera2018model}, and policy-based learning~\cite{Schulman2017ProximalAlgorithms}.
 The benefits of these approaches have recently been demonstrated for other application domains and should be considered in the future for the control of water systems.
 
 \begin{figure}
@@ -526,11 +529,11 @@ The benefits of these approaches have recently been demonstrated for other appli
 It is important to note that figure~\ref{fig:ch3-fig5} represents an evaluation of the RL agent for one storm only – namely, the training storm.
 Realistically, the control system will need to respond to storms of varying durations and magnitudes.
 As an example, the RL agent’s response to a 24-hour, 10-year storm is shown in figure~\ref{fig:ch3-fig6}.
-\edit{Performance of the controller in controlling a back-to-back event is presented in SI-\ref{SI:b2b-events}.}
+Performance of the controller in controlling a back-to-back event is presented in SI-\ref{SI:b2b-events}.
 Here, the RL agent outperformed the uncontrolled system much more notably compared to the training storm.
 The controlled outflows were much closer to the desired threshold, even when only one basin was controlled.
 This broader performance is captured in figure~\ref{fig:ch3-fig7}, which quantifies performance (eq.~\ref{perf_met}) across a spectrum of storm inputs.
-\edit{Figure~\ref{fig:7} compares the uncontrolled system to the RL-controlled system}.
+Figure~\ref{fig:ch3-fig7} compares the uncontrolled system to the RL-controlled system.
 Both the controlled  and uncontrolled systems perform equally well during small-magnitude and short events (e.g.\ the training storm in figure~\ref{fig:ch3-fig5}).
 The benefits of control become more pronounced for larger events, starting at 10-year storms and those that last over 2 hours.
 This visualization holistically captures the benefits of real-time control by highlighting new regions of performance and showing how control can push existing infrastructure to perform beyond its original design.
@@ -544,7 +547,7 @@ This visualization holistically captures the benefits of real-time control by hi
 
 \section{Discussion}
 
-Given the recent emergence and popularity of Reinforcement Learning, much research still remains to be conducted to evaluate its potential to serve as a viable methodology for \replace{controlling water systems} \edit{the RTC of water systems}.
+Given the recent emergence and popularity of Reinforcement Learning, much research still remains to be conducted to evaluate its potential to serve as a viable methodology for the RTC of water systems.
 Our study brings to light a number of benefits and challenges associated with this task.
 Arguably, it seems that the major benefit of using RL to control water systems is the ability to simply hand the learning problem to a computer without needing to worry about the many complexities, non-linearities and formulations that often complicate other control approaches.
 However, as this study showed, this comes with a number of considerable caveats.
@@ -555,13 +558,13 @@ The formulation of the reward function requires domain expertise and an element 
 In the first scenario, it was shown that a reward function that is too simple may lead to adverse behavior, such as the chattering or sudden actions.
 The reward may also not converge to a stable solution since the neural network can take advantage of the simple objective to maximize rewards using sudden or unintuitive actions.
 The formulation of the problem, which depends heavily on neural networks, also makes it difficult to determine why one specific reward function may work better than another.
-Increasing the complexity of the reward function, \edit{by incorporating more explicit guidance}, was shown to help guide the RL agent to a more desirable outcome. \edit{In other control approaches, such as genetic algorithms or model predictive control, the design of reward is an iterative process, and sometimes involves anticipating fringe cases to improve the robustness of the controller.}
-\edit{Similar to these approaches, we can however begin using this early study to formulate a number of practical considerations when formulating reward functions:
+Increasing the complexity of the reward function, by incorporating more explicit guidance, was shown to help guide the RL agent to a more desirable outcome. In other control approaches, such as genetic algorithms or model predictive control, the design of reward is an iterative process, and sometimes involves anticipating fringe cases to improve the robustness of the controller.
+Similar to these approaches, we can however begin using this early study to formulate a number of practical considerations when formulating reward functions:
 \begin{itemize}
     \item Define the reward function for entire domain of the state-action space, ensuring that it distinguishes the desirable actions from the undesirable ones.
     \item Ensure that the reward function represents a specific hydrologic response that the controller is to achieve, while anticipating, as much as possible, alternate and adverse  hydrologic responses that the controller may discover to maximize the reward function.
     \item Relax the mathematical formulation of the reward function and focus rather on the two above points (e.g.\ the shape of a reward surface rather than its specific mathematical form).
-\end{itemize}{}}
+\end{itemize}
 Reward formulations are an ongoing research area in the RL community and some formal methods have recently been proposed to provide a more rigorous framework for reward synthesis~\cite{fu2017learning}. These formulations should be investigated in the future.
 
 
@@ -616,5 +619,3 @@ However, the use of RL for more complex system topologies faces a number of chal
 Simultaneously controlling multiple distributed stormwater assets across large urban areas is a non-trivial problem, regardless of the control methodology.
 To that end, the concepts, initial results and formulations provided by this paper should help build a foundation to support RL as a viable option for stormwater control.
 The source code accompanying this paper should also allow others to evaluate many other possible architectures and parameterizations that could be used to improve the results presented in the paper.
-
-

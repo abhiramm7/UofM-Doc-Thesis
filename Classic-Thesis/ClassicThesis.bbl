@@ -17,6 +17,116 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{AbadiThisLearning}{inproceedings}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=AM}{%
+         family={Abadi},
+         familyi={A\bibinitperiod},
+         given={Mart{\'\i}n},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Barham},
+         familyi={B\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jianmin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhifeng},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Dean},
+         familyi={D\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Devin},
+         familyi={D\bibinitperiod},
+         given={Matthieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Ghemawat},
+         familyi={G\bibinitperiod},
+         given={Sanjay},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Irving},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Isard},
+         familyi={I\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM+1}
+    \strng{fullhash}{AMBPCJCZDADJDMGSIGIM+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{OSDI}
+    \field{pages}{265\bibrangedash 283}
+    \field{title}{Tensorflow: a system for large-scale machine learning.}
+    \field{volume}{16}
+    \field{year}{2016}
+  \endentry
+
+  \entry{abdulhai2003reinforcement}{article}{}
+    \name{author}{2}{}{%
+      {{hash=AB}{%
+         family={Abdulhai},
+         familyi={A\bibinitperiod},
+         given={Baher},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kattan},
+         familyi={K\bibinitperiod},
+         given={Lina},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {NRC Research Press}%
+    }
+    \strng{namehash}{ABKL1}
+    \strng{fullhash}{ABKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{6}
+    \field{pages}{981\bibrangedash 991}
+    \field{title}{Reinforcement learning: Introduction to theory and potential
+  for transport applications}
+    \field{volume}{30}
+    \field{journaltitle}{Canadian Journal of Civil Engineering}
+    \field{year}{2003}
+  \endentry
+
   \entry{Alvord1996AtrazineWetlands}{article}{}
     \name{author}{2}{}{%
       {{hash=AH}{%
@@ -44,7 +154,7 @@
     \field{issn}{03043800}
     \field{number}{1}
     \field{pages}{97\bibrangedash 107}
-    \field{title}{{Atrazine fate and transport in the Des Plaines Wetlands}}
+    \field{title}{Atrazine fate and transport in the Des Plaines Wetlands}
     \field{volume}{90}
     \field{journaltitle}{Ecological Modelling}
     \field{year}{1996}
@@ -80,9 +190,136 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \field{title}{{Feedback Systems: An Introduction for Scientists and
-  Engineers}}
+    \field{title}{Feedback Systems: An Introduction for Scientists and
+  Engineers}
     \field{year}{2006}
+  \endentry
+
+  \entry{aytar2018playing}{article}{}
+    \name{author}{6}{}{%
+      {{hash=AY}{%
+         family={Aytar},
+         familyi={A\bibinitperiod},
+         given={Yusuf},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pfaff},
+         familyi={P\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Budden},
+         familyi={B\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PTL}{%
+         family={Paine},
+         familyi={P\bibinitperiod},
+         given={Tom\bibnamedelima Le},
+         giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=WZ}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Ziyu},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=dFN}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Freitas},
+         familyi={F\bibinitperiod},
+         given={Nando},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AY+1}
+    \strng{fullhash}{AYPTBDPTLWZFNd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Playing hard exploration games by watching YouTube}
+    \field{journaltitle}{arXiv preprint arXiv:1805.11592}
+    \field{year}{2018}
+  \endentry
+
+  \entry{bartos2017open}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Bartos},
+         familyi={B\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMWBKB1}
+    \strng{fullhash}{BMWBKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Open storm: a complete framework for sensing and control of
+  urban watersheds}
+    \field{journaltitle}{arXiv preprint arXiv:1708.05172}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Bartos_2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Bartos},
+         familyi={B\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry ({RSC})}%
+    }
+    \strng{namehash}{BMWBKB1}
+    \strng{fullhash}{BMWBKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1039/c7ew00374a
+    \endverb
+    \field{number}{3}
+    \field{pages}{346\bibrangedash 358}
+    \field{title}{Open storm: a complete framework for sensing and control of
+  urban watersheds}
+    \field{volume}{4}
+    \field{journaltitle}{Environmental Science: Water Research {\&} Technology}
+    \field{year}{2018}
   \endentry
 
   \entry{Benedetti2009AScale}{article}{}
@@ -141,8 +378,8 @@
     \field{sortinithash}{B}
     \field{number}{8}
     \field{pages}{2035}
-    \field{title}{{A new rule generation method to develop a decision support
-  system for integrated management at river basin scale}}
+    \field{title}{A new rule generation method to develop a decision support
+  system for integrated management at river basin scale}
     \field{volume}{60}
     \field{journaltitle}{Water Science {\&} Technology}
     \field{year}{2009}
@@ -182,9 +419,75 @@
   Conservation}
     \field{chapter}{1}
     \field{pages}{5}
-    \field{title}{{Green Infrastructure: Smart Conservation for the 21st
-  Century}}
+    \field{title}{Green Infrastructure: Smart Conservation for the 21st
+  Century}
     \field{year}{2006}
+  \endentry
+
+  \entry{bhattacharya2003neural}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BB}{%
+         family={Bhattacharya},
+         familyi={B\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+      {{hash=LA}{%
+         family={Lobbrecht},
+         familyi={L\bibinitperiod},
+         given={AH},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Solomatine},
+         familyi={S\bibinitperiod},
+         given={DP},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{BBLASD1}
+    \strng{fullhash}{BBLASD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{6}
+    \field{pages}{458\bibrangedash 465}
+    \field{title}{Neural networks and reinforcement learning in control of
+  water systems}
+    \field{volume}{129}
+    \field{journaltitle}{Journal of Water Resources Planning and Management}
+    \field{year}{2003}
+  \endentry
+
+  \entry{bledsoe2002stream}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BBP}{%
+         family={Bledsoe},
+         familyi={B\bibinitperiod},
+         given={Brian\bibnamedelima P},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{BBP1}
+    \strng{fullhash}{BBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{6}
+    \field{pages}{451\bibrangedash 455}
+    \field{title}{Stream erosion potential and stormwater management
+  strategies}
+    \field{volume}{128}
+    \field{journaltitle}{Journal of Water Resources Planning and Management}
+    \field{year}{2002}
   \endentry
 
   \entry{Boesch2001ChesapeakeAgriculture}{article}{}
@@ -216,11 +519,125 @@
     \field{sortinithash}{B}
     \field{number}{2}
     \field{pages}{303\bibrangedash 320}
-    \field{title}{{Chesapeake Bay Eutrophication: Scientific Understanding,
-  Ecosystem Restoration, and Challenges for Agriculture}}
+    \field{title}{Chesapeake Bay Eutrophication: Scientific Understanding,
+  Ecosystem Restoration, and Challenges for Agriculture}
     \field{volume}{30}
     \field{journaltitle}{Journal of Environmental Quality}
     \field{year}{2001}
+  \endentry
+
+  \entry{Borsanyi2008}{article}{}
+    \name{author}{9}{}{%
+      {{hash=BP}{%
+         family={Bors\'{a}nyi},
+         familyi={B\bibinitperiod},
+         given={P\'{e}ter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Benedetti},
+         familyi={B\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dirckx},
+         familyi={D\bibinitperiod},
+         given={Geert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DKW}{%
+         family={De\bibnamedelima Keyser},
+         familyi={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Webbey},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Muschalla},
+         familyi={M\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SAM}{%
+         family={Solvi},
+         familyi={S\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinitperiod-M\bibinitperiod},
+      }}%
+      {{hash=VV}{%
+         family={Vandenberghe},
+         familyi={V\bibinitperiod},
+         given={Veronique},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weyand},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VPA}{%
+         family={Vanrolleghem},
+         familyi={V\bibinitperiod},
+         given={Peter\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BP+1}
+    \strng{fullhash}{BPBLDGDKWMDSAMVVWMVPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1139/S08-004
+    \endverb
+    \field{number}{4}
+    \field{pages}{395\bibrangedash 410}
+    \field{title}{{Modelling real-time control options on virtual sewer
+  systems}}
+    \field{volume}{7}
+    \field{journaltitle}{Journal of Environmental Engineering and Science}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Bronstert_2002}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BA}{%
+         family={Bronstert},
+         familyi={B\bibinitperiod},
+         given={Axel},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ND}{%
+         family={Niehoff},
+         familyi={N\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={B{\"u}rger},
+         familyi={B\bibinitperiod},
+         given={Gerd},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{BANDBG1}
+    \strng{fullhash}{BANDBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2}
+    \field{pages}{509\bibrangedash 529}
+    \field{title}{Effects of climate and land-use change on storm runoff
+  generation: present knowledge and modelling capabilities}
+    \field{volume}{16}
+    \field{journaltitle}{Hydrological processes}
+    \field{year}{2002}
   \endentry
 
   \entry{Brunner1991ANetworks}{article}{}
@@ -246,8 +663,8 @@
     \field{sortinithash}{B}
     \field{number}{5}
     \field{pages}{629\bibrangedash 642}
-    \field{title}{{A Muskingum-Cunge Channel Flow Routing Method for Drainage
-  Networks}}
+    \field{title}{A Muskingum-Cunge Channel Flow Routing Method for Drainage
+  Networks}
     \field{volume}{117}
     \field{journaltitle}{ASCE Journal of Hydraulics}
     \field{year}{1991}
@@ -276,7 +693,7 @@
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{edition}{5.0}
-    \field{title}{{HEC -RAS River Analysis System User Manual}}
+    \field{title}{HEC -RAS River Analysis System User Manual}
     \field{year}{2016}
   \endentry
 
@@ -322,11 +739,69 @@
     \field{issn}{01692046}
     \field{number}{3}
     \field{pages}{230\bibrangedash 240}
-    \field{title}{{Hydrologic shortcomings of conventional urban stormwater
-  management and opportunities for reform}}
+    \field{title}{Hydrologic shortcomings of conventional urban stormwater
+  management and opportunities for reform}
     \field{volume}{105}
     \field{journaltitle}{Landscape and Urban Planning}
     \field{year}{2012}
+  \endentry
+
+  \entry{aaswmm}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={CDMSmith},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Accessed: 2018-09-25}
+    \field{title}{City of Ann Arbor Stormwater Model Calibration and Analysis
+  Project}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Campisano2000}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CA}{%
+         family={Campisano},
+         familyi={C\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Schilling},
+         familyi={S\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Modica},
+         familyi={M\bibinitperiod},
+         given={Carlo},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CASWMC1}
+    \strng{fullhash}{CASWMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1016/S1462-0758(00)00061-3
+    \endverb
+    \field{number}{3}
+    \field{pages}{235\bibrangedash 242}
+    \field{title}{{Regulators' setup with application to the Roma--Cecchignola
+  combined sewer system}}
+    \field{volume}{2}
+    \field{journaltitle}{Urban Water}
+    \field{year}{2000}
   \endentry
 
   \entry{Carleton2000PerformanceRunoff}{article}{}
@@ -376,11 +851,55 @@
     \field{sortinithash}{C}
     \field{number}{3}
     \field{pages}{295\bibrangedash 304}
-    \field{title}{{Performance of a Constructed Wetlands in Treating Urban
-  Stormwater Runoff}}
+    \field{title}{Performance of a Constructed Wetlands in Treating Urban
+  Stormwater Runoff}
     \field{volume}{72}
     \field{journaltitle}{Water Environment Research}
     \field{year}{2000}
+  \endentry
+
+  \entry{castelletti2010tree}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CA}{%
+         family={Castelletti},
+         familyi={C\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+      {{hash=GS}{%
+         family={Galelli},
+         familyi={G\bibinitperiod},
+         given={Stefano},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Restelli},
+         familyi={R\bibinitperiod},
+         given={Marcello},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SSR}{%
+         family={Soncini-Sessa},
+         familyi={S\bibinitperiod-S\bibinitperiod},
+         given={Rodolfo},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CA+1}
+    \strng{fullhash}{CAGSRMSSR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{9}
+    \field{title}{Tree-based reinforcement learning for optimal water reservoir
+  operation}
+    \field{volume}{46}
+    \field{journaltitle}{Water Resources Research}
+    \field{year}{2010}
   \endentry
 
   \entry{Chaubey1999UncertaintyRainfall}{article}{}
@@ -419,8 +938,8 @@
     \field{issn}{00221694}
     \field{number}{1}
     \field{pages}{48\bibrangedash 61}
-    \field{title}{{Uncertainty in the model parameters due to spatial
-  variability of rainfall}}
+    \field{title}{Uncertainty in the model parameters due to spatial
+  variability of rainfall}
     \field{volume}{220}
     \field{journaltitle}{Journal of Hydrology}
     \field{year}{1999}
@@ -461,8 +980,100 @@
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{edition}{12}
-    \field{title}{{Water-resources engineering}}
+    \field{title}{Water-resources engineering}
     \field{year}{2000}
+  \endentry
+
+  \entry{chollet2017Deep}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CF}{%
+         family={Chollet},
+         familyi={C\bibinitperiod},
+         given={Francois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Manning Publications Co.}%
+    }
+    \strng{namehash}{CF1}
+    \strng{fullhash}{CF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Deep learning with python}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Chourabi2012}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=CH}{%
+         family={Chourabi},
+         familyi={C\bibinitperiod},
+         given={Hafedh},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={Nam},
+         familyi={N\bibinitperiod},
+         given={Taewoo},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WS}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={Shawn},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GGJR}{%
+         family={Gil-Garcia},
+         familyi={G\bibinitperiod-G\bibinitperiod},
+         given={J.\bibnamedelima Ramon},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mellouli},
+         familyi={M\bibinitperiod},
+         given={Sehl},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nahon},
+         familyi={N\bibinitperiod},
+         given={Karine},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PTA}{%
+         family={Pardo},
+         familyi={P\bibinitperiod},
+         given={Theresa\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SHJ}{%
+         family={Scholl},
+         familyi={S\bibinitperiod},
+         given={Hans\bibnamedelima Jochen},
+         giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CH+1}
+    \strng{fullhash}{CHNTWSGGJRMSNKPTASHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{booktitle}{Proceedings of the Annual Hawaii International Conference
+  on System Sciences}
+    \verb{doi}
+    \verb 10.1109/HICSS.2012.615
+    \endverb
+    \field{pages}{2289\bibrangedash 2297}
+    \field{title}{{Understanding smart cities: An integrative framework}}
+    \field{year}{2012}
   \endentry
 
   \entry{Ciou2012OptimizationWatershed}{article}{}
@@ -500,8 +1111,8 @@
     \field{sortinithash}{C}
     \field{number}{8}
     \field{pages}{736\bibrangedash 747}
-    \field{title}{{Optimization Model for BMP Placement in a Reservoir
-  Watershed}}
+    \field{title}{Optimization Model for BMP Placement in a Reservoir
+  Watershed}
     \field{volume}{138}
     \field{journaltitle}{Journal of Irrigation and Drainage Engineering}
     \field{year}{2012}
@@ -529,7 +1140,7 @@
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{issn}{0925-8574}
-    \field{pages}{40 \bibrangedash  45}
+    \field{pages}{40\bibrangedash 45}
     \field{title}{Defining predevelopment hydrology to mimic predevelopment
   water quality in stormwater control measures (SCMs)}
     \field{volume}{57}
@@ -537,24 +1148,205 @@
     \field{year}{2013}
   \endentry
 
-  \entry{DepartmentofEnvironmentalProtection2006PennsylvaniaManual}{book}{}
-    \name{author}{1}{}{%
-      {{hash=D}{%
-         family={{Department of Environmental Protection}},
+  \entry{clavera2018model}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CI}{%
+         family={Clavera},
+         familyi={C\bibinitperiod},
+         given={Ignasi},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=RJ}{%
+         family={Rothfuss},
+         familyi={R\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FY}{%
+         family={Fujita},
+         familyi={F\bibinitperiod},
+         given={Yasuhiro},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Asfour},
+         familyi={A\bibinitperiod},
+         given={Tamim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AP}{%
+         family={Abbeel},
+         familyi={A\bibinitperiod},
+         given={Pieter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CI+2}
+    \strng{fullhash}{CIRJSJFYATAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Model-Based Reinforcement Learning via Meta-Policy
+  Optimization}
+    \field{journaltitle}{arXiv preprint arXiv:1809.05214}
+    \field{year}{2018}
+  \endentry
+
+  \entry{VanDaal2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=vDP}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Daal},
          familyi={D\bibinitperiod},
+         given={Petra},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={Gruber},
+         familyi={G\bibinitperiod},
+         given={G{\"u}nter},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Langeveld},
+         familyi={L\bibinitperiod},
+         given={Jeroen},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Muschalla},
+         familyi={M\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Clemens},
+         familyi={C\bibinitperiod},
+         given={Fran{\c{c}}ois},
+         giveni={F\bibinitperiod},
       }}%
     }
     \list{publisher}{1}{%
-      {Bureau of Watershed Management}%
+      {Elsevier}%
     }
-    \strng{namehash}{D1}
-    \strng{fullhash}{D1}
+    \strng{namehash}{DPv+1}
+    \strng{fullhash}{DPvGGLJMDCF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \field{title}{{Pennsylvania Stormwater Best Management Practices Manual}}
-    \field{year}{2006}
+    \field{pages}{90\bibrangedash 101}
+    \field{title}{{Performance evaluation of real time control in urban
+  wastewater systems in practice: Review and perspective}}
+    \field{volume}{95}
+    \field{journaltitle}{Environmental Modelling and Software}
+    \field{year}{2017}
+  \endentry
+
+  \entry{depeweg2016learning}{article}{}
+    \name{author}{4}{}{%
+      {{hash=DS}{%
+         family={Depeweg},
+         familyi={D\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HLJM}{%
+         family={Hern{\'a}ndez-Lobato},
+         familyi={H\bibinitperiod-L\bibinitperiod},
+         given={Jos{\'e}\bibnamedelima Miguel},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=DVF}{%
+         family={Doshi-Velez},
+         familyi={D\bibinitperiod-V\bibinitperiod},
+         given={Finale},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=US}{%
+         family={Udluft},
+         familyi={U\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DS+1}
+    \strng{fullhash}{DSHLJMDVFUS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Learning and policy search in stochastic dynamical systems
+  with bayesian neural networks}
+    \field{journaltitle}{arXiv preprint arXiv:1605.07127}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Dirckz2011}{article}{}
+    \name{author}{6}{}{%
+      {{hash=DG}{%
+         family={Dirckx},
+         familyi={D\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={SchÃŒtze},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kroll},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TC}{%
+         family={Thoeye},
+         familyi={T\bibinitperiod},
+         given={Ch.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={{De Gueldre}},
+         familyi={D\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={{Van De Steene}},
+         familyi={V\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{DG+1}
+    \strng{fullhash}{DGSMKSTCDGVB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1080/1573062X.2011.630092
+    \endverb
+    \field{number}{6}
+    \field{pages}{367\bibrangedash 377}
+    \field{title}{{Cost-efficiency of RTC for CSO impact mitigation}}
+    \field{volume}{8}
+    \field{journaltitle}{Urban Water Journal}
+    \field{year}{2011}
   \endentry
 
   \entry{Dormand1980AFormulae}{article}{}
@@ -584,25 +1376,56 @@
     \field{issn}{03770427}
     \field{number}{1}
     \field{pages}{19\bibrangedash 26}
-    \field{title}{{A family of embedded Runge-Kutta formulae}}
+    \field{title}{A family of embedded Runge-Kutta formulae}
     \field{volume}{6}
     \field{journaltitle}{Journal of Computational and Applied Mathematics}
     \field{year}{1980}
   \endentry
 
+  \entry{Elliott2007ADrainage}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EA}{%
+         family={Elliott},
+         familyi={E\bibinitperiod},
+         given={A.H.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Trowsdale},
+         familyi={T\bibinitperiod},
+         given={S.A.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{EATS1}
+    \strng{fullhash}{EATS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{doi}
+    \verb 10.1016/J.ENVSOFT.2005.12.005
+    \endverb
+    \field{issn}{1364-8152}
+    \field{number}{3}
+    \field{pages}{394\bibrangedash 405}
+    \field{title}{A review of models for low impact urban stormwater drainage}
+    \field{volume}{22}
+    \field{journaltitle}{Environmental Modelling {\&} Software}
+    \field{month}{03}
+    \field{year}{2007}
+  \endentry
+
   \entry{Emerson2005Watershed-ScaleBasins}{article}{}
-    \name{author}{4}{}{%
+    \name{author}{3}{}{%
       {{hash=ECH}{%
          family={Emerson},
          familyi={E\bibinitperiod},
-         given={Clay\bibnamedelima H},
+         given={Clay\bibnamedelima H.},
          giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=AM}{%
-         family={Asce},
-         familyi={A\bibinitperiod},
-         given={M},
-         giveni={M},
       }}%
       {{hash=WC}{%
          family={Welty},
@@ -613,23 +1436,131 @@
       {{hash=TRG}{%
          family={Traver},
          familyi={T\bibinitperiod},
-         given={Robert\bibnamedelima G},
+         given={Robert\bibnamedelima G.},
          giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ECH+1}
-    \strng{fullhash}{ECHAMWCTRG1}
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers ({ASCE})}%
+    }
+    \strng{namehash}{ECHWCTRG1}
+    \strng{fullhash}{ECHWCTRG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{E}
     \field{sortinithash}{E}
+    \verb{doi}
+    \verb 10.1061/(ASCE)1084-0699(2005)10:3(237)
+    \endverb
+    \field{issn}{1084-0699}
     \field{number}{3}
     \field{pages}{237\bibrangedash 242}
-    \field{title}{{Watershed-Scale Evaluation of a System of Storm Water
-  Detention Basins}}
+    \field{title}{Watershed-Scale Evaluation of a System of Storm Water
+  Detention Basins}
     \field{volume}{10}
     \field{journaltitle}{Journal of Hydrologic Engineering}
+    \field{month}{05}
     \field{year}{2005}
+  \endentry
+
+  \entry{DepartmentofEnvironmentalProtection2006PennsylvaniaManual}{book}{}
+    \name{author}{1}{}{%
+      {{hash=oEPD}{%
+         prefix={of},
+         prefixi={o\bibinitperiod},
+         family={Environmental\bibnamedelima Protection},
+         familyi={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={Department},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Bureau of Watershed Management}%
+    }
+    \strng{namehash}{EPDo1}
+    \strng{fullhash}{EPDo1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{Pennsylvania Stormwater Best Management Practices Manual}
+    \field{year}{2006}
+  \endentry
+
+  \entry{espeholt2018impala}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=EL}{%
+         family={Espeholt},
+         familyi={E\bibinitperiod},
+         given={Lasse},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Soyer},
+         familyi={S\bibinitperiod},
+         given={Hubert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Munos},
+         familyi={M\bibinitperiod},
+         given={Remi},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Mnih},
+         familyi={M\bibinitperiod},
+         given={Volodymir},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Ward},
+         familyi={W\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DY}{%
+         family={Doron},
+         familyi={D\bibinitperiod},
+         given={Yotam},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FV}{%
+         family={Firoiu},
+         familyi={F\bibinitperiod},
+         given={Vlad},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Harley},
+         familyi={H\bibinitperiod},
+         given={Tim},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Dunning},
+         familyi={D\bibinitperiod},
+         given={Iain},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EL+1}
+    \strng{fullhash}{ELSHMRSKMVWTDYFVHTDI+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{title}{IMPALA: Scalable distributed Deep-RL with importance weighted
+  actor-learner architectures}
+    \field{journaltitle}{arXiv preprint arXiv:1802.01561}
+    \field{year}{2018}
   \endentry
 
   \entry{Fiorelli2013OptimisedFunction}{article}{}
@@ -674,8 +1605,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{title}{{Optimised real time operation of a sewer network using a
-  multi-goal objective function}}
+    \field{title}{Optimised real time operation of a sewer network using a
+  multi-goal objective function}
     \field{journaltitle}{http://dx.doi.org/10.1080/1573062X.2013.806560}
     \field{year}{2013}
   \endentry
@@ -701,8 +1632,41 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{F}
     \field{sortinithash}{F}
-    \field{title}{{Houstons Rapid Growth, Heavy Rains, Heightend Flood Risk}}
+    \field{title}{Houstons Rapid Growth, Heavy Rains, Heightend Flood Risk}
     \field{year}{2016}
+  \endentry
+
+  \entry{fu2017learning}{article}{}
+    \name{author}{3}{}{%
+      {{hash=FJ}{%
+         family={Fu},
+         familyi={F\bibinitperiod},
+         given={Justin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Katie},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJLKLS1}
+    \strng{fullhash}{FJLKLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{Learning Robust Rewards with Adversarial Inverse
+  Reinforcement Learning}
+    \field{journaltitle}{arXiv preprint arXiv:1710.11248}
+    \field{year}{2017}
   \endentry
 
   \entry{Gaborit2013ImprovingForecasts}{article}{}
@@ -744,10 +1708,13 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1080/1573062X.2012.726229
+    \endverb
     \field{number}{4}
     \field{pages}{230\bibrangedash 246}
-    \field{title}{{Improving the performance of stormwater detention basins by
-  real-time control using rainfall forecasts}}
+    \field{title}{Improving the performance of stormwater detention basins by
+  real-time control using rainfall forecasts}
     \field{volume}{10}
     \field{journaltitle}{Urban Water Journal}
     \field{year}{2013}
@@ -786,10 +1753,128 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1080/1573062X.2015.1057172
+    \endverb
+    \field{number}{8}
     \field{pages}{1\bibrangedash 11}
-    \field{title}{{Exploring forecast-based management strategies for
-  stormwater detention ponds}}
+    \field{title}{Exploring forecast-based management strategies for stormwater
+  detention ponds}
+    \field{volume}{13}
     \field{journaltitle}{Urban Water Journal}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Garcia_2015}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GL}{%
+         family={Garcia},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BGJ}{%
+         family={Barreiro-Gomez},
+         familyi={B\bibinitperiod-G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Escobar},
+         familyi={E\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Tellez},
+         familyi={T\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=QN}{%
+         family={Quijano},
+         familyi={Q\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OMC}{%
+         family={Ocampo-Martinez},
+         familyi={O\bibinitperiod-M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GL+1}
+    \strng{fullhash}{GLBGJEETDQNOMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb https://doi.org/10.1016/j.advwatres.2015.08.007
+    \endverb
+    \field{issn}{0309-1708}
+    \field{pages}{120\bibrangedash 132}
+    \field{title}{Modeling and real-time control of urban drainage systems: A
+  review}
+    \field{volume}{85}
+    \field{journaltitle}{Advances in Water Resources}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Garcia2015}{article}{}
+    \name{author}{6}{}{%
+      {{hash=GL}{%
+         family={Garc{\'{i}}a},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BGJ}{%
+         family={Barreiro-Gomez},
+         familyi={B\bibinitperiod-G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EE}{%
+         family={Escobar},
+         familyi={E\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={T{\'{e}}llez},
+         familyi={T\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=QN}{%
+         family={Quijano},
+         familyi={Q\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OMC}{%
+         family={Ocampo-Martinez},
+         familyi={O\bibinitperiod-M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GL+2}
+    \strng{fullhash}{GLBGJEETDQNOMC2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1016/j.advwatres.2015.08.007
+    \endverb
+    \field{pages}{120\bibrangedash 132}
+    \field{title}{{Modeling and real-time control of urban drainage systems: A
+  review}}
+    \field{volume}{85}
+    \field{journaltitle}{Advances in Water Resources}
     \field{year}{2015}
   \endentry
 
@@ -808,8 +1893,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{title}{{Stormwater Capture Potential in Urban and Suburban
-  California}}
+    \field{title}{Stormwater Capture Potential in Urban and Suburban
+  California}
     \list{institution}{1}{%
       {Natural Resources Defense Council}%
     }
@@ -820,7 +1905,7 @@
   \entry{Geosyntec2014}{report}{}
     \name{author}{1}{}{%
       {{hash=G}{%
-         family={{Geosyntec}},
+         family={Geosyntec},
          familyi={G\bibinitperiod},
       }}%
     }
@@ -830,7 +1915,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \field{title}{{Stormwater Capture Master Plan Interim Report}}
+    \field{title}{Stormwater Capture Master Plan Interim Report}
     \list{institution}{1}{%
       {Geosyntec}%
     }
@@ -870,8 +1955,8 @@
     \field{issn}{13648152}
     \field{number}{5}
     \field{pages}{633\bibrangedash 640}
-    \field{title}{{FITOVERT: A dynamic numerical model of subsurface vertical
-  flow constructed wetlands}}
+    \field{title}{FITOVERT: A dynamic numerical model of subsurface vertical
+  flow constructed wetlands}
     \field{volume}{25}
     \field{journaltitle}{Environmental Modelling {\&} Software}
     \field{year}{2010}
@@ -907,11 +1992,52 @@
     \field{issn}{13648152}
     \field{number}{5}
     \field{pages}{573\bibrangedash 582}
-    \field{title}{{Modeling water resource systems using a service-oriented
-  computing paradigm}}
+    \field{title}{Modeling water resource systems using a service-oriented
+  computing paradigm}
     \field{volume}{26}
     \field{journaltitle}{Environmental Modelling {\&} Software}
     \field{year}{2011}
+  \endentry
+
+  \entry{goodfellow2016Deep}{book}{}
+    \name{author}{4}{}{%
+      {{hash=GI}{%
+         family={Goodfellow},
+         familyi={G\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Courville},
+         familyi={C\bibinitperiod},
+         given={Aaron},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {MIT press Cambridge}%
+    }
+    \strng{namehash}{GI+1}
+    \strng{fullhash}{GIBYCABY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Deep learning}
+    \field{volume}{1}
+    \field{year}{2016}
   \endentry
 
   \entry{Goonetilleke2005UnderstandingManagement}{article}{}
@@ -950,11 +2076,50 @@
     \field{issn}{03014797}
     \field{number}{1}
     \field{pages}{31\bibrangedash 42}
-    \field{title}{{Understanding the role of land use in urban stormwater
-  quality management}}
+    \field{title}{Understanding the role of land use in urban stormwater
+  quality management}
     \field{volume}{74}
     \field{journaltitle}{Journal of Environmental Management}
     \field{year}{2005}
+  \endentry
+
+  \entry{gu2016continuous}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=GS}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Shixiang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LT}{%
+         family={Lillicrap},
+         familyi={L\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SI}{%
+         family={Sutskever},
+         familyi={S\bibinitperiod},
+         given={Ilya},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Levine},
+         familyi={L\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GS+1}
+    \strng{fullhash}{GSLTSILS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{booktitle}{International Conference on Machine Learning}
+    \field{pages}{2829\bibrangedash 2838}
+    \field{title}{Continuous deep q-learning with model-based acceleration}
+    \field{year}{2016}
   \endentry
 
   \entry{Hamel2013Source-controlReview}{article}{}
@@ -986,11 +2151,90 @@
     \field{sortinithash}{H}
     \field{issn}{00221694}
     \field{pages}{201\bibrangedash 211}
-    \field{title}{{Source-control stormwater management for mitigating the
-  impacts of urbanisation on baseflow: A review}}
+    \field{title}{Source-control stormwater management for mitigating the
+  impacts of urbanisation on baseflow: A review}
     \field{volume}{485}
     \field{journaltitle}{Journal of Hydrology}
     \field{year}{2013}
+  \endentry
+
+  \entry{Harrison2011}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HC}{%
+         family={Harrison},
+         familyi={H\bibinitperiod},
+         given={Colin},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=DIA}{%
+         family={Donnelly},
+         familyi={D\bibinitperiod},
+         given={Ian\bibnamedelima Abbott},
+         giveni={I\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HCDIA1}
+    \strng{fullhash}{HCDIA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Proceedings of the 55th Annual Meeting of the
+  International Society for the Systems Sciences}
+    \field{number}{1}
+    \field{title}{{A theory of smart cities}}
+    \field{volume}{55}
+    \field{year}{2011}
+  \endentry
+
+  \entry{henderson2017Deep}{article}{}
+    \name{author}{6}{}{%
+      {{hash=HP}{%
+         family={Henderson},
+         familyi={H\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=IR}{%
+         family={Islam},
+         familyi={I\bibinitperiod},
+         given={Riashat},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Bachman},
+         familyi={B\bibinitperiod},
+         given={Philip},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Pineau},
+         familyi={P\bibinitperiod},
+         given={Joelle},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Precup},
+         familyi={P\bibinitperiod},
+         given={Doina},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Meger},
+         familyi={M\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HP+1}
+    \strng{fullhash}{HPIRBPPJPDMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Deep reinforcement learning that matters}
+    \field{journaltitle}{arXiv preprint arXiv:1709.06560}
+    \field{year}{2017}
   \endentry
 
   \entry{Henze2000ActivatedASM3}{book}{}
@@ -1011,8 +2255,73 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \field{title}{{Activated sludge models ASM1, ASM2, ASM2d and ASM3}}
+    \field{title}{Activated sludge models ASM1, ASM2, ASM2d and ASM3}
     \field{year}{2000}
+  \endentry
+
+  \entry{hornik1989multilayer}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HK}{%
+         family={Hornik},
+         familyi={H\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Stinchcombe},
+         familyi={S\bibinitperiod},
+         given={Maxwell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WH}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={Halbert},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{HKSMWH1}
+    \strng{fullhash}{HKSMWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{5}
+    \field{pages}{359\bibrangedash 366}
+    \field{title}{Multilayer feedforward networks are universal approximators}
+    \field{volume}{2}
+    \field{journaltitle}{Neural networks}
+    \field{year}{1989}
+  \endentry
+
+  \entry{ioffe2015batch}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IS}{%
+         family={Ioffe},
+         familyi={I\bibinitperiod},
+         given={Sergey},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Szegedy},
+         familyi={S\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ISSC1}
+    \strng{fullhash}{ISSC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{title}{Batch normalization: Accelerating deep network training by
+  reducing internal covariate shift}
+    \field{journaltitle}{arXiv preprint arXiv:1502.03167}
+    \field{year}{2015}
   \endentry
 
   \entry{Jacopin2001OptimisationBasins}{article}{}
@@ -1050,8 +2359,8 @@
     \field{sortinithash}{J}
     \field{number}{2}
     \field{pages}{277\bibrangedash 285}
-    \field{title}{{Optimisation of operational management practices for the
-  detention basins}}
+    \field{title}{Optimisation of operational management practices for the
+  detention basins}
     \field{volume}{44}
     \field{journaltitle}{Water science and technology}
     \field{year}{2001}
@@ -1075,7 +2384,7 @@
     \field{sortinit}{K}
     \field{sortinithash}{K}
     \field{pages}{365\bibrangedash 391}
-    \field{title}{{Phosphorus dynamics in event driven wetlands}}
+    \field{title}{Phosphorus dynamics in event driven wetlands}
     \field{journaltitle}{Transformations of Nutrients in Natural and
   Constructed Wetlands}
     \field{year}{2001}
@@ -1105,7 +2414,7 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \field{title}{{Treatment wetlands}}
+    \field{title}{Treatment wetlands}
     \field{year}{2008}
   \endentry
 
@@ -1190,12 +2499,82 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{K}
     \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1021/acs.est.5b05870
+    \endverb
+    \field{issn}{0013-936X}
     \field{number}{14}
     \field{pages}{7267\bibrangedash 7273}
-    \field{title}{{Smarter Stormwater Systems}}
+    \field{title}{Smarter Stormwater Systems}
     \field{volume}{50}
     \field{journaltitle}{Environmental Science {\&} Technology}
     \field{year}{2016}
+  \endentry
+
+  \entry{kinnmark2012shallow}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KI}{%
+         family={Kinnmark},
+         familyi={K\bibinitperiod},
+         given={Ingemar},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer Science \& Business Media}%
+    }
+    \strng{namehash}{KI1}
+    \strng{fullhash}{KI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{The shallow water wave equations: formulation, analysis and
+  application}
+    \field{volume}{15}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Klenzendorf_2015}{report}{}
+    \name{author}{4}{}{%
+      {{hash=KB}{%
+         family={Klenzendorf},
+         familyi={K\bibinitperiod},
+         given={Brandon},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Barrett},
+         familyi={B\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CM}{%
+         family={Christman},
+         familyi={C\bibinitperiod},
+         given={Marty},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=QM}{%
+         family={Quigley},
+         familyi={Q\bibinitperiod},
+         given={Marcus},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KB+2}
+    \strng{fullhash}{KBBMCMQM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Water Quality and Conservation Benefits Achieved via Real
+  Time Control Retrofit of Stormwater Management Facilities near Austin, Texas}
+    \list{institution}{1}{%
+      {OptiRTC}%
+    }
+    \field{type}{techreport}
+    \field{year}{2015}
   \endentry
 
   \entry{Knight2003211}{article}{}
@@ -1239,12 +2618,112 @@
     \field{sortinithash}{K}
     \field{issn}{0925-8574}
     \field{number}{4--5}
-    \field{pages}{211 \bibrangedash  232}
+    \field{pages}{211\bibrangedash 232}
     \field{title}{Strategies for effective mosquito control in constructed
   treatment wetlands}
     \field{volume}{21}
     \field{journaltitle}{Ecological Engineering}
     \field{year}{2003}
+  \endentry
+
+  \entry{Kober2013ReinforcementSurvey}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KJ}{%
+         family={Kober},
+         familyi={K\bibinitperiod},
+         given={Jens},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BJA}{%
+         family={Bagnell},
+         familyi={B\bibinitperiod},
+         given={J.\bibnamedelima Andrew},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PJ}{%
+         family={Peters},
+         familyi={P\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SAGE PublicationsSage UK: London, England}%
+    }
+    \strng{namehash}{KJBJAPJ1}
+    \strng{fullhash}{KJBJAPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1177/0278364913495721
+    \endverb
+    \field{issn}{0278-3649}
+    \field{number}{11}
+    \field{pages}{1238\bibrangedash 1274}
+    \field{title}{Reinforcement learning in robotics: A survey}
+    \field{volume}{32}
+    \field{journaltitle}{The International Journal of Robotics Research}
+    \field{month}{09}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Kroll2016}{article}{}
+    \name{author}{6}{}{%
+      {{hash=KS}{%
+         family={Kroll},
+         familyi={K\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dirckx},
+         familyi={D\bibinitperiod},
+         given={Geert},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=DBM}{%
+         family={Donckels},
+         familyi={D\bibinitperiod},
+         given={Brecht\bibnamedelima M.R.},
+         giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=VM}{%
+         family={{Van Dorpe}},
+         familyi={V\bibinitperiod},
+         given={Mieke},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weemaes},
+         familyi={W\bibinitperiod},
+         given={Marjoleine},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WP}{%
+         family={Willems},
+         familyi={W\bibinitperiod},
+         given={Patrick},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KSDGDBMVMWMWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.2166/wst.2015.641
+    \endverb
+    \field{number}{7}
+    \field{pages}{1637\bibrangedash 1643}
+    \field{title}{{Modelling real-time control of WWTP influent flow under data
+  scarcity}}
+    \field{volume}{73}
+    \field{journaltitle}{Water Science and Technology}
+    \field{year}{2016}
   \endentry
 
   \entry{Lai2007SUSTAINWATERSHEDS}{article}{}
@@ -1293,8 +2772,8 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{pages}{946\bibrangedash 968}
-    \field{title}{{SUSTAIN -AN EPA BMP PROCESS AND PLACEMENT TOOL FOR URBAN
-  WATERSHEDS}}
+    \field{title}{SUSTAIN -AN EPA BMP PROCESS AND PLACEMENT TOOL FOR URBAN
+  WATERSHEDS}
     \field{volume}{5}
     \field{journaltitle}{Proceedings of the Water Environment Federation}
     \field{year}{2007}
@@ -1337,8 +2816,8 @@
     \field{isbn}{0273-1223 (Print)}
     \field{number}{9}
     \field{pages}{1687\bibrangedash 1697}
-    \field{title}{{CWM1: A general model to describe biokinetic processes in
-  subsurface flow constructed wetlands}}
+    \field{title}{CWM1: A general model to describe biokinetic processes in
+  subsurface flow constructed wetlands}
     \field{volume}{59}
     \field{journaltitle}{Water Science and Technology}
     \field{year}{2009}
@@ -1361,11 +2840,484 @@
     \field{sortinithash}{L}
     \field{number}{2}
     \field{pages}{830\bibrangedash 842}
-    \field{title}{{Modeling of Processes in Subsurface Flow Constructed
-  Wetlands: A Review}}
+    \field{title}{Modeling of Processes in Subsurface Flow Constructed
+  Wetlands: A Review}
     \field{volume}{7}
     \field{journaltitle}{Vadose Zone Journal {\textperiodcentered}}
     \field{year}{2008}
+  \endentry
+
+  \entry{LarisKarklisBefore-and-afterPost}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=LKKU}{%
+         family={Laris\bibnamedelima Karklis},
+         familyi={L\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Kevin\bibnamedelima Uhrmacher},
+         giveni={K\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Muyskens},
+         familyi={M\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LKKUMJ1}
+    \strng{fullhash}{LKKUMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Before-and-after photos of Harvey flooding in Texas -
+  Washington Post}
+    \field{year}{2017}
+  \endentry
+
+  \entry{larochelle2009exploring}{article}{}
+    \name{author}{4}{}{%
+      {{hash=LH}{%
+         family={Larochelle},
+         familyi={L\bibinitperiod},
+         given={Hugo},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Louradour},
+         familyi={L\bibinitperiod},
+         given={J{\'e}r{\^o}me},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lamblin},
+         familyi={L\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LH+1}
+    \strng{fullhash}{LHBYLJLP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{Jan}
+    \field{pages}{1\bibrangedash 40}
+    \field{title}{Exploring strategies for training deep neural networks}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of machine learning research}
+    \field{year}{2009}
+  \endentry
+
+  \entry{HRWC_2011}{report}{}
+    \name{author}{4}{}{%
+      {{hash=LR}{%
+         family={Lawson},
+         familyi={L\bibinitperiod},
+         given={Ric},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Riggs},
+         familyi={R\bibinitperiod},
+         given={Elizabeth},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Weiker},
+         familyi={W\bibinitperiod},
+         given={Debi},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Doubek},
+         familyi={D\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LR+1}
+    \strng{fullhash}{LRREWDDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Total Suspended Solids Reduction and Implementation Plan for
+  Malletts Creek: October 2011 - September 2016}
+    \list{institution}{1}{%
+      {Huron River Watershed Council}%
+    }
+    \field{type}{techreport}
+    \field{year}{2016}
+  \endentry
+
+  \entry{LeCun2015DeepLearning}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LY}{%
+         family={LeCun},
+         familyi={L\bibinitperiod},
+         given={Yann},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BY}{%
+         family={Bengio},
+         familyi={B\bibinitperiod},
+         given={Yoshua},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hinton},
+         familyi={H\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LYBYHG1}
+    \strng{fullhash}{LYBYHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1038/nature14539
+    \endverb
+    \field{issn}{0028-0836}
+    \field{number}{7553}
+    \field{pages}{436\bibrangedash 444}
+    \field{title}{Deep learning}
+    \verb{url}
+    \verb http://www.nature.com/articles/nature14539
+    \endverb
+    \field{volume}{521}
+    \field{journaltitle}{Nature}
+    \field{month}{05}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Lillicrap2015ContinuousLearning}{article}{}
+    \name{author}{8}{}{%
+      {{hash=LTP}{%
+         family={Lillicrap},
+         familyi={L\bibinitperiod},
+         given={Timothy\bibnamedelima P},
+         giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HJJ}{%
+         family={Hunt},
+         familyi={H\bibinitperiod},
+         given={Jonathan\bibnamedelima J},
+         giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pritzel},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Heess},
+         familyi={H\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Erez},
+         familyi={E\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=TY}{%
+         family={Tassa},
+         familyi={T\bibinitperiod},
+         given={Yuval},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wierstra},
+         familyi={W\bibinitperiod},
+         given={Daan},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LTP+1}
+    \strng{fullhash}{LTPHJJPAHNETTYSDWD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Continuous control with deep reinforcement learning}
+    \field{journaltitle}{arXiv preprint arXiv:1509.02971}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Litrico_2004}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LX}{%
+         family={Litrico},
+         familyi={L\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=FV}{%
+         family={Fromion},
+         familyi={F\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers ({ASCE})}%
+    }
+    \strng{namehash}{LXFV1}
+    \strng{fullhash}{LXFV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1061/(asce)0733-9437(2004)130:5(373)
+    \endverb
+    \field{number}{5}
+    \field{pages}{373\bibrangedash 383}
+    \field{title}{Simplified Modeling of Irrigation Canals for Controller
+  Design}
+    \field{volume}{130}
+    \field{journaltitle}{Journal of Irrigation and Drainage Engineering}
+    \field{month}{10}
+    \field{year}{2004}
+  \endentry
+
+  \entry{Lund2018}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LNSV}{%
+         family={Lund},
+         familyi={L\bibinitperiod},
+         given={Nadia Schou\bibnamedelima Vorndran},
+         giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=FAKV}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={Anne Katrine\bibnamedelima Vinther},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  V\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Borup},
+         familyi={B\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MH}{%
+         family={Madsen},
+         familyi={M\bibinitperiod},
+         given={Henrik},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SMP}{%
+         family={Steen\bibnamedelima Mikkelsen},
+         familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{LNSV+1}
+    \strng{fullhash}{LNSVFAKVBMMHSMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{3}
+    \field{pages}{279\bibrangedash 339}
+    \field{title}{Model predictive control of urban drainage systems: A review
+  and perspective towards smart real-time water management}
+    \field{volume}{48}
+    \field{journaltitle}{Critical reviews in environmental science and
+  technology}
+    \field{year}{2018}
+  \endentry
+
+  \entry{TheMathWorksInc.MATLAB}{book}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MATLAB},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The MathWorks Inc.}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{R2016a)}
+    \list{location}{1}{%
+      {Natick, Massachusetts}%
+    }
+    \field{year}{2016}
+  \endentry
+
+  \entry{Mahmoodian2017Pollution-basedPropagation}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MM}{%
+         family={Mahmoodian},
+         familyi={M\bibinitperiod},
+         given={Mahmood},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=DO}{%
+         family={Delmont},
+         familyi={D\bibinitperiod},
+         given={Orianne},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Schutz},
+         familyi={S\bibinitperiod},
+         given={Georges},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {WIT Press}%
+    }
+    \strng{namehash}{MMDOSG1}
+    \strng{fullhash}{MMDOSG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.2495/SDP-V12-N1-98-111
+    \endverb
+    \field{issn}{1743-7601}
+    \field{number}{01}
+    \field{pages}{98\bibrangedash 111}
+    \field{title}{Pollution-based model predictive control of combined sewer
+  networks, considering uncertainty propagation}
+    \field{volume}{12}
+    \field{journaltitle}{International Journal of Sustainable Development and
+  Planning}
+    \field{month}{01}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Marinaki_2003}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=MM}{%
+         family={Marinaki},
+         familyi={M\bibinitperiod},
+         given={Magdalene},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Papageorgiou},
+         familyi={P\bibinitperiod},
+         given={Markos},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MMPM1}
+    \strng{fullhash}{MMPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2003 European Control Conference ({ECC})}
+    \verb{doi}
+    \verb 10.23919/ecc.2003.7085327
+    \endverb
+    \field{title}{Linear-quadratic regulators applied to sewer network flow
+  control}
+    \field{month}{09}
+    \field{year}{2003}
+  \endentry
+
+  \entry{Meneses2018CoordinatingDenmark}{article}{}
+    \name{author}{6}{}{%
+      {{hash=ME}{%
+         family={Meneses},
+         familyi={M\bibinitperiod},
+         given={Elbys},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gaussens},
+         familyi={G\bibinitperiod},
+         given={Marion},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JC}{%
+         family={Jakobsen},
+         familyi={J\bibinitperiod},
+         given={Carsten},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Mikkelsen},
+         familyi={M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Grum},
+         familyi={G\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vezzaro},
+         familyi={V\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{ME+1}
+    \strng{fullhash}{MEGMJCMPGMVL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.3390/w10010076
+    \endverb
+    \field{issn}{2073-4441}
+    \field{number}{1}
+    \field{pages}{76}
+    \field{title}{Coordinating Rule-Based and System-Wide Model Predictive
+  Control Strategies to Reduce Storage Expansion of Combined Urban Drainage
+  Systems: The Case Study of Lundtofte, Denmark}
+    \field{volume}{10}
+    \field{journaltitle}{Water}
+    \field{month}{01}
+    \field{year}{2018}
   \endentry
 
   \entry{Michalak2013Record-settingConditions}{article}{}
@@ -1554,14 +3506,18 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1073/pnas.1216006110
+    \endverb
     \field{issn}{0027-8424}
     \field{number}{16}
     \field{pages}{6448\bibrangedash 6452}
-    \field{title}{{Record-setting algal bloom in Lake Erie caused by
+    \field{title}{Record-setting algal bloom in Lake Erie caused by
   agricultural and meteorological trends consistent with expected future
-  conditions}}
+  conditions}
     \field{volume}{110}
     \field{journaltitle}{Proceedings of the National Academy of Sciences}
+    \field{month}{04}
     \field{year}{2013}
   \endentry
 
@@ -1591,10 +3547,47 @@
     \field{sortinithash}{M}
     \field{number}{2}
     \field{pages}{172\bibrangedash 178}
-    \field{title}{{Water Quality Performance of a Batch-Type Stormwater
-  Detention Basin}}
+    \field{title}{Water Quality Performance of a Batch-Type Stormwater
+  Detention Basin}
     \field{volume}{80}
     \field{journaltitle}{Water Environment Research}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Middleton_2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MJR}{%
+         family={Middleton},
+         familyi={M\bibinitperiod},
+         given={John\bibnamedelima R},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=BME}{%
+         family={Barrett},
+         familyi={B\bibinitperiod},
+         given={Michael\bibnamedelima E},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Water Environment Federation}%
+    }
+    \strng{namehash}{MJRBME1}
+    \strng{fullhash}{MJRBME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.2175/106143007x220842
+    \endverb
+    \field{number}{2}
+    \field{pages}{172\bibrangedash 178}
+    \field{title}{Water Quality Performance of a Batch-Type Stormwater
+  Detention Basin}
+    \field{volume}{80}
+    \field{journaltitle}{Water Environment Research}
+    \field{month}{02}
     \field{year}{2008}
   \endentry
 
@@ -1622,14 +3615,156 @@
     \field{issn}{00431354}
     \field{number}{5}
     \field{pages}{1295\bibrangedash 1303}
-    \field{title}{{Alternative analysis of BOD removal in subsurface flow
-  constructed wetlands employing Monod kinetics}}
+    \field{title}{Alternative analysis of BOD removal in subsurface flow
+  constructed wetlands employing Monod kinetics}
     \field{volume}{35}
     \field{journaltitle}{Water Research}
     \field{year}{2001}
   \endentry
 
-  \entry{Mollerup2016ControllingCities}{article}{}
+  \entry{Mnih2015}{article}{}
+    \name{author}{19}{}{%
+      {{hash=MV}{%
+         family={Mnih},
+         familyi={M\bibinitperiod},
+         given={Volodymyr},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kavukcuoglu},
+         familyi={K\bibinitperiod},
+         given={Koray},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RAa}{%
+         family={Rusu},
+         familyi={R\bibinitperiod},
+         given={Andrei\bibnamedelima a},
+         giveni={A\bibinitperiod\bibinitdelim a\bibinitperiod},
+      }}%
+      {{hash=VJ}{%
+         family={Veness},
+         familyi={V\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BMG}{%
+         family={Bellemare},
+         familyi={B\bibinitperiod},
+         given={Marc\bibnamedelima G},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Graves},
+         familyi={G\bibinitperiod},
+         given={Alex},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={Riedmiller},
+         familyi={R\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FAK}{%
+         family={Fidjeland},
+         familyi={F\bibinitperiod},
+         given={Andreas\bibnamedelima K},
+         giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=OG}{%
+         family={Ostrovski},
+         familyi={O\bibinitperiod},
+         given={Georg},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Petersen},
+         familyi={P\bibinitperiod},
+         given={Stig},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Beattie},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Sadik},
+         familyi={S\bibinitperiod},
+         given={Amir},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Antonoglou},
+         familyi={A\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Helen},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kumaran},
+         familyi={K\bibinitperiod},
+         given={Dharshan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WD}{%
+         family={Wierstra},
+         familyi={W\bibinitperiod},
+         given={Daan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Legg},
+         familyi={L\bibinitperiod},
+         given={Shane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hassabis},
+         familyi={H\bibinitperiod},
+         given={Demis},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{MV+1}
+    \strng{fullhash}{MVKKSDRAaVJBMGGARMFAKOGPSBCSAAIKHKDWDLSHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1038/nature14236
+    \endverb
+    \field{isbn}{1476-4687 (Electronic) 0028-0836 (Linking)}
+    \field{issn}{0028-0836}
+    \field{number}{7540}
+    \field{pages}{529\bibrangedash 533}
+    \field{title}{Human-level control through deep reinforcement learning}
+    \verb{url}
+    \verb http://arxiv.org/abs/1312.5602
+    \endverb
+    \field{volume}{518}
+    \field{journaltitle}{Nature}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Mollerup2016}{article}{}
     \name{author}{4}{}{%
       {{hash=MAL}{%
          family={Mollerup},
@@ -1665,10 +3800,138 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{title}{{Controlling sewer systems -- a critical review based on
-  systems in three EU cities}}
+    \field{title}{Controlling sewer systems -- a critical review based on
+  systems in three EU cities}
     \field{journaltitle}{http://dx.doi.org/10.1080/1573062X.2016.1148183}
     \field{year}{2016}
+  \endentry
+
+  \entry{Montestruque2018}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MLA}{%
+         family={Montestruque},
+         familyi={M\bibinitperiod},
+         given={Luis\bibnamedelima A.},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{4}{}{%
+      {{hash=TP}{%
+         family={Tsakalides},
+         familyi={T\bibinitperiod},
+         given={Panagiotis},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Panousopoulou},
+         familyi={P\bibinitperiod},
+         given={Athanasia},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tsagkatakis},
+         familyi={T\bibinitperiod},
+         given={Grigorios},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Montestruque},
+         familyi={M\bibinitperiod},
+         given={Luis},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press}%
+    }
+    \strng{namehash}{MLA1}
+    \strng{fullhash}{MLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Smart Water Grids: A Cyber-Physical Systems Approach}
+    \field{chapter}{6}
+    \field{pages}{151\bibrangedash 168}
+    \field{title}{{An agent-based storm water management system}}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Montestruque_2015}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=ML}{%
+         family={Montestruque},
+         familyi={M\bibinitperiod},
+         given={Luis},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LMD}{%
+         family={Lemmon},
+         familyi={L\bibinitperiod},
+         given={M.\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{ACM} Press}%
+    }
+    \strng{namehash}{MLLMD1}
+    \strng{fullhash}{MLLMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Proceedings of the 1st {ACM} International Workshop on
+  Cyber-Physical Systems for Smart Water Networks -
+  {CySWater}{\textquotesingle}15}
+    \verb{doi}
+    \verb 10.1145/2738935.2738948
+    \endverb
+    \field{title}{Globally Coordinated Distributed Storm Water Management
+  System}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Mullapudi2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MA}{%
+         family={Mullapudi},
+         familyi={M\bibinitperiod},
+         given={Abhiram},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WBP}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry}%
+    }
+    \strng{namehash}{MAWBPKB1}
+    \strng{fullhash}{MAWBPKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1039/C6EW00211K
+    \endverb
+    \field{issn}{2053-1400}
+    \field{number}{1}
+    \field{title}{Emerging investigators series: building a theory for smart
+  stormwater systems}
+    \field{volume}{3}
+    \field{journaltitle}{Environ. Sci.: Water Res. Technol.}
+    \field{year}{2017}
   \endentry
 
   \entry{Munson2002ModelArea}{article}{}
@@ -1723,8 +3986,8 @@
     \field{issn}{00496979}
     \field{number}{1/4}
     \field{pages}{255\bibrangedash 272}
-    \field{title}{{Model Prediction of the Effects of Changing Phosphorus Loads
-  on the Everglades Protection Area}}
+    \field{title}{Model Prediction of the Effects of Changing Phosphorus Loads
+  on the Everglades Protection Area}
     \field{volume}{134}
     \field{journaltitle}{Water, Air, and Soil Pollution}
     \field{year}{2002}
@@ -1777,10 +4040,112 @@
     \field{sortinithash}{M}
     \field{issn}{00221694}
     \field{pages}{82\bibrangedash 91}
-    \field{title}{{Ecohydraulic-driven real-time control of stormwater basins}}
+    \field{title}{Ecohydraulic-driven real-time control of stormwater basins}
     \field{volume}{511}
     \field{journaltitle}{Journal of Hydrology}
     \field{year}{2014}
+  \endentry
+
+  \entry{ng1999policy}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=NAY}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Andrew\bibnamedelima Y},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Harada},
+         familyi={H\bibinitperiod},
+         given={Daishi},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Russell},
+         familyi={R\bibinitperiod},
+         given={Stuart},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NAYHDRS1}
+    \strng{fullhash}{NAYHDRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{ICML}
+    \field{pages}{278\bibrangedash 287}
+    \field{title}{Policy invariance under reward transformations: Theory and
+  application to reward shaping}
+    \field{volume}{99}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Ng2006AutonomousLearning}{incollection}{}
+    \name{author}{8}{}{%
+      {{hash=NAY}{%
+         family={Ng},
+         familyi={N\bibinitperiod},
+         given={Andrew\bibnamedelima Y},
+         giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Coates},
+         familyi={C\bibinitperiod},
+         given={Adam},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Diel},
+         familyi={D\bibinitperiod},
+         given={Mark},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Ganapathi},
+         familyi={G\bibinitperiod},
+         given={Varun},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={Jamie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=TB}{%
+         family={Tse},
+         familyi={T\bibinitperiod},
+         given={Ben},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Berger},
+         familyi={B\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Liang},
+         familyi={L\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{NAY+1}
+    \strng{fullhash}{NAYCADMGVSJTBBELE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{Experimental Robotics IX}
+    \field{pages}{363\bibrangedash 372}
+    \field{title}{Autonomous inverted helicopter flight via reinforcement
+  learning}
+    \field{year}{2006}
   \endentry
 
   \entry{NterLangergraber2005ModelingWetlands}{article}{}
@@ -1806,14 +4171,40 @@
     \field{sortinithash}{N}
     \field{number}{4}
     \field{pages}{924\bibrangedash 938}
-    \field{title}{{Modeling Variably Saturated Water Flow and Multicomponent
-  Reactive Transport in Constructed Wetlands}}
+    \field{title}{Modeling Variably Saturated Water Flow and Multicomponent
+  Reactive Transport in Constructed Wetlands}
     \field{volume}{4}
     \field{journaltitle}{Vadose Zone Journal}
     \field{year}{2005}
   \endentry
 
-  \entry{Ogata201ModernEngineering}{book}{}
+  \entry{Ocampo-Martinez2010}{book}{}
+    \name{author}{1}{}{%
+      {{hash=OMC}{%
+         family={Ocampo-Martinez},
+         familyi={O\bibinitperiod-M\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{OMC1}
+    \strng{fullhash}{OMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \verb{doi}
+    \verb 10.1007/978-1-84996-353-4
+    \endverb
+    \field{pages}{1\bibrangedash 236}
+    \field{title}{{Model predictive control of wastewater systems}}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Ogata201}{book}{}
     \name{author}{1}{}{%
       {{hash=OK}{%
          family={Ogata},
@@ -1833,8 +4224,64 @@
     \field{sortinithash}{O}
     \field{edition}{5}
     \field{isbn}{9780136156734}
-    \field{title}{{Modern Control Engineering}}
-    \field{year}{201}
+    \field{title}{Modern Control Engineering}
+    \field{year}{2011}
+  \endentry
+
+  \entry{OpenAI_dota}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=O}{%
+         family={OpenAI},
+         familyi={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{O1}
+    \strng{fullhash}{O1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{title}{OpenAI Five}
+    \field{year}{2018}
+  \endentry
+
+  \entry{osband2016Deep}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=OI}{%
+         family={Osband},
+         familyi={O\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Blundell},
+         familyi={B\bibinitperiod},
+         given={Charles},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pritzel},
+         familyi={P\bibinitperiod},
+         given={Alexander},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=VRB}{%
+         family={Van\bibnamedelima Roy},
+         familyi={V\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={Benjamin},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OI+1}
+    \strng{fullhash}{OIBCPAVRB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{4026\bibrangedash 4034}
+    \field{title}{Deep exploration via bootstrapped DQN}
+    \field{year}{2016}
   \endentry
 
   \entry{Ouyang2006AssessmentQuality}{article}{}
@@ -1879,7 +4326,7 @@
     \field{issn}{00431354}
     \field{number}{20}
     \field{pages}{3800\bibrangedash 3810}
-    \field{title}{{Assessment of seasonal variations in surface water quality}}
+    \field{title}{Assessment of seasonal variations in surface water quality}
     \field{volume}{40}
     \field{journaltitle}{Water Research}
     \field{year}{2006}
@@ -1908,11 +4355,41 @@
     \field{sortinithash}{P}
     \field{issn}{09258574}
     \field{pages}{105\bibrangedash 115}
-    \field{title}{{The verification of the Constructed Wetland Model No. 1
-  implementation in HYDRUS using column experiment data}}
+    \field{title}{The verification of the Constructed Wetland Model No. 1
+  implementation in HYDRUS using column experiment data}
     \field{volume}{68}
     \field{journaltitle}{Ecological Engineering}
     \field{year}{2014}
+  \endentry
+
+  \entry{TheEuropeanParliamentandthecouncilofEuropeanUnion2000DirectivePolicy}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PTE}{%
+         family={Parliament},
+         familyi={P\bibinitperiod},
+         given={The\bibnamedelima European},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=tcoEU}{%
+         prefix={the council\bibnamedelima of},
+         prefixi={t\bibinitperiod\bibinitdelim c\bibinitperiod\bibinitdelim
+  o\bibinitperiod},
+         family={European\bibnamedelima Union},
+         familyi={E\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PTEEUtco1}
+    \strng{fullhash}{PTEEUtco1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{01\bibrangedash 73}
+    \field{title}{Directive 2000/60/EC of the European Parliament and of the
+  Council of 23 October 2000 establishing a framework for Community action in
+  the field of water policy}
+    \field{journaltitle}{Official Journal of the European Communities}
+    \field{year}{2000}
   \endentry
 
   \entry{Persson2003HowPonds}{article}{}
@@ -1939,8 +4416,8 @@
     \field{issn}{09258574}
     \field{number}{4}
     \field{pages}{259\bibrangedash 269}
-    \field{title}{{How hydrological and hydraulic conditions affect performance
-  of ponds}}
+    \field{title}{How hydrological and hydraulic conditions affect performance
+  of ponds}
     \field{volume}{21}
     \field{journaltitle}{Ecological Engineering}
     \field{year}{2003}
@@ -1977,7 +4454,7 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{pages}{1\bibrangedash 7}
-    \field{title}{{Urban stormwater source control policies: why and how?}}
+    \field{title}{Urban stormwater source control policies: why and how?}
     \field{volume}{364}
     \field{journaltitle}{CWRS 2014: Evolving Water Resources Systems:
   Understanding, Predicting and Managing Water-Society Interactions}
@@ -2018,11 +4495,62 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{pages}{188\bibrangedash 200}
-    \field{title}{{Do stormwater source control policies deliver the right
-  hydrologic outcomes?}}
+    \field{title}{Do stormwater source control policies deliver the right
+  hydrologic outcomes?}
     \field{volume}{485}
     \field{journaltitle}{Journal of Hydrology}
     \field{year}{2013}
+  \endentry
+
+  \entry{pleau2005global}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PM}{%
+         family={Pleau},
+         familyi={P\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Colas},
+         familyi={C\bibinitperiod},
+         given={Hubert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lavallee},
+         familyi={L\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pelletier},
+         familyi={P\bibinitperiod},
+         given={Genevi{\`e}ve},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bonin},
+         familyi={B\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{PM+1}
+    \strng{fullhash}{PMCHLPPGBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{4}
+    \field{pages}{401\bibrangedash 413}
+    \field{title}{Global optimal real-time control of the Quebec urban drainage
+  system}
+    \field{volume}{20}
+    \field{journaltitle}{Environmental Modelling \& Software}
+    \field{year}{2005}
   \endentry
 
   \entry{powledge2005chesapeake}{article}{}
@@ -2045,7 +4573,7 @@
     \field{sortinithash}{P}
     \field{number}{12}
     \field{pages}{1032\bibrangedash 1038}
-    \field{title}{{Chesapeake Bay restoration: a model of what?}}
+    \field{title}{Chesapeake Bay restoration: a model of what?}
     \field{volume}{55}
     \field{journaltitle}{BioScience}
     \field{year}{2005}
@@ -2080,8 +4608,8 @@
     \field{sortinithash}{R}
     \field{number}{346}
     \field{pages}{1004\bibrangedash 1013}
-    \field{title}{{Nitrification-Denitrification at the Plant Root-Sediment
-  Interface in Wetlands}}
+    \field{title}{Nitrification-Denitrification at the Plant Root-Sediment
+  Interface in Wetlands}
     \field{volume}{34}
     \field{journaltitle}{Source: Limnology and Oceanography Limnol. Oceanogr}
     \field{year}{1989}
@@ -2127,10 +4655,65 @@
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{pages}{143\bibrangedash 154}
-    \field{title}{{MatSWMM e An open-source toolbox for designing real-time
-  control of urban drainage systems}}
+    \field{title}{MatSWMM e An open-source toolbox for designing real-time
+  control of urban drainage systems}
     \field{volume}{83}
     \field{journaltitle}{Environmental Modelling {\&} Software}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Riano-Briceno2016MatSWMMSystems}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RBG}{%
+         family={Ria{\~{n}}o-Brice{\~{n}}o},
+         familyi={R\bibinitperiod-B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BGJ}{%
+         family={Barreiro-Gomez},
+         familyi={B\bibinitperiod-G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RJA}{%
+         family={Ramirez-Jaime},
+         familyi={R\bibinitperiod-J\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=QN}{%
+         family={Quijano},
+         familyi={Q\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=OMC}{%
+         family={Ocampo-Martinez},
+         familyi={O\bibinitperiod-M\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{RBG+1}
+    \strng{fullhash}{RBGBGJRJAQNOMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1016/J.ENVSOFT.2016.05.009
+    \endverb
+    \field{issn}{1364-8152}
+    \field{pages}{143\bibrangedash 154}
+    \field{title}{MatSWMM -- An open-source toolbox for designing real-time
+  control of urban drainage systems}
+    \field{volume}{83}
+    \field{journaltitle}{Environmental Modelling {\&} Software}
+    \field{month}{09}
     \field{year}{2016}
   \endentry
 
@@ -2181,11 +4764,184 @@
     \field{sortinithash}{R}
     \field{issn}{09258574}
     \field{pages}{209\bibrangedash 213}
-    \field{title}{{Modelling the response of laboratory horizontal flow
-  constructed wetlands to unsteady organic loads with HYDRUS-CWM1}}
+    \field{title}{Modelling the response of laboratory horizontal flow
+  constructed wetlands to unsteady organic loads with HYDRUS-CWM1}
     \field{volume}{68}
     \field{journaltitle}{Ecological Engineering}
     \field{year}{2014}
+  \endentry
+
+  \entry{Roman_2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=RD}{%
+         family={Roman},
+         familyi={R\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Braga},
+         familyi={B\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Shetty},
+         familyi={S\bibinitperiod},
+         given={Nandan},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Culligan},
+         familyi={C\bibinitperiod},
+         given={Patricia},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{MDPI} {AG}}%
+    }
+    \strng{namehash}{RD+1}
+    \strng{fullhash}{RDBASNCP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.3390/w9120974
+    \endverb
+    \field{number}{12}
+    \field{pages}{974}
+    \field{title}{Design and Modeling of an Adaptively Controlled Rainwater
+  Harvesting System}
+    \field{volume}{9}
+    \field{journaltitle}{Water}
+    \field{month}{12}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Rossman2015a}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=RL}{%
+         family={Rossman},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {US EPA Office of Research}%
+      {Development}%
+    }
+    \strng{namehash}{RL1}
+    \strng{fullhash}{RL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{edition}{EPA/600/R-14/413 (NTIS EPA/600/R-14/413b)}
+    \field{title}{{Storm Water Management Model User’s Manual Version 5.1 -
+  Manual}}
+    \list{location}{1}{%
+      {Washington, DC}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Rossman2017}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=RL}{%
+         family={Rossman},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {US EPA Office of Research}%
+      {Development}%
+    }
+    \strng{namehash}{RL1}
+    \strng{fullhash}{RL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{edition}{EPA/600/R-17/111}
+    \field{title}{{Storm Water Management Model Reference Manual Volume II --
+  Hydraulics}}
+    \list{location}{1}{%
+      {Washington, DC}%
+    }
+    \field{year}{2017}
+  \endentry
+
+  \entry{Rossman2015b}{manual}{}
+    \name{author}{2}{}{%
+      {{hash=RL}{%
+         family={Rossman},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {US EPA Office of Research}%
+      {Development}%
+    }
+    \strng{namehash}{RLHW1}
+    \strng{fullhash}{RLHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{edition}{EPA/600/R-15/162A}
+    \field{title}{{Storm Water Management Model Reference Manual Volume I --
+  Hydrology}}
+    \list{location}{1}{%
+      {Washington, DC}%
+    }
+    \field{year}{2015}
+  \endentry
+
+  \entry{Rossman2016}{manual}{}
+    \name{author}{2}{}{%
+      {{hash=RL}{%
+         family={Rossman},
+         familyi={R\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=HW}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \list{organization}{2}{%
+      {US EPA Office of Research}%
+      {Development}%
+    }
+    \strng{namehash}{RLHW1}
+    \strng{fullhash}{RLHW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{edition}{EPA/600/R-16/093}
+    \field{title}{{Storm Water Management Model Reference Manual Volume III --
+  Water Quality}}
+    \list{location}{1}{%
+      {Washington, DC}%
+    }
+    \field{year}{2016}
   \endentry
 
   \entry{Rossman2010Storm5.1}{book}{}
@@ -2206,8 +4962,65 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \field{title}{{Storm Water Management Model User's Manual Version 5.1}}
+    \field{title}{Storm Water Management Model User's Manual Version 5.1}
     \field{year}{2010}
+  \endentry
+
+  \entry{Sadler2019}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SJM}{%
+         family={Sadler},
+         familyi={S\bibinitperiod},
+         given={Jeffrey\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GJL}{%
+         family={Goodall},
+         familyi={G\bibinitperiod},
+         given={Jonathan\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Behl},
+         familyi={B\bibinitperiod},
+         given={Madhur},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MMM}{%
+         family={Morsy},
+         familyi={M\bibinitperiod},
+         given={Mohamed\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Culver},
+         familyi={C\bibinitperiod},
+         given={Teresa},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BBD}{%
+         family={Bowes},
+         familyi={B\bibinitperiod},
+         given={Benjamin\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{SJM+1}
+    \strng{fullhash}{SJMGJLBMMMMCTBBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/j.envsoft.2019.07.009
+    \endverb
+    \field{title}{{Leveraging open source software and parallel computing for
+  model predictive control of urban drainage systems using EPA-SWMM5}}
+    \field{journaltitle}{Environmental Modelling and Software}
+    \field{year}{2019}
   \endentry
 
   \entry{Sage2015StormwaterPractices}{article}{}
@@ -2242,11 +5055,66 @@
     \field{sortinithash}{S}
     \field{number}{1}
     \field{pages}{66\bibrangedash 80}
-    \field{title}{{Stormwater Management Criteria for On-Site Pollution
-  Control: A Comparative Assessment of International Practices}}
+    \field{title}{Stormwater Management Criteria for On-Site Pollution Control:
+  A Comparative Assessment of International Practices}
     \field{volume}{56}
     \field{journaltitle}{Environmental Management}
     \field{year}{2015}
+  \endentry
+
+  \entry{schilling2008greening}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJ}{%
+         family={Schilling},
+         familyi={S\bibinitperiod},
+         given={Joseph},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Logan},
+         familyi={L\bibinitperiod},
+         given={Jonathan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{SJLJ1}
+    \strng{fullhash}{SJLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{4}
+    \field{pages}{451\bibrangedash 466}
+    \field{title}{Greening the rust belt: A green infrastructure model for
+  right sizing America's shrinking cities}
+    \field{volume}{74}
+    \field{journaltitle}{Journal of the American Planning Association}
+    \field{year}{2008}
+  \endentry
+
+  \entry{Schilling1989}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SW}{%
+         family={Schilling},
+         familyi={S\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SW1}
+    \strng{fullhash}{SW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{{Real-time control of urban drainage systems: The
+  state-of-the-art}}
+    \field{journaltitle}{IAWPRC Task Group on Real-Time Control of Urban
+  Drainage Systems, London}
+    \field{year}{1989}
   \endentry
 
   \entry{Scholes2008APotentials}{article}{}
@@ -2279,11 +5147,243 @@
     \field{issn}{03014797}
     \field{number}{3}
     \field{pages}{467\bibrangedash 478}
-    \field{title}{{A systematic approach for the comparative assessment of
-  stormwater pollutant removal potentials}}
+    \field{title}{A systematic approach for the comparative assessment of
+  stormwater pollutant removal potentials}
     \field{volume}{88}
     \field{journaltitle}{Journal of Environmental Management}
     \field{year}{2008}
+  \endentry
+
+  \entry{Schulman2017ProximalAlgorithms}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SJ}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WF}{%
+         family={Wolski},
+         familyi={W\bibinitperiod},
+         given={Filip},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Dhariwal},
+         familyi={D\bibinitperiod},
+         given={Prafulla},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RA}{%
+         family={Radford},
+         familyi={R\bibinitperiod},
+         given={Alec},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=KO}{%
+         family={Klimov},
+         familyi={K\bibinitperiod},
+         given={Oleg},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJ+1}
+    \strng{fullhash}{SJWFDPRAKO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Proximal policy optimization algorithms}
+    \field{journaltitle}{arXiv preprint arXiv:1707.06347}
+    \field{year}{2017}
+  \endentry
+
+  \entry{schutze_sewer_2008}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SM}{%
+         family={Sch{\"u}tze},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EV}{%
+         family={Erbe},
+         familyi={E\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Haas},
+         familyi={H\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Scheer},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weyand},
+         familyi={W\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SM+1}
+    \strng{fullhash}{SMEVHUSMWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1080/15730620701754376
+    \endverb
+    \field{issn}{1573-062X, 1744-9006}
+    \field{number}{1}
+    \field{pages}{69\bibrangedash 78}
+    \field{title}{Sewer system real-time control supported by the {M180}
+  guideline document}
+    \field{volume}{5}
+    \field{journaltitle}{Urban Water Journal}
+    \field{month}{03}
+    \field{year}{2008}
+    \field{urlday}{29}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
+  \endentry
+
+  \entry{Schutze2004RealToday}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SM}{%
+         family={Sch{\"{u}}tze},
+         familyi={S\bibinitperiod},
+         given={Manfred},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CA}{%
+         family={Campisano},
+         familyi={C\bibinitperiod},
+         given={Alberto},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=CH}{%
+         family={Colas},
+         familyi={C\bibinitperiod},
+         given={Hubert},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=SW}{%
+         family={Schilling},
+         familyi={S\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=VPA}{%
+         family={Vanrolleghem},
+         familyi={V\bibinitperiod},
+         given={Peter\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SM+2}
+    \strng{fullhash}{SMCACHSWVPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1016/j.jhydrol.2004.08.010
+    \endverb
+    \field{issn}{00221694}
+    \field{number}{3}
+    \field{pages}{335\bibrangedash 348}
+    \field{title}{Real time control of urban wastewater systems---where do we
+  stand today?}
+    \field{volume}{299}
+    \field{journaltitle}{Journal of Hydrology}
+    \field{year}{2004}
+  \endentry
+
+  \entry{schutze_astlingen_2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SM}{%
+         family={Sch{\"u}tze},
+         familyi={S\bibinitperiod},
+         given={Manfred},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lange},
+         familyi={L\bibinitperiod},
+         given={Maja},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pabst},
+         familyi={P\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Haas},
+         familyi={H\bibinitperiod},
+         given={Ulrich},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {IWA Publishing}%
+    }
+    \strng{namehash}{SM+3}
+    \strng{fullhash}{SMLMPMHU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.2166/wst.2018.172
+    \endverb
+    \field{issn}{0273-1223, 1996-9732}
+    \field{number}{2}
+    \field{pages}{552\bibrangedash 560}
+    \field{title}{Astlingen -- a benchmark for real time control ({RTC})}
+    \field{volume}{2017}
+    \field{journaltitle}{Water Science and Technology}
+    \field{month}{05}
+    \field{year}{2018}
+    \field{urlday}{20}
+    \field{urlmonth}{05}
+    \field{urlyear}{2019}
+  \endentry
+
+  \entry{scs1986urban}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SU}{%
+         family={Scs},
+         familyi={S\bibinitperiod},
+         given={US},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SU1}
+    \strng{fullhash}{SU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Urban Hydrology for Small Watersheds, Technical Release No.
+  55 (TR-55)}
+    \field{journaltitle}{US Department of Agriculture, US Government Printing
+  Office, Washington, DC}
+    \field{year}{1986}
   \endentry
 
   \entry{Seggelke2013ImplementationWilhelmshaven}{article}{}
@@ -2324,8 +5424,8 @@
     \field{sortinithash}{S}
     \field{number}{5}
     \field{pages}{330\bibrangedash 341}
-    \field{title}{{Implementation of an integrated real-time control system of
-  sewer system and waste water treatment plant in the city of Wilhelmshaven}}
+    \field{title}{Implementation of an integrated real-time control system of
+  sewer system and waste water treatment plant in the city of Wilhelmshaven}
     \field{volume}{10}
     \field{journaltitle}{http://dx.doi.org/10.1080/1573062X.2013.820331}
     \field{year}{2013}
@@ -2350,7 +5450,7 @@
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{isbn}{0139397299}
-    \field{title}{{Urban transportation networks}}
+    \field{title}{Urban transportation networks}
     \field{year}{1984}
   \endentry
 
@@ -2386,13 +5486,209 @@
     \field{issn}{10614303}
     \field{number}{5}
     \field{pages}{597\bibrangedash 606}
-    \field{title}{{Time-Dependent Retardation Model for Chemical Oxygen Demand
+    \field{title}{Time-Dependent Retardation Model for Chemical Oxygen Demand
   Removal in a Subsurface- Flow Constructed Wetland for Winery Wastewater
   Treatment All use subject to JSTOR Terms and Conditions Time-Dependent
-  Chemical Oxygen for Winery Retardation Demand Constr}}
+  Chemical Oxygen for Winery Retardation Demand Constr}
     \field{volume}{73}
     \field{journaltitle}{Water Environment Research}
     \field{year}{2001}
+  \endentry
+
+  \entry{Shishegar2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SS}{%
+         family={Shishegar},
+         familyi={S\bibinitperiod},
+         given={Shadab},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Duchesne},
+         familyi={D\bibinitperiod},
+         given={Sophie},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Pelletier},
+         familyi={P\bibinitperiod},
+         given={Genevi{\`e}ve},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{SSDSPG1}
+    \strng{fullhash}{SSDSPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{3}
+    \field{pages}{276\bibrangedash 286}
+    \field{title}{{Optimization methods applied to stormwater management
+  problems: A review}}
+    \field{volume}{15}
+    \field{journaltitle}{Urban Water Journal}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Silver2017MasteringAlgorithm}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hubert},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schrittwieser},
+         familyi={S\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Antonoglou},
+         familyi={A\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Guez},
+         familyi={G\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lanctot},
+         familyi={L\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Sifre},
+         familyi={S\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kumaran},
+         familyi={K\bibinitperiod},
+         given={Dharshan},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Graepel},
+         familyi={G\bibinitperiod},
+         given={Thore},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SD+1}
+    \strng{fullhash}{SDHTSJAILMGALMSLKDGT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Mastering chess and shogi by self-play with a general
+  reinforcement learning algorithm}
+    \field{journaltitle}{arXiv preprint arXiv:1712.01815}
+    \field{year}{2017}
+  \endentry
+
+  \entry{silver2017masteringgo}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=SD}{%
+         family={Silver},
+         familyi={S\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schrittwieser},
+         familyi={S\bibinitperiod},
+         given={Julian},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Simonyan},
+         familyi={S\bibinitperiod},
+         given={Karen},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AI}{%
+         family={Antonoglou},
+         familyi={A\bibinitperiod},
+         given={Ioannis},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Aja},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Guez},
+         familyi={G\bibinitperiod},
+         given={Arthur},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hubert},
+         familyi={H\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Baker},
+         familyi={B\bibinitperiod},
+         given={Lucas},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lai},
+         familyi={L\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bolton},
+         familyi={B\bibinitperiod},
+         given={Adrian},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SD+1}
+    \strng{fullhash}{SDSJSKAIHAGAHTBLLMBA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{number}{7676}
+    \field{pages}{354}
+    \field{title}{Mastering the game of Go without human knowledge}
+    \field{volume}{550}
+    \field{journaltitle}{Nature}
+    \field{year}{2017}
   \endentry
 
   \entry{Stanley1996PollutantPond}{article}{}
@@ -2412,50 +5708,183 @@
     \field{sortinithash}{S}
     \field{number}{6}
     \field{pages}{1076\bibrangedash 1083}
-    \field{title}{{Pollutant Removal by a Stormwater Dry Detention Pond}}
+    \field{title}{Pollutant Removal by a Stormwater Dry Detention Pond}
     \field{volume}{68}
     \field{journaltitle}{Source: Water Environment Research}
     \field{year}{1996}
   \endentry
 
-  \entry{TheEuropeanParliamentandthecouncilofEuropeanUnion2000DirectivePolicy}{article}{}
+  \entry{stocker_2014}{book}{}
     \name{author}{1}{}{%
-      {{hash=T}{%
-         family={{The European Parliament and the council of European Union}},
-         familyi={T\bibinitperiod},
+      {{hash=ST}{%
+         family={Stocker},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T1}
-    \strng{fullhash}{T1}
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{ST1}
+    \strng{fullhash}{ST1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{pages}{01 \bibrangedash  73}
-    \field{title}{{Directive 2000/60/EC of the European Parliament and of the
-  Council of 23 October 2000 establishing a framework for Community action in
-  the field of water policy}}
-    \field{journaltitle}{Official Journal of the European Communities}
-    \field{year}{2000}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Climate change 2013: the physical science basis: Working
+  Group I contribution to the Fifth assessment report of the Intergovernmental
+  Panel on Climate Change}
+    \field{year}{2014}
   \endentry
 
-  \entry{TheMathWorksInc.MATLAB}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=T}{%
-         family={{The MathWorks Inc.}},
-         familyi={T\bibinitperiod},
+  \entry{Sun2020}{article}{}
+    \name{author}{6}{}{%
+      {{hash=SC}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Congcong},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SJL}{%
+         family={Svensen},
+         familyi={S\bibinitperiod},
+         given={Jan\bibnamedelima Lorenz},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Borup},
+         familyi={B\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=PV}{%
+         family={Puig},
+         familyi={P\bibinitperiod},
+         given={Vicen{\c{c}}},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cembrano},
+         familyi={C\bibinitperiod},
+         given={Gabriela},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vezzaro},
+         familyi={V\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
       }}%
     }
-    \strng{namehash}{T2}
-    \strng{fullhash}{T2}
+    \strng{namehash}{SC+1}
+    \strng{fullhash}{SCSJLBMPVCGVL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \field{title}{{MATLAB}}
-    \list{location}{1}{%
-      {Natick, Massachusetts}%
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.3390/w12041034
+    \endverb
+    \field{number}{1034}
+    \field{pages}{1\bibrangedash 13}
+    \field{title}{{An MPC-enabled SWMM implementation of the Astlingen RTC
+  benchmarking network}}
+    \field{volume}{12}
+    \field{journaltitle}{Water}
+    \field{year}{2020}
+  \endentry
+
+  \entry{Sutton98}{book}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Sutton},
+         familyi={S\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+      {{hash=BA}{%
+         family={Barto},
+         familyi={B\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
     }
+    \list{publisher}{1}{%
+      {MIT Press, Cambridge}%
+    }
+    \strng{namehash}{SRBA1}
+    \strng{fullhash}{SRBA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{Reinforcement learning}
+    \field{year}{1998}
+  \endentry
+
+  \entry{sutton1991planning}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=SRS}{%
+         family={Sutton},
+         familyi={S\bibinitperiod},
+         given={Richard\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{SRS1}
+    \strng{fullhash}{SRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Machine Learning Proceedings 1991}
+    \field{pages}{353\bibrangedash 357}
+    \field{title}{Planning by incremental dynamic programming}
+    \field{year}{1991}
+  \endentry
+
+  \entry{sutton2000policy}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=SRS}{%
+         family={Sutton},
+         familyi={S\bibinitperiod},
+         given={Richard\bibnamedelima S},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MDA}{%
+         family={McAllester},
+         familyi={M\bibinitperiod},
+         given={David\bibnamedelima A},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SSP}{%
+         family={Singh},
+         familyi={S\bibinitperiod},
+         given={Satinder\bibnamedelima P},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mansour},
+         familyi={M\bibinitperiod},
+         given={Yishay},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRS+1}
+    \strng{fullhash}{SRSMDASSPMY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{booktitle}{Advances in neural information processing systems}
+    \field{pages}{1057\bibrangedash 1063}
+    \field{title}{Policy gradient methods for reinforcement learning with
+  function approximation}
+    \field{year}{2000}
   \endentry
 
   \entry{Tillinghast_2012}{article}{}
@@ -2506,6 +5935,71 @@
     \field{year}{2012}
   \endentry
 
+  \entry{tokar1999rainfall}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TAS}{%
+         family={Tokar},
+         familyi={T\bibinitperiod},
+         given={A\bibnamedelima Sezin},
+         giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=JPA}{%
+         family={Johnson},
+         familyi={J\bibinitperiod},
+         given={Peggy\bibnamedelima A},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Civil Engineers}%
+    }
+    \strng{namehash}{TASJPA1}
+    \strng{fullhash}{TASJPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{number}{3}
+    \field{pages}{232\bibrangedash 239}
+    \field{title}{Rainfall-runoff modeling using artificial neural networks}
+    \field{volume}{4}
+    \field{journaltitle}{Journal of Hydrologic Engineering}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Trotta1977}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TPD}{%
+         family={Trotta},
+         familyi={T\bibinitperiod},
+         given={Paul\bibnamedelima D.},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=LJW}{%
+         family={Labadie},
+         familyi={L\bibinitperiod},
+         given={J.\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=GNS}{%
+         family={Grigg},
+         familyi={G\bibinitperiod},
+         given={N.\bibnamedelima S.},
+         giveni={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TPDLJWGNS1}
+    \strng{fullhash}{TPDLJWGNS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{pages}{1443\bibrangedash 1459}
+    \field{title}{{Automatic control strategies for urban stormwater}}
+    \field{journaltitle}{Journal of the Hydraulics Division}
+    \field{year}{1977}
+  \endentry
+
   \entry{Urbonas1994ASSESSMENTTECHNOLOGY}{article}{}
     \name{author}{1}{}{%
       {{hash=UB}{%
@@ -2523,10 +6017,268 @@
     \field{sortinithash}{U}
     \field{number}{12}
     \field{pages}{347\bibrangedash 353}
-    \field{title}{{ASSESSMENT OF STORMWATER BMPs AND THEIR TECHNOLOGY}}
+    \field{title}{ASSESSMENT OF STORMWATER BMPs AND THEIR TECHNOLOGY}
     \field{volume}{29}
     \field{journaltitle}{Sci. Tech}
     \field{year}{1994}
+  \endentry
+
+  \entry{van2006model}{book}{}
+    \name{author}{1}{}{%
+      {{hash=VOPJ}{%
+         family={Van\bibnamedelima Overloop},
+         familyi={V\bibinitperiod\bibinitdelim O\bibinitperiod},
+         given={Peter-Jules},
+         giveni={P\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOS Press}%
+    }
+    \strng{namehash}{VOPJ1}
+    \strng{fullhash}{VOPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{title}{Model predictive control on open water systems}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Vanrolleghem2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VPA}{%
+         family={Vanrolleghem},
+         familyi={V\bibinitperiod},
+         given={Peter\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Benedetti},
+         familyi={B\bibinitperiod},
+         given={Lorenzo},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Meirlaen},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VPABLMJ1}
+    \strng{fullhash}{VPABLMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1016/j.envsoft.2004.02.004
+    \endverb
+    \field{number}{4}
+    \field{pages}{427\bibrangedash 442}
+    \field{title}{{Modelling and real-time control of the integrated urban
+  wastewater system}}
+    \field{volume}{20}
+    \field{journaltitle}{Environmental Modelling and Software}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Vezzaro2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=VL}{%
+         family={Vezzaro},
+         familyi={V\bibinitperiod},
+         given={Luca},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Grum},
+         familyi={G\bibinitperiod},
+         given={Morten},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VLGM1}
+    \strng{fullhash}{VLGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \verb{doi}
+    \verb 10.1016/j.jhydrol.2014.05.019
+    \endverb
+    \field{pages}{292\bibrangedash 303}
+    \field{title}{{A generalised Dynamic Overflow Risk Assessment (DORA) for
+  real time control of urban drainage systems}}
+    \field{volume}{515}
+    \field{journaltitle}{Journal of Hydrology}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Watkins1992Q-learning}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WCJCH}{%
+         family={Watkins},
+         familyi={W\bibinitperiod},
+         given={Christopher J. C.\bibnamedelima H.},
+         giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod
+  C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=DP}{%
+         family={Dayan},
+         familyi={D\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Kluwer Academic Publishers}%
+    }
+    \strng{namehash}{WCJCHDP1}
+    \strng{fullhash}{WCJCHDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1007/BF00992698
+    \endverb
+    \field{issn}{0885-6125}
+    \field{number}{3-4}
+    \field{pages}{279\bibrangedash 292}
+    \field{title}{Q-learning}
+    \field{volume}{8}
+    \field{journaltitle}{Machine Learning}
+    \field{month}{05}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Watson2016TheHypoxia}{article}{}
+    \name{author}{17}{}{%
+      {{hash=WSB}{%
+         family={Watson},
+         familyi={W\bibinitperiod},
+         given={Susan\bibnamedelima B.},
+         giveni={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=MC}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={Carol},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=AG}{%
+         family={Arhonditsis},
+         familyi={A\bibinitperiod},
+         given={George},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=BGL}{%
+         family={Boyer},
+         familyi={B\bibinitperiod},
+         given={Gregory\bibnamedelima L.},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=CW}{%
+         family={Carmichael},
+         familyi={C\bibinitperiod},
+         given={Wayne},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CMN}{%
+         family={Charlton},
+         familyi={C\bibinitperiod},
+         given={Murray\bibnamedelima N.},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=CR}{%
+         family={Confesor},
+         familyi={C\bibinitperiod},
+         given={Remegio},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=DDC}{%
+         family={Depew},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HTO}{%
+         family={H{\"{o}}{\"{o}}k},
+         familyi={H\bibinitperiod},
+         given={Tomas\bibnamedelima O.},
+         giveni={T\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=LSA}{%
+         family={Ludsin},
+         familyi={L\bibinitperiod},
+         given={Stuart\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Matisoff},
+         familyi={M\bibinitperiod},
+         given={Gerald},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MSP}{%
+         family={McElmurry},
+         familyi={M\bibinitperiod},
+         given={Shawn\bibnamedelima P.},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=MMW}{%
+         family={Murray},
+         familyi={M\bibinitperiod},
+         given={Michael\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=PRR}{%
+         family={Peter\bibnamedelima Richards},
+         familyi={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=RYR}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={Yerubandi\bibnamedelima R.},
+         giveni={Y\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=SMM}{%
+         family={Steffen},
+         familyi={S\bibinitperiod},
+         given={Morgan\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=WSW}{%
+         family={Wilhelm},
+         familyi={W\bibinitperiod},
+         given={Steven\bibnamedelima W.},
+         giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{WSB+1}
+    \strng{fullhash}{WSBMCAGBGLCWCMNCRDDCHTOLSAMGMSPMMWPRRRYRSMMWSW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/J.HAL.2016.04.010
+    \endverb
+    \field{issn}{1568-9883}
+    \field{pages}{44\bibrangedash 66}
+    \field{title}{The re-eutrophication of Lake Erie: Harmful algal blooms and
+  hypoxia}
+    \field{volume}{56}
+    \field{journaltitle}{Harmful Algae}
+    \field{month}{06}
+    \field{year}{2016}
   \endentry
 
   \entry{White2009BiogeochemicalWetlands}{article}{}
@@ -2552,9 +6304,140 @@
     \field{sortinithash}{W}
     \field{isbn}{9780632052554}
     \field{pages}{213\bibrangedash 227}
-    \field{title}{{Biogeochemical Dynamics I: Nitrogen Cycling in Wetlands}}
+    \field{title}{Biogeochemical Dynamics I: Nitrogen Cycling in Wetlands}
     \field{journaltitle}{The Wetlands Handbook}
     \field{year}{2009}
+  \endentry
+
+  \entry{wise2008green}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WS}{%
+         family={Wise},
+         familyi={W\bibinitperiod},
+         given={Steve},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WS1}
+    \strng{fullhash}{WS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{8}
+    \field{pages}{14\bibrangedash 19}
+    \field{title}{Green infrastructure rising}
+    \field{volume}{74}
+    \field{journaltitle}{Planning}
+    \field{year}{2008}
+  \endentry
+
+  \entry{wong2018real}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WB}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={BP},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={B},
+         giveni={B},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{WBKB1}
+    \strng{fullhash}{WBKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1029/2018WR022657
+    \endverb
+    \field{pages}{7309\bibrangedash 7330}
+    \field{title}{Real-time control of urban headwater catchments through
+  linear feedback: performance, analysis and site selection}
+    \field{volume}{54}
+    \field{journaltitle}{Water Resources Research}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Wong_2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WBP}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{Monitoring networks, Instruments and techniques: monitoring, Surface
+  water quality, Estimation and forecasting, storm water, sensors, real-time
+  measurements, adaptive sampling, first flush, nutrients, automated sampling,
+  urban stream}
+    \strng{namehash}{WBPKB1}
+    \strng{fullhash}{WBPKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1002/2015WR018013
+    \endverb
+    \field{issn}{1944-7973}
+    \field{number}{11}
+    \field{pages}{8986\bibrangedash 9000}
+    \field{title}{Adaptive measurements of urban runoff quality}
+    \field{volume}{52}
+    \field{journaltitle}{Water Resources Research}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Wong_2016b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WBP}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier {BV}}%
+    }
+    \strng{namehash}{WBPKB1}
+    \strng{fullhash}{WBPKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1016/j.envsoft.2016.07.020
+    \endverb
+    \field{pages}{505\bibrangedash 517}
+    \field{title}{Real-time environmental sensor data: An application to water
+  quality using web services}
+    \field{volume}{84}
+    \field{journaltitle}{Environmental Modelling {\&} Software}
+    \field{month}{10}
+    \field{year}{2016}
   \endentry
 
   \entry{Wong2002AConceptualisation}{article}{}
@@ -2598,7 +6481,7 @@
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{pages}{1\bibrangedash 14}
-    \field{title}{{A Model for Urban Stormwater Improvement Conceptualisation}}
+    \field{title}{A Model for Urban Stormwater Improvement Conceptualisation}
     \field{journaltitle}{Global Solutions for Urban Drainage}
     \field{year}{2002}
   \endentry
@@ -2641,10 +6524,133 @@
     \field{issn}{09258574}
     \field{number}{1}
     \field{pages}{58\bibrangedash 70}
-    \field{title}{{Modelling urban stormwater treatment-A unified approach}}
+    \field{title}{Modelling urban stormwater treatment-A unified approach}
     \field{volume}{27}
     \field{journaltitle}{Ecological Engineering}
     \field{year}{2006}
+  \endentry
+
+  \entry{Wright_2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Wright},
+         familyi={W\bibinitperiod},
+         given={Jeffrey},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Marchese},
+         familyi={M\bibinitperiod},
+         given={Dayton},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Thomas Telford Ltd.}%
+    }
+    \strng{namehash}{WJMD1}
+    \strng{fullhash}{WJMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \verb{doi}
+    \verb 10.1680/jsmic.17.00017
+    \endverb
+    \field{number}{4}
+    \field{pages}{86\bibrangedash 89}
+    \field{title}{Briefing: Continuous monitoring and adaptive control: the
+  `smart' storm water management solution}
+    \field{volume}{170}
+    \field{journaltitle}{Proceedings of the Institution of Civil Engineers -
+  Smart Infrastructure and Construction}
+    \field{month}{12}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Yuan2019}{article}{}
+    \name{author}{10}{}{%
+      {{hash=YZ}{%
+         family={Yuan},
+         familyi={Y\bibinitperiod},
+         given={Zhiguo},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=OG}{%
+         family={Olsson},
+         familyi={O\bibinitperiod},
+         given={Gustaf},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=COR}{%
+         family={Cardell-Oliver},
+         familyi={C\bibinitperiod-O\bibinitperiod},
+         given={Rachel},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=vSK}{%
+         prefix={van},
+         prefixi={v\bibinitperiod},
+         family={Schagen},
+         familyi={S\bibinitperiod},
+         given={Kim},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Marchi},
+         familyi={M\bibinitperiod},
+         given={Angela},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Deletic},
+         familyi={D\bibinitperiod},
+         given={Ana},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UC}{%
+         family={Urich},
+         familyi={U\bibinitperiod},
+         given={Christian},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=RW}{%
+         family={Rauch},
+         familyi={R\bibinitperiod},
+         given={Wolfgang},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yanchen},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=JG}{%
+         family={Jiang},
+         familyi={J\bibinitperiod},
+         given={Guangming},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier Ltd}%
+    }
+    \strng{namehash}{YZ+1}
+    \strng{fullhash}{YZOGCORSKvMADAUCRWLYJG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \verb{doi}
+    \verb 10.1016/j.watres.2019.02.034
+    \endverb
+    \field{pages}{381\bibrangedash 402}
+    \field{title}{{Sweating the assets - The role of instrumentation, control
+  and automation in urban water systems}}
+    \field{volume}{155}
+    \field{journaltitle}{Water Research}
+    \field{year}{2019}
   \endentry
 
   \entry{Zhen2004OptimalScale}{article}{}
@@ -2677,55 +6683,11 @@
     \field{issn}{0733-9496}
     \field{number}{4}
     \field{pages}{339\bibrangedash 347}
-    \field{title}{{Optimal Location and Sizing of Stormwater Basins at
-  Watershed Scale}}
+    \field{title}{Optimal Location and Sizing of Stormwater Basins at Watershed
+  Scale}
     \field{volume}{130}
     \field{journaltitle}{Journal of Water Resources Planning and Management}
     \field{year}{2004}
-  \endentry
-
-  \entry{Mullapudi2017}{article}{}
-    \name{author}{3}{}{%
-      {{hash=t}{%
-         family={\textbf{Mullapudi, Abhiram}},
-         familyi={t\bibinitperiod},
-      }}%
-      {{hash=WBP}{%
-         family={Wong},
-         familyi={W\bibinitperiod},
-         given={Brandon\bibnamedelima P.},
-         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kerkez},
-         familyi={K\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Royal Society of Chemistry (RSC)}%
-    }
-    \strng{namehash}{tWBPKB1}
-    \strng{fullhash}{tWBPKB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{T}
-    \field{sortinithash}{T}
-    \verb{doi}
-    \verb 10.1039/c6ew00211k
-    \endverb
-    \field{issn}{2053-1419}
-    \field{number}{1}
-    \field{pages}{66\bibrangedash 77}
-  \field{title}{\href{https://randomstorms.net/data/papers/stormwatertheory.pdf}{Emerging
-  investigators series: building a theory for smart stormwater systems}}
-    \verb{url}
-    \verb http://dx.doi.org/10.1039/C6EW00211K
-    \endverb
-    \field{volume}{3}
-    \field{journaltitle}{Environmental Science: Water Research \& Technology}
-    \field{year}{2017}
   \endentry
 \enddatalist
 \endinput
