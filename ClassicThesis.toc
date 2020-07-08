@@ -1,0 +1,127 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {american}{}
+\defcounter {refsection}{0}\relax 
+\vspace {-\cftbeforepartskip }
+\babel@toc {american}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}{Introduction}}{1}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}{Control of Stormwater Systems}}{2}{section.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}{Statistical methods}}{3}{section.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}{Dissertation Outline}}{3}{section.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}{Building a Theory for Smart Stormwater Systems}}{5}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}{Do best local practices achieve the best global outcomes?}}{6}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}{Existing studies on real-time control}}{7}{subsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}{Toward a framework for smart stormwater systems}}{9}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}{Limitations of existing simulations approaches}}{9}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}{Simulating controlled systems}}{10}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}{Simulated Studies}}{11}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}{Model Implementation}}{12}{subsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}{Case Study 1: Local Control}}{13}{subsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.3}{Case Study 2: System-level Control}}{16}{subsection.2.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}{Discussion}}{19}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}{Knowledge gaps}}{20}{section.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}{Toward a new generation of real-time models}}{21}{subsection.2.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}{Control Algorithms}}{21}{subsection.2.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.7}{Conclusions}}{22}{section.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}{Shaping the response in watersheds using a sensor network}}{23}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}{Study area and technologies}}{25}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}{Study area}}{25}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}{Technologies and Architecture}}{26}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}{Characterizing control actions}}{28}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}{Set-point hydrographs}}{31}{section.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}{Coordinated releases between multiple control sites}}{32}{section.3.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}{Conclusions}}{35}{section.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}{Bayesian optimization for shaping the response of the stormwater systems}}{37}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}{\texttt {pystorms}:\ A simulation sandbox for the development and evaluation of stormwater control algorithms}}{39}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}{Background}}{40}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}{Control of Stormwater Systems}}{40}{subsection.5.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1.1}{Simulating Stormwater Systems}}{41}{subsubsection.5.1.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1.2}{Implementing Control}}{42}{subsubsection.5.1.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}{The Need for a Simulation Sandbox}}{44}{subsection.5.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}{\texttt {pystorms} }}{45}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}{Scenarios}}{46}{subsection.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}{Programming Interface}}{47}{subsection.5.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}{Architecture}}{49}{subsection.5.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.3.1}{Configuration}}{50}{subsubsection.5.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.3.2}{Simulation}}{51}{subsubsection.5.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}{Demo: Evaluating Control Strategies}}{52}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{{Rule-based Control}}{52}{paragraph*.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{{Equal-filling Degree Control}}{52}{paragraph*.22}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}{Discussion}}{55}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}{Conclusions and Next Steps}}{56}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}{Conclusion}}{59}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}{Summary of Discoveries}}{59}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}{Future Directions}}{59}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {i}{Appendix}}{63}{part.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}{Appendix-1}}{65}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}{Case study 1: Local Control}}{65}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}{Case study 2: System-level Control}}{65}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}{Appendix-2}}{67}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}{Deep Neural Networks}}{67}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}{Hyper parameters and architecture}}{68}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}{Equal-filling degree algorithm}}{69}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}{Scenario 1 --- Reward function Formulation Sensitivity}}{70}{section.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}{Scenario 1 --- Location sensitivity}}{72}{section.B.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.6}{Scenario 2 --- Back-to-back event}}{73}{section.B.6}
+\defcounter {refsection}{0}\relax 
+\vspace {\beforebibskip }
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {}{Bibliography}}{75}{section*.37}
