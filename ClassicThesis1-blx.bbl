@@ -17,7 +17,97 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
-  \entry{Mullapudi2017}{article}{}
+  \entry{5Rimer2020}{article}{}
+    \name{author}{9}{}{%
+      {{hash=SRP}{%
+         family={Sara},
+         familyi={S\bibinitperiod},
+         given={Rimer\bibnamedelima P.},
+         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=t}{%
+         family={\textbf{Mullapudi, Abhiram}},
+         familyi={t\bibinitperiod},
+      }}%
+      {{hash=STC}{%
+         family={Sara},
+         familyi={S\bibinitperiod},
+         given={Troutman\bibnamedelima C.},
+         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Gregory},
+         familyi={G\bibinitperiod},
+         given={Ewing},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=JGL}{%
+         family={Jonathan},
+         familyi={J\bibinitperiod},
+         given={Goodall\bibnamedelima L.},
+         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Ruben},
+         familyi={R\bibinitperiod},
+         given={Kertesz},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bryant},
+         familyi={B\bibinitperiod},
+         given={McDonnell},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JHM}{%
+         family={Jon},
+         familyi={J\bibinitperiod},
+         given={Hathaway\bibnamedelima M.},
+         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BK}{%
+         family={Branko},
+         familyi={B\bibinitperiod},
+         given={Kerkez},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRP+1}
+    \strng{fullhash}{SRPtSTCGEJGLRKBMJHMBK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{\texttt{pystorms}: A simulation sandbox for the development
+  and evaluation of stormwater control algorithms}
+    \field{year}{2020}
+  \endentry
+
+  \entry{4Mullapudi2020b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=t}{%
+         family={\textbf{Mullapudi, Abhiram}},
+         familyi={t\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{tKB1}
+    \strng{fullhash}{tKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Automated Control of Stormwater Systems using
+  BayesianOptimization}
+    \field{year}{2020}
+  \endentry
+
+  \entry{1Mullapudi2017}{article}{}
     \name{author}{3}{}{%
       {{hash=t}{%
          family={\textbf{Mullapudi, Abhiram}},
@@ -61,7 +151,7 @@
     \field{year}{2017}
   \endentry
 
-  \entry{Mullapudi2018}{article}{}
+  \entry{2Mullapudi2018}{article}{}
     \name{author}{4}{}{%
       {{hash=t}{%
          family={\textbf{Mullapudi, Abhiram}},
@@ -111,7 +201,7 @@
     \field{year}{2018}
   \endentry
 
-  \entry{Mullapudi_Lewis_Gruden_Kerkez_2020}{article}{}
+  \entry{3Mullapudi2020}{article}{}
     \name{author}{4}{}{%
       {{hash=t}{%
          family={\textbf{Mullapudi, Abhiram}},

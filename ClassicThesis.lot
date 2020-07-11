@@ -26,15 +26,11 @@
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Terminology defined for the \texttt {pystorms} package and to delineate stormwater scenarios.\relax }}{73}{table.caption.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Terminology defined for the \texttt {pystorms} package and to delineate stormwater scenarios.\relax }}{45}{table.caption.16}
+\contentsline {table}{\numberline {6.2}{\ignorespaces \texttt {pystorms} includes a curated collection of real world-inspired stormwater scenarios for developing and quantitatively evaluating the performance of stormwater control algorithms.\relax }}{85}{table.caption.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces \texttt {pystorms} includes a curated collection of real world-inspired stormwater scenarios for developing and quantitatively evaluating the performance of stormwater control algorithms.\relax }}{57}{table.caption.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Calculated performance metric values from Equation~\ref {eq:perf-sub} for simulations corresponding to the two implemented control algorithms and the uncontrolled simulation. As can be seen, the equal-filling degree control strategy performs better than the rule-based control strategy, which then outperforms the uncontrolled case.\relax }}{58}{table.caption.24}
-\defcounter {refsection}{0}\relax 
-\ttl@tocsep 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Calculated performance metric values from Equation~\ref {eq:perf-sub} for simulations corresponding to the two implemented control algorithms and the uncontrolled simulation. As can be seen, the equal-filling degree control strategy performs better than the rule-based control strategy, which then outperforms the uncontrolled case.\relax }}{86}{table.caption.31}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 

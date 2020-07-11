@@ -28,11 +28,11 @@
 % in order to deactivate the time-stamp on the pages
 % (see ClassicThesis.pdf for more information):
 % ****************************************************************************************************
-\PassOptionsToPackage{drafting=true,    % print version information on the bottom of the pages
+\PassOptionsToPackage{drafting=false,    % print version information on the bottom of the pages
   tocaligned=false, % the left column of the toc will be aligned (no indentation)
   dottedtoc=false,  % page numbers in ToC flushed right
   eulerchapternumbers=true, % use AMS Euler for chapter font (otherwise Palatino)
-  linedheaders=false,       % chaper headers will have line above and beneath
+  linedheaders=true,       % chaper headers will have line above and beneath
   floatperchapter=true,     % numbering per chapter for all floats (i.e., Figure 1.1)
   eulermath=true,  % use awesome Euler fonts for mathematical formulae (only with pdfLaTeX)
   beramono=true,    % toggle a nice monospaced font (w/ bold)
@@ -48,14 +48,17 @@
 \newcommand{\mySubtitle}{\xspace}
 \newcommand{\myDegree}{Doctor of Philosophy\xspace}
 \newcommand{\myName}{Abhiram Mullapudi\xspace}
-\newcommand{\myProf}{Put name here\xspace}
-\newcommand{\myOtherProf}{Put name here\xspace}
-\newcommand{\mySupervisor}{Put name here\xspace}
-\newcommand{\myFaculty}{Put data here\xspace}
+
+\newcommand{\mySupervisor}{Dr. Branko Kerkez\xspace}
+\newcommand{\myFaculty}{Dr. Neda Masoud\xspace}
+\newcommand{\myProf}{Dr. Andrew Gronewold\xspace}
+\newcommand{\myOtherProf}{Dr. Ramanarayan Vasudevan\xspace}
+
+
 \newcommand{\myDepartment}{Department of Civil and Environmental Engineering\xspace}
 \newcommand{\myUni}{University of Michigan\xspace}
 \newcommand{\myLocation}{Ann Arbor\xspace}
-\newcommand{\myTime}{June 2020\xspace}
+\newcommand{\myTime}{July 2020\xspace}
 \newcommand{\myVersion}{0.1}
 
 % ********************************************************************
@@ -89,7 +92,7 @@
   %style=authoryear-comp, % Author 1999, 2010
   %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
   sorting=nyt, % name, year, title
-  maxbibnames=5, % default: 3, et al.
+  maxbibnames=10, % default: 3, et al.
   %backref=true,%
   natbib=true % natbib compatibility mode (\citep and \citet still work)
 }{biblatex}
