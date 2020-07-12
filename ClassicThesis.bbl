@@ -1199,6 +1199,29 @@
     \field{year}{2018}
   \endentry
 
+  \entry{national2009urban}{book}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=CNR}{%
+         family={Council},
+         familyi={C\bibinitperiod},
+         given={National\bibnamedelima Research},
+         giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {National Academies Press}%
+    }
+    \strng{namehash}{CNR+1}
+    \strng{fullhash}{CNR+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{Urban stormwater management in the United States}
+    \field{year}{2009}
+  \endentry
+
   \entry{VanDaal2017}{article}{}
     \name{author}{5}{}{%
       {{hash=vDP}{%
@@ -1609,6 +1632,26 @@
   multi-goal objective function}
     \field{journaltitle}{http://dx.doi.org/10.1080/1573062X.2013.806560}
     \field{year}{2013}
+  \endentry
+
+  \entry{frazier2018tutorial}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FPI}{%
+         family={Frazier},
+         familyi={F\bibinitperiod},
+         given={Peter\bibnamedelima I},
+         giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FPI1}
+    \strng{fullhash}{FPI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{A tutorial on bayesian optimization}
+    \field{journaltitle}{arXiv preprint arXiv:1807.02811}
+    \field{year}{2018}
   \endentry
 
   \entry{Frosch2016}{misc}{}
@@ -3181,7 +3224,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Taylor \& Francis}%
+      {Informa UK Limited}%
     }
     \strng{namehash}{LNSV+1}
     \strng{fullhash}{LNSVFAKVBMMHSMP1}
@@ -3189,13 +3232,21 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{L}
     \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1080/10643389.2018.1455484
+    \endverb
+    \field{issn}{1547-6537}
     \field{number}{3}
     \field{pages}{279\bibrangedash 339}
     \field{title}{Model predictive control of urban drainage systems: A review
   and perspective towards smart real-time water management}
+    \verb{url}
+    \verb http://dx.doi.org/10.1080/10643389.2018.1455484
+    \endverb
     \field{volume}{48}
-    \field{journaltitle}{Critical reviews in environmental science and
-  technology}
+    \field{journaltitle}{Critical Reviews in Environmental Science and
+  Technology}
+    \field{month}{02}
     \field{year}{2018}
   \endentry
 
@@ -5096,11 +5147,11 @@
          given={Mohamed\bibnamedelima M.},
          giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
-      {{hash=CT}{%
+      {{hash=CTB}{%
          family={Culver},
          familyi={C\bibinitperiod},
-         given={Teresa},
-         giveni={T\bibinitperiod},
+         given={Teresa\bibnamedelima B.},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
       }}%
       {{hash=BBD}{%
          family={Bowes},
@@ -5109,11 +5160,8 @@
          giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
       }}%
     }
-    \list{publisher}{1}{%
-      {Elsevier Ltd}%
-    }
     \strng{namehash}{SJM+1}
-    \strng{fullhash}{SJMGJLBMMMMCTBBD1}
+    \strng{fullhash}{SJMGJLBMMMMCTBBBD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
@@ -5121,9 +5169,13 @@
     \verb{doi}
     \verb 10.1016/j.envsoft.2019.07.009
     \endverb
-    \field{title}{{Leveraging open source software and parallel computing for
-  model predictive control of urban drainage systems using EPA-SWMM5}}
-    \field{journaltitle}{Environmental Modelling and Software}
+    \field{issn}{1364-8152}
+    \field{pages}{104484}
+    \field{title}{Leveraging open source software and parallel computing for
+  model predictive control of urban drainage systems using EPA-SWMM5}
+    \field{volume}{120}
+    \field{journaltitle}{Environmental Modelling \& Software}
+    \field{month}{10}
     \field{year}{2019}
   \endentry
 
@@ -5302,65 +5354,6 @@
     \field{year}{2017}
   \endentry
 
-  \entry{schutze_sewer_2008}{article}{}
-    \name{author}{5}{}{%
-      {{hash=SM}{%
-         family={Sch{\"u}tze},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=EV}{%
-         family={Erbe},
-         familyi={E\bibinitperiod},
-         given={V.},
-         giveni={V\bibinitperiod},
-      }}%
-      {{hash=HU}{%
-         family={Haas},
-         familyi={H\bibinitperiod},
-         given={U.},
-         giveni={U\bibinitperiod},
-      }}%
-      {{hash=SM}{%
-         family={Scheer},
-         familyi={S\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=WM}{%
-         family={Weyand},
-         familyi={W\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {en}%
-    }
-    \strng{namehash}{SM+1}
-    \strng{fullhash}{SMEVHUSMWM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1080/15730620701754376
-    \endverb
-    \field{issn}{1573-062X, 1744-9006}
-    \field{number}{1}
-    \field{pages}{69\bibrangedash 78}
-    \field{title}{Sewer system real-time control supported by the {M180}
-  guideline document}
-    \field{volume}{5}
-    \field{journaltitle}{Urban Water Journal}
-    \field{month}{03}
-    \field{year}{2008}
-    \field{urlday}{29}
-    \field{urlmonth}{01}
-    \field{urlyear}{2020}
-  \endentry
-
   \entry{Schutze2004RealToday}{article}{}
     \name{author}{5}{}{%
       {{hash=SM}{%
@@ -5394,7 +5387,7 @@
          giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SM+2}
+    \strng{namehash}{SM+1}
     \strng{fullhash}{SMCACHSWVPA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -5443,7 +5436,7 @@
     \list{publisher}{1}{%
       {IWA Publishing}%
     }
-    \strng{namehash}{SM+3}
+    \strng{namehash}{SM+2}
     \strng{fullhash}{SMLMPMHU1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -5490,7 +5483,7 @@
     \list{publisher}{1}{%
       {IWA Publishing}%
     }
-    \strng{namehash}{SM+3}
+    \strng{namehash}{SM+2}
     \strng{fullhash}{SMLMPMHU1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -5510,6 +5503,68 @@
     \field{urlday}{20}
     \field{urlmonth}{05}
     \field{urlyear}{2019}
+  \endentry
+
+  \entry{schutze_sewer_2008}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SM}{%
+         family={Schütze},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=EV}{%
+         family={Erbe},
+         familyi={E\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=HU}{%
+         family={Haas},
+         familyi={H\bibinitperiod},
+         given={U.},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Scheer},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Weyand},
+         familyi={W\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SM+3}
+    \strng{fullhash}{SMEVHUSMWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.1080/15730620701754376
+    \endverb
+    \field{issn}{1573-062X, 1744-9006}
+    \field{number}{1}
+    \field{pages}{69\bibrangedash 78}
+    \field{title}{Sewer system real-time control supported by the {M180}
+  guideline document}
+    \verb{url}
+    \verb http://www.tandfonline.com/doi/abs/10.1080/15730620701754376
+    \endverb
+    \field{volume}{5}
+    \field{journaltitle}{Urban Water Journal}
+    \field{month}{03}
+    \field{year}{2008}
+    \field{urlday}{29}
+    \field{urlmonth}{01}
+    \field{urlyear}{2020}
   \endentry
 
   \entry{scs1986urban}{article}{}
@@ -6254,11 +6309,15 @@
     \field{sortinit}{V}
     \field{sortinithash}{V}
     \verb{doi}
-    \verb 10.1016/j.jhydrol.2014.05.019
+    \verb https://doi.org/10.1016/j.jhydrol.2014.05.019
     \endverb
+    \field{issn}{0022-1694}
     \field{pages}{292\bibrangedash 303}
-    \field{title}{{A generalised Dynamic Overflow Risk Assessment (DORA) for
-  real time control of urban drainage systems}}
+    \field{title}{A generalised Dynamic Overflow Risk Assessment (DORA) for
+  Real Time Control of urban drainage systems}
+    \verb{url}
+    \verb http://www.sciencedirect.com/science/article/pii/S0022169414003837
+    \endverb
     \field{volume}{515}
     \field{journaltitle}{Journal of Hydrology}
     \field{year}{2014}
