@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  12 JUL 2020 20:43
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  12 JUL 2020 23:33
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.117 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -3078,8 +3078,8 @@ Package biblatex Info: Reference section=0 on input line 16.
  (./FrontBackmatter/Contents.tex
 Package tocbasic Info: character protrusion at toc deactivated on input line 11.
  (./ClassicThesis.toc
-Overfull \hbox (2.67285pt too wide) in paragraph at lines 11--11
- [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Chap-ter :Shap-ing stream-flow in real-time us-ing a sensor- 
+Overfull \hbox (4.50058pt too wide) in paragraph at lines 11--11
+ [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Chap-ter : Shap-ing stream-flow in real-time us-ing a sensor- 
  []
 
 
@@ -3701,22 +3701,27 @@ Overfull \hbox (2.32399pt too wide) in paragraph at lines 57--58
  []
 
 
-Overfull \hbox (7.6931pt too wide) has occurred while \output is active
+Overfull \hbox (11.9706pt too wide) has occurred while \output is active
  []|[]|
  []
 
 [3] [4]
+Overfull \hbox (0.58136pt too wide) in paragraph at lines 103--103
+|[]\TU/Iwona(0)/m/sc/14.4/80ls - :  --- - 
+ []
+
+
 Overfull \hbox (4.87697pt too wide) in paragraph at lines 103--103
 \TU/Iwona(0)/m/sc/14.4/80ls   -  - -|  
  []
 
 
-Overfull \hbox (9.40367pt too wide) in paragraph at lines 126--126
-|[]\TU/Iwona(0)/m/sc/14.4/80ls - : ---  - 
+Overfull \hbox (11.83688pt too wide) in paragraph at lines 126--126
+|[]\TU/Iwona(0)/m/sc/14.4/80ls - :  ---  - 
  []
 
 
-Overfull \hbox (134.45341pt too wide) has occurred while \output is active
+Overfull \hbox (138.73091pt too wide) has occurred while \output is active
  []|[]|
  []
 
@@ -5747,7 +5752,7 @@ FrontBackmatter/Bibliography.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `ClassicThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5AB3902753E4A20C518A3BC60827D9E9;6406.
+(rerunfilecheck)             Checksum: D6F2A5D355104A62C7E2E640D93FBF47;6421.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -5767,14 +5772,14 @@ Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 Here is how much of LuaTeX's memory you used:
  41903 strings out of 494413
  100000,1977958 words of node,token memory allocated
- 9021 words of node memory still in use:
-   17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 56 glue, 21 kern, 3 penalty, 10 margin_kern, 876 glyph, 244 attribute, 141 glue_spec, 244 attribute_list, 3 write, 29 pdf_action, 2 pdf_colorstack nodes
+ 9043 words of node memory still in use:
+   17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 56 glue, 21 kern, 3 penalty, 10 margin_kern, 878 glyph, 246 attribute, 141 glue_spec, 246 attribute_list, 3 write, 29 pdf_action, 2 pdf_colorstack nodes
    avail lists: 1:11,2:1048,3:253,4:111,5:832,6:260,7:7138,8:158,9:439,10:26,11:610,12:1
  43268 multiletter control sequences out of 65536+600000
- 151 fonts using 49951079 bytes
+ 151 fonts using 49950599 bytes
  73i,23n,98p,9091b,3858s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-BoldItalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bolditalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (139 pages, 13558660 bytes).
+Output written on ClassicThesis.pdf (139 pages, 13560313 bytes).
 
 PDF statistics: 2398 PDF objects out of 2487 (max. 8388607)
  2058 compressed objects within 21 object streams

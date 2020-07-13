@@ -59,7 +59,7 @@ My dissertation, leveraging statistical approaches, addresses these knowledge ga
 \end{itemize}
  
 
-\section{Chapter 2:Building a theory for smart stormwater systems}
+\section{Chapter 2: Building a theory for smart stormwater systems}
 
 Retrofitting existing stormwater systems with wireless sensors and controllers will enable real-time control of flooding, stream erosion, and pollutant treatment. 
 Adoption of these smart systems is not limited by the technology, which has matured to a point where it can be deployed ubiquitously, but rather by our understanding of system-scale environmental science.
@@ -82,7 +82,7 @@ We demonstrate the use of the this framework on two simulated case studies, whic
 % Contribution
 This chapter's main contribution is demonstrating the use of real-time control for enhancing nutrient removal in stormwater systems. The modular simulation framework developed in this chapter has been the foundation for the control algorithms and the simulation tools developed in this dissertation. 
 
-\section{Chapter 3:Shaping streamflow in real-time using a sensor-actuator network}
+\section{Chapter 3: Shaping streamflow in real-time using a sensor-actuator network}
 
 The primary objective of this chapter is to illustrate how data from a stormwater sensor network can be leveraged to precisely shape the hydrographs at the outlet of an urban watershed.
 While the underlying dynamics of the stormwater systems are inherently non-linear, its general behavior can be perceived as a low-pass filter.
@@ -100,7 +100,7 @@ We also demonstrated the coordinated control of two controllable stormwater asse
 
 This chapter demonstrates the characterization and control of an urban watershed using wireless sensor-actuator networks. To the best of our knowledge, the study presented in this chapter is the first-ever study to demonstrate the use of coordinated control strategies for achieving system scale objectives in a real watershed.
 
-\section{Chapter 4:Deep Reinforcement Learning for the control of stormwater networks}
+\section{Chapter 4: Deep Reinforcement Learning for the control of stormwater networks}
 
 Presently, state-of-the-art control of stormwater falls under classic linear model predictive control (MPC).
 While this enables us to analytically evaluate the stability, robustness, and ensure performance guarantees, the approach demands a number of approximations, assumptions, and a high level of user expertise.
@@ -123,7 +123,7 @@ The chapter's main contribution is the formulation and implementation of an RL-b
 We also provide a fully open-sourced implementation of the control algorithm to promote transparency and permit the direct application of the methods to other systems.
 
 
-\section{Chapter 5:Bayesian Optimization for shaping stormwater flows}
+\section{Chapter 5: Bayesian Optimization for shaping stormwater flows}
 
 Early evaluations of RL-based control have suggested that controllers often maintain nearly constant control actions (valve positions) throughout a storm event.
 This may mitigate the need for real-time control, as one could simply preset the control action ahead of a storm without needing to change it in real-time. 
@@ -140,7 +140,7 @@ Finally, we propose a methodology for quantifying rainfall uncertainty associate
 
 This chapter's main contributions are a methodology for shaping flows in stormwater systems, which requires no real-time control actions and relies only on a pre-storm valve configuration, and an algorithm that establishes bounds on the controller's performance by quantifying rainfall uncertainty. We also provide an open-source implementation of the controller that can be applied to virtually any stormwater network for which a physical model\footnote{EPA-SWMM model, \href{https://www.epa.gov/water-research/storm-water-management-model-swmm}{epa.gov/swmm}} exists.
 
-\section[\texttt{pystorms}]{Chapter 6:A simulation sandbox for the development and evaluation of stormwater control algorithms}
+\section[Chapter 6: \texttt{pystorms}]{Chapter 6: A simulation sandbox for the development and evaluation of stormwater control algorithms}
 
 Over the past decade, there has been a significant amount of work in the development of real-time control algorithms for stormwater systems.
 Most, if not all, of the proposed algorithms were evaluated on specific stormwater networks and perturbed by a particular set of storm events.
