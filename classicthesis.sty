@@ -50,7 +50,99 @@
 \newcommand{\dsum}{\displaystyle\sum}
 \newcommand*\unit[1]{\, \mathrm{#1}}
 \newcommand{\forceindent}{\hspace{4em}}
+\usepackage{multirow}
+% my math symbols
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\minimize}{minimize}
 
+% common symbols
+\newcommand{\R}{\mathbb{R}}
+
+% vectors
+\newcommand{\vecFont}[1]{\mathsf{#1}}
+\def\va{{\vecFont{a}}}
+\def\vb{{\vecFont{b}}}
+\def\vc{{\vecFont{c}}}
+\def\vd{{\vecFont{d}}}
+\def\ve{{\vecFont{e}}}
+\def\vf{{\vecFont{f}}}
+\def\vg{{\vecFont{g}}}
+\def\vh{{\vecFont{h}}}
+\def\vi{{\vecFont{i}}}
+\def\vj{{\vecFont{j}}}
+\def\vk{{\vecFont{k}}}
+\def\vl{{\vecFont{l}}}
+\def\vm{{\vecFont{m}}}
+\def\vn{\hat{\vecFont{n}}}
+\def\vo{{\vecFont{o}}}
+\def\vp{{\vecFont{p}}}
+\def\vq{{\vecFont{q}}}
+\def\vr{{\vecFont{r}}}
+\def\vs{{\vecFont{s}}}
+\def\vt{{\vecFont{t}}}
+\def\vu{{\vecFont{u}}}
+\def\vv{{\vecFont{v}}}
+\def\vw{{\vecFont{w}}}
+\def\vx{{\vecFont{x}}}
+\def\vy{{\vecFont{y}}}
+\def\vz{{\vecFont{z}}}
+
+% matrices
+% Matrix
+\newcommand{\matFont}[1]{\mathsf{#1}}
+\def\mA{{\matFont{A}}}
+\def\mB{{\matFont{B}}}
+\def\mC{{\matFont{C}}}
+\def\mD{{\matFont{D}}}
+\def\mE{{\matFont{E}}}
+\def\mF{{\matFont{F}}}
+\def\mG{{\matFont{G}}}
+\def\mH{{\matFont{H}}}
+\def\mI{{\matFont{I}}}
+\def\mJ{{\matFont{J}}}
+\def\mK{{\matFont{K}}}
+\def\mL{{\matFont{L}}}
+\def\mM{{\matFont{M}}}
+\def\mN{{\matFont{N}}}
+\def\mO{{\matFont{O}}}
+\def\mP{{\matFont{P}}}
+\def\mQ{{\matFont{Q}}}
+\def\mR{{\matFont{R}}}
+\def\mS{{\matFont{S}}}
+\def\mT{{\matFont{T}}}
+\def\mU{{\matFont{U}}}
+\def\mV{{\matFont{V}}}
+\def\mW{{\matFont{W}}}
+\def\mX{{\matFont{X}}}
+\def\mY{{\matFont{Y}}}
+\def\mZ{{\matFont{Z}}}
+
+% macros for cubic flow
+\def\V{{\matFont{V}}}
+\def\v{{\vecFont{v}}}
+\def\dV{{\matFont{D}}}
+\def\dv{{\vecFont{d}}}
+\def\dVs{{\matFont{D}}}
+\def\U{{\widetilde{\matFont{V}}}}
+\def\u{{\widetilde{\vecFont{v}}}}
+\def\dU{{\widetilde{\matFont{D}}}}
+\def\du{{\widetilde{\vecFont{d}}}}
+\def\dUs{{\widetilde{\matFont{D}}}}
+% \def\SO3{{\text{SO}(3)}}
+\def\l1{{\ell^1}}
+\def\P{{\vecFont{p}}}
+\def\dPs{{\matFont{Q}}}
+\def\Q{{\widetilde{\vecFont{p}}}}
+\def\dQs{{\widetilde{\matFont{Q}}}}
+
+\def\arap{{\textsc{arap}}\xspace}
+\def\cubeness{{\textsc{cubeness}}\xspace}
+
+
+% Bayesian Optimization 
+\def\GP{{\mathcal{GP}}}
 
 \newcommand{\squote}[1] {`#1'}
 \newcommand{\dquote}[1] {``#1''}

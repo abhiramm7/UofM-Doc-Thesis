@@ -106,70 +106,100 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}{Introduction}}{69}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}{\texttt {pystorms}}}{71}{chapter.6}
+\contentsline {section}{\numberline {5.2}{Background: Control of Stormwater Systems}}{70}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}{Introduction}}{71}{section.6.1}
+\contentsline {subsection}{\numberline {5.2.1}{State of Autonomous Stormwater Control}}{70}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}{Background}}{72}{section.6.2}
+\contentsline {section}{\numberline {5.3}{Control of stormwater systems using Bayesian Optimization}}{71}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}{Control of Stormwater Systems}}{72}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {5.3.1}{Gaussian Processes}}{75}{subsection.5.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1.1}{Simulating Stormwater Systems}}{73}{subsubsection.6.2.1.1}
+\contentsline {subsection}{\numberline {5.3.2}{Acquisition Function}}{77}{subsection.5.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.2.1.2}{Implementing Control}}{74}{subsubsection.6.2.1.2}
+\contentsline {subsection}{\numberline {5.3.3}{Uncertainty Quantification}}{78}{subsection.5.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}{The Need for a Simulation Sandbox}}{76}{subsection.6.2.2}
+\contentsline {section}{\numberline {5.4}{Evaluating Bayesian Optimization for the control of stormwater systems}}{80}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}{\texttt {pystorms} }}{77}{section.6.3}
+\contentsline {subsection}{\numberline {5.4.1}{Generalizability}}{80}{subsection.5.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}{Scenarios}}{78}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {5.4.2}{Uncertainty Quantification}}{82}{subsection.5.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}{Programming Interface}}{79}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {5.4.3}{Implementation}}{83}{subsection.5.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}{Architecture}}{81}{subsection.6.3.3}
+\contentsline {section}{\numberline {5.5}{Results}}{84}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3.1}{Configuration}}{82}{subsubsection.6.3.3.1}
+\contentsline {subsection}{\numberline {5.5.1}{Generalizability}}{84}{subsection.5.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {6.3.3.2}{Simulation}}{83}{subsubsection.6.3.3.2}
+\contentsline {subsection}{\numberline {5.5.2}{Uncertainty Quantification}}{86}{subsection.5.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}{Demo: Evaluating Control Strategies}}{84}{section.6.4}
+\contentsline {section}{\numberline {5.6}{Discussion}}{88}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Rule-based Control}}{84}{paragraph*.28}
+\contentsline {section}{\numberline {5.7}{Conclusion}}{89}{section.5.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{{Equal-filling Degree Control}}{84}{paragraph*.29}
+\contentsline {chapter}{\numberline {6}{\texttt {pystorms}}}{91}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.5}{Discussion}}{87}{section.6.5}
+\contentsline {section}{\numberline {6.1}{Introduction}}{91}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.6}{Conclusions and Next Steps}}{88}{section.6.6}
+\contentsline {section}{\numberline {6.2}{Background}}{92}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}{Conclusion}}{91}{chapter.7}
+\contentsline {subsection}{\numberline {6.2.1}{Control of Stormwater Systems}}{92}{subsection.6.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}{Summary of Discoveries}}{91}{section.7.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}{Simulating Stormwater Systems}}{93}{subsubsection.6.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}{Future Directions}}{91}{section.7.2}
+\contentsline {subsubsection}{\numberline {6.2.1.2}{Implementing Control}}{94}{subsubsection.6.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {i}{Appendix}}{95}{part.1}
+\contentsline {subsection}{\numberline {6.2.2}{The Need for a Simulation Sandbox}}{96}{subsection.6.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}{Appendix-1}}{97}{appendix.A}
+\contentsline {section}{\numberline {6.3}{\texttt {pystorms} }}{97}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}{Case study 1: Local Control}}{97}{section.A.1}
+\contentsline {subsection}{\numberline {6.3.1}{Scenarios}}{98}{subsection.6.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}{Case study 2: System-level Control}}{97}{section.A.2}
+\contentsline {subsection}{\numberline {6.3.2}{Programming Interface}}{99}{subsection.6.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}{Appendix-2}}{99}{appendix.B}
+\contentsline {subsection}{\numberline {6.3.3}{Architecture}}{101}{subsection.6.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}{Deep Neural Networks}}{99}{section.B.1}
+\contentsline {subsubsection}{\numberline {6.3.3.1}{Configuration}}{102}{subsubsection.6.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}{Hyper parameters and architecture}}{100}{section.B.2}
+\contentsline {subsubsection}{\numberline {6.3.3.2}{Simulation}}{103}{subsubsection.6.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}{Equal-filling degree algorithm}}{101}{section.B.3}
+\contentsline {section}{\numberline {6.4}{Demo: Evaluating Control Strategies}}{104}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}{Scenario 1 --- Reward function Formulation Sensitivity}}{102}{section.B.4}
+\contentsline {paragraph}{{Rule-based Control}}{104}{paragraph*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.5}{Scenario 1 --- Location sensitivity}}{104}{section.B.5}
+\contentsline {paragraph}{{Equal-filling Degree Control}}{104}{paragraph*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.6}{Scenario 2 --- Back-to-back event}}{105}{section.B.6}
+\contentsline {section}{\numberline {6.5}{Discussion}}{107}{section.6.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}{Conclusions and Next Steps}}{108}{section.6.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}{Conclusion}}{111}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}{Summary of Discoveries}}{111}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}{Future Directions}}{111}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {i}{Appendix}}{115}{part.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}{Appendix-1}}{117}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}{Case study 1: Local Control}}{117}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}{Case study 2: System-level Control}}{117}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}{Appendix-2}}{119}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}{Deep Neural Networks}}{119}{section.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}{Hyper parameters and architecture}}{120}{section.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}{Equal-filling degree algorithm}}{121}{section.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}{Scenario 1 --- Reward function Formulation Sensitivity}}{122}{section.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}{Scenario 1 --- Location sensitivity}}{124}{section.B.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.6}{Scenario 2 --- Back-to-back event}}{125}{section.B.6}
 \defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Bibliography}}{107}{section*.44}
+\contentsline {chapter}{\numberline {}{Bibliography}}{127}{section*.52}
