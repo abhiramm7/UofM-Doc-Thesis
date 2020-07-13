@@ -14,6 +14,26 @@ A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
 A level-1 auxiliary file: Chapters/Chapter4.aux
 A level-1 auxiliary file: Chapters/Chapter5.aux
+Case mismatch error between cite keys Vezzaro2014 and vezzaro2014
+---line 723 of file ClassicThesis.aux
+ : \citation{Vezzaro2014
+ :                      }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Sadler2019 and sadler2019
+---line 736 of file ClassicThesis.aux
+ : \citation{Sadler2019
+ :                     }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Lund2018 and lund2018
+---line 754 of file ClassicThesis.aux
+ : \citation{Lund2018
+ :                   }
+I'm skipping whatever remains of this command
+Case mismatch error between cite keys Vezzaro2014 and vezzaro2014
+---line 806 of file ClassicThesis.aux
+ : \citation{Vezzaro2014
+ :                      }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Chapters/Conclusion.aux
 A level-1 auxiliary file: Chapters/Appendix01.aux
 A level-1 auxiliary file: Chapters/Appendix03.aux
@@ -32,22 +52,22 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 27518 items from 5000.
+Reallocated field_info (elt_size=4) to 29603 items from 5000.
 Database file #1: ClassicThesis-blx.bib
 Database file #2: Bibliography.bib
-Repeated entry---line 1198 of file Bibliography.bib
+Repeated entry---line 1263 of file Bibliography.bib
  : @article{schutze_sewer_2008
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1989 of file Bibliography.bib
+Repeated entry---line 2054 of file Bibliography.bib
  : @article{Lund2018
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2113 of file Bibliography.bib
+Repeated entry---line 2178 of file Bibliography.bib
  : @article{Sadler2019
  :                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2198 of file Bibliography.bib
+Repeated entry---line 2263 of file Bibliography.bib
  : @article{Vezzaro2014
  :                     ,
 I'm skipping whatever remains of this entry
@@ -55,45 +75,45 @@ Database file #3: Abhi_Publications.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 162 entries,
+You've used 177 entries,
             6268 wiz_defined-function locations,
-            2237 strings with 45459 characters,
-and the built_in function-call counts, 1194136 in all, are:
-= -- 89279
-> -- 21104
-< -- 5896
-+ -- 33034
-- -- 8199
-* -- 90256
-:= -- 126866
+            2313 strings with 48625 characters,
+and the built_in function-call counts, 1314779 in all, are:
+= -- 98156
+> -- 23415
+< -- 6355
++ -- 36843
+- -- 9256
+* -- 99584
+:= -- 140531
 add.period$ -- 0
-call.type$ -- 162
-change.case$ -- 161
-chr.to.int$ -- 168
-cite$ -- 322
-duplicate$ -- 128257
-empty$ -- 106029
-format.name$ -- 13617
-if$ -- 240702
+call.type$ -- 177
+change.case$ -- 176
+chr.to.int$ -- 240
+cite$ -- 352
+duplicate$ -- 141667
+empty$ -- 116464
+format.name$ -- 15060
+if$ -- 264170
 int.to.chr$ -- 0
-int.to.str$ -- 435
+int.to.str$ -- 479
 missing$ -- 0
-newline$ -- 6768
-num.names$ -- 8686
-pop$ -- 57745
+newline$ -- 7513
+num.names$ -- 9400
+pop$ -- 63226
 preamble$ -- 1
-purify$ -- 4716
+purify$ -- 5076
 quote$ -- 0
-skip$ -- 35211
+skip$ -- 38211
 stack$ -- 0
-substring$ -- 154750
-swap$ -- 29365
-text.length$ -- 4621
-text.prefix$ -- 184
+substring$ -- 170187
+swap$ -- 32374
+text.length$ -- 5060
+text.prefix$ -- 201
 top$ -- 1
-type$ -- 5492
+type$ -- 6002
 warning$ -- 0
-while$ -- 15502
+while$ -- 17265
 width$ -- 0
-write$ -- 6607
-(There were 4 error messages)
+write$ -- 7337
+(There were 8 error messages)
