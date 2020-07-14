@@ -17,177 +17,7 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
-  \entry{4Mullapudi2020b}{unpublished}{}
-    \name{author}{2}{}{%
-      {{hash=MA}{%
-         family={Mullapudi},
-         familyi={M\bibinitperiod},
-         given={Abhiram},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kerkez},
-         familyi={K\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MAKB1}
-    \strng{fullhash}{MAKB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{note}{In preparation for submission}
-    \field{title}{Automated Control of Stormwater Systems using
-  BayesianOptimization}
-    \field{year}{2020}
-  \endentry
-
-  \entry{1Mullapudi2017}{article}{}
-    \name{author}{3}{}{%
-      {{hash=MA}{%
-         family={Mullapudi},
-         familyi={M\bibinitperiod},
-         given={Abhiram},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=WBP}{%
-         family={Wong},
-         familyi={W\bibinitperiod},
-         given={Brandon\bibnamedelima P.},
-         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kerkez},
-         familyi={K\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Royal Society of Chemistry (RSC)}%
-    }
-    \strng{namehash}{MAWBPKB1}
-    \strng{fullhash}{MAWBPKB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1039/c6ew00211k
-    \endverb
-    \field{issn}{2053-1419}
-    \field{number}{1}
-    \field{pages}{66\bibrangedash 77}
-    \field{title}{Emerging investigators series: building a theory for smart
-  storm\-water systems}
-    \verb{url}
-    \verb http://dx.doi.org/10.1039/C6EW00211K
-    \endverb
-    \field{volume}{3}
-    \field{journaltitle}{Environmental Science: Water Research \& Technology}
-    \field{year}{2017}
-  \endentry
-
-  \entry{2Mullapudi2018}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MA}{%
-         family={Mullapudi},
-         familyi={M\bibinitperiod},
-         given={Abhiram},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BMD}{%
-         family={Bartos},
-         familyi={B\bibinitperiod},
-         given={Matthew\bibnamedelima D.},
-         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=WBP}{%
-         family={Wong},
-         familyi={W\bibinitperiod},
-         given={Brandon\bibnamedelima P.},
-         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kerkez},
-         familyi={K\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {MDPI AG}%
-    }
-    \strng{namehash}{MA+1}
-    \strng{fullhash}{MABMDWBPKB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.3390/s18072259
-    \endverb
-    \field{issn}{1424-8220}
-    \field{number}{7}
-    \field{pages}{2259}
-    \field{title}{Shaping Streamflow Using a Real-Time Storm\-water Control
-  Network}
-    \verb{url}
-    \verb http://dx.doi.org/10.3390/s18072259
-    \endverb
-    \field{volume}{18}
-    \field{journaltitle}{Sensors}
-    \field{year}{2018}
-  \endentry
-
-  \entry{3Mullapudi2020}{article}{}
-    \name{author}{4}{}{%
-      {{hash=MA}{%
-         family={Mullapudi},
-         familyi={M\bibinitperiod},
-         given={Abhiram},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=LMJ}{%
-         family={Lewis},
-         familyi={L\bibinitperiod},
-         given={Matthew\bibnamedelima J.},
-         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=GCL}{%
-         family={Gruden},
-         familyi={G\bibinitperiod},
-         given={Cyndee\bibnamedelima L.},
-         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=KB}{%
-         family={Kerkez},
-         familyi={K\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MA+1}
-    \strng{fullhash}{MALMJGCLKB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1016/j.advwatres.2020.103600
-    \endverb
-    \field{issn}{03091708}
-    \field{pages}{103600}
-    \field{title}{Deep reinforcement learning for the real time control of
-  stormwater systems}
-    \field{journaltitle}{Advances in Water Resources}
-    \field{month}{04}
-    \field{year}{2020}
-  \endentry
-
-  \entry{5Rimer2020}{unpublished}{}
+  \entry{5Mullapudi2020}{unpublished}{}
     \name{author}{10}{}{%
       {{hash=SRP}{%
          family={Sara},
@@ -195,11 +25,11 @@
          given={Rimer\bibnamedelima P.},
          giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
-      {{hash=MA}{%
-         family={Mullapudi},
-         familyi={M\bibinitperiod},
-         given={Abhiram},
-         giveni={A\bibinitperiod},
+      {{hash=tt}{%
+         family={\textbf{Mullapudi}},
+         familyi={t\bibinitperiod},
+         given={\textbf{Abhiram}},
+         giveni={t\bibinitperiod},
       }}%
       {{hash=STC}{%
          family={Sara},
@@ -251,14 +81,184 @@
       }}%
     }
     \strng{namehash}{SRP+1}
-    \strng{fullhash}{SRPMASTCGEJSMJGLRKBMJHMBK1}
+    \strng{fullhash}{SRPttSTCGEJSMJGLRKBMJHMBK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{note}{In preparation for submission}
-    \field{title}{pystorms: A simulation sandbox for the development and
-  evaluation of stormwater control algorithms}
+    \field{title}{pystorms: A Simulation Sandbox For The Development And
+  Evaluation Of Stormwater Control Algorithms}
+    \field{year}{2020}
+  \endentry
+
+  \entry{4Mullapudi2020b}{unpublished}{}
+    \name{author}{2}{}{%
+      {{hash=tt}{%
+         family={\textbf{Mullapudi}},
+         familyi={t\bibinitperiod},
+         given={\textbf{Abhiram}},
+         giveni={t\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ttKB1}
+    \strng{fullhash}{ttKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{note}{In preparation for submission}
+    \field{title}{Automated Control Of Stormwater Systems Using Bayesian
+  Optimization}
+    \field{year}{2020}
+  \endentry
+
+  \entry{1Mullapudi2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=tt}{%
+         family={\textbf{Mullapudi}},
+         familyi={t\bibinitperiod},
+         given={\textbf{Abhiram}},
+         giveni={t\bibinitperiod},
+      }}%
+      {{hash=WBP}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Royal Society of Chemistry (RSC)}%
+    }
+    \strng{namehash}{ttWBPKB1}
+    \strng{fullhash}{ttWBPKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1039/c6ew00211k
+    \endverb
+    \field{issn}{2053-1419}
+    \field{number}{1}
+    \field{pages}{66\bibrangedash 77}
+    \field{title}{Emerging investigators series: building a theory for smart
+  storm\-water systems}
+    \verb{url}
+    \verb http://dx.doi.org/10.1039/C6EW00211K
+    \endverb
+    \field{volume}{3}
+    \field{journaltitle}{Environmental Science: Water Research \& Technology}
+    \field{year}{2017}
+  \endentry
+
+  \entry{2Mullapudi2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=tt}{%
+         family={\textbf{Mullapudi}},
+         familyi={t\bibinitperiod},
+         given={\textbf{Abhiram}},
+         giveni={t\bibinitperiod},
+      }}%
+      {{hash=BMD}{%
+         family={Bartos},
+         familyi={B\bibinitperiod},
+         given={Matthew\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WBP}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Brandon\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Mdpi Ag}%
+    }
+    \strng{namehash}{tt+1}
+    \strng{fullhash}{ttBMDWBPKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.3390/s18072259
+    \endverb
+    \field{issn}{1424-8220}
+    \field{number}{7}
+    \field{pages}{2259}
+    \field{title}{Shaping Streamflow Using a Real-Time Storm\-water Control
+  Network}
+    \verb{url}
+    \verb http://dx.doi.org/10.3390/s18072259
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{Sensors}
+    \field{year}{2018}
+  \endentry
+
+  \entry{3Mullapudi2020}{article}{}
+    \name{author}{4}{}{%
+      {{hash=tt}{%
+         family={\textbf{Mullapudi}},
+         familyi={t\bibinitperiod},
+         given={\textbf{Abhiram}},
+         giveni={t\bibinitperiod},
+      }}%
+      {{hash=LMJ}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={Matthew\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=GCL}{%
+         family={Gruden},
+         familyi={G\bibinitperiod},
+         given={Cyndee\bibnamedelima L.},
+         giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{tt+1}
+    \strng{fullhash}{ttLMJGCLKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1016/j.advwatres.2020.103600
+    \endverb
+    \field{issn}{03091708}
+    \field{pages}{103600}
+    \field{title}{Deep Reinforcement Learning For The Real Time Control Of
+  Stormwater Systems}
+    \field{journaltitle}{Advances in Water Resources}
+    \field{month}{04}
     \field{year}{2020}
   \endentry
 \enddatalist

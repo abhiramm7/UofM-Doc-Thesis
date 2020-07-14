@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  13 JUL 2020 07:52
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  14 JUL 2020 02:18
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.138 seconds
+luaotfload | main : initialization completed in 0.126 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -2040,7 +2040,7 @@ Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-)) (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux) (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Publications.aux) (./FrontBackmatter/Contents.aux) (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Conclusion.aux) (./Chapters/Appendix01.aux) (./Chapters/Appendix03.aux) (./FrontBackmatter/Bibliography.aux))
+)) (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux) (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Publications.aux) (./FrontBackmatter/Contents.aux) (./Chapters/Introduction.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux) (./Chapters/Conclusion.aux) (./Chapters/Appendix-2.aux) (./Chapters/Appendix-4.aux) (./FrontBackmatter/Bibliography.aux))
 \openout1 = ClassicThesis.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -2970,6 +2970,90 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `ﬆ' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬅ' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‥' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‼' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⌐' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁰' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁴' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁵' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁶' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁷' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁸' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁹' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₀' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₁' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₂' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₃' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₄' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₅' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₆' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₇' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₈' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₉' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₊' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `₋' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁺' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `⁻' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `‒' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `―' is missing
+(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `ﬅ' is missing
@@ -3066,7 +3150,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (1.18692pt too wide) in paragraph at lines 15--15
+Overfull \hbox (0.43137pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 “  Emerg-ing in-ves-ti-ga-tors se-ries: build-ing a the-ory for smart storm-
  []
 
@@ -3084,8 +3168,8 @@ Package biblatex Info: Reference section=0 on input line 16.
  (./FrontBackmatter/Contents.tex
 Package tocbasic Info: character protrusion at toc deactivated on input line 11.
  (./ClassicThesis.toc
-Overfull \hbox (4.50058pt too wide) in paragraph at lines 11--11
- [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Chap-ter : Shap-ing stream-flow in real-time us-ing a sensor- 
+Overfull \hbox (11.67798pt too wide) in paragraph at lines 15--15
+ [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Bayesian Op-ti-miza-tion for shap-ing stormwa-ter flows []  
  []
 
 
@@ -3128,16 +3212,16 @@ Overfull \hbox (5.2044pt too wide) in paragraph at lines 73--73
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Real time con-trol of ur-ban drainage sys-tems []  
  []
 
+
+Overfull \hbox (23.0773pt too wide) in paragraph at lines 79--79
+ [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Re-in-force-ment learn-ing for stormwa-ter sys-tems []  
+ []
+
 [9
 
 
 
 ]
-Overfull \hbox (23.0773pt too wide) in paragraph at lines 79--79
- [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Re-in-force-ment learn-ing for stormwa-ter sys-tems []  
- []
-
-
 Overfull \hbox (10.28415pt too wide) in paragraph at lines 93--93
  [][] []\TU/TeXGyrePagella(0)/m/n/10.95 Sim-u-la-tion, Im-ple-men-ta-tion, and Eval-u-a-tion []  
  []
@@ -3267,11 +3351,6 @@ Overfull \hbox (2.05298pt too wide) in paragraph at lines 85--85
 
 Overfull \hbox (1.29893pt too wide) in paragraph at lines 85--85
  \TU/TeXGyrePagella(0)/m/n/10.95 pu-ta-tional rep-re-sen-ta-tions of the stormwa-ter net- 
- []
-
-
-Overfull \hbox (78.15451pt too wide) in paragraph at lines 87--87
- \TU/DejaVuSansMono(0)/m/n/10.95 theta \TU/TeXGyrePagella(0)/m/n/10.95 can be ac-cessed at [][]open-storm.org/pystorms/demo[][] []  
  []
 
 Package microtype Info: Character `ﬆ' is missing
@@ -3554,90 +3633,6 @@ Overfull \hbox (5.39519pt too wide) in paragraph at lines 35--35
  (./Chapters/Introduction.tex
 Chapter 1.
 Package microtype Info: Character `ﬆ' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬅ' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‥' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‼' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⌐' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁰' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁴' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁵' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁶' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁷' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁸' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁹' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₀' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₁' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₂' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₃' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₄' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₅' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₆' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₇' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₈' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₉' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₊' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `₋' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁺' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `⁻' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `‒' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `―' is missing
-(microtype)             in font `TU/TeXGyrePagella(0)/bx/n/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 Package microtype Info: Character `ﬅ' is missing
@@ -3722,8 +3717,8 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/9'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (3.53581pt too wide) in paragraph at lines 30--33
-[]\TU/TeXGyrePagella(0)/bx/n/10.95 Tem-po-ral prop-er-ties\TU/TeXGyrePagella(0)/m/n/10.95 : Given the long de-ci-sion time hori-zons[] [[][][][]],
+Overfull \hbox (2.30177pt too wide) in paragraph at lines 30--33
+[]\TU/TeXGyrePagella(0)/bx/n/10.95 Tem-po-ral prop-er-ties\TU/TeXGyrePagella(0)/m/n/10.95 : Given the long de-ci-sion time hori-zons[] [[][][][]],
  []
 
 [1
@@ -3737,42 +3732,27 @@ Overfull \hbox (2.32399pt too wide) in paragraph at lines 57--58
 []\TU/TeXGyrePagella(0)/bx/n/10.95 Chapter-\TU/TeXGyrePagella(0)/m/n/10.95 : This chap-ter in-tro-duces a Bayesian Optimization-based
  []
 
-
-Overfull \hbox (11.9706pt too wide) has occurred while \output is active
- []|[]|
- []
-
 [3] [4]
-Overfull \hbox (0.58136pt too wide) in paragraph at lines 103--103
-|[]\TU/Iwona(0)/m/sc/14.4/80ls - :  --- - 
+Overfull \hbox (13.45938pt too wide) in paragraph at lines 103--103
+|[]\TU/Iwona(0)/m/sc/14.4/80ls  --- -   - 
  []
 
 
-Overfull \hbox (4.87697pt too wide) in paragraph at lines 103--103
-\TU/Iwona(0)/m/sc/14.4/80ls   -  - -|  
+Overfull \hbox (23.06924pt too wide) in paragraph at lines 126--126
+|[]\TU/Iwona(0)/m/sc/14.4/80ls  ---  - - 
  []
 
 
-Overfull \hbox (11.83688pt too wide) in paragraph at lines 126--126
-|[]\TU/Iwona(0)/m/sc/14.4/80ls - :  ---  - 
- []
-
-
-Overfull \hbox (138.73091pt too wide) has occurred while \output is active
+Overfull \hbox (78.19621pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[5]
-Overfull \hbox (3.03891pt too wide) in paragraph at lines 143--143
-\TU/Iwona(0)/m/sc/14.4/80ls ---  ---  - 
- []
-
-[6])
+[5] [6])
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/sc' will be
-(Font)              scaled to size 9.30756pt on input line 90.
+(Font)              scaled to size 9.30756pt on input line 93.
  [7]
-\openout2 = Chapters/Chapter1.aux
- (./Chapters/Chapter1.tex
+\openout2 = Chapters/Chapter2.aux
+ (./Chapters/Chapter2.tex
 Chapter 2.
 [8
 
@@ -3780,8 +3760,8 @@ Chapter 2.
 
 
 ]
-Overfull \hbox (4.9157pt too wide) in paragraph at lines 29--34
-\TU/TeXGyrePagella(0)/m/n/10.95 tems, as evinced by harm-ful al-gal blooms, such as those on Lake Erie [[][][][]]
+Overfull \hbox (4.93715pt too wide) in paragraph at lines 29--34
+\TU/TeXGyrePagella(0)/m/n/10.95 tems, as evinced by harm-ful al-gal blooms, such as those on Lake Erie [[][][][]]
  []
 
 [9] [10]
@@ -3794,7 +3774,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-1/k-drawing.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-1/k-drawing-eps-converted-to.pdf gfx/Chapter-1/k-drawing.eps>
 (epstopdf)             \includegraphics on input line 80.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-1/k-drawing-eps-converted-to.pdf, id=862, 304.13625pt x 425.59pt>
+<gfx/Chapter-1/k-drawing-eps-converted-to.pdf, id=861, 304.13625pt x 425.59pt>
 File: gfx/Chapter-1/k-drawing-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-1/k-drawing-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-1/k-drawing-eps-converted-to.pdf  used on input line 80.
@@ -3805,13 +3785,13 @@ Overfull \hbox (9.66006pt too wide) has occurred while \output is active
  []
 
 [11] [12<./gfx/Chapter-1/k-drawing-eps-converted-to.pdf>] [13] [14]
-<gfx/Chapter-1/coupled_model.png, id=964, 499.1448pt x 232.2276pt>
+<gfx/Chapter-1/coupled_model.png, id=962, 499.1448pt x 232.2276pt>
 File: gfx/Chapter-1/coupled_model.png Graphic file (type png)
 <use gfx/Chapter-1/coupled_model.png>
 Package luatex.def Info: gfx/Chapter-1/coupled_model.png  used on input line 143.
 (luatex.def)             Requested size: 336.0pt x 156.32872pt.
  [15<./gfx/Chapter-1/coupled_model.png>] [16] [17]
-<gfx/Chapter-1/Model_Individual.png, id=1006, 871.255pt x 595.22375pt>
+<gfx/Chapter-1/Model_Individual.png, id=1005, 871.255pt x 595.22375pt>
 File: gfx/Chapter-1/Model_Individual.png Graphic file (type png)
 <use gfx/Chapter-1/Model_Individual.png>
 Package luatex.def Info: gfx/Chapter-1/Model_Individual.png  used on input line 217.
@@ -3825,7 +3805,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-1/local.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-1/local-eps-converted-to.pdf gfx/Chapter-1/local.eps>
 (epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-1/local-eps-converted-to.pdf, id=1007, 124.465pt x 429.605pt>
+<gfx/Chapter-1/local-eps-converted-to.pdf, id=1006, 124.465pt x 429.605pt>
 File: gfx/Chapter-1/local-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-1/local-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-1/local-eps-converted-to.pdf  used on input line 227.
@@ -3840,7 +3820,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-1/Glo_sys_rep.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf gfx/Chapter-1/Glo_sys_rep.eps>
 (epstopdf)             \includegraphics on input line 280.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf, id=1037, 291.0875pt x 236.885pt>
+<gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf, id=1036, 291.0875pt x 236.885pt>
 File: gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf  used on input line 280.
@@ -3854,13 +3834,13 @@ Package epstopdf Info: Source file: <gfx/Chapter-1/Global.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-1/Global-eps-converted-to.pdf gfx/Chapter-1/Global.eps>
 (epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-1/Global-eps-converted-to.pdf, id=1038, 466.74374pt x 418.56375pt>
+<gfx/Chapter-1/Global-eps-converted-to.pdf, id=1037, 466.74374pt x 418.56375pt>
 File: gfx/Chapter-1/Global-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-1/Global-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-1/Global-eps-converted-to.pdf  used on input line 285.
 (luatex.def)             Requested size: 336.0pt x 301.32733pt.
  [21] [22<./gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf><./gfx/Chapter-1/Global-eps-converted-to.pdf>]
-<gfx/Chapter-1/arch.png, id=1117, 700.0554pt x 200.4288pt>
+<gfx/Chapter-1/arch.png, id=1116, 700.0554pt x 200.4288pt>
 File: gfx/Chapter-1/arch.png Graphic file (type png)
 <use gfx/Chapter-1/arch.png>
 Package luatex.def Info: gfx/Chapter-1/arch.png  used on input line 306.
@@ -3938,13 +3918,13 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
  [23<./gfx/Chapter-1/arch.png>] [24] [25])
-Overfull \hbox (0.4335pt too wide) in paragraph at lines 346--91
+Overfull \hbox (0.4335pt too wide) in paragraph at lines 346--94
 \TU/TeXGyrePagella(0)/m/n/10.95 ter sys-tems the-o-ret-i-cal frame-work. Be-fore such sys-tems be-come adopted,
  []
 
 [26]
-\openout2 = Chapters/Chapter2.aux
- (./Chapters/Chapter2.tex
+\openout2 = Chapters/Chapter3.aux
+ (./Chapters/Chapter3.tex
 Chapter 3.
 [27
 
@@ -3957,7 +3937,7 @@ Overfull \hbox (35.01337pt too wide) has occurred while \output is active
  []
 
 [28]
-<gfx/Chapter-2/fig_1_v2.png, id=1190, 1626.075pt x 621.32124pt>
+<gfx/Chapter-2/fig_1_v2.png, id=1188, 1626.075pt x 621.32124pt>
 File: gfx/Chapter-2/fig_1_v2.png Graphic file (type png)
 <use gfx/Chapter-2/fig_1_v2.png>
 Package luatex.def Info: gfx/Chapter-2/fig_1_v2.png  used on input line 49.
@@ -3968,7 +3948,7 @@ Overfull \hbox (35.01337pt too wide) has occurred while \output is active
  []
 
 [30<./gfx/Chapter-2/fig_1_v2.png>] [31]
-<gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png, id=1222, 969.65692pt x 477.80794pt>
+<gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png, id=1220, 969.65692pt x 477.80794pt>
 File: gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png Graphic file (type png)
 <use gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png>
 Package luatex.def Info: gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png  used on input line 105.
@@ -3988,7 +3968,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-2/fod.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-2/fod-eps-converted-to.pdf gfx/Chapter-2/fod.eps>
 (epstopdf)             \includegraphics on input line 125.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-2/fod-eps-converted-to.pdf, id=1230, 527.9725pt x 252.945pt>
+<gfx/Chapter-2/fod-eps-converted-to.pdf, id=1228, 527.9725pt x 252.945pt>
 File: gfx/Chapter-2/fod-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-2/fod-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-2/fod-eps-converted-to.pdf  used on input line 125.
@@ -4002,7 +3982,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-2/Figure5_F.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-2/Figure5_F-eps-converted-to.pdf gfx/Chapter-2/Figure5_F.eps>
 (epstopdf)             \includegraphics on input line 146.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-2/Figure5_F-eps-converted-to.pdf, id=1232, 585.18625pt x 244.915pt>
+<gfx/Chapter-2/Figure5_F-eps-converted-to.pdf, id=1230, 585.18625pt x 244.915pt>
 File: gfx/Chapter-2/Figure5_F-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-2/Figure5_F-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-2/Figure5_F-eps-converted-to.pdf  used on input line 146.
@@ -4022,7 +4002,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-2/Figure7.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-2/Figure7-eps-converted-to.pdf gfx/Chapter-2/Figure7.eps>
 (epstopdf)             \includegraphics on input line 201.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-2/Figure7-eps-converted-to.pdf, id=1284, 515.9275pt x 190.7125pt>
+<gfx/Chapter-2/Figure7-eps-converted-to.pdf, id=1281, 515.9275pt x 190.7125pt>
 File: gfx/Chapter-2/Figure7-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-2/Figure7-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-2/Figure7-eps-converted-to.pdf  used on input line 201.
@@ -4042,7 +4022,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-2/Figure4.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-2/Figure4-eps-converted-to.pdf gfx/Chapter-2/Figure4.eps>
 (epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-2/Figure4-eps-converted-to.pdf, id=1302, 413.545pt x 260.975pt>
+<gfx/Chapter-2/Figure4-eps-converted-to.pdf, id=1299, 413.545pt x 260.975pt>
 File: gfx/Chapter-2/Figure4-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-2/Figure4-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-2/Figure4-eps-converted-to.pdf  used on input line 219.
@@ -4144,7 +4124,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-2/Figure6.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-2/Figure6-eps-converted-to.pdf gfx/Chapter-2/Figure6.eps>
 (epstopdf)             \includegraphics on input line 236.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-2/Figure6-eps-converted-to.pdf, id=1304, 515.9275pt x 235.88126pt>
+<gfx/Chapter-2/Figure6-eps-converted-to.pdf, id=1301, 515.9275pt x 235.88126pt>
 File: gfx/Chapter-2/Figure6-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-2/Figure6-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-2/Figure6-eps-converted-to.pdf  used on input line 236.
@@ -4155,8 +4135,8 @@ Overfull \hbox (35.01337pt too wide) has occurred while \output is active
  []
 
 [38<./gfx/Chapter-2/Figure4-eps-converted-to.pdf>] [39<./gfx/Chapter-2/Figure6-eps-converted-to.pdf>]
-\openout2 = Chapters/Chapter3.aux
- (./Chapters/Chapter3.tex
+\openout2 = Chapters/Chapter4.aux
+ (./Chapters/Chapter4.tex
 Chapter 4.
 [40
 
@@ -4183,7 +4163,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/RL_main_fig_1_final.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf gfx/Chapter-3/RL_main_fig_1_final.eps>
 (epstopdf)             \includegraphics on input line 64.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf, id=1380, 355.3275pt x 361.35pt>
+<gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf, id=1376, 355.3275pt x 361.35pt>
 File: gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf  used on input line 64.
@@ -4213,7 +4193,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/casestudy_fig_2.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf gfx/Chapter-3/casestudy_fig_2.eps>
 (epstopdf)             \includegraphics on input line 224.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf, id=1481, 476.78125pt x 456.70625pt>
+<gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf, id=1477, 476.78125pt x 456.70625pt>
 File: gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf  used on input line 224.
@@ -4253,7 +4233,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/single_pond.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/single_pond-eps-converted-to.pdf gfx/Chapter-3/single_pond.eps>
 (epstopdf)             \includegraphics on input line 439.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/single_pond-eps-converted-to.pdf, id=1580, 597.23125pt x 452.69125pt>
+<gfx/Chapter-3/single_pond-eps-converted-to.pdf, id=1574, 597.23125pt x 452.69125pt>
 File: gfx/Chapter-3/single_pond-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/single_pond-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/single_pond-eps-converted-to.pdf  used on input line 439.
@@ -4278,7 +4258,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_tarining.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_tarining-eps-converted-to.pdf gfx/Chapter-3/system_tarining.eps>
 (epstopdf)             \includegraphics on input line 530.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/system_tarining-eps-converted-to.pdf, id=1629, 470.75874pt x 148.555pt>
+<gfx/Chapter-3/system_tarining-eps-converted-to.pdf, id=1623, 470.75874pt x 148.555pt>
 File: gfx/Chapter-3/system_tarining-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_tarining-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/system_tarining-eps-converted-to.pdf  used on input line 530.
@@ -4298,7 +4278,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_scale_1.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_scale_1-eps-converted-to.pdf gfx/Chapter-3/system_scale_1.eps>
 (epstopdf)             \includegraphics on input line 560.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/system_scale_1-eps-converted-to.pdf, id=1642, 588.1975pt x 455.7025pt>
+<gfx/Chapter-3/system_scale_1-eps-converted-to.pdf, id=1636, 588.1975pt x 455.7025pt>
 File: gfx/Chapter-3/system_scale_1-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_scale_1-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/system_scale_1-eps-converted-to.pdf  used on input line 560.
@@ -4318,7 +4298,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_scale_2.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_scale_2-eps-converted-to.pdf gfx/Chapter-3/system_scale_2.eps>
 (epstopdf)             \includegraphics on input line 598.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/system_scale_2-eps-converted-to.pdf, id=1690, 585.18625pt x 429.605pt>
+<gfx/Chapter-3/system_scale_2-eps-converted-to.pdf, id=1684, 585.18625pt x 429.605pt>
 File: gfx/Chapter-3/system_scale_2-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_scale_2-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/system_scale_2-eps-converted-to.pdf  used on input line 598.
@@ -4338,7 +4318,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/heatmap.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/heatmap-eps-converted-to.pdf gfx/Chapter-3/heatmap.eps>
 (epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/heatmap-eps-converted-to.pdf, id=1714, 410.53375pt x 195.73125pt>
+<gfx/Chapter-3/heatmap-eps-converted-to.pdf, id=1708, 410.53375pt x 195.73125pt>
 File: gfx/Chapter-3/heatmap-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/heatmap-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/heatmap-eps-converted-to.pdf  used on input line 618.
@@ -4354,8 +4334,8 @@ Overfull \hbox (60.46819pt too wide) has occurred while \output is active
  []
 
 [68]
-\openout2 = Chapters/Chapter4.aux
- (./Chapters/Chapter4.tex
+\openout2 = Chapters/Chapter5.aux
+ (./Chapters/Chapter5.tex
 Chapter 5.
 
 Overfull \hbox (4.18132pt too wide) in paragraph at lines 28--28
@@ -4368,7 +4348,7 @@ Overfull \hbox (4.18132pt too wide) in paragraph at lines 28--28
 
 
 ] [70]
-<gfx/Chapter-4/bae-opt.png, id=1816, 330.2739pt x 135.8676pt>
+<gfx/Chapter-4/bae-opt.png, id=1809, 330.2739pt x 135.8676pt>
 File: gfx/Chapter-4/bae-opt.png Graphic file (type png)
 <use gfx/Chapter-4/bae-opt.png>
 Package luatex.def Info: gfx/Chapter-4/bae-opt.png  used on input line 77.
@@ -4478,7 +4458,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-4/bayesian_intro.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf gfx/Chapter-4/bayesian_intro.eps>
 (epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf, id=1890, 532.99126pt x 111.41624pt>
+<gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf, id=1882, 532.99126pt x 111.41624pt>
 File: gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf  used on input line 184.
@@ -5030,38 +5010,35 @@ Overfull \hbox (88.54399pt too wide) has occurred while \output is active
  []
 
 [83]
-Package epstopdf Info: Source file: <gfx/Chapter-4/performance_gamma.eps>
-(epstopdf)                    date: 2020-07-13 11:43:58
-(epstopdf)                    size: 135988 bytes
-(epstopdf)             Output file: <gfx/Chapter-4/performance_gamma-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-13 11:43:58
-(epstopdf)                    size: 46414 bytes
-(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/performance_gamma-eps-converted-to.pdf gfx/Chapter-4/performance_gamma.eps>
+Package epstopdf Info: Source file: <gfx/Chapter-4/performance.eps>
+(epstopdf)                    date: 2020-07-14 01:06:01
+(epstopdf)                    size: 135592 bytes
+(epstopdf)             Output file: <gfx/Chapter-4/performance-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-07-14 01:16:08
+(epstopdf)                    size: 46332 bytes
+(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/performance-eps-converted-to.pdf gfx/Chapter-4/performance.eps>
 (epstopdf)             \includegraphics on input line 507.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-4/performance_gamma-eps-converted-to.pdf, id=2076, 388.45125pt x 241.90375pt>
-File: gfx/Chapter-4/performance_gamma-eps-converted-to.pdf Graphic file (type pdf)
-<use gfx/Chapter-4/performance_gamma-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-4/performance_gamma-eps-converted-to.pdf  used on input line 507.
-(luatex.def)             Requested size: 268.80103pt x 167.3973pt.
-Package epstopdf Info: Source file: <gfx/Chapter-4/generalizability_epsilon.eps>
-(epstopdf)                    date: 2020-07-13 11:43:58
-(epstopdf)                    size: 41583 bytes
-(epstopdf)             Output file: <gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-13 07:50:28
-(epstopdf)                    size: 19478 bytes
-(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf gfx/Chapter-4/generalizability_epsilon.eps>
+<gfx/Chapter-4/performance-eps-converted-to.pdf, id=2068, 388.45125pt x 244.915pt>
+File: gfx/Chapter-4/performance-eps-converted-to.pdf Graphic file (type pdf)
+<use gfx/Chapter-4/performance-eps-converted-to.pdf>
+Package luatex.def Info: gfx/Chapter-4/performance-eps-converted-to.pdf  used on input line 507.
+(luatex.def)             Requested size: 336.0pt x 211.84854pt.
+Package epstopdf Info: Source file: <gfx/Chapter-4/epsilon.eps>
+(epstopdf)                    date: 2020-07-14 01:04:16
+(epstopdf)                    size: 50879 bytes
+(epstopdf)             Output file: <gfx/Chapter-4/epsilon-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-07-14 01:16:08
+(epstopdf)                    size: 21352 bytes
+(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/epsilon-eps-converted-to.pdf gfx/Chapter-4/epsilon.eps>
 (epstopdf)             \includegraphics on input line 521.
-system(epstopdf --outfile=gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf gfx/Chapter-4/generalizability_epsilon.eps) executed.
-Package epstopdf Info: Result file: <gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-13 07:52:32
-(epstopdf)                    size: 19478 bytes.
-<gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf, id=2080, 518.89862pt x 348.34142pt>
-File: gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf Graphic file (type pdf)
-<use gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf  used on input line 521.
-(luatex.def)             Requested size: 134.39795pt x 90.22113pt.
- [84] [85<./gfx/Chapter-4/performance_gamma-eps-converted-to.pdf><./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>]
+Package epstopdf Info: Output file is already uptodate.
+<gfx/Chapter-4/epsilon-eps-converted-to.pdf, id=2072, 156.585pt x 118.4425pt>
+File: gfx/Chapter-4/epsilon-eps-converted-to.pdf Graphic file (type pdf)
+<use gfx/Chapter-4/epsilon-eps-converted-to.pdf>
+Package luatex.def Info: gfx/Chapter-4/epsilon-eps-converted-to.pdf  used on input line 521.
+(luatex.def)             Requested size: 336.0pt x 254.18915pt.
+ [84]
 Overfull \hbox (7.2708pt too wide) in paragraph at lines 553--553
 []|[]| 
  []
@@ -5071,31 +5048,29 @@ Overfull \hbox (3.09036pt too wide) in paragraph at lines 557--557
 []|\TU/DejaVuSansMono(0)/m/sc/10.95 epsilon| 
  []
 
+[85<./gfx/Chapter-4/performance-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <gfx/Chapter-4/ucq.eps>
-(epstopdf)                    date: 2020-07-13 11:43:58
-(epstopdf)                    size: 584946 bytes
+(epstopdf)                    date: 2020-07-14 01:12:23
+(epstopdf)                    size: 584919 bytes
 (epstopdf)             Output file: <gfx/Chapter-4/ucq-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-13 07:50:28
-(epstopdf)                    size: 209645 bytes
+(epstopdf)                    date: 2020-07-14 01:12:37
+(epstopdf)                    size: 209564 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/ucq-eps-converted-to.pdf gfx/Chapter-4/ucq.eps>
 (epstopdf)             \includegraphics on input line 583.
-system(epstopdf --outfile=gfx/Chapter-4/ucq-eps-converted-to.pdf gfx/Chapter-4/ucq.eps) executed.
-Package epstopdf Info: Result file: <gfx/Chapter-4/ucq-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-13 07:52:32
-(epstopdf)                    size: 209645 bytes.
-<gfx/Chapter-4/ucq-eps-converted-to.pdf, id=2149, 478.78876pt x 196.735pt>
+Package epstopdf Info: Output file is already uptodate.
+<gfx/Chapter-4/ucq-eps-converted-to.pdf, id=2107, 478.78876pt x 196.735pt>
 File: gfx/Chapter-4/ucq-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-4/ucq-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-4/ucq-eps-converted-to.pdf  used on input line 583.
 (luatex.def)             Requested size: 336.0pt x 138.06177pt.
-[86] [87<./gfx/Chapter-4/ucq-eps-converted-to.pdf>]
+ [86<./gfx/Chapter-4/epsilon-eps-converted-to.pdf>] [87]
 Overfull \hbox (1.05235pt too wide) in paragraph at lines 620--625
 \TU/TeXGyrePagella(0)/m/n/10.95 met-rics, with-out the need for in-ter-nal op-ti-mizer pa-ram-e-ter-i-za-tion. Given
  []
 
-[88]) [89] [90]
-\openout2 = Chapters/Chapter5.aux
- (./Chapters/Chapter5.tex
+[88<./gfx/Chapter-4/ucq-eps-converted-to.pdf>] [89]) [90]
+\openout2 = Chapters/Chapter6.aux
+ (./Chapters/Chapter6.tex
 Chapter 6.
 Package microtype Info: Character `‥' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/it/9'.
@@ -5251,22 +5226,13 @@ Overfull \hbox (7.5477pt too wide) in paragraph at lines 26--43
 \TU/TeXGyrePagella(0)/m/n/10.95 source that fos-ters ac-ces-si-bil-ity and col-lab-o-ra-tion amongst smart stormwa-
  []
 
-<gfx/Chapter-5/pystormsLayersSketch.png, id=2214, 481.8pt x 246.1998pt>
+<gfx/Chapter-5/pystormsLayersSketch.png, id=2182, 481.8pt x 246.1998pt>
 File: gfx/Chapter-5/pystormsLayersSketch.png Graphic file (type png)
 <use gfx/Chapter-5/pystormsLayersSketch.png>
 Package luatex.def Info: gfx/Chapter-5/pystormsLayersSketch.png  used on input line 51.
 (luatex.def)             Requested size: 336.0pt x 171.70003pt.
 LaTeX Font Info:    Font shape `TU/DejaVuSansMono(0)/m/n' will be
 (Font)              scaled to size 8.50006pt on input line 52.
-
-LaTeX Warning: Citation 'Vezzaro2014' on page 92 undefined on input line 72.
-
-
-LaTeX Warning: Citation 'Sadler2019' on page 92 undefined on input line 72.
-
-
-LaTeX Warning: Citation 'Lund2018' on page 92 undefined on input line 74.
-
 [92] [93<./gfx/Chapter-5/pystormsLayersSketch.png>] [94] [95]
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/bx/n/5'.
@@ -5449,7 +5415,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-5/pystorms_code.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-5/pystorms_code-eps-converted-to.pdf gfx/Chapter-5/pystorms_code.eps>
 (epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-5/pystorms_code-eps-converted-to.pdf, id=2304, 166.6225pt x 205.76875pt>
+<gfx/Chapter-5/pystorms_code-eps-converted-to.pdf, id=2269, 166.6225pt x 205.76875pt>
 File: gfx/Chapter-5/pystorms_code-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-5/pystorms_code-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-5/pystorms_code-eps-converted-to.pdf  used on input line 221.
@@ -5468,7 +5434,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-5/pystorms_architectire_fin.eps
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf gfx/Chapter-5/pystorms_architectire_fin.eps>
 (epstopdf)             \includegraphics on input line 270.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf, id=2334, 207.77625pt x 199.74625pt>
+<gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf, id=2300, 207.77625pt x 199.74625pt>
 File: gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf  used on input line 270.
@@ -5483,21 +5449,18 @@ Package epstopdf Info: Source file: <gfx/Chapter-5/algo.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-5/algo-eps-converted-to.pdf gfx/Chapter-5/algo.eps>
 (epstopdf)             \includegraphics on input line 306.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-5/algo-eps-converted-to.pdf, id=2384, 455.7025pt x 171.64125pt>
+<gfx/Chapter-5/algo-eps-converted-to.pdf, id=2349, 455.7025pt x 171.64125pt>
 File: gfx/Chapter-5/algo-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-5/algo-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-5/algo-eps-converted-to.pdf  used on input line 306.
 (luatex.def)             Requested size: 336.0pt x 126.55681pt.
  [103]
-Overfull \hbox (1.30804pt too wide) in paragraph at lines 338--342
+Overfull \hbox (1.30804pt too wide) in paragraph at lines 336--340
 \TU/TeXGyrePagella(0)/m/n/10.95 achieve \TU/DejaVuSansMono(0)/m/sc/10.95 theta\TU/TeXGyrePagella(0)/m/n/10.95 ’s con-trol ob-jec-tive, to sim-plify our il-lus-tra-tion of \TU/DejaVuSansMono(0)/m/sc/10.95 pystorms\TU/TeXGyrePagella(0)/m/n/10.95 ,
  []
 
-
-LaTeX Warning: Citation 'Vezzaro2014' on page 104 undefined on input line 348.
-
 [104<./gfx/Chapter-5/algo-eps-converted-to.pdf>]
-Overfull \hbox (15.87996pt too wide) in paragraph at lines 352--353
+Overfull \hbox (15.87996pt too wide) in paragraph at lines 350--351
 []\TU/TeXGyrePagella(0)/m/n/10.95 The im-ple-men-ta-tion of the equal-filling de-gree al-go-rithm us-ing \TU/DejaVuSansMono(0)/m/sc/10.95 pystorms
  []
 
@@ -5585,7 +5548,7 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/13.13995'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Calculating math sizes for size <13.13995> on input line 362.
+LaTeX Font Info:    Calculating math sizes for size <13.13995> on input line 360.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/9.19792'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -5755,17 +5718,17 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/6.56998'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 13.14015pt on input line 362.
+(Font)              scaled to size 13.14015pt on input line 360.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 9.19806pt on input line 362.
+(Font)              scaled to size 9.19806pt on input line 360.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(2)/m/n' will be
-(Font)              scaled to size 6.57007pt on input line 362.
+(Font)              scaled to size 6.57007pt on input line 360.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 13.13974pt on input line 362.
+(Font)              scaled to size 13.13974pt on input line 360.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 9.19777pt on input line 362.
+(Font)              scaled to size 9.19777pt on input line 360.
 LaTeX Font Info:    Font shape `TU/TeXGyrePagellaMath(3)/m/n' will be
-(Font)              scaled to size 6.56987pt on input line 362.
+(Font)              scaled to size 6.56987pt on input line 360.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/bx/n/13.13995'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -6026,12 +5989,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-5/equalfilling.eps>
 (epstopdf)                    date: 2020-07-01 12:04:22
 (epstopdf)                    size: 48154 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-5/equalfilling-eps-converted-to.pdf gfx/Chapter-5/equalfilling.eps>
-(epstopdf)             \includegraphics on input line 399.
+(epstopdf)             \includegraphics on input line 397.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-5/equalfilling-eps-converted-to.pdf, id=2428, 461.725pt x 208.78pt>
+<gfx/Chapter-5/equalfilling-eps-converted-to.pdf, id=2392, 461.725pt x 208.78pt>
 File: gfx/Chapter-5/equalfilling-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-5/equalfilling-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-5/equalfilling-eps-converted-to.pdf  used on input line 399.
+Package luatex.def Info: gfx/Chapter-5/equalfilling-eps-converted-to.pdf  used on input line 397.
 (luatex.def)             Requested size: 336.0pt x 151.93025pt.
  [106<./gfx/Chapter-5/equalfilling-eps-converted-to.pdf>] [107]) [108] [109] [110]
 \openout2 = Chapters/Conclusion.aux
@@ -6046,7 +6009,7 @@ Package epstopdf Info: Source file: <gfx/rs_final.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/rs_final-eps-converted-to.pdf gfx/rs_final.eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/rs_final-eps-converted-to.pdf, id=2477, 578.16pt x 143.53625pt>
+<gfx/rs_final-eps-converted-to.pdf, id=2440, 578.16pt x 143.53625pt>
 File: gfx/rs_final-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/rs_final-eps-converted-to.pdf>
 Package luatex.def Info: gfx/rs_final-eps-converted-to.pdf  used on input line 20.
@@ -6317,10 +6280,10 @@ Package microtype Info: Character `―' is missing
 
 
 ] [116]
-\openout2 = Chapters/Appendix01.aux
- (./Chapters/Appendix01.tex
+\openout2 = Chapters/Appendix-2.aux
+ (./Chapters/Appendix-2.tex
 Appendix A.
-<gfx/Chapter-1/Controller_Logic.png, id=2525, 876.27374pt x 1424.32124pt>
+<gfx/Chapter-1/Controller_Logic.png, id=2488, 876.27374pt x 1424.32124pt>
 File: gfx/Chapter-1/Controller_Logic.png Graphic file (type png)
 <use gfx/Chapter-1/Controller_Logic.png>
 Package luatex.def Info: gfx/Chapter-1/Controller_Logic.png  used on input line 44.
@@ -6330,8 +6293,8 @@ Package luatex.def Info: gfx/Chapter-1/Controller_Logic.png  used on input line 
 
 
 ] [118<./gfx/Chapter-1/Controller_Logic.png>]
-\openout2 = Chapters/Appendix03.aux
- (./Chapters/Appendix03.tex
+\openout2 = Chapters/Appendix-4.aux
+ (./Chapters/Appendix-4.tex
 Appendix B.
 [119
 
@@ -6348,7 +6311,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/heatmap_eq.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf gfx/Chapter-3/heatmap_eq.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf, id=2551, 572.1375pt x 192.72pt>
+<gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf, id=2514, 572.1375pt x 192.72pt>
 File: gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf  used on input line 92.
@@ -6363,7 +6326,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/eqf.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/eqf-eps-converted-to.pdf gfx/Chapter-3/eqf.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/eqf-eps-converted-to.pdf, id=2564, 1161.33875pt x 610.28pt>
+<gfx/Chapter-3/eqf-eps-converted-to.pdf, id=2527, 1161.33875pt x 610.28pt>
 File: gfx/Chapter-3/eqf-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/eqf-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/eqf-eps-converted-to.pdf  used on input line 120.
@@ -6378,7 +6341,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/new_reward.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/new_reward-eps-converted-to.pdf gfx/Chapter-3/new_reward.eps>
 (epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/new_reward-eps-converted-to.pdf, id=2599, 317.185pt x 297.11pt>
+<gfx/Chapter-3/new_reward-eps-converted-to.pdf, id=2562, 317.185pt x 297.11pt>
 File: gfx/Chapter-3/new_reward-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/new_reward-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/new_reward-eps-converted-to.pdf  used on input line 152.
@@ -6393,7 +6356,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/location_senstiv.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/location_senstiv-eps-converted-to.pdf gfx/Chapter-3/location_senstiv.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/location_senstiv-eps-converted-to.pdf, id=2627, 441.65pt x 328.22626pt>
+<gfx/Chapter-3/location_senstiv-eps-converted-to.pdf, id=2590, 441.65pt x 328.22626pt>
 File: gfx/Chapter-3/location_senstiv-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/location_senstiv-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/location_senstiv-eps-converted-to.pdf  used on input line 161.
@@ -6407,7 +6370,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/b2b.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/b2b-eps-converted-to.pdf gfx/Chapter-3/b2b.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/b2b-eps-converted-to.pdf, id=2628, 587.19376pt x 454.69875pt>
+<gfx/Chapter-3/b2b-eps-converted-to.pdf, id=2591, 587.19376pt x 454.69875pt>
 File: gfx/Chapter-3/b2b-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/b2b-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/b2b-eps-converted-to.pdf  used on input line 169.
@@ -6418,175 +6381,145 @@ Package luatex.def Info: gfx/Chapter-3/b2b-eps-converted-to.pdf  used on input l
 
 ]
 \openout2 = FrontBackmatter/Bibliography.aux
- (./FrontBackmatter/Bibliography.tex
-Overfull \hbox (10.1575pt too wide) in paragraph at lines 15--15
-[]\TU/TeXGyrePagella(0)/m/n/10.95 . \TU/TeXGyrePagella(0)/m/sc/10.95 \TU/TeXGyrePagella(0)/m/n/10.95 : [][]$\TU/DejaVuSansMono(0)/m/sc/10.95 https : / / deap . readthedocs . io / en / master / examples /
- []
-
-[127
+ (./FrontBackmatter/Bibliography.tex [127
 
 
 
 ]
-Overfull \hbox (8.86319pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/sc/10.95 \TU/TeXGyrePagella(0)/m/n/10.95 : -, -. \TU/TeXGyrePagella(0)/m/sc/10.95 \TU/TeXGyrePagella(0)/m/n/10.95 : [][]$\TU/DejaVuSansMono(0)/m/sc/10.95 10 . 1061 / (ASCE ) 0733 - 9496(2003 )
- []
-
-
-Overfull \hbox (11.98831pt too wide) in paragraph at lines 15--15
+Overfull \hbox (11.23276pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 “  Chesa-peake Bay Eu-troph-i-ca-tion: Sci-en-tific Un-der-stand-ing, Ecosys-
  []
 
 
-Overfull \hbox (5.35939pt too wide) in paragraph at lines 15--15
+Overfull \hbox (4.60384pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/it/10.95 Jour-nal of En-vi-ron-men-tal En-gi-neer-ing and Sci-ence \TU/TeXGyrePagella(0)/m/n/10.95 . (), pp. –
  []
 
-[128] [129]
-Overfull \hbox (4.713pt too wide) in paragraph at lines 15--15
+[128]
+Overfull \hbox (2.04927pt too wide) in paragraph at lines 15--15
+[]\TU/TeXGyrePagella(0)/m/n/10.95 Al-berto Camp-isano, Wolf-gang Schilling, and Carlo Mod-ica. “  Reg-
+ []
+
+[129]
+Overfull \hbox (3.95744pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Pe-tra van Daal, Gün-ter Gru-ber, Jeroen Langeveld, Dirk Muschalla,
  []
 
 
-Overfull \hbox (0.59714pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 Velez, and Stef-fen Ud-luft. “  Learn-ing and pol-icy search in stochas-
- []
-
-
-Overfull \hbox (2.46289pt too wide) in paragraph at lines 15--15
+Overfull \hbox (1.70734pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Clay H. Emer-son, Claire Welty, and Robert G. Traver. “  Watershed-
  []
 
 [130]
-Overfull \hbox (175.23112pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 sewer net-work us-ing a multi-goal ob-jec-tive func-tion.” In: \TU/TeXGyrePagella(0)/m/it/10.95 http://dx.doi.org/./X..
+Overfull \hbox (145.17943pt too wide) in paragraph at lines 15--15
+\TU/TeXGyrePagella(0)/m/n/10.95 net-work us-ing a multi-goal ob-jec-tive func-tion.” In: \TU/TeXGyrePagella(0)/m/it/10.95 http://dx.doi.org/./X..
  []
 
 [131]
-Overfull \hbox (3.67049pt too wide) in paragraph at lines 15--15
+Overfull \hbox (2.91493pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Shix-i-ang Gu, Tim-o-thy Lil-l-i-crap, Ilya Sutskever, and Sergey Levine.
  []
 
-[132] [133]
-Overfull \hbox (6.05084pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 In: \TU/TeXGyrePagella(0)/m/it/10.95 Pro-ceed-ings of the Wa-ter En-vi-ron-ment Fed-er-a-tion \TU/TeXGyrePagella(0)/m/n/10.95  (), pp. –
- []
-
-[134]
-Overfull \hbox (0.24683pt too wide) in paragraph at lines 15--15
-[]\TU/TeXGyrePagella(0)/m/n/10.95 Ric Law-son, Eliz-a-beth Riggs, Debi Weiker, and Jonathan Doubek.
- []
-
-
-Overfull \hbox (2.48352pt too wide) in paragraph at lines 15--15
+[132] [133] [134]
+Overfull \hbox (1.72797pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 Canals for Con-troller De-sign.” In: \TU/TeXGyrePagella(0)/m/it/10.95 Jour-nal of Ir-ri-ga-tion and Drainage
  []
 
 
-Overfull \hbox (1.14929pt too wide) in paragraph at lines 15--15
+Overfull \hbox (0.39374pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Na-dia Schou Vorn-dran Lund, Anne Ka-trine Vinther Falk, Morten
  []
 
-[135]
-Overfull \hbox (12.06302pt too wide) in paragraph at lines 15--15
+
+Overfull \hbox (11.30746pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Mag-da-lene Mari-naki and Markos Pa-pa-geor-giou. “  Linear-quadratic
  []
 
-
-Overfull \hbox (20.89085pt too wide) in paragraph at lines 15--15
+[135]
+Overfull \hbox (20.1353pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 El-bys Mene-ses, Mar-ion Gaussens, Carsten Jakob-sen, Pe-ter Mikkelsen,
  []
 
 
-Overfull \hbox (2.68576pt too wide) in paragraph at lines 15--15
+Overfull \hbox (1.9302pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 tex.ids: mene-sesCo-or-di-nat-in-gRule-BasedSys-temWidea, p. .
  []
 
 
-Overfull \hbox (20.89085pt too wide) in paragraph at lines 15--15
-[]\TU/TeXGyrePagella(0)/m/n/10.95 El-bys Mene-ses, Mar-ion Gaussens, Carsten Jakob-sen, Pe-ter Mikkelsen,
- []
-
-[136]
-Overfull \hbox (2.97269pt too wide) in paragraph at lines 15--15
+Overfull \hbox (2.21713pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Volodymyr Mnih, Ko-ray Kavukcuoglu, David Sil-ver, Alex Graves,
  []
 
 
-Overfull \hbox (7.0152pt too wide) in paragraph at lines 15--15
+Overfull \hbox (6.25964pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 three EU cities.” In: \TU/TeXGyrePagella(0)/m/it/10.95 http://dx.doi.org/./X..
  []
 
-
-Overfull \hbox (14.73557pt too wide) in paragraph at lines 15--15
+[136]
+Overfull \hbox (13.98001pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 “  Emerg-ing in-ves-ti-ga-tors se-ries: build-ing a the-ory for smart stormwa-
  []
 
 
-Overfull \hbox (14.73557pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 “  Emerg-ing in-ves-ti-ga-tors se-ries: build-ing a the-ory for smart stormwa-
- []
-
-
-Overfull \hbox (7.72333pt too wide) in paragraph at lines 15--15
+Overfull \hbox (6.96777pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Ab-hi-ram Mul-la-pudi, Matthew Bar-tos, Bran-don Wong, and Branko
  []
 
-[137]
-Overfull \hbox (2.19543pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 Jamie Schulte, Ben Tse, Eric Berger, and Eric Liang. “  Au-tonomous
- []
-
-[138]
-Overfull \hbox (30.60004pt too wide) in paragraph at lines 15--15
+[137] [138]
+Overfull \hbox (29.84448pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 K R Reddy, W H Patrick, and C W Lin-dau. “  Nitrification-Denitrification
  []
 
 
-Overfull \hbox (18.59923pt too wide) in paragraph at lines 15--15
+Overfull \hbox (17.84367pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/it/10.95 Lim-nol-ogy and Oceanog-ra-phy Lim-nol. Oceanogr \TU/TeXGyrePagella(0)/m/n/10.95 . (), pp. –
  []
 
-[139]
-Overfull \hbox (3.88483pt too wide) in paragraph at lines 15--15
+
+Overfull \hbox (3.12927pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Sara P. Rimer, Ab-hi-ram Mul-la-pudi, Sara C. Trout-man, and Branko
  []
 
-
-Overfull \hbox (7.47762pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/it/10.95 sion . - Man-ual\TU/TeXGyrePagella(0)/m/n/10.95 . EPA//R-/ (NTIS EPA//R-/b).
- []
-
-[140] [141]
-Overfull \hbox (19.49088pt too wide) in paragraph at lines 15--15
+[139] [140]
+Overfull \hbox (18.73532pt too wide) in paragraph at lines 15--15
 \TU/TeXGyrePagella(0)/m/n/10.95 of Wil-helmshaven.” In: \TU/TeXGyrePagella(0)/m/it/10.95 http://dx.doi.org/./X..
  []
 
 
-Overfull \hbox (30.84439pt too wide) in paragraph at lines 15--15
+Overfull \hbox (30.08884pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 David Sil-ver, Thomas Hu-bert, Ju-lian Schrit-twieser, Ioan-nis Antonoglou,
  []
 
-[142] [143]
-Overfull \hbox (0.66858pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 “  Mod-elling and real-time con-trol of the in-te-grated ur-ban wastew-
+[141]
+Overfull \hbox (9.65053pt too wide) in paragraph at lines 15--15
+\TU/TeXGyrePagella(0)/m/n/10.95 Gabriela Cem-brano, and Luca Vez-zaro. “  An MPC-Enabled SWMM
  []
 
 
-Overfull \hbox (0.1675pt too wide) in paragraph at lines 15--15
-\TU/TeXGyrePagella(0)/m/n/10.95 a-ter sys-tem.” In: \TU/TeXGyrePagella(0)/m/it/10.95 En-vi-ron-men-tal Mod-elling and Soft-ware \TU/TeXGyrePagella(0)/m/n/10.95 . (),
+Overfull \hbox (10.8863pt too wide) in paragraph at lines 15--15
+\TU/TeXGyrePagella(0)/m/n/10.95 ming.” In: \TU/TeXGyrePagella(0)/m/it/10.95 Ma-chine Learn-ing Pro-ceed-ings \TU/TeXGyrePagella(0)/m/n/10.95 . El-se-vier, , pp. –
+ []
+
+[142]
+Overfull \hbox (3.55914pt too wide) in paragraph at lines 15--15
+[]\TU/TeXGyrePagella(0)/m/n/10.95 Pe-ter A. Van-rol-leghem, Lorenzo Benedetti, and J. Meir-laen. “  Mod-
  []
 
 
-Overfull \hbox (3.55382pt too wide) in paragraph at lines 15--15
+Overfull \hbox (2.79826pt too wide) in paragraph at lines 15--15
 []\TU/TeXGyrePagella(0)/m/n/10.95 Steve Wise. “  Green in-fras-truc-ture ris-ing.” In: \TU/TeXGyrePagella(0)/m/it/10.95 Plan-ning \TU/TeXGyrePagella(0)/m/n/10.95 . (),
  []
 
-[144]) [145]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
- (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux) (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Publications.aux) (./FrontBackmatter/Contents.aux) (./Chapters/Introduction.aux) (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Conclusion.aux) (./Chapters/Appendix01.aux) (./Chapters/Appendix03.aux) (./FrontBackmatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+[143]
+Overfull \hbox (51.25975pt too wide) in paragraph at lines 15--15
+\TU/TeXGyrePagella(0)/m/n/10.95 . (), pp. –. \TU/TeXGyrePagella(0)/m/sc/10.95 \TU/TeXGyrePagella(0)/m/n/10.95 : -. \TU/TeXGyrePagella(0)/m/sc/10.95 \TU/TeXGyrePagella(0)/m/n/10.95 : [][]$\TU/DejaVuSansMono(0)/m/sc/10.95 10 . 1029 / WR021i012p01797$[][]\TU/TeXGyrePagella(0)/m/n/10.95 . 
+ []
+
+) [144]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+ (./ClassicThesis.aux (./FrontBackmatter/DirtyTitlepage.aux) (./FrontBackmatter/Titlepage.aux) (./FrontBackmatter/Titleback.aux) (./FrontBackmatter/Abstract.aux) (./FrontBackmatter/Publications.aux) (./FrontBackmatter/Contents.aux) (./Chapters/Introduction.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux) (./Chapters/Chapter6.aux) (./Chapters/Conclusion.aux) (./Chapters/Appendix-2.aux) (./Chapters/Appendix-4.aux) (./FrontBackmatter/Bibliography.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 
 
  *File List*
@@ -6756,7 +6689,7 @@ FrontBackmatter/Abstract.tex
 FrontBackmatter/Publications.tex
 FrontBackmatter/Contents.tex
 Chapters/Introduction.tex
-Chapters/Chapter1.tex
+Chapters/Chapter2.tex
 gfx/Chapter-1/k-drawing-eps-converted-to.pdf
 gfx/Chapter-1/coupled_model.png
 gfx/Chapter-1/Model_Individual.png
@@ -6764,7 +6697,7 @@ gfx/Chapter-1/local-eps-converted-to.pdf
 gfx/Chapter-1/Glo_sys_rep-eps-converted-to.pdf
 gfx/Chapter-1/Global-eps-converted-to.pdf
 gfx/Chapter-1/arch.png
-Chapters/Chapter2.tex
+Chapters/Chapter3.tex
 gfx/Chapter-2/fig_1_v2.png
 gfx/Chapter-2/Figure_2_Control_Flow_Landscape.png
 gfx/Chapter-2/fod-eps-converted-to.pdf
@@ -6772,7 +6705,7 @@ gfx/Chapter-2/Figure5_F-eps-converted-to.pdf
 gfx/Chapter-2/Figure7-eps-converted-to.pdf
 gfx/Chapter-2/Figure4-eps-converted-to.pdf
 gfx/Chapter-2/Figure6-eps-converted-to.pdf
-Chapters/Chapter3.tex
+Chapters/Chapter4.tex
 gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf
 gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf
 gfx/Chapter-3/single_pond-eps-converted-to.pdf
@@ -6780,13 +6713,13 @@ gfx/Chapter-3/system_tarining-eps-converted-to.pdf
 gfx/Chapter-3/system_scale_1-eps-converted-to.pdf
 gfx/Chapter-3/system_scale_2-eps-converted-to.pdf
 gfx/Chapter-3/heatmap-eps-converted-to.pdf
-Chapters/Chapter4.tex
+Chapters/Chapter5.tex
 gfx/Chapter-4/bae-opt.png
 gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf
-gfx/Chapter-4/performance_gamma-eps-converted-to.pdf
-gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf
+gfx/Chapter-4/performance-eps-converted-to.pdf
+gfx/Chapter-4/epsilon-eps-converted-to.pdf
 gfx/Chapter-4/ucq-eps-converted-to.pdf
-Chapters/Chapter5.tex
+Chapters/Chapter6.tex
 gfx/Chapter-5/pystormsLayersSketch.png
 gfx/Chapter-5/pystorms_code-eps-converted-to.pdf
 gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf
@@ -6794,9 +6727,9 @@ gfx/Chapter-5/algo-eps-converted-to.pdf
 gfx/Chapter-5/equalfilling-eps-converted-to.pdf
 Chapters/Conclusion.tex
 gfx/rs_final-eps-converted-to.pdf
-Chapters/Appendix01.tex
+Chapters/Appendix-2.tex
 gfx/Chapter-1/Controller_Logic.png
-Chapters/Appendix03.tex
+Chapters/Appendix-4.tex
 gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf
 gfx/Chapter-3/eqf-eps-converted-to.pdf
 gfx/Chapter-3/new_reward-eps-converted-to.pdf
@@ -6805,19 +6738,11 @@ gfx/Chapter-3/b2b-eps-converted-to.pdf
 FrontBackmatter/Bibliography.tex
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `ClassicThesis.out' has not changed.
-(rerunfilecheck)             Checksum: BC7E1348B27EF425FE0E6229A57183B9;7662.
+(rerunfilecheck)             Checksum: CFD37ADF3B47EE253E3BBC3E9ECC652F;7607.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                ClassicThesis
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 
@@ -6825,19 +6750,19 @@ Package logreq Info: Writing requests to 'ClassicThesis.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42458 strings out of 494413
+ 42416 strings out of 494413
  100000,2373549 words of node,token memory allocated
- 10333 words of node memory still in use:
-   17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 65 glue, 21 kern, 3 penalty, 2 sub_mlist, 10 margin_kern, 1011 glyph, 302 attribute, 141 glue_spec, 302 attribute_list, 3 write, 40 pdf_action, 2 pdf_colorstack nodes
-   avail lists: 1:11,2:1124,3:265,4:116,5:833,6:265,7:7140,8:158,9:452,10:26,11:610,12:1
- 43600 multiletter control sequences out of 65536+600000
- 179 fonts using 56647751 bytes
+ 10215 words of node memory still in use:
+   17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 66 glue, 21 kern, 3 penalty, 2 sub_mlist, 10 margin_kern, 1000 glyph, 296 attribute, 141 glue_spec, 296 attribute_list, 3 write, 36 pdf_action, 2 pdf_colorstack nodes
+   avail lists: 1:11,2:1064,3:256,4:119,5:832,6:272,7:7146,8:158,9:452,10:27,11:610,12:1
+ 43572 multiletter control sequences out of 65536+600000
+ 179 fonts using 56648095 bytes
  75i,23n,98p,9091b,3858s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-BoldItalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bolditalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (165 pages, 14121239 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-BoldItalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bolditalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
+Output written on ClassicThesis.pdf (164 pages, 14118421 bytes).
 
-PDF statistics: 2989 PDF objects out of 3580 (max. 8388607)
- 2562 compressed objects within 26 object streams
- 641 named destinations out of 1000 (max. 131072)
+PDF statistics: 2932 PDF objects out of 2984 (max. 8388607)
+ 2531 compressed objects within 26 object streams
+ 627 named destinations out of 1000 (max. 131072)
  785 words of extra memory for PDF output out of 10000 (max. 100000000)
 

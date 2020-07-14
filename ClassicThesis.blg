@@ -9,34 +9,14 @@ A level-1 auxiliary file: FrontBackmatter/Abstract.aux
 A level-1 auxiliary file: FrontBackmatter/Publications.aux
 A level-1 auxiliary file: FrontBackmatter/Contents.aux
 A level-1 auxiliary file: Chapters/Introduction.aux
-A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
 A level-1 auxiliary file: Chapters/Chapter4.aux
 A level-1 auxiliary file: Chapters/Chapter5.aux
-Case mismatch error between cite keys Vezzaro2014 and vezzaro2014
----line 944 of file ClassicThesis.aux
- : \citation{Vezzaro2014
- :                      }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Sadler2019 and sadler2019
----line 957 of file ClassicThesis.aux
- : \citation{Sadler2019
- :                     }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Lund2018 and lund2018
----line 975 of file ClassicThesis.aux
- : \citation{Lund2018
- :                   }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Vezzaro2014 and vezzaro2014
----line 1027 of file ClassicThesis.aux
- : \citation{Vezzaro2014
- :                      }
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: Chapters/Chapter6.aux
 A level-1 auxiliary file: Chapters/Conclusion.aux
-A level-1 auxiliary file: Chapters/Appendix01.aux
-A level-1 auxiliary file: Chapters/Appendix03.aux
+A level-1 auxiliary file: Chapters/Appendix-2.aux
+A level-1 auxiliary file: Chapters/Appendix-4.aux
 A level-1 auxiliary file: FrontBackmatter/Bibliography.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -52,70 +32,54 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 33495 items from 5000.
+Reallocated field_info (elt_size=4) to 31688 items from 5000.
 Database file #1: ClassicThesis-blx.bib
 Database file #2: Bibliography.bib
 Warning--entry type for "One" isn't style-file defined
---line 394 of file Bibliography.bib
-Repeated entry---line 1263 of file Bibliography.bib
- : @article{schutze_sewer_2008
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2054 of file Bibliography.bib
- : @article{Lund2018
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2178 of file Bibliography.bib
- : @article{Sadler2019
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2263 of file Bibliography.bib
- : @article{Vezzaro2014
- :                     ,
-I'm skipping whatever remains of this entry
+--line 434 of file Bibliography.bib
 Database file #3: Abhi_Publications.bib
 Biblatex version: 3.8
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 205 entries,
+You've used 192 entries,
             6268 wiz_defined-function locations,
-            2485 strings with 55063 characters,
-and the built_in function-call counts, 1519121 in all, are:
-= -- 113149
-> -- 27204
-< -- 7302
-+ -- 42660
-- -- 10854
-* -- 115204
-:= -- 162525
+            2435 strings with 52917 characters,
+and the built_in function-call counts, 1420616 in all, are:
+= -- 105821
+> -- 25687
+< -- 7033
++ -- 39880
+- -- 10345
+* -- 107357
+:= -- 151261
 add.period$ -- 0
-call.type$ -- 205
-change.case$ -- 204
-chr.to.int$ -- 312
-cite$ -- 408
-duplicate$ -- 163704
-empty$ -- 134652
-format.name$ -- 17424
-if$ -- 305000
+call.type$ -- 192
+change.case$ -- 191
+chr.to.int$ -- 288
+cite$ -- 382
+duplicate$ -- 152630
+empty$ -- 125965
+format.name$ -- 16122
+if$ -- 285564
 int.to.chr$ -- 0
-int.to.str$ -- 560
+int.to.str$ -- 513
 missing$ -- 0
-newline$ -- 8709
-num.names$ -- 10787
-pop$ -- 73297
+newline$ -- 8106
+num.names$ -- 10222
+pop$ -- 68478
 preamble$ -- 1
-purify$ -- 5781
+purify$ -- 5556
 quote$ -- 0
-skip$ -- 43892
+skip$ -- 41628
 stack$ -- 0
-substring$ -- 196346
-swap$ -- 37408
-text.length$ -- 5864
-text.prefix$ -- 229
+substring$ -- 183594
+swap$ -- 35116
+text.length$ -- 5527
+text.prefix$ -- 216
 top$ -- 1
-type$ -- 6953
+type$ -- 6511
 warning$ -- 0
-while$ -- 19981
+while$ -- 18514
 width$ -- 0
-write$ -- 8505
-(There were 8 error messages)
+write$ -- 7915
+(There was 1 warning)

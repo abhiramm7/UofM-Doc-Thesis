@@ -1,474 +1,670 @@
 %************************************************
-\chapter[\texttt{pystorms}]{A simulation sandbox for the development and evaluation of stormwater control algorithms}\label{ch:pystorms}
+\chapter{Bayesian Optimization for shaping stormwater flows}\label{ch:bayes}
 %************************************************
-
 \vspace{1cm}
 
 \section{Introduction}
-\graffito{This chapter is developed in collaboration with \textbf{Sara P. Rimer} (Argonne National Laboratory) and \textbf{Sara C. Troutman} (University of Michigan).}
-
-
-The advent of smart cities is poised to transform the management of our built environment \citep{Chourabi2012, Harrison2011}. Specific to stormwater, a new generation of smart and connected stormwater systems promises to reduce flooding and improve water quality management by autonomously sensing watershed parameters and subsequently controlling corresponding hydraulic components across complete watersheds, both \emph{adaptively} and \emph{in real-time}. These smart systems will provide an alternative to costly concrete-and-steel construction by squeezing even more performance out of existing stormwater and sewer infrastructure, and reimagining the design and operation of new infrastructure. While the idea of controlling distributed stormwater systems in real-time dates back to the 1970s \citep{Trotta1977}, the concept has only recently gained widespread traction in large part due to the affordability of internet-connected sensors, the increased capacity of data services, and the broader acceptance and popularity of other autonomous systems (e.g. self-driving cars and robots). Relative to other fields of autonomy, however, smart water systems are still early in their stage of adoption. Thus, developing and implementing smart water systems presents an exciting opportunity for researchers and practitioners alike to propose new visions, standards, and technologies.
-
- \
- 
-The intelligence of smart stormwater systems broadly refers to the acquisition (i.e. \dquote{sensing}) and processing of data into decisions and actions (i.e. \dquote{control strategies}) that are then used to guide the operation of gates, valves, pumps, and other actuators within a water system. Ultimately, the logic embedded via these control rules determines how water is moved around the collection system to meet specific performance objectives or reduce adverse outcomes (e.g. flooding, overflows, and/or water quality impairments). As such, the emerging field of smart stormwater systems stands to benefit greatly from researchers and stakeholders who can bring to bear new control strategies and techniques.
+% One Para - Short introduction for the paper.
+The next generation of stormwater systems --- equipped with sensors and actuators --- will monitor the state of water to autonomously prevent flooding and improve water quality~\cite{kerkez2016}.
+Over the past few years, a substantial effort has been focused on discovering algorithms for the control of stormwater systems~\cite{Ocampo-Martinez_2015, lund2018,shishegar2018optimization}. 
+While promising, many of these algorithms are highly parametrized, and study results relied on finely-tuned objectives on specific study areas.
+As such, the generalizability of the control methods poses an open area of research.
+Furthermore, the adoption of many existing control methods requires significant human and computational resources, as well as expertise in control theory, machine learning, and urban hydrology.
 
 \
 
-However, due to the complex, bureaucratic nature of watershed management, it can be impenetrable for new groups working in this field to obtain the necessary details of how real-world stormwater systems operate, as those details are unlikely to be opened up to just anyone who wants to try out new ideas of controlling them. To that end, computational toolchains exist for simulating stormwater systems and then evaluating various control rules implemented by them. Yet, developing these simulations and adapting them to specific control strategies often requires a significant amount of effort and expertise.  Furthermore, while a number of promising control algorithms have been proposed, they have all been evaluated on highly specific examples and simulators, making it difficult to establish cross-comparisons of their performance. In an effort to address these limitations, the contribution of this paper is \pystormsNOSPACE, an open-source Python package comprised of:
-%
-\begin{enumerate}
-\item A collection of real world-inspired smart stormwater control scenarios that facilitate the quantitative evaluation of control strategies, coupled with
-\item A programming interface and a stormwater simulator to provide a stand alone package for developing stormwater control strategies.
-\end{enumerate}
-%
-Our aspiration is for \pystorms to emerge as a community-driven resource that fosters accessibility and collaboration amongst smart stormwater control's field of researchers and practitioners, both novices and experts alike. 
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-% -------------------------------------------------------------------------------------------------------------------- %
-\section{Background}
-\label{sec:background}
-% -------------------------------------------------------------------------------------------------------------------- %
-%
-%
-%
-\begin{figure*}
-    \centering
-    \includegraphics[width=\linewidth]{gfx/Chapter-5/pystormsLayersSketch.png}
-    \caption{\pystorms abstracts the control of stormwater systems as scenarios, which are characterized by a computational representation of a stormwater network, a corresponding event driver, set of observable states, and controllable assets that can be leveraged to manipulate the behavior of a stormwater network in real-time to achieve control objectives. This is coupled with a streamlined programming interface and a stormwater simulator to provide the users with a standalone package for the development and evaluation of control algorithms.}
-    \label{fig:scenarioComponents}
-\end{figure*}
-%
-%
-%
-\subsection{Control of Stormwater Systems}
-\label{subsec:controlofstormwatersystems}
-%
-%
-%
-A stormwater control problem can be defined as the development of an infrastructural strategy to manipulate the behavior of stormwater in order to achieve a desired response.
-Traditionally, stormwater control has relied on \emph{passive} solutions, in which control strategies are large-scale, construction-heavy, and often financially-burdensome.
-However, the emergence of microcontrollers, wireless communication technologies, and low-cost sensors has allowed for small-scale, modular, and automated control components (e.g. hydraulic valve operated by cellularly-connected actuator) to be installed at strategic locations throughout a stormwater network for \emph{active} control, with decisions that can be automated, adjusted remotely, and made in real-time.
-Consequently, stormwater infrastructure can now be instantly redesigned to respond to its dynamic environment.
+% What is the contribution of this paper and its novelty?
+To that end, this chapter proposes an automated approach for controlling stormwater systems, using Bayesian Optimization.
+The approach is ``off-the-shelf'', in that it can be evaluated for the control of a stormwater system as long as there exists a numerical model (e.g.\ SWMM, Mike-Urban) for simulating its hydraulic conditions.
+It does not require any formal mathematical abstractions (e.g.\ assumptions on the linearity of dynamics) or surrogate models, making it possible to be applied without tuning or parametrization.
+
+The main contributions of this chapter include:
+\begin{itemize}
+	\item An automated and generalizable approach for identifying control strategies in stormwater networks, with the ability to realize objectives at the watershed scale.
+	\item A methodology for quantifying the uncertainty associated with precipitation forecasts in the context of control decisions.
+	\item An open-source implementation that can be adopted directly ``off-the-shelf'' to control stormwater networks. 
+\end{itemize}
+
+\section{Background: Control of Stormwater Systems}\label{sec:ctrlstrmsystems}
+
+%  What are stormwater systems?
+Stormwater systems are designed to act as conveyance networks for transporting rainfall runoff from the urban environments into downstream water bodies~\cite{national2009urban, Rossman2015a}.
+These networks often form an amalgam of interconnected storage assets, such as basins, which buffer stormwater runoff to reduce flooding and improve water quality.
+While the dynamics of storm events are inherently stochastic and highly variable, stormwater networks functions as static systems~\cite{kerkez2016}.
+Storage and conveyance are sized for an ``average'' storm scenario, or simply governed by the availability of construction area or cost.
+Once constructed, these systems are not upgraded for decades, leading to flooding and water quality impairments due to changing storm patterns and land uses. 
+Simply put, many systems are unable to keep pace with rapid urbanization and evolving weather patterns~\cite{kerkez2016}.
+
 
 \
 
-Although implemented smart stormwater control engineering solutions were documented at least a decade earlier, research-oriented discussion of these implementations did not occur until 1989 \citep{Schilling1989}.
-Furthermore, while implementation of smart stormwater control began at the end of the 20th-century, the 21st-century has seen far more extensive systematic successes, as seen beginning with the foundational reviews of \citet{Schutze2004RealToday} and \citet{Vanrolleghem2005}.
-Some notable adaptive real-time stormwater control implementations that have been installed hand-in-hand with extensive research dissemination include \citet{Ocampo-Martinez2010, Gaborit2013ImprovingForecasts, Vezzaro2014, Gaborit2015ExploringPonds,Gaborit2016, Mullapudi2017, Montestruque2018, Sadler2019}.
-These references we specifically emphasize as to us they represent diverse and well-documented implementations of smart stormwater control from single control assets to watershed-scale implementations.
-For more comprehensive reviews of stormwater control implementations, we direct the reader to some recently published survey articles on the topic \citep{Yuan2019, Lund2018, Shishegar2018, VanDaal2017, Garcia2015}. 
-%
-%
-%
-\subsubsection{Simulating Stormwater Systems}
-\label{subsec:simulatingstormwatersystems}
-%
-%
-%
-Due to the variability of storm events and the safety concerns of experimental uncertainty, it is infeasible to test various control strategies on \emph{actual} stormwater networks. Thus, a more practical method to test the outcomes of different control decisions is to use a computational simulation of a stormwater network that is able to give us a \dquote{good enough} estimate of what the actual in-situ physical results might be. Often, these simulations can be carried out using computational stormwater models that have already been developed to inform the design and operation of the stormwater system being studied.
+% Why is stormwater control?
+Rather than rebuilding stormwater infrastructure to meet the rising demands, retrofitting existing systems with sensors and actuators poses one effective and economical alternative\cite{kerkez2016}.
+Over the past decade, several simulated\cite{Mullapudi_Lewis_Gruden_Kerkez_2020, Troutman_2020, lund2018, Wong_Kerkez_2018,Ocampo-Martinez_2015,vezzaro2014} and real-world case studies\cite{Mullapudi_Bartos_Wong_Kerkez_2018} have demonstrated the effectiveness of control in mitigating flooding, reducing erosion, and improving water quality.
+Akin to self-driving cars, control in stormwater systems enables us to tailor the behavior of the network to individual storm events, so that one can fully utilize the existing storage and coordinate releases to achieve watershed scale objectives~\cite{kerkez2016}.
+
+\subsection{State of Autonomous Stormwater Control}
+The past decade has seen a significant rise in research related to autonomous stormwater control algorithms~\cite{shishegar2018optimization}.
+These studies have proposed and analyzed the applicability of a wide variety of control methodologies --- ranging from static rule-based approaches to deep-learning methods like reinforcement learning.
+Wong et al.~\cite{Wong_Kerkez_2018} and others~\cite{Ocampo-Martinez_2015,joseph2014hybrid, Sun_2020, lund2020cso} have developed control approaches based on classical control (LQR) and linear optimization methodologies.
+These approaches rely on a surrogate linear model that approximates the dynamics of stormwater network.
+On the other end of the spectrum, though deep-learning based control approaches~\cite{Mullapudi_Lewis_Gruden_Kerkez_2020,Ochoa_Riano-Briceno_Quijano_Ocampo-Martinez_2019} do not require a surrogate model, training and tuning a controller using these methods is computationally expensive.
+Static rule based\cite{schmitt2020simulation} and reactive control approaches~\cite{Troutman_2020} can be used without a surrogate model or a pre-trained controller, but designing the rules and appropriate parametrizations in these approaches requires an intimate knowledge of the stormwater network being controlled.
+Though these approaches are very promising, adapting them for the control of new stormwater systems is a non-trivial task.
+This explains, perhaps, why Genetic Algorithm have risen in popularity, due to their black-box, off-the-shelf nature. 
+
 
 \
 
-As a stormwater system is designed to route rainfall and other runoff to a wastewater treatment plant and/or discharge to a receiving body of water, the computational components of stormwater models primarily include a (i) runoff module and (ii) a routing module, and are driven by (iii) precipitation events (e.g. rain, snow). The runoff module converts precipitation into overland runoff; the overland runoff then undergoes hydrological processes (e.g. infiltration, evaporation) and is hydraulically transported to the stormwater collection system, which is carried out computationally via the routing module.
+% What is a GA and how does it work?    
+A significant amount of research in stormwater control has relied on Genetic Algorithms (GA)~\cite{sadler2019, lund2018, Rjeily_2018, Meneses_2018, vezzaro2014}.
+GA iteratively search through the set of possible solutions until converging onto a viable solution.
+The biggest strength of GA is its applicability for optimizing any objective function, irrespective of its underlying mathematical structure, as long it can be numerically evaluated. 
+In the context of stormwater control, GA exhaustively simulate the responses of various control decisions in a stormwater network --- using a simulator (e.g. EPA-SWMM) --- until identifying a viable solution.
+Though GA are intuitive and flexible for identifying control strategies that achieve a wide variety of stormwater control objectives (as long as an objective function can accurately represent them), their fundamental properties hinder its application: (i) Quality of solutions identified by GA --- especially for problems with large solution spaces like stormwater control --- is highly sensitive to the choice of hyper-parameters (e.g.\ population size, generations);
+(ii) Irrespective of the problem, many GAs randomly permutate through the solution space to identify a solution, thus not leveraging the system's inherent structure to explore the solutions efficiently; and (iii) GAs are entirely opaque, and offer us no path to interpret the identified solution nor asses its optimality\footnote{Optimality in GA is evaluated through exhaustive numerical simulations}.
+Readers are directed to Maier et.al for an in-depth analysis on the use GA in the water systems~\cite{maier2014}.
 
 \
 
-Over the years, several different software applications have been developed for modeling and simulating stormwater networks. The different software applications all function in a similar manner in which they computationally estimate the dynamics of stormwater as it moves through predefined temporal and spatial bounds to varying degrees of mathematical accuracy and fidelity to the underlying hydraulic and hydrological governing processes. The US-EPA's Stormwater Management Model (SWMM) \citep{Rossman2015a}, MIKE URBAN+ from the MIKE Powered by DHI software suite\footnote{\href{https://www.mikepoweredbydhi.com/products/mike-urban-plus}{mikepoweredbydhi.com}}, and the Model for Urban Stormwater Improvement Conceptualisation (MUSIC) by eWater\footnote{\href{https://ewater.org.au/products/music/}{ewater.org.au}} are a few examples of widely-used stormwater software applications. Furthermore, in addition to modeling runoff and its routing, some of these software applications have also been developed with the capabilities of modeling urban flooding (e.g. MIKE FLOOD) as well as the generation and transport of pollutants (e.g. SWMM). The computational details underlying the models produced by these software applications are not the purpose of this paper, and instead for clarity and further detail, the reader is directed to \citet{Rossman2015b}, \citet{Rossman2017}, and \citet{Rossman2016}. Additionally, we provide further detail about the hydraulic simulator we utilize in Section \ref{subsec:architecture}.
-%
-%
-%
-\subsubsection{Implementing Control}
-\label{subsec:implementingcontrol}
-%
-%
-%
-For those unfamiliar with control theory and control systems engineering, the field can be evasive. Here, we aim to maintain the idea of control in its broadest but most straightforward meaning: after receiving some sort of \emph{cue} (for our systems, this cue may be readings from sensors), an \emph{action} is taken on the system to alter it for a desired outcome (an action for stormwater systems may be as simple as the opening and closing of a valve). When we implement \emph{control}, we are making decisions and taking actions that try to optimize our system in order to meet some specified objective. Thus, a stormwater control strategy can be simplified as the method of developing rules that determine actions to be implemented by the stormwater system. The computational process of implementing this method to find these actions is what we define as the \emph{stormwater control algorithm}.
+% What about all other things people have been working on?
+Furthermore, recent works in the control of stormwater systems have also acknowledged the limitation of the existing approaches in quantifying the rainfall uncertainty associated with control decisions\cite{sadler2019}.
+Hence, there is a need for an easy to use and generalizable control approach, that addresses the limitations of GA and also can quantify uncertainty; such an approach would be instrumental in transitioning autonomous stormwater control algorithms from the realm of simulation into adoption on a physical system. The Bayesian Optimization approach presented in this work is one such approach.
 
-\
-
-It is easy to imagine how finding the \dquote{best} actions to implement is a complex undertaking. Suppose a stormwater system with only one valve was installed, and that valve could be either completely opened or closed every hour. Deciding on a pattern for the complete opening and closing of the valve --- even over the period of a few days --- in order to meet some sort of objective is actually quite difficult, with no guarantee of a singularly \dquote{correct} solution. Now, imagine if the action could be to open the valve as a percentage between 0--100\% --- the combination of actions that can be implemented becomes even more endless. From an initial perspective, this process of finding the \dquote{best} and \dquote{correct} solution from what is an inexhaustible set of possibilities might seem futile. However, for stormwater applications, finding such an absolute \dquote{best} solution is usually not necessary, and most likely does not even exist. Instead, a solution that provides a \dquote{better} outcome than the current one is often sufficient and can still drastically benefit the system. Additionally, such better solutions are actually dependent on how a system's underlying needs are even defined. That is, \emph{how we define the objective determines what is considered optimal}. Thus, research on stormwater control focuses on both (i) the formulation of control objectives and (ii) analyzing and differentiating the myriad potential solutions based on said formulations. While the former research is essential in this field, it is not the focus of this paper. Rather, our initiative here concentrates on the latter: via the presented simulation sandbox \pystormsNOSPACE, we aim to develop a systematic means for analyzing and differentiating control solutions for stormwater systems with pre-defined objectives.
-
-\
-
-Thus far, we have discussed \dquote{smart stormwater control} in its broadest sense, which encompasses all layers that a smart stormwater control system would entail --- from the sensors chosen, the communication protocol implemented for those sensors, the data management of what is sensed, the wireless actuators controlling a control asset, even to the human operators who may interact or intervene physically with the system. However, from here on out, we focus our discussion of smart stormwater control strategies strictly on \emph{the computational algorithm that is used to determine the discrete actions to be taken by the system's control assets based on information known regarding the system's past, current, and/or future state}. This algorithm can allow for the control strategy to be implemented and adjusted over any number of given time periods, and can be coordinated amongst any number of control assets within the system. By focusing strictly on the computational algorithm, we are able to isolate one component of smart stormwater systems that can allow for \emph{quantitative} cross-comparisons of strategies used across a multitude of stormwater systems. Additionally, the focus on the computational algorithm also centers the component of a smart stormwater system that can specifically benefit from experts outside the discipline of water resources engineering.
-%
-%
-%
-\subsection{The Need for a Simulation Sandbox}
-\label{subsec:overviewofthesimulationsandbox}
-%
-%
-%
-Even though smart stormwater control has been successfully implemented for decades, there still does not exist a standard to systematically evaluate the performance of different control strategies across diverse stormwater networks and contexts. Consequently, this inability to systematically evaluate smart stormwater control directly impedes our field's ability to bring new and necessary expertise to solve some of our most essential and complex problems. 
-
-\
-
-As demonstrated by the smart stormwater control survey papers referenced in Section \ref{subsec:controlofstormwatersystems}, this desire for direct and systematized comparisons of control strategies is not an isolated realization. While there have been previous efforts to introduce benchmarking stormwater networks for evaluating control strategies \citep{Schutze2017, Borsanyi2008}, we identify the need to make available a more extensive assortment of example stormwater networks to the broader research community. This assortment of networks must be both nonexclusive and nonrestrictive, and capture the complexity and diversity of features unique to stormwater.
-Furthermore, we recognize that there is a need for an unambiguous programming interface that explicates the computational backend and aids researchers to easily utilize the example networks for prototyping stormwater control solutions. 
-
-\
-
-We developed \pystorms as a Python-based \emph{simulation sandbox} to accelerate a researcher's ability to computationally simulate and evaluate stormwater control strategies. \pystorms provides a collection of diverse stormwater control scenarios, which are drawn from real-world urban watersheds to encompass diverse features appertaining to stormwater systems. These scenarios are coupled with a stormwater simulator and streamlined programming interface, which together provide researchers with a standalone package that focuses its usage on stormwater control algorithm development and testing. Our intention is that \pystorms reduces the programming learning curve that can be a barrier to those aspiring to learn stormwater control, and also curates an open repository of smart stormwater control examples which foster the development and evaluation of any number of new control strategies applied to them. In the following section, we present a detailed overview of the design and architecture of \pystormsNOSPACE, and how it facilitates the systematic evaluation of stormwater control strategies. 
-%
-%
-%
-\begin{table*}[ht]
-\small
-\caption{Terminology defined for the \pystorms package and to delineate stormwater scenarios.}\label{tab:terminology}
-\begin{tabular}{l p{3.5in}}
-\toprule
-\textbf{Network Topology} & We distinguish a \emph{network} to be the physical system of conduits (e.g.\ pipes, culverts), storage elements (e.g.\ retention and detention basins), and any other subcatchment infrastructure (e.g.\ green infrastructure, wetlands) that collect, convey, and/or treat stormwater runoff. \\\midrule
-\textbf{Event Driver} & Any inputs or ``disturbances'' to the network that govern the generation and flow of runoff are defined as event drivers.
-Most often, an event driver is the precipitation generating runoff in the watershed.
-It can also include wastewater flows, tidal fluctuations of connected water bodies, or any other such phenomenon that influence the flow of runoff in the network. \\\midrule
-\textbf{Controllable Assets} & Any elements (e.g.\ basins, wetlands, CSO pump stations) that are equipped with valves, pumps, or any other flow control infrastructure that can be actuated to manipulate stormwater flow. \\\midrule
-\textbf{Observable States} & The collection of states in the network (e.g.\ water levels, flows, pollutants) that can be accessed by the users during a simulation. \\\midrule
-\textbf{Control Objectives} & The overall goal or set of goals (e.g.\ preventing flooding, improving water quality, reducing erosion) of manipulating the behavior of a stormwater network using controllable assets during a simulation.
-The ability of a controller to achieve a particular objective is quantified using a performance metric. \\
-\bottomrule
-\end{tabular}
-\end{table*}
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-% -------------------------------------------------------------------------------------------------------------------- %
-\section{\pystorms}\label{sec:pystorms}
-% -------------------------------------------------------------------------------------------------------------------- %
-%
-%
-%
-Developed in Python, \pystorms is supported on all major operating systems (OSX, Windows, and Linux) and can be installed using \texttt{pip}\footnote{\href{https://pypi.org/project/pystorms/}{pypi.org/project/pystorms}}.
-\pystorms is distributed under the GNU General Public GPLv3 license\footnote{\href{https://www.gnu.org/licenses/gpl-3.0.html}{gnu.org/licenses/gpl-3.0.html}}, which ensures that this package and its derivatives remain open-source and can be used free of cost. Additionally, source code for the package is available on Github\footnote{\href{https://github.com/kLabUM/pystorms}{github.com/kLabUM/pystorms}}, alongside comprehensive documentation and tutorials to utilize and contribute to its broader development\footnote{\href{http://open-storm.org/pystorms}{open-storm.org/pystorms}}. 
-%
-%
-%
-\subsection{Scenarios}\label{subsec:scenarios}
-%
-%
-%
-\begin{table*}[ht]
-\small
-\caption{\pystorms includes a curated collection of real world-inspired stormwater scenarios for developing and quantitatively evaluating the performance of stormwater control algorithms.}\label{tab:scenarios}
-\begin{tabular}{p{0.5in}p{1.75in}p{1.75in}}
-\toprule
-\textbf{Scenario} & \textbf{Network} & \textbf{Control Objectives} \\\midrule
-\scenario{theta} & $2 \unit{km^2}$ idealized separated stormwater network & Maintain the flows at the outlet below a threshold and avoid flooding (2 storage basin outlets) \\\midrule
-\scenario{alpha} & $0.12 \unit{km^2}$ residential combined sewer network & Minimize total combined sewer overflow volume (5 weirs at interceptor connections) \\\midrule
-\scenario{beta} & $1.3 \unit{km^2}$ separated stormwater network with a tidally-influenced receiving river & Minimize flooding (1 detention pond outlet, 1 storage basin outlet, 1 pump) \\\midrule
-\scenario{gamma} & $4 \unit{km^2}$ highly urban separated stormwater network & Maintain channel flows below threshold and avoid flooding (11 detention pond outlets) \\\midrule
-\scenario{delta} & $1.7 \unit{km^2}$ combined sewer network in which the stormwater ponds also serve as waterfront & Maintain water levels within upper and lower thresholds for water quality and aesthetic objectives (5 storage basin outlets) \\\midrule
-\scenario{epsilon} & $67 \unit{km^2}$ highly urban combined sewer network & Maintain sewer network outlet TSS load below threshold and avoid flooding (11 in-line storage dams) \\ \midrule
-\scenario{zeta} & $1.8 \unit{km^2}$ combined and separated sewer network (based on the Astlingen benchmarking network \citep{Schutze2017, Sun2020}) & Maximize flow to downstream wastewater treatment plant and minimize total combined sewer overflow volume (4 storage basin outlets) \\
-\bottomrule
-\end{tabular}
-\end{table*}
-%
-%
-%
-\pystorms abstracts smart stormwater systems as \emph{scenarios}. Each scenario is described by (i) \emph{an underlying stormwater network}--which includes the network's topology (e.g.\ a sewer system draining into a water body) and its event driver (e.g.\ storm event)--and its \emph{overlaying control system}, which includes a set of observable states (e.g.\ water levels), controllable assets (e.g.\ basins with controllable valves at outlet), and a specific control objective (e.g.\ preventing flooding). The specific terminology for a scenario in \pystorms is described in further detail in Table~\ref{tab:terminology}, and the corresponding delineation between (i) and (ii) is illustrated in Fig.~\ref{fig:scenarioComponents}. 
-
-\
-
-By abstracting our stormwater systems as scenarios, we are able to create new scenarios with relative ease by interchanging different scenario components. For example, let us assume we have evaluated a control algorithm when applied to an individual scenario. We can now broaden our inquiry and test the algorithm's \emph{scalability} by interchanging components of our scenario's overlaying control system (e.g. sequentially increase its number of controllable assets), and evaluating the algorithm on this newly derived set of scenarios. Similarly, we can quantify the \emph{generalizability} of a control algorithm as it is applied to a specific control objective (e.g.\ maintaining water level set points) by systematically altering the underlying stormwater network (e.g. cycle through a set of design storms as the event driver) while retaining the overall control system. We can then calculate a performance metric of the algorithm when applied across this new subsequent set of scenarios. Thus, not only can can now evaluate a control algorithm applied to an individual stormwater scenario, but we can also evaluate it more universally when applied across a spectrum of these interchanged scenarios. 
-
-\
-
-\pystorms provides an collection of seven scenarios, drawn from real-world smart stormwater systems across North America and Europe and named as a letter from the Greek alphabet. The collection of scenarios span a multitude of stormwater systems that address a diverse set of urban watershed needs with various smart control objectives. The subcatchment areas range from $0.12 - 67 \unit{km^2}$ in size, and include both combined and separated stormwater arrangements. A brief summary of the collection's scenarios are presented in Table~\ref{tab:scenarios}, with their more detailed descriptions provided throughout this paper's appendices. 
-
-\
-
-While our aim is for this collection of scenarios to be representative of a myriad of smart stormwater control, we recognize that it is certainly not exhaustive. As such, we aspire to grow the \pystorms repository of stormwater scenarios through community-driven contributions of new scenarios. Accordingly, we provide extensive documentation \footnote{\href{https://klabum.github.io/pystorms/build/html/BuildingScenarios.html}{open-storm.org/pystorms/docs/build-scenarios}} for users to contribute their own scenarios, or modify the existing ones. 
-
-\
-
-To demonstrate what is a scenario in the context of \pystormsNOSPACE, we present here Scenario \scenario{theta}, an idealized stormwater network that can be used for rapid prototyping of control strategies. Scenario \scenario{theta}'s \emph{network topology} can be described as two $1000 \unit{m^3}$ storage basins connected in parallel and draining through a shared outlet into a downstream water body. The \emph{event driver} is a synthetic rain event lasting $9 \unit{hr}$ with a peak intensity of $3.2 \unit{in}$. We stipulate the \emph{observable states} to be the water levels at the two basins at each $15 \unit{min}$ time-step of the simulation, and the \emph{controllable assets} are outlet valves of both storage basins adjustable at each time-step between $0-100\unit{\%}$ open. The \emph{control objective} is to maintain the outflow into the downstream water body below a specified threshold of $0.5 \unit{m^3s^{-1}}$, while simultaneously preventing flooding at the basins. The ability of a control strategy to meet \scenario{theta}'s control objective is quantified using a pre-defined performance metric that computes a penalty for violating the control objective at each time-step, and sums these penalties across the whole simulation. We provide the specific details on this performance metric (eq.~\ref{eq:perf-obj}) in Section~\ref{sec:evaluatingcontrolstrategies} where we evaluate the performance of two different example control strategies applied to \scenario{theta}.
-%
-%
-%
-\subsection{Programming Interface}
-%
-%
-%
-\begin{figure}[ht]
-    \centering
-	\includegraphics[width=0.9\linewidth]{gfx/Chapter-5/pystorms_code.eps}
-	\caption{\pystorms provides a high-level abstraction for simulating control in stormwater networks for users to quantitatively evaluate the performance of control strategies with minimal overhead.}\label{fig:code}
+\section{Control of stormwater systems using Bayesian Optimization}\label{sec:bae}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.90\linewidth]{gfx/Chapter-4/bae-opt.png}
+	\caption{Bayesian Optimization converges onto an optimal control decision that realizes the stormwater network's desired response by learning a surrogate objective function and identifying the control decision that minimizes it. Surrogate objective functions, in Bayesian Optimization, maps the control decisions ($\vx$) to their corresponding performance ($z$). It is learned by evaluating the performance of the various control decisions in the solution space. A control decision's performance is evaluated by simulating its response using a stormwater simulator and quantifying the simulated response (e.g.\ hydrographs, water levels, and pollutographs) using a performance metric.}\label{fig:bae}
 \end{figure}
-%
-%
-%
-The \pystorms programming interface is inspired by the principles of control theory, where the control of a system is abstracted as an iterative process (also known as a control loop) in which a controller monitors the underlying state(s) of the system of interest, and makes calculated adjustments --- via control actions --- to the system for it to achieve a desired behavior. In the context of smart stormwater control, our system of interest is our stormwater network, and the states and control actions are represented by the set of observable states and the specific control asset configurations (e.g.\ valve positions and pump settings). Thus, we have discretized the simulation of stormwater control in \pystorms as the following series of steps:
-%
-\begin{enumerate}
-	\item \label{query} \textbf{Query the set of observable states} for specified locations in the stormwater network at the current time-step; then potentially use these queried states to 
-	\item \label{compute} \textbf{Compute control actions} to manipulate the system to achieve a desired behavior; and finally, 
-	 \item \label{implement} \textbf{Implement the control actions} by adjusting the settings of the controllable assets that serve as inputs into the underlying system. 
-\end{enumerate}
+
+% Introduce Bayesian Optimization
+In this chapter, we introduce a Bayesian Optimization (BO) based approach for controlling stormwater systems.
+BO can be applied to optimize systems that are computationally expensive to simulate and whose dynamics restrict them from being easily formulated in the classical optimization framework~\cite{frazier2018tutorial}.
+BO optimizes systems by learning a surrogate objective function.
+It relies on this function to quantify the uncertainty associated with the identified optimum and reduce the computational resource required for the optimization process~\cite{frazier2018tutorial}. 
+BO is extensively used in the AI community to optimize hyper-parameters in the deep learning models~\cite{chen_huang_2018, brochu2010tutorial, frazier2018tutorial}.
+In the water domain, Candelieri et al.\ used BO for pump scheduling optimization in water distribution networks~\cite{Candelieri_Perego_Archetti_2018}.
+To the best of our knowledge, BO has not yet been applied for the control of stormwater systems.
 
 \
 
-We initialize a \pystorms scenario by creating an instance of it using the statement:  \texttt{pystorms.scenarios.<scenario name>()}.
-As seen in Fig.~\ref{fig:code}, \scenario{theta} is initialized with \texttt{pystorms.scenarios.theta()}.
-The initialization then configures the stormwater simulator with the computational representations necessary to simulate the respective scenario, and returns it as a Python object. This Python object (\texttt{env} in Fig.~\ref{fig:code}) can be used to progress and/or pause the stormwater simulator, read and/or write parameters to the network, and utilize any additional \pystorms functionality. The current state of the underlying stormwater network in the scenario can be queried using the \texttt{<scenario object>.state()} call (\texttt{env.state()} in Fig.~\ref{fig:code}).
-\texttt{<scenario object>.step(<actions>)} implements the control actions in the stormwater network, progresses the simulation forward a time-step, and returns the current status of simulation (\texttt{True} when the simulation has terminated and \texttt{False} otherwise). In Fig.~\ref{fig:code}, \texttt{done = env.step(actions)} implements \texttt{actions} in the stormwater network and progresses the simulation being handled by the \texttt{env} Python object, which in this case is the Scenario \scenario{theta}.
-\texttt{done} is assigned \texttt{True} when the simulation has terminated, and \texttt{False} otherwise.
+% Explain the idea of control in this paper
+Stormwater systems have traditionally relied on reactive and horizon-based control approaches, which control the network's assets throughout the storm event~\cite{sadler2019, vezzaro2014, Troutman_2020}.
+This chapter uses a control strategy that requires manipulating the controllable assets in the stormwater network only once before the storm event to achieve the desired flow control objectives.
+Using BO, based on the existing numerical model (e.g.\ EPA-SWMM) and anticipated storm event, we identify the control decisions that should be implemented in the stormwater network to realize the desired response.
+Unlike feedback control, in this proposed planning based control approach, the controller does not alter its course if its actions result in an unintended response. 
+Hence, planning for the possible uncertainties and choosing a control decision that minimizes the risk becomes essential.
+BO's ability to quantify uncertainties associated with control decisions makes it ideal for such a control strategy.
 
 
 \
 
-During the each time-step of the simulation, the ability for the implemented control actions to achieve the scenario's control objective are evaluated by computing the time-step's corresponding performance metric. This computed value is then stored for each time-step, and can be accessed at any time during the simulation using \texttt{<scenario object>.performance()} (\texttt{env.performance()} in Fig.~\ref{fig:code}). Additional parameters are logged throughout the simulation. While an initial set of these logged parameters is predefined, the user is able to customize this set for any additional parameters of interest. 
+Stormwater dynamics are governed by non-linear phenomena, such as runoff, infiltration, and gravity-driven flow through complex networks of basins and channels~\cite{Rossman2015a, Mullapudi_Wong_Kerkez_2017, Rimer2019}.
+Prior studies~\cite{lund2020cso} that formulated the control of stormwater systems as an optimization problem were constrained to approximating these phenomena as a linear system.
+This is a non-trivial task, not to mention one that limits the analysis of important higher-order non-linear terms. 
+Our BO formulation can optimize systems by merely relying on a numerical model without requiring a surrogate model or simplified dynamics.
+BO can be adopted as long as there is a way (e.g.\ numerical simulation, empirical methodology, or a real-world study) to evaluate the impacts of a control decision~\cite{frazier2018tutorial}.
+Many popular models for stormwater exist and are used by communities and municipalities worldwide (e.g.\ SWMM, MIKE)~\cite{Rossman2015a}.
+Our approach also builds upon what many city managers already use --- thus providing, as much as possible, ``off-the-shelf'' approach for control of stormwater systems.
+%without requiring the development of new models 
+
 
 \
 
-The series of steps for implementing a control loop into our stormwater simulation is seamlessly integrated throughout the \pystorms programming interface. Users carry out Step \ref{query} using \texttt{<scenario object>.state()}, and Step \ref{implement} using \\ 
-\texttt{<scenario object>.step(<actions>)}. Separated out to be defined by the user is the controller (Step \ref{compute}), which maps the observed states to control actions. While implementing the controller into \pystorms is ultimately left to the user, for our example presented here, we implement it as a Python function block (see Fig.~\ref{fig:code}).
-%
-%
-%
-\subsection{Architecture}
-\label{subsec:architecture}
-%
-%
-%
-The \pystorms architecture follows the object oriented programming paradigm which relies on classes as its core building blocks. This style of software architecture was chosen to allow \pystorms to be modular such that users can customize it to meet their own specific requirements and/or workflows.  While the \pystorms programming interface is designed with the intent to be intuitive for all potential users, it particularly caters to those who may only have a rudimentary understanding of stormwater dynamics and/or basic familiarity with programming in Python. However, it can also be easily customized to meet the requirements of researchers who want to incorporate advanced functionality, such as custom water quality or rainfall-runoff modules (for details on how to utilize \pystorms modularity and customization, we again direct the reader to its online documentation). 
-
-\
-
-The \pystorms architecture is organized to accomplish two tasks: (1) the configuration of the scenario metadata, and (2) the simulation of the stormwater network. These two tasks are carried out using three core interacting modules: \texttt{environment}, \texttt{scenario}, and \texttt{config}. These three modules interface with each other to build and execute the various scenarios. Fig.~\ref{fig:arch} provides a schematic of this architecture. The first two modules handle the stormwater simulation, while the latter handles the computational representation of the stormwater networks and the metadata pertaining to the control problem (i.e.\ states, actions, and objectives). 
-%
-%
-%
-\begin{figure}[ht]
-    \centering
-	\includegraphics[width=\linewidth]{gfx/Chapter-5/pystorms_architectire_fin.eps}
-	\caption{\pystorms is built with three interacting core modules: (i) \texttt{config} represents the metadata and computational representations of the stormwater network and event driver; (ii) \texttt{environment} acts as an interface for scenarios to interact with the stormwater simulators; and (iii) \texttt{scenario} provides a consistent structure for the scenarios in the package. A scenario object in \pystorms inherits (represented by arrows) from the base \texttt{scenario} class, and interfaces (represented by line) with the stormwater simulator though the \texttt{environment}. }\label{fig:arch}
-\end{figure}
-%
-%
-%
-\subsubsection{Configuration}
-%
-%
-%
-The \texttt{config} module is used to manage the configuration in the \pystorms architecture. \texttt{config} contains a configuration file for each scenario, which delineates the stormwater network, its set of observable states and controllable assets, and the set of parameters that are used to compute its control objective's corresponding performance metric. The configuration files are written using YAML, a mark-up language commonly used for developing configuration files in software applications. With YAML, the parameters of interest defined in the configuration file are formatted as vertical lists rather than data structures. As a result, the configuration file becomes more human-readable, and creates a scalable and easy workflow for developing scenarios. 
-%
-%
-%
-\subsubsection{Simulation}
-%
-%
-%
-Scenarios in \pystorms are implemented as Python classes. To ensure consistent functionality across scenarios, each scenario is instantiated as its own independent class with an inherited structure from a base \texttt{scenario} module. The scenario classes interface their corresponding configuration files with the stormwater simulator and implement any of the functions specific to that scenario (e.g.\ functions used for computing performance metrics of corresponding control objectives).
-
-\
-
-The \texttt{environment} module is the interface between the stormwater simulator (e.g.\ EPA-SWMM) and the scenarios. This module is specifically included to ensure \pystorms is able to remain agnostic to whatever stormwater simulator is used. For instance, if a user wants to utilize a customized hydrologic solver for simulating stormwater, they can do so by modifying the \texttt{environment} module to call their solver when the scenarios query it, thus ensuring compatibility to a wide array of simulators with minimal overhead. 
-
-\
-
-\pystorms uses SWMM as its default stormwater simulator. SWMM, developed by the US-EPA, is an open-source stormwater simulation model that is extensively used for the design and analysis of stormwater systems across the world. SWMM is built with the C programming language, a low-level language that results in significant computational efficiency. However, the trade off for using C is SWMM's difficulty to be interfaced with the latest scientific libraries. As a result, there have been several efforts over the years to build wrappers for SWMM such that its functionality can be exploited via high-level programming languages, such as Python.  
-
-\
-
-PySWMM is a Python implemented package that not only provides a wrapper to communicate with SWMM, but also yields a high-level user interface for querying the various stormwater parameters. \pystorms --- by means of the \texttt{environment} module --- interfaces with SWMM using PySWMM, and as a result, all functionality included in PySWMM can also be accessed using \pystormsNOSPACE. Readers are directed to the documentation for additional details and examples to customize \pystorms to meet their requirements. 
-%
-%
-%
-\begin{figure*}
-    \centering
-    \includegraphics[width=\linewidth]{gfx/Chapter-5/algo.eps}
-    \caption{Equal-filling controller maintains the flows at the outlet below a desired threshold by coordinating its actions such that it equally utilizes the storage in the controllable assets of the network.
-    Algorithm 1 and the corresponding code snippet illustrate the algorithm and its Python implementation. 
-    An interactive example of algorithm implementation and its evaluation on Scenario \scenario{theta} can be accessed at \href{https://colab.research.google.com/drive/1KZmqE7UJxKCzBdDvN8A0uZ_3lzSgHmNP}{open-storm.org/pystorms/demo}}
-    \label{fig:eqf}
-\end{figure*}
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-% -------------------------------------------------------------------------------------------------------------------- %
-\section{Demo: Evaluating Control Strategies}
-\label{sec:evaluatingcontrolstrategies}
-% -------------------------------------------------------------------------------------------------------------------- %
-%
-%
-%
-Throughout this section, we demonstrate how \pystorms facilitates developing smart stormwater control strategies by evaluating the performance of two control algorithms applied to Scenario \scenario{theta}.
-
-\
-
-While there exist many control strategies that can be adopted to achieve \scenario{theta}'s control objective, to simplify our illustration of \pystormsNOSPACE, we implement two basic control strategies here. The algorithms used to implement the control strategies are described below and in Fig.~\ref{fig:eqf}. Both control strategies are simple reactive control strategies, in which the valve settings of \scenario{theta}'s two basin outlets are adjusted to either retain or release storage depending on the observed states compared some corresponding water level limits. 
-%
-%
-%
-\paragraph{Rule-based Control}
-Our basic rule-based control strategy adjusts our basin outlets based on their respective water levels. Specifically, each basin's outlet setting is equal to its relative water level (i.e., the current water level of the basin divided by its maximum depth). Therefore, our control algorithm will set a full basin's outlet to 100\% open, and a basin that is half full will have its outlet set to 50\% open, etc. While this strategy provides a means to mitigate local flooding at each basin, it notably does not consider the other control objective for the network's outflow into the downstream water body to stay below a given threshold.
-%
-%
-%
-\paragraph{Equal-filling Degree Control}
-The equal-filling degree is a control strategy often applied to stormwater networks with distributed stormwater storage assets, and has commonly been used as a starting point when comparing more than one control strategies \citep{Borsanyi2008, Campisano2000, Dirckz2011, Kroll2016, Vezzaro2014}. For this strategy, we begin by defining a storage asset's ``filling degree'' --- which is typically the ratio a storage asset is full based on its volume or depth --- and compute it for each asset in the collection system. The algorithm seeks to ``balance'' these filling degrees across the system based on its average. The exact manner in which this balancing is carried out is not necessarily consistent in literature. Our method for this balancing is delineated in the algorithm in Fig.~\ref{fig:eqf}. If all assets have a filling degree equal to the average (i.e., all assets are equally filled), then each should release an equal fraction of the target outflow. Otherwise, the released flows across the assets should be differentiated such that, when an asset has a filling degree less than the average, it does not release any flow; but if an asset is greater than the average, it releases flows based on its deviation from the average. 
-
-\
-
-The implementation of the equal-filling degree algorithm using \pystorms can be seen in Figure~\ref{fig:eqf}. We carry out the simulation for each of the two algorithms, as well as for the \emph{uncontrolled case}, in which control actions are never implemented and the basin outlets are always open. The resulting hydraulic behavior at the two basins and the network's outflow for each of these simulation runs can be seen in Figure~\ref{fig:results}. 
-
-\
-
-Our aim to find a control strategy that can meet \scenario{theta}'s \emph{control objective} to maintain the outflow into the downstream water body below a specified threshold of $0.5 \unit{m^3s^{-1}}$ and also minimize flooding at the basins. As discussed in Section~\ref{subsec:scenarios}, we pre-define a performance metric to quantify our control algorithm's ability to meet the corresponding control objective. For Scenario \scenario{theta}, this performance metric, $P$, is defined as:
-%
-%
-%
-\begin{subequations}\label{eq:perf-sub}
-\begin{equation}\label{eq:perf-obj}
-	P = \mathlarger{\sum_{t=0}^T} \left( \mathcal{H}_{t} + \displaystyle\sum_{i=1}^2 \mathcal{G}_{i,t}\right)
+% How model and Bae are used this paper.
+We formulate the control of stormwater systems as an optimization problem, in which the objective function ($\mathcal{Z}$), subject to constraints, captures the desired response of a stormwater system to control actions. 
+The objective function in BO is evaluated by simulating the control decision's response in a stormwater simulator and then distilling the simulated hydrographs and water levels into a \textit{performance metric} that quantifies the degree of success of the control decision.
+Consider the scenario where we want to identify the valve position at an outlet structure to maintain the outflows from the basin below a threshold.
+This control objective's performance metric is formulated in Eq.~\ref{eq:opti-ctrl}, as the cumulative flows exceeding the threshold ($\lambda$) during the storm event for an outlet valve position, constrained between completely closed (0.0) to completely open (1.0).
+\begin{subequations}\label{eq:opti-ctrl}
+\begin{alignat}{2}
+&\!\arg\min_{x}        &\qquad& \mathcal{Z}(\vx) = \sum_{t=0}^{T} g(q_t) \\
+&\text{subject to} &      & 0.0 \leq \vx \leq 1.0
+\end{alignat}
+\begin{equation}
+	g(q_t) = \begin{cases}	
+		(q_t - \lambda) &\text{if } q_t > \lambda\\
+		0.0 &\text{else }\\
+	\end{cases}
 \end{equation}
-\begin{align}
-   \mathcal{H}_t &= 
-      \begin{cases} 
-        Q_{t} - 0.5 \,,
-                   & \text{if \,} Q_{t} > 0.5 \\
-		   0.0\,,     & \text{otherwise} \\
-      \end{cases}
-      \label{eq:perfdeviation} \\
-   %   
-   \mathcal{G}_{i,t} &=
-      \begin{cases}
-        10^3\,,    & \text{if any flooding at basin \,} i \\
-        0.0\,,     & \text{otherwise} \\
-      \end{cases}
-      \label{eq:perfflooding}
+\end{subequations}
+$T$ and $q_t$ in Eq.~\ref{eq:opti-ctrl} represent the storm event duration and the outflows from the basin.
+The valve position that achieves the desired flow control objective is determined by identifying the control decision $(\vx)$ that minimizes the performance metric in Eq.~\ref{eq:opti-ctrl}.
+
+
+\
+
+% Explain how Bayesian Optimization Works.
+BO  learns the surrogate objective function that maps the control decisions to their corresponding performance metrics ($\mathcal{F}:\vx \rightarrow z$) and then uses it to identify the optimal control decision~\cite{frazier2018tutorial}.
+This surrogate objective function is learned by evaluating the given objective function's value across various possible control decisions.
+Gaussian Processes (GP) are the most widely used regressors in BO for learning this mapping as they, for a given set of data-points, learn to predict the performance metric associated with a control decision and estimate the uncertainty associated with the prediction~\cite{rasmussenGaussianProcessesMachine2006, frazier2018tutorial}.
+The most distinguishing characteristic of BO is its ability to prioritize the most promising solutions when searching through the solution space, using an acquisition function ($\mathcal{A}$), to minimize the number of data-points --- and subsequently the number stormwater simulations --- required for identifying the optimum~\cite{rasmussenGaussianProcessesMachine2006}. 
+
+
+% Algorithm
+\begin{algorithm}
+\caption{Bayesian Optimization approach for controlling stormwater systems. Let $n_o$ be the number of initial random eval\-uations in the solution space and $N$ be the total number of evaluations.}\label{algo:bayes}
+%Assume Gaussian Prior on the surrogate objective function $(\mathcal{F})$\\
+Evaluate the performance of $n_o$ randomly sampled control decisions;  $\mathcal{D}_{0:n_o}:\{\vx_{0:n_o}, z_{0:n_o}\}$\\
+Learn an initial estimate of the surrogate objective function using a GP\@; $\mathcal{F}_{n_o} \sim \mathcal{GP}(\mathcal{D}_{0:n_o})$\\
+Set n = $n_o$\\
+\While{$n \leq N$}{Identify a new control decision to evaluate; $\vx_{n+1} = \arg\max \mathcal{A}(x |\mathcal{F}_n)$ \\
+	Evaluate performance ($z_{n+1}$)  of $\vx_{n+1}$ using a stormwater simulator.\\
+	Augment $\mathcal{D}_n$ with $\{ \vx_{n+1}, z_{n+1}\}$\\
+	Update $\mathcal{F}_{n+1} \sim \mathcal{GP}(\mathcal{D}_{0:n+1})$\\
+	n = n+1
+}
+Return $\arg\min \mathcal{F}_N(x)$
+\end{algorithm}
+
+\
+
+% Explain the algorithm 
+Algorithm.~\ref{algo:bayes} summarizes the BO-based control of stormwater systems.
+Initially, BO evaluates a pre-defined number ($n_o$) of random control decisions, in the solution space, to create an initial set of data points ($\mathcal{D}_{0:n_o}:\{ \vx_{0:n_o}, z_{0:n_o} \}$). 
+These are used to learn an initial estimate of the surrogate objective function ($\mathcal{F}$), which then is used by the acquisition function ($\mathcal{A}$) for identifying the next control decision ($\vx_{n+1}$) to evaluate.
+Using the performance metric, we evaluate this control decision's ability to achieve the desired response and update the set of data points with these observations ($\{ \vx_{n+1}, z_{n+1}\}$).
+These new set of data-points are then used to update the surrogate objective function.
+This updated function will be used by the acquisition function in the next iteration to identify a new control decision to evaluate.
+This process is repeated until convergence onto an optimum or for a pre-defined number of iterations.
+
+\
+
+Every iteration in BO improves the estimate of the surrogate objective function. 
+Fig.\ref{fig:single-bayopt} illustrates the surrogate objective function across various iterations (5, 10, 100) learned by the BO approach identifying the control action that maintains the outflows from the basin below a threshold (Eq.~\ref{eq:opti-ctrl}).
+In Fig.\ref{fig:single-bayopt}, red dots are the evaluated control decisions, and the red line and shaded area represent the GP estimate of the surrogate objective function and its associated uncertainty. 
+As the number of the iterations increase, the uncertainty associated with the surrogate objective predictions decreases.
+Based on the initial evaluations, the acquisition function identifies that there is a high probability that the optimum might lie between 0.3 and 0.5 and focuses its search in this region (indicated by the high density of red dots in Fig.\ref{fig:single-bayopt}).
+
+\
+
+
+\begin{figure*}
+	\includegraphics[width=\textwidth]{gfx/Chapter-4/bayesian_intro.eps}
+	\caption{With every iteration of BO, the uncertainty (shaded area) in the surrogate objective function reduces. This figure illustrates the surrogate objective function being approximated by the GP at various iterations. Initially (N=5), there is a high degree of uncertainty in the GP's estimate of control decision's performance. As the number iterations increase, the uncertainty reduces. Also, notice that the BO focuses its initial evaluations  (N=5 and 10) in the most promising regions of the solution space.}\label{fig:single-bayopt}
+\end{figure*}
+
+In the following sections, we present an overview of GP and acquisition functions and introduce an algorithm for updating the GP in BO to provide more accurate uncertainty estimates.
+
+
+\subsection{Gaussian Processes}\label{subsec:gp}
+% What are GP? 
+BO relies on GP to learn the surrogate objective function that maps the control decision ($\vx$) to the performance metric  ($z$) that represents the control decision's ability to achieve the desired objective successfully~\cite{frazier2018tutorial}. 
+GP assumes the standard regression model (Eq.~\ref{eq:gp-regres}), where the estimate of the performance metric is a function of the control decision and uniform Gaussian noise ($\epsilon \sim \mathcal{N}(\mu_n, \sigma_n^2)$)~\citep{rasmussenGaussianProcessesMachine2006}.
+\begin{equation}\label{eq:gp-regres}
+	z = f(\vx) + \epsilon
+\end{equation}
+Apart from the Gaussian assumption on the noise, GP does not require any further assumptions on the structure of the mapping or the data's nature.
+When trained, GP not only learn to predict a value but also estimate the uncertainty associated with the prediction~\cite{rasmussenGaussianProcessesMachine2006}.  
+GP's ability to quantify uncertainties and their flexibility to be applied to any data without requiring any explicit assumptions makes GP one of the most efficient and generalizable approach for regression, especially for hydrological systems. 
+GP have been used by Fries et al.\ to improve the accuracy of hydrological models~\cite{Fries_Kerkez_2017}, and Troutman et al.\ have used GP for identifying the contribution of wastewater flows in combined sewer systems~\cite{Troutman_Schambach_Love_Kerkez_2017}.
+
+\
+
+% Explain the idea behind GP
+A GP is defined as a collection of random variables, any finite subset of which are jointly Gaussian~\cite{rasmussenGaussianProcessesMachine2006}.
+In this context, the control decision's performance ($f(\vx)$) is the random variable, and they are assumed to be jointly Gaussian (i.e.\ $P(f(\vx_{n+1})|f(\vx_1)f(\vx_2) \ldots f(\vx_{N})) \sim \mathcal{N}(\mu,K))$.
+For example, let say we evaluated the performance of $N$ control decisions, and we wish to know the performance of an unevaluated control decision ($\vx_{N+1}$).
+GP relying on the jointly Gaussian property, predict the performance value at the unevaluated control decision $(z_{N+1})$ by identifying the mean $(\mu_{1:N})$ and covariance $(K_{1:N})$ that characterizes the underlying distribution in the observed data~\cite{rasmussenGaussianProcessesMachine2006}.
+
+\
+
+% Explain the mean and variance and segue into kernels 
+A GP is fully characterized by a mean function and a covariance function (Eq.~\ref{eq:GP}).
+The mean function, given a set of observed data points ($\mathcal{D}_{N}:\{ \vx_{0:N}, z_{0:N}\}$), predicts the most likely value ($z$) at the data point  and covariance function estimates the uncertainty associated with this prediction.
+\begin{align}\label{eq:GP}
+	f(\vx|\mathcal{D}_N) &\sim \mathcal{GP} ( \mu(\vx|\mathcal{D}_N) , K( \vx|\mathcal{D}_N) ) 
+\end{align}
+Fig.~\ref{fig:single-bayopt}  summarizes the mean function's predictions (indicated by the red line) and the covariance function's uncertainty estimates (95\% confidence interval indicated by the shaded area) in the solution space $([0,1])$, as the set of observed data points (indicated by the red dots) increases.
+In Fig.~\ref{fig:single-bayopt}, the mean function's predictions at observed data points $(\vx_{0:N})$ align perfectly with the observed values (i.e.\ $\mu(\vx_{0:N}) = z_{0:N}$), and the estimated uncertainty at these points is almost 0.
+Uncertainty estimates for the unobserved data points in Fig.~\ref{fig:single-bayopt} increase as they get further from the observed data, indicating that the values predicted by the mean function at these points are inaccurate.
+
+\
+
+% Kernels
+The predictions of GP for a set of data points are determined by their similarity (or dissimilarity) to the collection of observed data points.
+This similarity in GP --- specifically in the mean and covariance functions --- is quantified using kernels.
+The governing physical relationships between control decisions and their impacts in stormwater systems\footnote{e.g.\ Outflow from a valve in a basin is $C_d \times \text{valve opening} \times \sqrt{2 \times g \times h}$} are non-linear, and kernels enable us to embed these non-linear relationships.
+Squared Exponential Kernel (Eq.~\ref{eq:kenel-sqexp}) is widely used in the GP literature for capturing such non-linear relationships~\cite{Duvenaud}.
+\begin{equation}\label{eq:kenel-sqexp}
+	k(\vx, \vx^\prime) = \sigma^2 \exp 	\big( {-\frac{{(\vx - \vx^\prime)}^2}{2{l}^2}} \big)
+\end{equation}
+Please refer to Rasmussen et al.\ for more information on kernels~\cite{rasmussenGaussianProcessesMachine2006}. 
+Consider the control of an outlet valve in a basin, where evaluated the performance ($z$) of the valve opening at 50\% ($\vx=0.50$), and we wish to know the performance ($z^\prime$) at 60\% opening ($\vx^\prime=0.60$). 
+Using GP, it can be analytically estimated using the following equations:
+\begin{subequations}\label{eq:me-cov}
+\begin{align}	
+	\mu(\vx^\prime) &= k(\vx^\prime, \vx){[k(\vx, \vx) + \sigma_n^2]}^{-1}z \\
+	K(\vx^\prime) &= k(\vx^\prime, \vx^\prime) - k(\vx^\prime, \vx){[k(\vx, \vx) + \sigma_n^2]}^{-1}k(\vx, \vx^\prime)\\
+	z^\prime &\sim \mathcal{N}(\mu(\vx^\prime), K(\vx^\prime))
 \end{align}
 \end{subequations}
-%
-where $\mathcal{H}_{t}$ is a flow exceedance penalty of the stormwater network's outflow, $Q_{t}$, over the $0.5 \unit{m^3s^{-1}}$ threshold; and $\mathcal{G}_{i,t}$ is an arbitrary flooding penalty of $10^3$ added whenever there exists flooding at either of our two basins, both calculated and summed across every time-step $t$ in the simulation. 
-
-The performance metric calculated across the simulations for both implemented control algorithms and the uncontrolled case can be seen in Table~\ref{tab:perfmet}). Additionally, the hydraulic behavior of our two basins and the network outlet when these algorithms are applied versus the uncontrolled case can be seen in Fig.~\ref{fig:results}.
 
 \
 
-As can be seen, the equal-filling degree strategy is able to achieve the control objective of the outflow threshold, as well as avoidance of flooding. Alternatively, the rule-based control strategy only is able to avoid flooding at the basins. The stormwater network behavior for both strategies follow their corresponding implemented algorithm. For example, as the rule-based control strategy does not directly consider the outflow threshold when determining the implemented control actions, it follows that the outflow in the network's outlet exceeds this threshold (see the outlet plot in Fig.~\ref{fig:results}). 
+% MLE estimation
+A final decision of the GP chain involves finding the choice of hyper-parameters ($ \theta : \{ \sigma^2, l, \sigma_n^2 \}$) that best represent the observed data points.
+In this chapter, these parameters are determined by maximizing the log marginal likelihood~\cite{rasmussenGaussianProcessesMachine2006}.
+\begin{subequations}\label{eq:log-like}
+\begin{align}
+	\log p(\mathbf{z} | X, \theta) &= -\frac{1}{2} \mathbf{z}^{\top} K_{z}^{-1} \mathbf{z}-\frac{1}{2} \log \left|K_{z}\right|-\frac{n}{2} \log 2 \pi \\
+	K_z &= K_{N \times N} + \sigma_n^2 I_{N \times N}
+\end{align}
+\end{subequations}
+Log marginal likelihood (Eq.\ref{eq:log-like}) is a metric that quantifies the accuracy with which a given set of model parameters represent the data.
+$K_{N \times N}$ and $I_{N \times N}$ in Eq.~\ref{eq:log-like} represent the kernel matrix and the identity matrix.
+
+
+
+\subsection{Acquisition Function}
+% What is the acquisition function?
+The acquisition function, based on the surrogate objective function learned by the GP, identifies the most promising control decisions to evaluate in the solution space.
+BO relies on the acquisition function to efficiently explore the solution space and minimize the number of evaluations required for converging onto an optimum~\cite{frazier2018tutorial}.
+Expected Improvement (EI), one such widely used acquisition function in BO~\cite{jones1998efficient, frazier2018tutorial}, is defined as follows:
+\begin{equation}\label{eq:EI}
+		EI_n(x) = E \big[ {[ f_n(x) - f^*_n ]}^+ \big]
+\end{equation}
+Where $x$ and $f_N(x)$ are the control decision and its corresponding value estimated using the surrogate objective function learned from $N$ data points.
+$f^*_N = \max f(x)$ is the current best performing solution. 
+${[ f_N(x) - f^*_N ]}^+$ indicates the positive part (i.e.\ $z^+ = \max (z, 0)$).
+\begin{equation}\label{eq:ei-max}
+	x_{N+1} = \argmax EI_N(x)
+\end{equation}
+By identifying the control decision that maximizes the EI, BO identifies the next control decision $x_{N+1}$ to evaluate~\cite{frazier2018tutorial}. 
 
 \
 
-The results for each implemented control strategy versus the uncontrolled case are also captured using \scenario{theta}'s performance metric seen in Equation~\ref{eq:perf-sub}. As the performance metric is ultimately a sum of penalties for violating the control objective, a smaller calculated performance metric value indicates a better performing control algorithm. The respective performance metric values for each control strategy presented here can be seen in Table~\ref{tab:perfmet}. With a calculated performance metric of $0$, the equal-filling degree strategy perfectly meets \scenario{theta}'s control objective; 
-comparatively, the rule-based and uncontrolled cases have higher performance metric values, and thus, we can conclude perform worse than the equal-filling degree.
-%
-%
-%
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{gfx/Chapter-5/equalfilling.eps}
-    \caption{In Scenario \scenario{theta}, the equal-filling degree control strategy is successfully able to maintain the flows at the outlet of the watershed below the desired threshold of $0.5 \unit{m^3s^{-1}}$ by uniformly using the storage in the networks. Static rule-based control and uncontrolled responses of the networks are also presented for comparison. The maximum depth in each of the two basins is $2 \unit{m}$.}
-    \label{fig:results}
+% Equation and how it works and how exploration and exploitation works.
+The analytical nature of the GP enables us to derive a closed-form solution (Eq.\ref{eq:cloase-ei}) for EI~\cite{jones1998efficient}.
+This closed-form equation is then used as the objective function in Eq.\ref{eq:ei-max} to identify the next control decision to evaluate.
+\begin{align}\label{eq:cloase-ei}
+	EI_N(x) &= {[\Delta_N(x)]}^+ + \sigma_N(x) \varphi(\frac{\Delta_N(x)}{\sigma_N(x)}) - |\Delta_N(x)| \Phi(\frac{\Delta_N(x)}{\sigma_N(x)})
+\end{align}
+$\mu_N(x)$ and $\sigma_N(x)$ in Eq.\ref{eq:cloase-ei} are the mean and covariance function of the GP\@.
+$\varphi$ and $\Phi$ are the PDF and CDF of standard normal distribution.
+$\Delta_N(x) = \mu_N(x) - f^*_N$ is the difference between the performance of a suggested control decision $x$ and the best performing solution in the surrogate objective function.
+Previous studies~\cite{frazier2018tutorial} have indicated that the use of numerical optimization methods like quasi-Newton method have worked well in optimizing Eq.\ref{eq:cloase-ei}.
+Please refer to \textit{A Tutorial on Bayesian Optimization} by Peter I. Frazier for a detailed discussion on EI and other ``exotic'' acquisition functions that are being used in BO~\cite{frazier2018tutorial}.
+
+\subsection{Uncertainty Quantification}
+% Why do we need to update this?
+GP described in Section-\ref{subsec:gp}, when learning the surrogate objective function, assume a uniform noise ($\sigma^2_n$) on control decision's performance.
+Under this assumption, GP optimizing for the best set of parameters identify a $\sigma^2_n$ that encapsulates the entire set of observed data~\cite{rasmussenGaussianProcessesMachine2006, Kersting_Plagemann_Pfaff_Burgard_2007}.
+Consider the instance where a controlled stormwater basin can experience a storm event in an ensemble of probable events.
+Under these uncertain conditions, using BO, we want to identify the best control decision that we can implement in the basin and quantify the uncertainty that this control decision would achieve the desired objective.
+GP trained with the assumption of uniform noise tends to over or underestimate the risks associated with individual decisions when the variance in the performance depends on the decision~\cite{Kersting_Plagemann_Pfaff_Burgard_2007}, which is the case for the stormwater systems.
+For example, if the outlet valve in the stormwater basin is opened by 0.10\% and the basin experiences two different storm events --- one small and one large --- the variance in the outflows leaving the basin is low, rather than when the valve is opened by 0.90\%.
+
+\
+\begin{algorithm}
+\caption{Uncertainty Quantification using MLH-GP}\label{algo:hetrosodastic-GP}
+Let $\mathcal{GP}_1$ be the GP representing the surrogate objective function ($\mathcal{F}$) learned by the Bayesian Optimizer in Algorithm.~\ref{algo:bayes}\\
+Given $\mathcal{GP}_1$, estimate the empirical noise ($\hat{z}$) from the training data $\hat{z}_i = \log(var[z_i, \mathcal{GP}_1(\vx_i|\mathcal{D})])$ and create a new data set $\hat{\mathcal{D}_{0:N}} = \{ x_{0:N}, \hat{z}_{0:N} \}$ \\
+Using $\hat{\mathcal{D}}$, learn $\mathcal{GP}_2$ to estimate noise ($\hat{z}$) from $\vx$; $\mathcal{GP}_2: \vx \rightarrow \hat{z}$ \\
+Using $\mathcal{GP}_2$ to estimate logarithmic noise, train a combined $\mathcal{GP}_3: \vx \rightarrow z$ using Eq.~\ref{eq:hgp-gp3} and Eq.~\ref{eq:gp3-cov}\\
+If not converged, set $\mathcal{GP}_2$=$\mathcal{GP}_3$ and go to step 2 \\
+\end{algorithm}
+
+
+%TODO: Add the sine wave example, so as to make is really clear.
+% How do we achieve this?
+Unlike the generic GP regression model, which assumes uniform Gaussian noise (Eq.\ref{eq:gp-regres}), Most Likely Heteroscedastic Gaussian Process (MLH-GP) builds on the assumption that the Gaussian noise in the regression model is dependent on its inputs~\cite{Kersting_Plagemann_Pfaff_Burgard_2007}.
+\begin{subequations}\label{eq:mlhgp-regress}
+\begin{align}
+	z_i &= f(\vx_i) + \epsilon_i \\
+	\epsilon_i &\sim \mathcal{N}(0, r(\vx_i)) 
+\end{align}
+\end{subequations}
+This regression model (Eq.\ref{eq:mlhgp-regress}) enables us to account for the variance in the performance stemming from each control decision.
+We can directly use MLH-GP to update the GP ($\mathcal{GP}_1$) used for learning the surrogate objective function in BO to account for these variances. 
+\begin{subequations}\label{eq:hgp-var}
+\begin{align}
+	\hat{z}_i &= var[z_i, \mathcal{GP}_1(\vx_i|\mathcal{D})] = {s}^{-1} \times \sum^s_{j=1} 0.5 \times {(z_i - z_i^j)}^2 \\
+	z_i^j &\sim \mathcal{N}(\mu_{\mathcal{GP}_1}(\vx_i), K_{\mathcal{GP}_1}(\vx_i))
+\end{align}
+\end{subequations}
+MLH-GP, using Eq.\ref{eq:hgp-var}, estimate the variance in the performance ($z_i$) observed by simulating the control decision ($\vx_i$) and performance predicted ($z_i^j$) by the learned surrogate objective function ($\mathcal{GP}_1$).
+A new GP ($\mathcal{GP}_2$) is then trained to learn the mapping between the simulated control decisions and log of estimated variance.
+$s$ in Eq.\ref{eq:hgp-var} is the number of samples used for estimating variance~\cite{Kersting_Plagemann_Pfaff_Burgard_2007}.
+% TODO check the notation consistency 
+\begin{subequations}\label{eq:hgp-gp3}
+	\begin{align}
+		r(x) &= e^{\mu_{\mathcal{GP}_2}(x)}\label{eq:nos-esti}\\
+		R(x) &= diag(r(x))
+	\end{align}
+\end{subequations}
+Using the estimates of $\mathcal{GP}_2$, we populate the $R$ matrix (Eq.~\ref{eq:hgp-gp3}) and then use this matrix to train a new GP ($\mathcal{GP}_3$) that accounts for the input dependent variances (Eq.~\ref{eq:gp3-cov}).
+In this chapter, we use this GP to quantify the uncertainty associated with control decisions.
+\begin{subequations}\label{eq:gp3-cov}
+\begin{align}
+	\mu_{\mathcal{GP}_3} &= K^{*}{(K+R)}^{-1} \mathbf{z}\\
+	K_{\mathcal{GP}_3} &= K^{* *}+R^{*}-K^{*}{(K+R)}^{-1} K^{* T}\\
+	\mathcal{GP}_3 &\sim \mathcal{N} (\mu_{\mathcal{GP}_3}, K_{\mathcal{GP}_3})
+\end{align}
+\end{subequations}
+As described in the Algorithm.~\ref{algo:hetrosodastic-GP}, we repeat this process until the estimates of $\mathcal{GP}_3$ converge.
+
+\section{Evaluating Bayesian Optimization for the control of stormwater systems}\label{sec:methods}
+% Why do we need such a evaluation for analyzing this approach?
+Stormwater networks are complex and often designed uniquely to meet the requirements of a particular watershed.
+During their operation, these systems experience a wide spectrum of storm events, many of which they might not have been explicitly designed for.
+These systems are required to achieve a multitude of localized and system scale objectives.
+Hence, for a stormwater control approach to be applicable, it has to achieve a diverse set of control objectives across various network topologies and storm events.
+Furthermore, control algorithms should have the ability to account for the uncertainties --- especially those stemming from the stochastic nature of storm events --- that are inherent in these systems. 
+Though a real-world evaluation is essential for validating a control approach's applicability, we focus on a simulation-based evaluation, as it will allow us to exhaustively simulate a number of scenarios. 
+
+
+\
+
+% What are the stormwater networks and rain-events we are using?
+In this chapter, we analyze the BO's ability to control stormwater systems across two criteria:%three criterion:
+\begin{enumerate}
+	\item \textbf{Generalizability}: We analyze the applicability of BO for achieving diverse control objectives across stormwater systems and rain-events.
+%	\item \textbf{Scalability}: Ability of the controller to converge onto a control decision as the number of controlled assets in a stormwater network increases.
+	\item \textbf{Uncertainty Quantification}: We evaluate BO's ability to quantify rainfall uncertainty associated with a particular control decision.
+\end{enumerate}
+We assess these criteria using the stormwater control scenarios from \texttt{pystorms}, an open-source python package developed for the quantitative evaluation of stormwater control algorithms.
+\texttt{pystorms} provides a curated collection of stormwater networks, storm events, and control objectives delineated as scenarios, named after the Greek alphabet, for evaluating stormwater control algorithms~\cite{Rimer2019}.
+In the following Sections-~\ref{sec:general} and~\ref{sec:unq}, we specify the specific scenarios and metrics used for quantifying the ability of BO in each of the above-described criteria.
+In Section--~\ref{sec:implementation}, we summarize the computational implementation of these evaluations.
+
+\subsection{Generalizability}\label{sec:general}
+% How are we evaluating generalizability, on what objectives, which informs which scenarios are being used
+We quantify the Generalizability of BO by analyzing its ability to identify the control decisions that achieve the desired objective in both separated and combined stormwater systems.
+Specifically, scenario gamma and epsilon in \texttt{pystorms}.
+In this control approach, we implement only a control decision for the entire duration of the storm event. Hence, we limit our evaluation to event-specific control objectives, with the specific goals of minimizing flooding and maintaining flows and loading below a threshold.
+This evaluation assumes that we have perfect information about the storm event (inputs) used to drive the stormwater network's response.
+%We then evaluate the GA's ability to control these stormwater systems and compare its performance to BO to quantify their computational efficiency.
+
+\begin{subequations}\label{eq:gen-gamma-perf}
+\begin{align}
+	\mathcal{Z} =  \overbrace{\sum_i^N c_1 \times d^i_T}^{\text{Storage penality}} &+ \sum^T_t \sum_i^N \Big\{ \overbrace{\frac{c_2 }{T} \times f^i_t}^{\text{Flooding penality}} + \overbrace{g(q^i_t)}^{\text{Flow penalty}} \Big\}\\
+	g(q^i_t) &= \begin{cases}	
+		(q^i_t - 0.11) &\text{if } q^i_t > 0.11\\
+		0.0 &\text{else }\\
+	\end{cases}
+\end{align}
+\end{subequations}
+
+\
+
+% Scenario Gamma
+% TODO: kinda wanted to say that 4 are easier to read than 11 and these 4 basins present an exiting problem.
+Scenario gamma represents a separated stormwater network in a semi-urbanized watershed, and this network comprises 11 interconnected basins that are draining into a downstream water body.
+Equipped with a controllable valve, these basin's outlet size can be adjusted to any value between 100\% open to completely closed.
+The control objective in this scenario is to maintain the flows in the network below $0.11 m^3\ s^{-1}$ during a 25 year 6-hour SCS-II design storm and is quantified based on the performance metric presented in Eq.~\ref{eq:gen-gamma-perf}, where $c_1=10^3, c_2=10^4$ represent the penalty factors.
+These penalties are determined such that they penalize flooding more than storing water in the basins.
+$d_T$, $f_t$, and $q_t$ in Eq.~\ref{eq:gen-gamma-perf} represent depth, flooding and outflows during the simulation.
+The storage component penalizes the controller for storing water in the basins at the end of the storm event.
+This penalty is incorporated in the performance metric to prevent the controller from converging onto a trivial solution that stores all the runoff in the basins to maintain flows below the desired threshold.
+The flow and flooding penalty penalize the controller based on the cumulative flooding and flows that exceed the desired threshold of $0.11 m^3\ s^{-1}$.
+Hence, by attempting to identify a control decision that minimizes this performance metric, the controller is compelled to identify the set of valve positions (i.e.\ the percent of outlet opening) that maintain the network's flows below the desired threshold, while avoiding flooding.
+In this analysis, we control the four most downstream basins, chosen based on their control potential, in the network~\cite{Mullapudi_Lewis_Gruden_Kerkez_2020, schutze_sewer_2008}. 
+
+%In this analysis, we control the four most downstream basins in scenario gamma.
+%This choice was motivated by the fact that 3 of these 4 basins are the largest in the network and encounter almost all the runoff generated in the network, and controlling a combinations of large and small basins enables us to test the ability of the control approach to coordinate the actions in the network such that actions in the larger basins avoid flooding the smaller basin.
+
+\begin{subequations}\label{eq:gen-epslion-perf}
+\begin{align}
+	\mathcal{Z} =  \sum^T_t \big\{ \overbrace{g(l_t)}^{\text{Loading penalty}} &+ \sum_i^N  \overbrace{h(f_t^i)}^{\text{Flooding penality}} \big\}\\
+	g(l_t) &= \begin{cases}	
+		(l_i - 1.075) &\text{if } l_t > 1.075\\
+		0.0 &\text{else }
+	\end{cases}\\
+	h(f^i_t) &= \begin{cases}	
+		10^9 &\text{if } f^i_t > 0.0\\
+		0.0 &\text{else }
+	\end{cases}
+\end{align}
+\end{subequations}
+
+\
+
+% Scenario Epsilon
+% TODO: check if runoff is the right word to refer to the sewer thing.
+Scenario epsilon represents a combined stormwater system in an urban watershed of 67$km^2$, comprising a network of pipes draining, both wet and dry weather flows, into a downstream water treatment plant.
+This network has 11 inflatable dams that can hold back (or release) runoff in the pipes.
+This effectively seeks to create interim storage for the runoff in the pipe network, before those flows reach a downstream treatment plant. 
+The control objective in the scenario is to maintain the loading at the network's outlet below $1.075\ kg\ s^{-1}$ while preventing flooding. 
+This scenario is driven by three (two of which are back-to-back) real-world storm events and daily diurnal flows.
+The control decision's ability to realize this control objective is quantified using the performance metric presented in Eq.~\ref{eq:gen-epslion-perf}.
+Loading penalty in the performance metric penalizes the control actions resulting in exceedance of loads (i.e.\ $>1.075\ kg\ s^{-1}$) leaving the network, and the flooding penalty ensures that these control actions avoid flooding.
+In this analysis, we control all the 11 inflatable dams.
+
+\
+
+% Comparison with GA
+In this analysis, we also evaluate the GA's ability to identify the optimal control decisions for the above described two scenarios and compare its performance to the BO approach to analyze their ability to identify a better performing solution\footnote{(i.e.\ identify the set of control decisions that minimize the metrics defined in Eq.~\ref{eq:gen-epslion-perf} and Eq.~\ref{eq:gen-gamma-perf})} for the same number of stormwater simulations.
+Specifically, we compare the optimal solutions identified by the BO and GA approach for 30 stormwater simulations.
+Given the stochastic nature of these approaches, we repeat this evaluation for 30 different random seeds and compare the mean and variance of the performance of identified solutions.
+
+
+
+% Uncertainty
+\subsection{Uncertainty Quantification}\label{sec:unq}
+We evaluate BO's ability to quantify the rainfall uncertainty by comparing its uncertainty estimates to empirically computed values.
+For this evaluation, we consider the scenario where the stormwater system can experience any one storm event, with uniform probability, from the ensemble of possible events.
+Uncertainty in this evaluation is empirically computed by evaluating  each possible action's performance (Eq.~\ref{eq:perf-unq}) across all the possible storm events and computing its mean and variance so that they can be compared to the values estimated by the GP in BO\@.
+\begin{subequations}\label{eq:perf-unq}
+\begin{align}
+	\mathcal{Z} &= - \exp\{ \sum_{t=0}^T  \frac{f_t}{i_t} + \frac{g(q_{t})}{i_t} \} \\
+	g(q_{t}) &=
+      \begin{cases}
+        q_{t} - 1.0
+                   & \text{if \,} q_{t} > 1.0 \\
+	      0.0     & \text{else}
+      \end{cases}
+\end{align}
+\end{subequations}
+$f_t$, $i_t$, and $q_t$ in the performance metric represent flooding, inflow, and outflows during the simulation.
+% May be redo the line?
+Unlike the other two scenarios, the performance metric for uncertainty quantification is defined as an exponential function as it creates a smoother terrain for the MLH-GP to approximate.
+Krauth et al.\ have argued that a well-defined objective function is essential for the GP to approximate a function accurately~\cite{Krauth_Bonilla_Cutajar_Filippone}.
+
+\
+
+We focus our evaluation on a stormwater system with a stormwater basin (scenario theta in \texttt{pystorms}), equipped with a controllable valve at its outlet, experiencing a set of 20 synthetically generated storm events.
+This scenario's control objective is to maintain the outflows from the basin below $1.0\ m^3 s^{-1}$ for any/all of the possible storm events.
+We limit our evaluation to the control of a single basin. As its solution space is small enough that an empirical evaluation of all possible solutions is computationally tractable\footnote{1\% discretization of solution space from 0 to 100\% for 20 storm event would require 2000 simulations.}.
+% and the identified uncertainties are interpretable. 
+We embed the notion of uncertainty in rainfall by randomizing the storm event in the stormwater simulator when evaluating the performance of a control decision. 
+For every iteration of the BO, we uniformly sample a storm event from the possible set of storm events and simulate its response for the control decision.  
+Then the surrogate objective function (i.e., GP) is updated using Algorithm.~\ref{algo:hetrosodastic-GP}. 
+We then compare these updated estimates to the empirically computed values to evaluate their accuracy. 
+Furthermore, to analyze the effectiveness of MLH-GP in quantifying uncertainty estimates, over GP, we evaluate the performance of control actions sampled uniformly across the solution space and train these GPs to estimate the uncertainties in these performance estimates.
+
+% Implementation Details
+\subsection{Implementation}\label{sec:implementation}
+% pystorms collection of scenarios and programming interface.
+The scenarios in \texttt{pystorms} are equipped with a stormwater simulator, which can be accessed using a Python-based programming interface.
+This Pythonic interface enables us to integrate the Python-based scientific computing libraries with the stormwater simulator and develop advanced control algorithms, such as the one presented in this chapter. 
+\texttt{pystorms} uses US EPA's Stormwater Management Model (SWMM), an extensively used open-source stormwater modeling software~\cite{Rossman2015a}, as its stormwater simulator.
+SWMM is built in C language and interfaces with \texttt{pystorms} via \texttt{PySWMM}, a python wrapper that enables us to use the functionality of SWMM from Python~\cite{mcdonnell_bryant_e_2020_3751574}.
+SWMM uses a dynamical wave equation for routing runoff through the stormwater network, which accounts for backchannel flows and other such dynamics that can arise in the network from control, thus making SWMM an ideal choice for simulating control of stormwater systems~\cite{Mullapudi_Wong_Kerkez_2017}. 
+Please refer to Rimer et al.\ for more information on \texttt{pystorms} and an overview of modeling control in stormwater systems~\cite{Rimer2019}.
+
+\
+
+% Gaussian Processes and  Bae
+BO implementation has two primary components, GP and Acquisition functions. 
+As alluded in Section-~\ref{subsec:gp}, there are a lot of moving parts in implementing GP~\cite{frazier2018tutorial}.
+% CITE
+Over the years, a suite of accessible open-source libraries has been developed that, right out of the box, provide implementations of various kernels and automate the process of identifying parameters to prototype the GP with minimal overhead~\cite{gpy2014, scikit-learn, daulton2020differentiable}.
+\texttt{GPy} developed by Sheffield machine learning group is one such Python library.
+%CITE
+In this chapter, we have used \texttt{GPy} for modeling GP and MLH-GP~\cite{gpy2014}. 
+We use \texttt{GPyOpt}, another Python library developed Sheffield machine learning group, for implementing Bayesian Optimization~\cite{gpyopt2016}. 
+\texttt{GPyOpt} provides an implementation of the Acquisition functions that build on the GP implemented using \texttt{GPy} and a modular programming interface, used in this chapter to interface with \texttt{pystorms}.
+In this work, GA evaluation is implemented using DEAP, one of the most widely used Python-based evolutionary computation framework\cite{fortin12a}. Specifically, we adopt the implementation of One Max Problem provided in the library~\cite{One}.
+Simulations presented in this chapter were run in the University of Michigan's Great Lakes Custer on a 3.0 GHz Intel Xeon Gold 6154 processor with 1GB of RAM and the source code used for this evaluations can be accessed at \href{https://github.com/kLabUM/BaeOpt}{github.com/kLabUM/BaeOpt}.
+
+\section{Results}
+%Performance of the controller 
+\subsection{Generalizability}
+
+\begin{figure*}[ht]
+	\includegraphics[width=\textwidth]{gfx/Chapter-4/performance.eps}
+	\caption{As should be expected, tuning the dimension of a basin's outlet (turning a valve until a desired outlet opening percentage is reached) ahead of a storm event reduces the intensity of its outflows.
+	BO identifies, given an incoming storm, the valve positions that can be set in the network to maintain the outflows from the basins below the desired exceedance threshold.
+	The network topology illustrates the location of the four controlled basins in the stormwater network.}\label{fig:gamma-4}
+\end{figure*}
+
+% Explain what they are seeing the figure for scenario gamma and how the controller is able to achieve the objective. 
+The performance in scenario gamma, a separated stormwater network, is presented in Fig.~\ref{fig:gamma-4}.
+By changing the valve's position at the outlet of the basins to a pre-computed value and maintaining it throughout the storm event, the controller maintains the flows (second row in Fig.~\ref{fig:gamma-4}) in the network below the exceedance threshold.
+In this particular scenario, BO identifies 0.34, 1.00, 0.21, 0.20 as the  valve positions for the four basins for maintaining the outflows below $0.11 m^3\sec^{-1}$. These actions reduce the exceeding flows by 99.87\%.
+The application of BO control increases the utilization of the storage in the stormwater network (first row in Fig.~\ref{fig:gamma-4}) and reduces the intensity with which runoff leaves the basin.
+%Furthermore, in this scenario, control also reduces the sharp peaks in the hydrograph (basin 2 outflow in Fig.\ref{fig:gamma-4}). 
+
+\begin{figure}[ht]
+	\includegraphics[width=\textwidth]{gfx/Chapter-4/epsilon.eps}
+	\caption{By configuring the inflatable storage dams (ISDs) in a combined sewer network to a pre-defined position, the loading received by the treatment plant, during both dry and wet weather conditions, is maintained below the exceedance threshold. 
+	BO, based on the daily flows and incoming storm, identifies the ISD settings that realize this desired response.}\label{fig:epsilon}
 \end{figure}
-%
-%
-%
-\begin{table}[ht]
-\small
-\caption{Calculated performance metric values from Equation~\ref{eq:perf-sub} for  simulations corresponding to the two implemented control algorithms and the uncontrolled simulation. As can be seen, the equal-filling degree control strategy performs better than the rule-based control strategy, which then outperforms the uncontrolled case.}\label{tab:perfmet}
-\begin{tabular}{l c}
+
+\
+
+% Explain what they are seeing the figure for scenario gamma and how the controller is able to achieve the objective. 
+Fig.~\ref{fig:epsilon} illustrates the controlled and uncontrolled response of scenario epsilon.
+BO identifies the percent opening of inflatable storage dams, in the underground pipes of the combined stormwater network, to maintain the loading from the network to the water treatment plant below the desired threshold.
+These setpoints\footnote{\{6\%, 84\%, 92\%, 66\%, 69\%, 73\%, 7\%, 49\%, 1\%, 35\%, 4\% \}} are maintained for a simulated duration of 15 days, during which the network experiences both dry and wet weather flows.
+These actions reduce the total loads (above $1.075\ kg\ s^{-1}$) at the treatment plant by 99.11\% (from $7721.27\ kg$ to $68.26\ kg$).
+By reducing the outlet pipe dimensions, we increase the time spent by runoff in the pipe network, which directly corresponds to an increased pollutant capture, thus effectively reducing the load leaving the network~\cite{Troutman_2020}.
+
+
+
+
+
+% Summarize generalizability results: Multiple topologies, storm events, and objectives.
+%In both these scenarios, we achieve the control objectives by configuring stormwater elements, specifically the outlet dimensions in the basins and conduits, 
+%This control strategy is minimally intrusive (i.e.\ requires only implementing control actions once) approach for achieving system-scale control objectives.
+%Furthermore, given the formulation of the control strategy, system scale coordination is implicitly embedded in the solution identified by the Bayesian Optimization approach.
+%This is seen in the controlled response of scenario epsilon (Fig.00 in SI-00), where the control decisions hold back water in the network to ``smoothen'' the response at the outlet. 
+
+
+\begin{table}
+%\small
+\caption{Solutions identified by BO, for the evaluated scenarios, consistently outperform the solutions identified by GA for a set of 30 iterations across 30 random seeds.
+The mean and standard deviation of the identified optimal control decision's performance is summarized in the table; lower the values indicate better the ability of the control decision to achieve the desired control objective.
+}\label{tab:boga}
+\begin{tabular}{p{0.5in}p{0.5in}p{0.5in}p{0.5in}p{0.5in}}
 \toprule
-{\centering \textbf{Control Strategy}} & \textbf{Performance Metric} \\\midrule
-Uncontrolled & 1630 \\
-Rule-based & 1624 \\
-Equal-filling Degree & 0 \\
+\multirow{3}{*}{\textbf{Scenario}} & \multicolumn{2}{c}{\multirow{3}{*}{\textbf{BO}}} & \multicolumn{2}{c}{\multirow{3}{*}{\textbf{GA}}} \\
+&    &  &  &   \\
+&   $\mu$ & $\sigma$ & $\mu$ &  $\sigma$ \\ \midrule
+\texttt{gamma}   & 1875.89 & 961.12 & 3070.28 & 2063.03 \\\midrule
+\texttt{epsilon}  & 1008.35 & 573.83 & 2619.65 & 1351.98 \\
 \bottomrule
 \end{tabular}
 \end{table}
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-% -------------------------------------------------------------------------------------------------------------------- %
+
+\
+
+%Explain Table
+Table.\ref{tab:boga} summarizes the BO and GA-based controller's performance for scenarios gamma and epsilon for 30 iterations across 30 random seeds.
+%Mean and variance of the 30 solutions (i.e.\ for each random seed) identified by both the control approaches are presented in 2--5 columns of Table.\ref{tab:boga}.
+Performance of the solutions for scenario gamma and scenario epsilon are quantified using Eq.~\ref{eq:gen-gamma-perf} and Eq.~\ref{eq:gen-epslion-perf}, respectively.
+BO consistently outperforms the GA in terms of computational efficiency.
+BO's average performance for scenarios gamma and epsilon is 63.67\% and 159.79\% better than GA\@. 
+Furthermore, BO's performance variance (columns 4 and 6 in Table.\ref{tab:boga}) is considerably lower than GA (by $114.6\%$ and $135.6\%$).
+
+\
+
+% Efficiency of the approach when compared to GA and how all the above results prove its generalizability. 
+In this Generalizability evaluation, the proposed BO approach identifies the control decisions that realize the desired control response, directly ``off-the-shelf'' without any scenario-specific customizations for the stormwater network's topology or the control objective.
+This ability to be applied out of the box to control diverse stormwater networks illustrates the Generalizability of the BO approach.
+While GA is also generalizable in similar terms, BO has demonstrably been more computationally efficient for the evaluated scenarios. 
+
+
+\subsection{Uncertainty Quantification}
+
+\begin{figure*}[ht]
+	\includegraphics[width=\linewidth]{gfx/Chapter-4/ucq.eps}
+	\caption{MLH-GP more accurately quantify the manifestation of rainfall uncertainty (shaded areas) in the performance metric than the GP\@. 
+	For the same number of samples (200), uncertainty bounds quantified by MLH-GP closely aligns with the empirically computed values.
+	Though GP performs better when the entire solution space is uniformly sampled, they still overestimate the uncertainty compared to MLH-GP\@.
+	Note that most of the 200 samples in BO are focused around 0.23, as acquisition function prioritizes evaluating the most promising regions in the solution space.}\label{fig:uc-limits}
+\end{figure*}
+
+% General Result
+Fig.~\ref{fig:uc-limits} illustrates the uncertainty quantified by the BO (blue shaded area) and compares it to the empirically computed uncertainty (orange shaded area) for a single basin in scenario theta.
+Though the uncertainties quantified by the BO does not precisely correspond to the empirically estimated values, they do closely align with them.
+BO uses ten times fewer samples than used for empirical estimation and assumes a specific kernel\footnote{Squared Expotential Kernel} to represent the relationship between the control decisions and their corresponding uncertainties.
+Thus, it is intractable for the estimated uncertainty to exactly converge onto the empirically computed values.
+Having said that, MLH-GP much more accurately captures the underlying uncertainty than the GP (gray shaded area), which overestimates the uncertainty  (first row second column in Fig.~\ref{fig:uc-limits}).
+While GPs better estimate the uncertainty when the entire solution space is sampled uniformly, they still overestimate (gray area in the first row first column in Fig.~\ref{fig:uc-limits}) the uncertainty when compared to MLH-GP\@.
+Uncertainty quantified by MLH-GP almost perfectly aligns with the empirical estimates (~0.3 to 1.0 in second row first column in Fig.~\ref{fig:uc-limits}) for the same set of uniformly sampled data-points.
+These results demonstrate the effectiveness of MLH-GP in quantifying the input-dependent uncertainties. 
+
+\
+
+
+% Explain the increasing uncertainty. 
+% TODO : Check the consistency in the terminology specifically storms and stuff. 
+Quantifying the uncertainty associated with control decisions enables us to understand the corresponding risk associated with implementing these decisions in a stormwater network. 
+For instance, consider the uncertainty estimates presented in Fig.~\ref{fig:uc-limits}.
+For the given set of synthetic rainevents, uncertainty estimates for the valve positions between $\approx0.10$ and $\approx0.25$ (10\% and 25\% valve opening) are slightly larger than those for valve position greater than 0.25.  
+From these estimates, we can interpret that a control decision between 0.19 to 0.25 will realize the objective of maintaining the flows below $1.0 m^3 s^{-1}$ and its ability to do, no matter which storm event it experiences, can only deviate by at most 0.076 of the expected performance metric.
+Whereas any valve opening greater than 0.25 will not be able to realize the control objective.
+
+
+\
+
+% Summary of the results.
+Understanding the risks associated with control actions enables us to identify the set of actions that can be implemented with a high degree of certainty to achieve the desired control objective, and BO, though the objective function learned by the GP, can be adopted to quantify these risks. 
+Furthermore, this objective function also enables us to analytically interpret how the simulated data influences the  choice of optimal actions.
+
 \section{Discussion}
-\label{sec:discussion}
-% -------------------------------------------------------------------------------------------------------------------- %
-%
-%
-%
-This ability for stormwater systems to be instantly modified is critical as communities prepare for more frequent, uncertain, and destructive weather events due to climate change. More so, \emph{often the most basic control strategies} can have large-scale impacts on the complex, dynamic systems they operate, potentially leading to millions of dollars in savings for the communities they serve. Even though sensor-actuator components may be successfully deployed at individual sites throughout a stormwater network, determining strategies for their coordination across the entire watershed may only add further complexity. As a result, there is a great need --- along with endless opportunities --- to develop and implement novel control strategies for transforming stormwater systems. While the sandboxing efforts of \pystorms serves as an initial effort to foster the development of these strategies, we see specific opportunities to, first, methodically facilitate the development of new simulation frameworks and control algorithms, and subsequently, to then validate and extend their efficacy. We expound on these points here, and discuss next steps to put them into practice.
+% Objective functions: Why are they important and how should one make them?
+BO identifies control solutions solely based on the specific performance metrics, without the need for internal optimizer parameterization.
+Given the sole reliance on one metric, designing a performance metric that accurately and uniquely represents the desired controlled response is paramount.
+Building on our previous work~\cite{Mullapudi_Lewis_Gruden_Kerkez_2020}, this chapter's performance metrics were designed to accurately represent the desired control objective, to ensure that the BO will not be able to game the performance metric and identify a solution that minimizes the performance metric but results in an undesirable response in the stormwater network.
+When adopting BO to control new stormwater systems, performance metrics can be designed using any mathematical structure\footnote{Equations used in the performance metric can be exponential, polynomial, etc\ldots} as long as it accurately represents the desired responseand there does not exist a trivial solution that the BO can exploit.
+Performance metrics presented in this work can directly be translated for controlling other stormwater networks for the specific set of control objectives discussed in the chapter: maintaining flows and loading below a threshold.
 
 \
 
-As discussed in Section~\ref{subsec:overviewofthesimulationsandbox}, a critical limitation to progressing smart stormwater control research forward is the inability to systematically develop and analyze smart stormwater simulation workflows and control algorithms. \pystorms can be customized and adapted for a multitude of other uses beyond its initially provided collection of scenarios and stormwater simulator provided. For example, alternative stormwater simulation software be easily integrated into \pystormsNOSPACE.  Furthermore, new scenarios can be assembled from the assortment of components in the scenario collection such that additional research questions can be studied. For instance, for each of the scenarios we provide at the outset, \pystorms specifies only a subset of a scenario's total observable states that are able to be queried throughout the simulation.
-However, this initial subset of observable states is never claimed as the optimal; in fact, to the best of our knowledge, there does not yet exist a methodology for identifying an optimal set of observable states. Thus, new scenarios can be made with different subsets of observable states (e.g.\ flows, pollutant concentrations), and new research questions can now be asked about which states may be most critical for informing control actions to be taken.
+% Optimality of the identified solution and how it depends on other things. 
+Given the complexity and scale of stormwater systems, we cannot guarantee global optimality without enforcing the assumption of linearity. 
+Hence, we have to contend with the sub-optimal solutions that achieve the objective. 
+For the scenarios evaluated in this chapter, BO was successfully able to identify the control decision that achieves the desired response.
+However, the quality of the identified solution has a strong dependence on the random seed used.
+Hence, readers should consider evaluating BO across multiple random seeds.
 
 \
 
-Beyond the coordination and integration of smart stormwater control methods, we view a more expansive opportunity for \pystorms to impel the research community to extend its analysis of \dquote{control.} Specifically, we see a need for improved validation of control methods, and an opportunity for new approaches in defining a control method's success. In the current iteration of \pystorms discussed here, we present a means to assess the performance of a control algorithm via its ability to achieve the pre-defined control objective (e.g. maintain flow below a threshold, avoid flooding). However, there are many other assessment metrics that can define a control algorithm's \dquote{success,} including computational efficiency, applicability across real-world contexts, and the incorporation of social considerations for actual implementation.
-\pystorms can serve as a mechanism for assessing the performance of control algorithms across these definitions. For example, by increasing the number of controllable assets available out of the eleven pond outlets presented in Scenario \scenario{gamma}, one can assess the \emph{scalability} of a control algorithm as the state-action space increases. Additionally, control algorithm \emph{generalizability} across storm characteristics can be assessed with the multiple rain events provided in Scenario \scenario{epsilon}. These are just a few illustrations of how \pystorms provides a way to broaden and assess the definition of control efficacy to include factors that are critical for the implementation of smart stormwater approaches in real-world systems.
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-%
-% -------------------------------------------------------------------------------------------------------------------- %
-\section{Conclusions and Next Steps}
-\label{sec:conclusion}
-% -------------------------------------------------------------------------------------------------------------------- %
-%
-%
-%
-\pystorms provides a curated collection of scenarios, coupled with an accessible programming interface, to enable the development and quantitative evaluation of stormwater control algorithms. We have developed \pystorms with the intent to make research into smart stormwater control more accessible to the broader research community. It is our hope that this package will emerge as a community-driven resource that is able to address key knowledge gaps and enable the advancement of smart stormwater systems. To this extent, we see proximate opportunities for the broader research community to collaborate on \pystorms by contributing their own stormwater scenarios and/or control algorithms to the package initiated here. Likewise, we encourage the broader research community to further build upon \pystorms by imparting their own smart stormwater control instances using the \pystorms architecture and integrating their own stormwater control simulation workflows into it.
+% Generalizability: We do not need real-time control for everything and or we can use hybrid approaches
+Results presented in this chapter suggest that a sub-set of control objectives, like the ones discussed in this chapter, can be realized without real-time control, but rather solely by tuning valve openings ahead of a storm. 
+However, it might not often be the case that a high-fidelity model and a representative estimate of incoming storm events would be available. 
+In such instances, one could consider a hybrid controller that configures the control elements before the storm event and during the storm event monitors the network's response.
+If it detects a deviation from the planned response, it can then implement appropriate control actions in the network.
+Such a hybrid control approach would enable us to realize desired control responses with minimal and risk-averse control interventions, and it should be evaluated in future studies.
 
+\
+
+
+% What are some future directions people should look in?
+There is an active interest in the AI community in developing Acquisition functions that are robust to the uncertainties inherent in the evaluations~\cite{letham2019}.
+These advances stand to improve the BO's ability to quantify the underlying uncertainty in the system. 
+Furthermore, these new Acquisition functions improve on the approach's effectiveness by parallelizing the acquisition process~\cite{frazier2018tutorial}. 
+Recent advances in Deep-Gaussian processes have demonstrated their effectiveness in working around GP's parametric limitation and would be instrumental in extending this approach for the control of larger systems~\cite{damianou2013deep}.
+Though promising, their applicability for the control of stormwater systems is yet to be evaluated. 
+
+\
+
+% Uncertainty quantification, challenges and what is a good future direction to take.
+Understanding the impacts of uncertainties inherent in stormwater systems would be essential in developing robust stormwater control algorithms.
+BO, as illustrated in this chapter, is an efficient approach for quantifying these uncertainties. 
+Though the GP can quantify the uncertainties based on the observed data points\footnote{Though in this chapter, they are simulated, this approach can be adopted for real-world data. Hence, to illustrate the flexibility of the approach, we refer to them as observed data points.}, interpreting and translating them into actionable information for stormwater control decision-making is still an open research question.
+Especially in the instances where multiple stormwater basins are being controlled (e.g.\ 10, 20 basins), interpreting these high-dimensional uncertainty estimates is a non-trivial task.
+To the best of our knowledge, there does yet exist an approach for tackling this, and addressing this knowledge gap would be instrumental in transitioning stormwater control algorithms into adoption. 
+
+\section{Conclusion}
+%% TODOD: take an other stab at this.
+This chapter introduces a BO-based automated control algorithm for identifying control decisions that realize the desired control objective.
+To the best of our knowledge, this is the first application of BO for the control of stormwater systems.
+This algorithm also incorporates a methodology for quantifying the rainfall uncertainties associated with a control decision's performance.
+Though this control approach can be used off-the-shelf for controlling stormwater systems, it is limited in the set of control objectives that it can achieve.
+Its ability to identify the control decisions that realize the desired control objective depends on the performance metric representing the objective and the random seed used in the methodology.
+The source code accompanying this work should allow researchers to evaluate the BO-based control approach's performance on other stormwater systems and develop extensions for improving its effectiveness.

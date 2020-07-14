@@ -5,15 +5,15 @@
 %************************************************
 %What are stormwater systems and why are they needed and what is the problem?
 Stormwater infrastructure systems mitigate the adverse effects of urbanization on the watershed ecology by treating and transporting the accumulated stormwater runoff away from the urban environment and into a downstream water body~\cite{national2009urban}.
-Existing stormwater systems are increasingly being stressed beyond their intended design~\cite{Kerkez2016SmarterSystems, national2009urban}.
+Existing stormwater systems are increasingly being stressed beyond their intended design~\cite{kerkez2016, national2009urban}.
 The resulting symptoms manifest themselves in frequent flash floods\cite{LarisKarklisBefore-and-afterPost} and poor water quality in downstream water bodies\cite{Watson2016TheHypoxia}.
-Though these infrastructure systems can be rebuilt with larger storage capacity to keep pace with the evolving demands, such an undertaking might not be financially viable for most communities\cite{Kerkez2016SmarterSystems}.
+Though these infrastructure systems can be rebuilt with larger storage capacity to keep pace with the evolving demands, such an undertaking might not be financially viable for most communities\cite{kerkez2016}.
 Furthermore, stormwater systems are often designed and constructed in a piecemeal fashion, and Emerson et al.\ have demonstrated that such a localized approach is not guaranteed to improve the stormwater system's performance~\cite{Emerson2005Watershed-ScaleBasins}.
 
 \
 
 %So how do we go about fixing it? : wireless sensing and control, but controlling this is not easy.
-In lieu of new construction, one alternative would be to retrofit existing stormwater systems with sensors and controllers, so that these systems can be dynamically controlled in real-time to the achieve the desired response\cite{Kerkez2016SmarterSystems, Mullapudi2017}. 
+In lieu of new construction, one alternative would be to retrofit existing stormwater systems with sensors and controllers, so that these systems can be dynamically controlled in real-time to the achieve the desired response\cite{kerkez2016, Mullapudi_Wong_Kerkez_2017}. 
 Such a vision is not limited by technology, which has matured to the point at which it can be ubiquitously deployed\cite{Bartos_2018}.
 Rather, the challenge is much more fundamental and rooted in a system-level understanding of environmental science.
 Once stormwater systems become highly instrumented and controlled, how should they actually be operated to achieve desired watershed outcomes?
@@ -36,7 +36,7 @@ Recently, there have been works investigating the use of evolutionary algorithms
 \
 
 
-The state-of-the-art in stormwater control  can be broadly classified under two categories: (1) Control algorithms reliant on parametrized models (e.g.\ model predictive control) for identifying control actions~\cite{Wong_Kerkez_2018, Ocampo-Martinez_2015,joseph2014hybrid, Sun_Lorenz_2020, lund2020cso}. (2) Search-based algorithms (e.g.\ evolutionary optimization algorithms) that exhaustively simulate physical models for identifying control actions~\cite{shishegar2018optimization,sadler2019, lund2018, Rjeily_2018, Meneses_2018, vezzaro2014}.
+The state-of-the-art in stormwater control  can be broadly classified under two categories: (1) Control algorithms reliant on parametrized models (e.g.\ model predictive control) for identifying control actions~\cite{Wong_Kerkez_2018, Ocampo-Martinez_2015,joseph2014hybrid, Sun_2020, lund2020cso}. (2) Search-based algorithms (e.g.\ evolutionary optimization algorithms) that exhaustively simulate physical models for identifying control actions~\cite{shishegar2018optimization,sadler2019, lund2018, Rjeily_2018, Meneses_2018, vezzaro2014}.
 Though these control algorithms have been applied for localized control in stormwater systems\footnote{e.g.\ maintaining constant water levels and flows in individual basins.}, their investigation in the context of coordinated control and targeted removal of pollutants has been limited.
 To fully realize the potential of the stormwater infrastructure and to safeguard our water bodies, we need to synthesize control algorithms that are able to coordinate the response of many distributed control assets in the network, while simultaneously achieving a diverse set of water quality and flow objectives. 
 Technologically, we are at a point where we can monitor and control these assets in real-time, but the development of control algorithms is hampered by a number of fundamental knowledge gaps:
@@ -59,7 +59,7 @@ My dissertation, leveraging statistical approaches, addresses these knowledge ga
 \end{itemize}
  
 
-\section{Chapter 2: Building a theory for smart stormwater systems}
+\section{Building a theory for smart stormwater systems}
 
 Retrofitting existing stormwater systems with wireless sensors and controllers will enable real-time control of flooding, stream erosion, and pollutant treatment. 
 Adoption of these smart systems is not limited by the technology, which has matured to a point where it can be deployed ubiquitously, but rather by our understanding of system-scale environmental science.
@@ -82,7 +82,7 @@ We demonstrate the use of the this framework on two simulated case studies, whic
 % Contribution
 This chapter's main contribution is demonstrating the use of real-time control for enhancing nutrient removal in stormwater systems. The modular simulation framework developed in this chapter has been the foundation for the control algorithms and the simulation tools developed in this dissertation. 
 
-\section{Chapter 3: Shaping streamflow in real-time using a sensor-actuator network}
+\section{Shaping streamflow in real-time using a sensor-actuator network}
 
 The primary objective of this chapter is to illustrate how data from a stormwater sensor network can be leveraged to precisely shape the hydrographs at the outlet of an urban watershed.
 While the underlying dynamics of the stormwater systems are inherently non-linear, its general behavior can be perceived as a low-pass filter.
@@ -100,7 +100,7 @@ We also demonstrated the coordinated control of two controllable stormwater asse
 
 This chapter demonstrates the characterization and control of an urban watershed using wireless sensor-actuator networks. To the best of our knowledge, the study presented in this chapter is the first-ever study to demonstrate the use of coordinated control strategies for achieving system scale objectives in a real watershed.
 
-\section{Chapter 4: Deep Reinforcement Learning for the control of stormwater networks}
+\section{Deep Reinforcement Learning for the control of stormwater networks}
 
 Presently, state-of-the-art control of stormwater falls under classic linear model predictive control (MPC).
 While this enables us to analytically evaluate the stability, robustness, and ensure performance guarantees, the approach demands a number of approximations, assumptions, and a high level of user expertise.
@@ -123,7 +123,7 @@ The chapter's main contribution is the formulation and implementation of an RL-b
 We also provide a fully open-sourced implementation of the control algorithm to promote transparency and permit the direct application of the methods to other systems.
 
 
-\section{Chapter 5: Bayesian Optimization for shaping stormwater flows}
+\section{Bayesian Optimization for shaping stormwater flows}
 
 Early evaluations of RL-based control have suggested that controllers often maintain nearly constant control actions (valve positions) throughout a storm event.
 This may mitigate the need for real-time control, as one could simply preset the control action ahead of a storm without needing to change it in real-time. 
@@ -140,7 +140,7 @@ Finally, we propose a methodology for quantifying rainfall uncertainty associate
 
 This chapter's main contributions are a methodology for shaping flows in stormwater systems, which requires no real-time control actions and relies only on a pre-storm valve configuration, and an algorithm that establishes bounds on the controller's performance by quantifying rainfall uncertainty. We also provide an open-source implementation of the controller that can be applied to virtually any stormwater network for which a physical model\footnote{EPA-SWMM model, \href{https://www.epa.gov/water-research/storm-water-management-model-swmm}{epa.gov/swmm}} exists.
 
-\section[Chapter 6: \texttt{pystorms}]{Chapter 6: A simulation sandbox for the development and evaluation of stormwater control algorithms}
+\section[\texttt{pystorms}]{A simulation sandbox for the development and evaluation of stormwater control algorithms}
 
 Over the past decade, there has been a significant amount of work in the development of real-time control algorithms for stormwater systems.
 Most, if not all, of the proposed algorithms were evaluated on specific stormwater networks and perturbed by a particular set of storm events.
