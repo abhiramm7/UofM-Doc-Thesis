@@ -9,24 +9,24 @@ networks}\label{ch:rl}
 \section{Introduction}
 
 Urban stormwater and sewer systems are being stressed beyond their intended design.
-The resulting symptoms manifest themselves in frequent flash floods \cite{LarisKarklisBefore-and-afterPost} and poor receiving water quality \cite{Watson2016TheHypoxia}.
+The resulting symptoms manifest themselves in frequent flash floods\cite{LarisKarklisBefore-and-afterPost} and poor receiving water quality\cite{Watson2016TheHypoxia}.
 Presently, the primary solution to these challenges is the construction of new infrastructure, such as bigger pipes, basins, wetlands, and other distributed storage assets.
-Redesigning and rebuilding the existing stormwater infrastructure to keep in pace with the evolving inputs is cost prohibitive for most communities \cite{kerkez2016}.
+Redesigning and rebuilding the existing stormwater infrastructure to keep in pace with the evolving inputs is cost prohibitive for most communities\cite{kerkez2016}.
 Furthermore, infrastructure is often upgraded on a site-by-site basis and rarely optimized for system-scale performance.
-Present approaches rely heavily on the assumption that these individual upgrades will add up to cumulative benefits, while the contrary has actually been illustrated by studies evaluating system-level outcomes \cite{Emerson2005Watershed-ScaleBasins}.
+Present approaches rely heavily on the assumption that these individual upgrades will add up to cumulative benefits, while the contrary has actually been illustrated by studies evaluating system-level outcomes\cite{Emerson2005Watershed-ScaleBasins}.
 The changing and highly variable nature of weather and urban environments demands stormwater solutions that can more rapidly adapt to changing community needs.
 
 \
 
 Instead of relying on new construction, a new generation of smart stormwater systems promises to dynamically re-purpose existing stormwater systems.
-These systems will use streaming sensor data to infer real-time state of a watershed and respond via real-time control of distributed control assets, such as valves, gates, and pumps \cite{kerkez2016}.
+These systems will use streaming sensor data to infer real-time state of a watershed and respond via real-time control of distributed control assets, such as valves, gates, and pumps\cite{kerkez2016}.
 By achieving system-level coordination between many distributed control points, the size of infrastructure needed to reduce flooding and improve water quality will become smaller.
-This presents a non-trivial control challenge, however, as any automated decisions must be carried with regard to public safety and must account for the physical complexity inherent to urban watersheds \cite{Mullapudi_Wong_Kerkez_2017, Schutze2004RealToday}.
+This presents a non-trivial control challenge, however, as any automated decisions must be carried with regard to public safety and must account for the physical complexity inherent to urban watersheds\cite{Mullapudi_Wong_Kerkez_2017, Schutze2004RealToday}.
 
 \
 
 In this chapter, we investigate \textit{Deep Reinforcement Learning} for the real-time control of stormwater systems.
-This approach builds on very recent advances in the artificial intelligence community, which have primarily focused on the control of complex autonomous systems, such as robots and autonomous vehicles \cite{Mnih2015,Lillicrap2015ContinuousLearning}.
+This approach builds on very recent advances in the artificial intelligence community, which have primarily focused on the control of complex autonomous systems, such as robots and autonomous vehicles\cite{Mnih2015,Lillicrap2015ContinuousLearning}.
 In this novel formulation, our algorithm will \textit{learn} the best real-time control strategy for a distributed stormwater system by efficiently quantifying the space of all possible control actions.
 In simple terms, the algorithm attempts various control actions until discovering those that have the desired outcomes.
 While such an approach has shown promise across many other domains, it is presently unclear how it will perform and scale when used for the real-time control of water systems, specifically urban drainage networks.
@@ -77,7 +77,7 @@ Deep RL control has yet to be applied to the real-time control of urban drainage
 \
 
 Deep RL agents approximate underlying system dynamics implicitly, hence not requiring a simplified or linearized control model \cite{Sutton98}.
-A Deep RL agent instantaneously identifies a control action by observing the network dynamic, thus reducing delay in the decision process \cite{Mnih2015, Silver2017MasteringAlgorithm}.
+An Deep RL agent instantaneously identifies a control action by observing the network dynamic, thus reducing delay in the decision process \cite{Mnih2015, Silver2017MasteringAlgorithm}.
 The explorative nature of the Deep RL agents also enables the methodology to adapt its control strategy to changing conditions of the system \cite{Sutton98}.
 Hence, Reinforcement Learning shows promise as a potential alternative or supplement to existing control methods for water systems.
 To that end, the goal of this chapter is to formulate and evaluate of Reinforcement Learning for the real-time control of urban drainage systems.

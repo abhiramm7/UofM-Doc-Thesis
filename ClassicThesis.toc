@@ -6,15 +6,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}{Introduction}}{1}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}{Building a theory for smart stormwater systems}}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}{Chapter 2: Building a theory for smart stormwater systems}}{3}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}{Shaping streamflow in real-time using a sensor-actuator network}}{4}{section.1.2}
+\contentsline {section}{\numberline {1.2}{Chapter 3: Shaping streamflow in real-time using a sensor-actuator network}}{4}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}{Deep Reinforcement Learning for the control of stormwater networks}}{5}{section.1.3}
+\contentsline {section}{\numberline {1.3}{Chapter 4: Deep Reinforcement Learning for the control of stormwater networks}}{5}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}{Bayesian Optimization for shaping stormwater flows}}{5}{section.1.4}
+\contentsline {section}{\numberline {1.4}{Chapter 5: Bayesian Optimization for shaping stormwater flows}}{6}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}{\texttt {pystorms}}}{6}{section.1.5}
+\contentsline {section}{\numberline {1.5}{\texttt {Chapter 6: pystorms}}}{6}{section.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}{Building a Theory for Smart Stormwater Systems}}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
@@ -178,28 +178,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.2}{Future Directions}}{111}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {i}{Appendix}}{115}{part.1}
+\contentsline {part}{\numberline {i}{Appendix}}{113}{part.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}{Appendix-1}}{117}{appendix.A}
+\contentsline {chapter}{\numberline {A}{Appendix-1}}{115}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}{Case study 1: Local Control}}{117}{section.A.1}
+\contentsline {section}{\numberline {A.1}{Case study 1: Local Control}}{115}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}{Case study 2: System-level Control}}{117}{section.A.2}
+\contentsline {section}{\numberline {A.2}{Case study 2: System-level Control}}{115}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}{Appendix-2}}{119}{appendix.B}
+\contentsline {chapter}{\numberline {B}{Appendix-2}}{117}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.1}{Deep Neural Networks}}{119}{section.B.1}
+\contentsline {section}{\numberline {B.1}{Deep Neural Networks}}{117}{section.B.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.2}{Hyper parameters and architecture}}{120}{section.B.2}
+\contentsline {section}{\numberline {B.2}{Hyper parameters and architecture}}{118}{section.B.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.3}{Equal-filling degree algorithm}}{121}{section.B.3}
+\contentsline {section}{\numberline {B.3}{Equal-filling degree algorithm}}{119}{section.B.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.4}{Scenario 1 --- Reward function Formulation Sensitivity}}{122}{section.B.4}
+\contentsline {section}{\numberline {B.4}{Scenario 1 --- Reward function Formulation Sensitivity}}{120}{section.B.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.5}{Scenario 1 --- Location sensitivity}}{124}{section.B.5}
+\contentsline {section}{\numberline {B.5}{Scenario 1 --- Location sensitivity}}{122}{section.B.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {B.6}{Scenario 2 --- Back-to-back event}}{125}{section.B.6}
+\contentsline {section}{\numberline {B.6}{Scenario 2 --- Back-to-back event}}{123}{section.B.6}
 \defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {}{Bibliography}}{127}{section*.52}
+\contentsline {chapter}{\numberline {}{Bibliography}}{125}{section*.51}

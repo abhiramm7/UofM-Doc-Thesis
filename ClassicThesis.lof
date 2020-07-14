@@ -92,18 +92,18 @@
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Rule-based algorithm used for controlling the system in the second case study.\relax }}{118}{figure.caption.41}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Rule-based algorithm used for controlling the system in the second case study.\relax }}{116}{figure.caption.40}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Performance comparison between uncontrolled and controlled systems (RL and equal-filling) across a spectrum of stormevents. Equal-filling approach is able to successfully control the system to achieve the objective of minimizing flows in all the stormevents.\relax }}{121}{figure.caption.46}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Performance comparison between uncontrolled and controlled systems (RL and equal-filling) across a spectrum of stormevents. Equal-filling approach is able to successfully control the system to achieve the objective of minimizing flows in all the stormevents.\relax }}{119}{figure.caption.45}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Equal-filling approach successfully maintains the outflows from the four basins below the desired threshold.\relax }}{122}{figure.caption.48}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Equal-filling approach successfully maintains the outflows from the four basins below the desired threshold.\relax }}{120}{figure.caption.47}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Performance of the RL agent is independent of the choice of equations used for creating the reward functions.\relax }}{123}{figure.caption.49}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Performance of the RL agent is independent of the choice of equations used for creating the reward functions.\relax }}{121}{figure.caption.48}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Performance of the RL agent controlling the basins across the network. Controller is able to control the response of the basins irrespective of the location, indicating the independence of the control algorithm's performance on the location of the basin. Results presented in this figure are independent simulations; each column represents a simulation where only that particular basin is controlled.\relax }}{124}{figure.caption.50}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Performance of the RL agent controlling the basins across the network. Controller is able to control the response of the basins irrespective of the location, indicating the independence of the control algorithm's performance on the location of the basin. Results presented in this figure are independent simulations; each column represents a simulation where only that particular basin is controlled.\relax }}{122}{figure.caption.49}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Performance of the RL controller in a back-to-back event. Given that the controller is trained to react based on the depth in the basins and not the rainfall experienced in the watershed, controller treats this back-to-back event as if it were a single event.\relax }}{125}{figure.caption.51}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Performance of the RL controller in a back-to-back event. Given that the controller is trained to react based on the depth in the basins and not the rainfall experienced in the watershed, controller treats this back-to-back event as if it were a single event.\relax }}{123}{figure.caption.50}
 \defcounter {refsection}{0}\relax 
 \ttl@tocsep 

@@ -19,11 +19,11 @@
 \datalist[entry]{nyt/global//global/global}
   \entry{5Mullapudi2020}{unpublished}{}
     \name{author}{10}{}{%
-      {{hash=SRP}{%
-         family={Sara},
-         familyi={S\bibinitperiod},
-         given={Rimer\bibnamedelima P.},
-         giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+      {{hash=RSP}{%
+         family={Rimer},
+         familyi={R\bibinitperiod},
+         given={Sara\bibnamedelima P.},
+         giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
       }}%
       {{hash=tt}{%
          family={\textbf{Mullapudi}},
@@ -31,62 +31,63 @@
          given={\textbf{Abhiram}},
          giveni={t\bibinitperiod},
       }}%
-      {{hash=STC}{%
-         family={Sara},
+      {{hash=TSC}{%
+         family={Troutman},
+         familyi={T\bibinitperiod},
+         given={Sara\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=EG}{%
+         family={Ewing},
+         familyi={E\bibinitperiod},
+         given={Gregory},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SJM}{%
+         family={Sadler},
          familyi={S\bibinitperiod},
-         given={Troutman\bibnamedelima C.},
-         giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Jeffrey\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
-      {{hash=GE}{%
-         family={Gregory},
+      {{hash=MBE}{%
+         family={McDonnell},
+         familyi={M\bibinitperiod},
+         given={Bryant\bibnamedelima E.},
+         giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kertesz},
+         familyi={K\bibinitperiod},
+         given={Ruben},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=GJL}{%
+         family={Goodall},
          familyi={G\bibinitperiod},
-         given={Ewing},
-         giveni={E\bibinitperiod},
+         given={Jonathan\bibnamedelima L.},
+         giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
       }}%
-      {{hash=JSM}{%
-         family={Jeffrey},
-         familyi={J\bibinitperiod},
-         given={Sadler\bibnamedelima M.},
-         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      {{hash=HJM}{%
+         family={Hathaway},
+         familyi={H\bibinitperiod},
+         given={Jon\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
       }}%
-      {{hash=JGL}{%
-         family={Jonathan},
-         familyi={J\bibinitperiod},
-         given={Goodall\bibnamedelima L.},
-         giveni={G\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=RK}{%
-         family={Ruben},
-         familyi={R\bibinitperiod},
-         given={Kertesz},
-         giveni={K\bibinitperiod},
-      }}%
-      {{hash=BM}{%
-         family={Bryant},
-         familyi={B\bibinitperiod},
-         given={McDonnell},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=JHM}{%
-         family={Jon},
-         familyi={J\bibinitperiod},
-         given={Hathaway\bibnamedelima M.},
-         giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=BK}{%
-         family={Branko},
-         familyi={B\bibinitperiod},
-         given={Kerkez},
-         giveni={K\bibinitperiod},
+      {{hash=KB}{%
+         family={Kerkez},
+         familyi={K\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SRP+1}
-    \strng{fullhash}{SRPttSTCGEJSMJGLRKBMJHMBK1}
+    \strng{namehash}{RSP+1}
+    \strng{fullhash}{RSPttTSCEGSJMMBEKRGJLHJMKB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{note}{In preparation for submission}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{\textit{In} \textit{preparation} \textit{for}
+  \textit{submission}}
     \field{title}{pystorms: A Simulation Sandbox For The Development And
   Evaluation Of Stormwater Control Algorithms}
     \field{year}{2020}
@@ -113,7 +114,8 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \field{note}{In preparation for submission}
+    \field{note}{\textit{In} \textit{preparation} \textit{for}
+  \textit{submission}}
     \field{title}{Automated Control Of Stormwater Systems Using Bayesian
   Optimization}
     \field{year}{2020}

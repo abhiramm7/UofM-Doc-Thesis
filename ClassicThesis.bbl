@@ -699,7 +699,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{note}{arXiv: 1012.2599}
     \field{title}{A tutorial on Bayesian optimization of expensive cost
   functions, with application to active user modeling and hierarchical
   reinforcement learning}
@@ -871,7 +870,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{note}{Accessed: 2018-09-25}
     \field{title}{City of Ann Arbor Stormwater Model Calibration and Analysis
   Project}
     \field{year}{2015}
@@ -1151,7 +1149,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{note}{arXiv: 1812.06855}
     \field{title}{Bayesian Optimization in AlphaGo}
     \verb{url}
     \verb http://arxiv.org/abs/1812.06855
@@ -3789,6 +3786,35 @@
     \field{year}{2004}
   \endentry
 
+  \entry{loucks2017water}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LDP}{%
+         family={Loucks},
+         familyi={L\bibinitperiod},
+         given={Daniel\bibnamedelima P},
+         giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=VBE}{%
+         family={Van\bibnamedelima Beek},
+         familyi={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Eelco},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LDPVBE1}
+    \strng{fullhash}{LDPVBE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Water resource systems planning and management: An
+  introduction to methods, models, and applications}
+    \field{year}{2017}
+  \endentry
+
   \entry{lund2018}{article}{}
     \name{author}{5}{}{%
       {{hash=LNSV}{%
@@ -4272,7 +4298,6 @@
     \verb 10.3390/w10010076
     \endverb
     \field{issn}{2073-4441}
-    \field{note}{tex.ids: menesesCoordinatingRuleBasedSystemWide2018a}
     \field{number}{1}
     \field{pages}{76}
     \field{title}{Coordinating Rule-Based and System-Wide Model Predictive
@@ -5818,6 +5843,40 @@
     \field{year}{2005}
   \endentry
 
+  \entry{randhir2009urbanization}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RT}{%
+         family={Randhir},
+         familyi={R\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=EP}{%
+         family={Ekness},
+         familyi={E\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{RTEP1}
+    \strng{fullhash}{RTEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{1}
+    \field{pages}{88\bibrangedash 101}
+    \field{title}{Urbanization effects on watershed habitat potential: a
+  multivariate assessment of thresholds and interactions}
+    \field{volume}{2}
+    \field{journaltitle}{Ecohydrology: Ecosystems, Land and Water Process
+  Interactions, Ecohydrogeomorphology}
+    \field{year}{2009}
+  \endentry
+
   \entry{rasmussenGaussianProcessesMachine2006}{book}{}
     \name{author}{2}{}{%
       {{hash=RCE}{%
@@ -5847,7 +5906,6 @@
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{isbn}{978-0-262-18253-9}
-    \field{note}{OCLC: ocm61285753}
     \field{series}{Adaptive computation and machine learning}
     \field{title}{Gaussian processes for machine learning}
     \list{location}{1}{%
@@ -6667,7 +6725,7 @@
          giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SM+2}
+    \strng{namehash}{SM+3}
     \strng{fullhash}{SMCACHSWVPA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -6719,7 +6777,7 @@
     \list{publisher}{1}{%
       {IWA Publishing}%
     }
-    \strng{namehash}{SM+3}
+    \strng{namehash}{SM+2}
     \strng{fullhash}{SMLMPMHU1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -7262,6 +7320,28 @@
     \field{title}{Policy gradient methods for reinforcement learning with
   function approximation}
     \field{year}{2000}
+  \endentry
+
+  \entry{te2010applied}{book}{}
+    \name{author}{1}{}{%
+      {{hash=TCV}{%
+         family={Te\bibnamedelima Chow},
+         familyi={T\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Ven},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Tata McGraw-Hill Education}%
+    }
+    \strng{namehash}{TCV1}
+    \strng{fullhash}{TCV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Applied hydrology}
+    \field{year}{2010}
   \endentry
 
   \entry{Tillinghast_2012}{article}{}
