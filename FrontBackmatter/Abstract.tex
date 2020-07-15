@@ -10,28 +10,34 @@
 \let\cleardoublepage\relax
 
 \chapter*{Abstract}
-Rapid advances in wireless communication, embedded systems, and high-performance computing are promising a fusion of physical and digital water.
+Rapid advances in wireless communication, embedded systems, and high-performance computing are promising the fusion of physical and digital water.
 The next generation of stormwater systems --- equipped with wireless sensors and actuators --- will autonomously reconfigure themselves to prevent  flooding and achieve system scale objectives.
 This vision of ``smart'' stormwater systems is not limited by technology, which has matured to the point where it can be ubiquitously deployed.
 Instead, the challenge is much more fundamental and rooted in a system-level understanding of stormwater networks: \textit{once stormwater systems become highly instrumented, how should they be controlled to achieve the desired watershed outcomes?} This dissertation leverages statistical learning methods to begin closing fundamental knowledge gaps in the emerging field of smart water systems.
 % Each chapter
 % Second Chapter.
-In the second chapter of this dissertation, we address the lack of simulation tools for developing control algorithms that target pollutants in stormwater runoff by introducing a new stormwater modeling framework.
-Using this framework, we demonstrate real-time control’s potential for enhancing stormwater network’s nutrient removal efficiency. 
+The second chapter of this dissertation addresses the lack of simulation tools for modeling pollutant interactions by introducing a new toolchain for coupling the existing hydraulic, hydrologic, and water quality models.
+Using this toolchain, we demonstrate real-time control's potential for enhancing nutrient removal in a watershed.
+% Real-time control's potential for enhancing nutrient removal in a watershed is demonstrated using this toolchain.
+% Third Chapter 
+In the third chapter, to characterize a watershed's controllability, a real-world case study is carried out using a wireless sensor-actuator network.
+Through this study, the ability to precisely shape the hydrograph is quantified, illustrating the high level of granularity that can be achieved using real-time control. 
 % Fourth Chapter 
-In the third chapter, to characterize the controllability of a watershed, we carry out a real-world case study using a wireless sensor-actuator network to control the response of a watershed. %to achieve system-scale objectives.
-Through this study, we learn that we can precisely shape the streamflows in a watershed by relying on the watershed's characterization identified from sensor measurements.
-% Fourth Chapter 
-In the fourth chapter, we investigate the use of a Reinforcement Learning-based control algorithm for synthesizing a stormwater controller that does not require explicit dynamical assumptions.
-We demonstrate its effectiveness via a simulation-based evaluation and provide guidelines for adapting this approach for the control of stormwater systems.
+Given that most state-of-the-art stormwater control algorithms require surrogate models or assume simplified dynamics, the fourth chapter introduces a Reinforcement Learning-based model-free algorithm for synthesizing stormwater controllers.
+The efficacy of the algorithm is demonstrated via simulation, highlighting strong performance.
+More importantly, a discussion is provided on the limitations of the approach, and a set of guidelines is presented for those seeking to apply Reinforcement Learning to stormwater control.
 % Fifth Chapter
-In the fifth chapter, we introduce a Bayesian Optimization-based methodology for quantifying the uncertainties associated with control decisions and demonstrate its use for identifying robust control strategies.
-%Quantifying these uncertainties enables us to identify the robust control strategies that can be implemented in a stormwater network.
+The fifth chapter in this dissertation introduces a Bayesian Optimization-based methodology for addressing the lack of knowledge relating to the uncertainty in stormwater control approaches and demonstrates its use for identifying robust control strategies.
 % Sixth Chapter.
-In the final chapter, we introduce an open-source Python library to facilitate the systematic quantitative evaluation of control algorithms.
+In the final chapter, an open-source Python library to facilitate the systematic quantitative evaluation of control algorithms is introduced.
 This library provides a curated collection of stormwater control scenarios, coupled with an accessible programming interface and a stormwater simulator, to provide a standalone package for developing stormwater control algorithms.
 % Two lines on the future and conclude.
-The discoveries made in this dissertation, along with the algorithms and tools developed, stand to provide the foundation for the development of a new generation of autonomous stormwater infrastructure.
+The discoveries made in this dissertation, along with the algorithms and tools developed, seek to support the foundation for the development of a new generation of autonomous stormwater infrastructure.
 \endgroup
 
 \vfill
+
+%The fifth chapter in this dissertation introduces a Bayesian Optimization-based methodology for quantifying the uncertainties associated with control decisions and demonstrate its use for identifying robust control strategies.
+%Quantifying these uncertainties enables us to identify the robust control strategies that can be implemented in a stormwater network.
+%We demonstrate its effectiveness via a simulation-based evaluation and provide guidelines for adapting this approach for the control of stormwater systems.
+

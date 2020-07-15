@@ -4,12 +4,13 @@
 %************************************************
 %************************************************
 %What are stormwater systems and why are they needed and what is the problem?
-Stormwater infrastructure is designed to mitigate the adverse effects of urbanization, like flooding and deterioration of watershed ecosystems~\cite{national2009urban, randhir2009urbanization}.
+Stormwater infrastructure is designed to mitigate the adverse effects of urbanization, including flooding and deterioration of watershed ecosystems~\cite{national2009urban, randhir2009urbanization}.
 Stormwater systems reduce or eliminate these challenges by treating and transporting the accumulated stormwater runoff away from the urban environment and into a downstream water body~\cite{national2009urban}.
 Existing stormwater systems are increasingly being stressed beyond their intended design~\cite{kerkez2016, national2009urban}.
 The resulting symptoms manifest themselves in frequent flash floods\cite{LarisKarklisBefore-and-afterPost} and poor water quality in downstream water bodies\cite{Watson2016TheHypoxia}.
 While these infrastructure systems can be rebuilt with larger storage capacity to keep pace with the evolving demands, such an undertaking might not be financially viable for most communities\cite{kerkez2016}.
-Furthermore, stormwater systems are often designed and constructed in a piecemeal fashion, and Emerson et al.\ have demonstrated that such a localized approach is not guaranteed to improve the stormwater system's performance~\cite{Emerson2005Watershed-ScaleBasins}.
+Furthermore, stormwater systems are often designed and constructed in a piecemeal fashion.
+Emerson et al.\ have demonstrated that such a localized approach is not guaranteed to improve the stormwater system's performance~\cite{Emerson2005Watershed-ScaleBasins}.
 When small-scale solutions cannot be guaranteed to result in system-scale benefits,  new solutions are warranted.
 
 \
@@ -23,7 +24,7 @@ Once stormwater systems become highly instrumented and controlled, how should th
 \
 
 % What about other approaches from reservoir systems and why cant we use those methods?
-The Water Resource Engineering community has extensively studied the control of water networks, and there is a significant volume of work focused on developing algorithms for the control of reservoir systems~\cite{Haimes_1977,Labadie_2004,Yeh_1985,Reed_Hadka_Herman_Kasprzyk_Kollat_2013}.
+The Water Resource Engineering community has extensively studied the control of water networks, and there is a significant volume of work focused on developing algorithms for the control of big reservoir systems~\cite{Haimes_1977,Labadie_2004,Yeh_1985,Reed_Hadka_Herman_Kasprzyk_Kollat_2013}.
 However, much of these efforts have focused on large river basins, which change slowly and exhibit variable dynamics compared to urban stormwater networks~\cite{loucks2017water, te2010applied}.
 Direct adoption of these existing methods for the control of stormwater systems is hindered by the fundamental scaling properties of water systems:
 \begin{itemize}
@@ -34,7 +35,7 @@ However, given that the stormwater storage nodes are considerably smaller and ar
 Stormwater systems operate on a much smaller time horizon (in the order of minutes)~\cite{lund2018}.
 At such smaller time scales, the nonlinearities in hydrological and hydraulic phenomena are significant and have to be accounted into control decisions.
 \end{itemize}
-Recently, there have been works investigating the use of evolutionary algorithms~\cite{Reed_Hadka_Herman_Kasprzyk_Kollat_2013, maier2014,Bessler_Savic_Walters_2003} for reservoir control, and these algorithms are increasingly being used for the control of stormwater systems~\cite{shishegar2018optimization,lund2018}.
+Relatively recently, there have been works investigating the use of evolutionary algorithms~\cite{Reed_Hadka_Herman_Kasprzyk_Kollat_2013, maier2014,Bessler_Savic_Walters_2003} for reservoir control, and these algorithms are increasingly being used for the control of stormwater systems~\cite{shishegar2018optimization,lund2018}.
 
 \
 
@@ -74,7 +75,7 @@ In the second chapter of this dissertation, we present a modeling framework for 
 \
 
 % Methodology
-Existing stormwater simulation tools can be broadly grouped into two categories: those that focus on hydrology (on watershed scale)\cite{Rossman2010Storm5.1} and those that focus on water quality (at individual sites)\cite{Langergraber2009CWM1:Wetlands}.
+A comprehensive literature review is offered in the chapter, highlighting primarily that existing stormwater simulation tools can be broadly grouped into two categories: those that focus on hydrology (on a watershed scale)\cite{Rossman2010Storm5.1} and those that focus on water quality (at individual sites)\cite{Langergraber2009CWM1:Wetlands}.
 This often forces a trade-off between comprehensively modeling system-level hydrology and pollutant treatment.
 We propose a modular approach that integrates these existing models under a common simulation framework, rather than incorporating the desired functionality in a single unified model.
 This choice was motivated by the desire to ensure compatibility with the existing tools and to provide the researches with the flexibility of incorporating their custom models into the framework.
@@ -89,13 +90,7 @@ The modular simulation framework developed in this chapter has been the foundati
 \section{Chapter 3: Shaping streamflow in real-time using a sensor-actuator network}
 
 The primary objective of this chapter is to illustrate how data from a stormwater sensor network can be leveraged to precisely shape the hydrographs at the outlet of an urban watershed.
-While the underlying dynamics of the stormwater systems are inherently non-linear, its general behavior can be perceived as a low-pass filter.
-Behavior of the watershed --- retrofitted with wireless sensors and controllers --- during a stormevent can be characterized using sensor's data-streams.
-Once characterized, actuators and valves in the network can be used for shaping the response of the watershed.
-
-\
-
-Leveraging a wireless sensor-actuator network in the Ann Arbor~\cite{Bartos_2018}, we characterize the travel-times and magnitudes of flows resulting from the control system's actions.
+Leveraging a wireless sensor-actuator network in the Ann Arbor~\cite{Bartos_2018}, we characterize the travel-times and magnitudes of flows resulting from a control system's actions.
 Based on this characterization, we formulate a series of experiments to illustrate how such an approach achieves flow control objectives.
 We create a flat hydrograph using a single control asset to illustrate the use of water level data in maintaining system-level flows below a desired stream erosion threshold.
 We also demonstrate the coordinated control of two controllable stormwater assets for shaping streamflow at the outlet of the watershed.
@@ -116,8 +111,8 @@ In this chapter, we introduce the first ever evaluation of RL for the control of
 
 \
 
-We analyze the feasibility of the RL-based control of stormwater systems by formulating a series of simulation-based experiments.
-The controller's sensitivity to the reward function formulation is evaluated by training the controller on a single basin using five different reward functions and analyzing its performance.
+We analyze the feasibility of RL-based control of stormwater systems by formulating a series of simulation-based experiments.
+The controller's sensitivity to reward function formulation is evaluated by training the controller on a single basin using five different reward functions and analyzing final performance.
 The scalability of the approach is analyzed by training the controller on a network of three interconnected basins.
 The robustness of the controller formulation to the choice of neural network architecture is also evaluated.
 %We then analyze the trained controller's performance on a spectrum of storm events to quantity the benefits of the proposed control approach.
@@ -147,7 +142,7 @@ Finally, we propose a methodology for extending Bayesian Optimization's ability 
 
 \
 
-This chapter's main contributions are a methodology for shaping stormwater flows and an algorithm that establishes bounds on the controller's performance by quantifying rainfall uncertainty.
+This chapter's main contributions include a methodology for shaping stormwater flows and an algorithm that establishes bounds on the controller's performance by quantifying impacts of rainfall uncertainty.
 We also provide an open-source implementation of the controller that can be applied to virtually any stormwater network for which a physical model exists.
 
 \section[\texttt{Chapter 6: pystorms}]{Chapter 6: A simulation sandbox for the development and evaluation of stormwater control algorithms}
