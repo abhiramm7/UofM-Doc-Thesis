@@ -14,7 +14,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}{Chapter 5: Bayesian Optimization for shaping stormwater flows}}{5}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}{\texttt {Chapter 6: pystorms}}}{6}{section.1.5}
+\contentsline {section}{\numberline {1.5}{Chapter 6: \texttt {pystorms}}}{6}{section.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}{Building a Theory for Smart Stormwater Systems}}{9}{chapter.2}
 \defcounter {refsection}{0}\relax 
