@@ -421,9 +421,6 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT ./gfx/title_page.png
 INPUT ./gfx/title_page.png
 INPUT ./gfx/title_page.png
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 OUTPUT FrontBackmatter/Titleback.aux
 INPUT ./FrontBackmatter/Titleback.tex
 INPUT ./FrontBackmatter/Titleback.tex
@@ -431,6 +428,8 @@ OUTPUT FrontBackmatter/Abstract.aux
 INPUT ./FrontBackmatter/Abstract.tex
 INPUT ./FrontBackmatter/Abstract.tex
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
 OUTPUT FrontBackmatter/Publications.aux
 INPUT ./FrontBackmatter/Publications.tex
 INPUT ./FrontBackmatter/Publications.tex
@@ -496,6 +495,7 @@ INPUT ./gfx/Chapter-2/Figure7-eps-converted-to.pdf
 INPUT ./gfx/Chapter-2/Figure4.eps
 INPUT ./gfx/Chapter-2/Figure4-eps-converted-to.pdf
 INPUT ./gfx/Chapter-2/Figure4-eps-converted-to.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT ./gfx/Chapter-2/Figure6.eps
 INPUT ./gfx/Chapter-2/Figure6-eps-converted-to.pdf
 INPUT ./gfx/Chapter-2/Figure6-eps-converted-to.pdf
