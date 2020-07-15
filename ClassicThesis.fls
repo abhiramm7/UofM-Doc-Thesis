@@ -536,9 +536,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT ./gfx/Chapter-4/performance.eps
 INPUT ./gfx/Chapter-4/performance-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/performance-eps-converted-to.pdf
-INPUT ./gfx/Chapter-4/epsilon.eps
-INPUT ./gfx/Chapter-4/epsilon-eps-converted-to.pdf
-INPUT ./gfx/Chapter-4/epsilon-eps-converted-to.pdf
+INPUT ./gfx/Chapter-4/generalizability_epsilon.eps
+INPUT ./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf
+INPUT ./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/ucq.eps
 INPUT ./gfx/Chapter-4/ucq-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/ucq-eps-converted-to.pdf

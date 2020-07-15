@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  15 JUL 2020 12:18
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  15 JUL 2020 14:28
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.144 seconds
+luaotfload | main : initialization completed in 0.110 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -5119,19 +5119,19 @@ File: gfx/Chapter-4/performance-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-4/performance-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-4/performance-eps-converted-to.pdf  used on input line 507.
 (luatex.def)             Requested size: 336.0pt x 211.84854pt.
-Package epstopdf Info: Source file: <gfx/Chapter-4/epsilon.eps>
-(epstopdf)                    date: 2020-07-14 01:04:16
-(epstopdf)                    size: 50879 bytes
-(epstopdf)             Output file: <gfx/Chapter-4/epsilon-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-07-14 01:16:08
-(epstopdf)                    size: 21352 bytes
-(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/epsilon-eps-converted-to.pdf gfx/Chapter-4/epsilon.eps>
+Package epstopdf Info: Source file: <gfx/Chapter-4/generalizability_epsilon.eps>
+(epstopdf)                    date: 2020-07-15 11:56:26
+(epstopdf)                    size: 50851 bytes
+(epstopdf)             Output file: <gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-07-15 14:27:41
+(epstopdf)                    size: 21259 bytes
+(epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf gfx/Chapter-4/generalizability_epsilon.eps>
 (epstopdf)             \includegraphics on input line 521.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-4/epsilon-eps-converted-to.pdf, id=2097, 156.585pt x 118.4425pt>
-File: gfx/Chapter-4/epsilon-eps-converted-to.pdf Graphic file (type pdf)
-<use gfx/Chapter-4/epsilon-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-4/epsilon-eps-converted-to.pdf  used on input line 521.
+<gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf, id=2097, 156.585pt x 118.4425pt>
+File: gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf Graphic file (type pdf)
+<use gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>
+Package luatex.def Info: gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf  used on input line 521.
 (luatex.def)             Requested size: 336.0pt x 254.18915pt.
  [84]
 Overfull \hbox (7.2708pt too wide) in paragraph at lines 553--553
@@ -5158,7 +5158,7 @@ File: gfx/Chapter-4/ucq-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-4/ucq-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-4/ucq-eps-converted-to.pdf  used on input line 583.
 (luatex.def)             Requested size: 336.0pt x 138.06177pt.
- [86<./gfx/Chapter-4/epsilon-eps-converted-to.pdf>] [87]
+ [86<./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf>] [87]
 Overfull \hbox (1.05235pt too wide) in paragraph at lines 620--625
 \TU/TeXGyrePagella(0)/m/n/10.95 met-rics, with-out the need for in-ter-nal op-ti-mizer pa-ram-e-ter-i-za-tion. Given
  []
@@ -6700,7 +6700,7 @@ Chapters/Chapter5.tex
 gfx/Chapter-4/bae-opt.png
 gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf
 gfx/Chapter-4/performance-eps-converted-to.pdf
-gfx/Chapter-4/epsilon-eps-converted-to.pdf
+gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf
 gfx/Chapter-4/ucq-eps-converted-to.pdf
 Chapters/Chapter6.tex
 gfx/Chapter-5/pystormsLayersSketch.png
@@ -6738,10 +6738,10 @@ Here is how much of LuaTeX's memory you used:
    17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 66 glue, 21 kern, 3 penalty, 2 sub_mlist, 10 margin_kern, 1005 glyph, 296 attribute, 141 glue_spec, 296 attribute_list, 3 write, 36 pdf_action, 2 pdf_colorstack nodes
    avail lists: 1:8,2:1044,3:252,4:120,5:832,6:273,7:7148,8:158,9:453,10:26,11:610,12:1
  43571 multiletter control sequences out of 65536+600000
- 179 fonts using 56648095 bytes
+ 179 fonts using 56647923 bytes
  75i,23n,98p,9091b,3858s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-BoldItalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bolditalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (162 pages, 13865213 bytes).
+Output written on ClassicThesis.pdf (162 pages, 13865142 bytes).
 
 PDF statistics: 2935 PDF objects out of 2984 (max. 8388607)
  2547 compressed objects within 26 object streams
