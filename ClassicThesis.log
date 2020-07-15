@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  14 JUL 2020 14:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.4.16)  14 JUL 2020 22:35
  system commands enabled.
  file:line:error style messages enabled.
 **ClassicThesis.tex
@@ -23,7 +23,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.186 seconds
+luaotfload | main : initialization completed in 0.113 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/silence/silence.sty
 Package: silence 2012/07/02 v1.5b Selective filtering of warnings and error messages
@@ -2685,11 +2685,11 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/12/80ls'.
 (microtype)             Ignoring protrusion settings for this character.
-<gfx/title_page.png, id=409, 378.41376pt x 375.4025pt>
+<gfx/title_page.png, id=409, 465.74pt x 456.20438pt>
 File: gfx/title_page.png Graphic file (type png)
 <use gfx/title_page.png>
 Package luatex.def Info: gfx/title_page.png  used on input line 23.
-(luatex.def)             Requested size: 227.62204pt x 225.81032pt.
+(luatex.def)             Requested size: 227.62204pt x 222.95735pt.
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -4022,7 +4022,7 @@ Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/it/10'.
 (microtype)             Ignoring protrusion settings for this character.
  [23<./gfx/Chapter-1/arch.png>] [24] [25])
-Overfull \hbox (0.4335pt too wide) in paragraph at lines 346--94
+Overfull \hbox (0.4335pt too wide) in paragraph at lines 348--94
 \TU/TeXGyrePagella(0)/m/n/10.95 ter sys-tems the-o-ret-i-cal frame-work. Be-fore such sys-tems be-come adopted,
  []
 
@@ -4243,12 +4243,7 @@ Chapter 4.
 
 
 
-]
-Overfull \hbox (11.7123pt too wide) in paragraph at lines 21--25
-\TU/TeXGyrePagella(0)/m/n/10.95 stormwa-ter sys-tems promises to dy-nam-i-cally re-purpose ex-ist-ing stormwa-
- []
-
-[41]
+] [41]
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
 []|[][]|  
  []
@@ -4261,12 +4256,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/RL_main_fig_1_final.eps>
 (epstopdf)                    date: 2020-03-16 23:08:07
 (epstopdf)                    size: 32643 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf gfx/Chapter-3/RL_main_fig_1_final.eps>
-(epstopdf)             \includegraphics on input line 64.
+(epstopdf)             \includegraphics on input line 66.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf, id=1404, 355.3275pt x 361.35pt>
 File: gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf  used on input line 64.
+Package luatex.def Info: gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf  used on input line 66.
 (luatex.def)             Requested size: 336.0pt x 341.70363pt.
  [43<./gfx/Chapter-3/RL_main_fig_1_final-eps-converted-to.pdf>]
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4291,12 +4286,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/casestudy_fig_2.eps>
 (epstopdf)                    date: 2020-03-16 23:08:07
 (epstopdf)                    size: 166918 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf gfx/Chapter-3/casestudy_fig_2.eps>
-(epstopdf)             \includegraphics on input line 224.
+(epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf, id=1504, 476.78125pt x 456.70625pt>
 File: gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf  used on input line 224.
+Package luatex.def Info: gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf  used on input line 226.
 (luatex.def)             Requested size: 235.19897pt x 225.30023pt.
  [49<./gfx/Chapter-3/casestudy_fig_2-eps-converted-to.pdf>]
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4304,7 +4299,7 @@ Overfull \hbox (60.46819pt too wide) has occurred while \output is active
  []
 
 [50] [51]
-Overfull \hbox (16.9371pt too wide) in paragraph at lines 300--302
+Overfull \hbox (16.9371pt too wide) in paragraph at lines 302--304
 \TU/TeXGyrePagella(0)/m/n/10.95 The penalty rates are gov-erned by a set of five pa-ram-e-ters c=$\TU/TeXGyrePagellaMath(1)/m/n/10.95 {𝑐[], 𝑐[], 𝑐[], 𝑐[], 𝑐[]}$\TU/TeXGyrePagella(0)/m/n/10.95 ,
  []
 
@@ -4314,7 +4309,7 @@ Overfull \hbox (60.46819pt too wide) has occurred while \output is active
  []
 
 [52]
-Overfull \hbox (14.65901pt too wide) in paragraph at lines 341--346
+Overfull \hbox (14.65901pt too wide) in paragraph at lines 343--348
 []\TU/TeXGyrePagella(0)/m/n/10.95 where re-ward pa-ram-e-ters c=$\TU/TeXGyrePagellaMath(1)/m/n/10.95 {𝑐[], 𝑐[], 𝑐[], 𝑐[], 𝑐[]}$ \TU/TeXGyrePagella(0)/m/n/10.95 are cho-sen as $\TU/TeXGyrePagellaMath(1)/m/n/10.95 {0.5, 1, 3, 1, 10}$
  []
 
@@ -4331,12 +4326,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/single_pond.eps>
 (epstopdf)                    date: 2020-03-16 23:08:08
 (epstopdf)                    size: 918762 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/single_pond-eps-converted-to.pdf gfx/Chapter-3/single_pond.eps>
-(epstopdf)             \includegraphics on input line 439.
+(epstopdf)             \includegraphics on input line 441.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/single_pond-eps-converted-to.pdf, id=1601, 597.23125pt x 452.69125pt>
 File: gfx/Chapter-3/single_pond-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/single_pond-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/single_pond-eps-converted-to.pdf  used on input line 439.
+Package luatex.def Info: gfx/Chapter-3/single_pond-eps-converted-to.pdf  used on input line 441.
 (luatex.def)             Requested size: 336.0pt x 254.68655pt.
 
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4356,12 +4351,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_tarining.eps>
 (epstopdf)                    date: 2020-03-16 23:08:09
 (epstopdf)                    size: 190858 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_tarining-eps-converted-to.pdf gfx/Chapter-3/system_tarining.eps>
-(epstopdf)             \includegraphics on input line 530.
+(epstopdf)             \includegraphics on input line 532.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/system_tarining-eps-converted-to.pdf, id=1649, 470.75874pt x 148.555pt>
 File: gfx/Chapter-3/system_tarining-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_tarining-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/system_tarining-eps-converted-to.pdf  used on input line 530.
+Package luatex.def Info: gfx/Chapter-3/system_tarining-eps-converted-to.pdf  used on input line 532.
 (luatex.def)             Requested size: 336.0pt x 106.03014pt.
 
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4376,12 +4371,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_scale_1.eps>
 (epstopdf)                    date: 2020-03-16 23:08:09
 (epstopdf)                    size: 119464 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_scale_1-eps-converted-to.pdf gfx/Chapter-3/system_scale_1.eps>
-(epstopdf)             \includegraphics on input line 560.
+(epstopdf)             \includegraphics on input line 562.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/system_scale_1-eps-converted-to.pdf, id=1662, 588.1975pt x 455.7025pt>
 File: gfx/Chapter-3/system_scale_1-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_scale_1-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/system_scale_1-eps-converted-to.pdf  used on input line 560.
+Package luatex.def Info: gfx/Chapter-3/system_scale_1-eps-converted-to.pdf  used on input line 562.
 (luatex.def)             Requested size: 336.0pt x 260.31635pt.
  [61<./gfx/Chapter-3/system_tarining-eps-converted-to.pdf>]
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4396,12 +4391,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/system_scale_2.eps>
 (epstopdf)                    date: 2020-03-16 23:08:09
 (epstopdf)                    size: 91643 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/system_scale_2-eps-converted-to.pdf gfx/Chapter-3/system_scale_2.eps>
-(epstopdf)             \includegraphics on input line 598.
+(epstopdf)             \includegraphics on input line 600.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/system_scale_2-eps-converted-to.pdf, id=1711, 585.18625pt x 429.605pt>
 File: gfx/Chapter-3/system_scale_2-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/system_scale_2-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/system_scale_2-eps-converted-to.pdf  used on input line 598.
+Package luatex.def Info: gfx/Chapter-3/system_scale_2-eps-converted-to.pdf  used on input line 600.
 (luatex.def)             Requested size: 336.0pt x 246.68007pt.
 
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -4416,12 +4411,12 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/heatmap.eps>
 (epstopdf)                    date: 2020-03-16 23:08:10
 (epstopdf)                    size: 146912 bytes
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/heatmap-eps-converted-to.pdf gfx/Chapter-3/heatmap.eps>
-(epstopdf)             \includegraphics on input line 618.
+(epstopdf)             \includegraphics on input line 620.
 Package epstopdf Info: Output file is already uptodate.
 <gfx/Chapter-3/heatmap-eps-converted-to.pdf, id=1734, 410.53375pt x 195.73125pt>
 File: gfx/Chapter-3/heatmap-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/heatmap-eps-converted-to.pdf>
-Package luatex.def Info: gfx/Chapter-3/heatmap-eps-converted-to.pdf  used on input line 618.
+Package luatex.def Info: gfx/Chapter-3/heatmap-eps-converted-to.pdf  used on input line 620.
 (luatex.def)             Requested size: 336.0pt x 160.19601pt.
  [65<./gfx/Chapter-3/heatmap-eps-converted-to.pdf>]
 Overfull \hbox (60.46819pt too wide) has occurred while \output is active
@@ -5521,10 +5516,6 @@ File: gfx/Chapter-5/pystorms_code-eps-converted-to.pdf Graphic file (type pdf)
 Package luatex.def Info: gfx/Chapter-5/pystorms_code-eps-converted-to.pdf  used on input line 221.
 (luatex.def)             Requested size: 302.39795pt x 373.50438pt.
  [99] [100<./gfx/Chapter-5/pystorms_code-eps-converted-to.pdf>]
-Overfull \hbox (32.48058pt too wide) in paragraph at lines 250--255
-\TU/TeXGyrePagella(0)/m/n/10.95 gram-ming in-ter-face. Users carry out Step [][][][] us-ing \TU/DejaVuSansMono(0)/m/sc/10.95 <scenario object>.state()\TU/TeXGyrePagella(0)/m/n/10.95 ,
- []
-
 Package epstopdf Info: Source file: <gfx/Chapter-5/pystorms_architectire_fin.eps>
 (epstopdf)                    date: 2020-07-01 12:04:22
 (epstopdf)                    size: 73816 bytes
@@ -5539,7 +5530,7 @@ File: gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf Graphic file 
 <use gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf  used on input line 270.
 (luatex.def)             Requested size: 336.0pt x 323.05377pt.
-[101] [102<./gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf>]
+ [101] [102<./gfx/Chapter-5/pystorms_architectire_fin-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <gfx/Chapter-5/algo.eps>
 (epstopdf)                    date: 2020-07-01 12:04:22
 (epstopdf)                    size: 459441 bytes
@@ -5560,10 +5551,6 @@ Overfull \hbox (1.30804pt too wide) in paragraph at lines 336--340
  []
 
 [104<./gfx/Chapter-5/algo-eps-converted-to.pdf>]
-Overfull \hbox (15.87996pt too wide) in paragraph at lines 350--351
-[]\TU/TeXGyrePagella(0)/m/n/10.95 The im-ple-men-ta-tion of the equal-filling de-gree al-go-rithm us-ing \TU/DejaVuSansMono(0)/m/sc/10.95 pystorms
- []
-
 Package microtype Info: Character `ﬆ' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/m/n/13.13995'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -6081,7 +6068,7 @@ Package microtype Info: Character `‒' is missing
 Package microtype Info: Character `―' is missing
 (microtype)             in font `TU/TeXGyrePagella(0)/bx/n/6.56998'.
 (microtype)             Ignoring protrusion settings for this character.
-[105]
+ [105]
 Package epstopdf Info: Source file: <gfx/Chapter-5/equalfilling.eps>
 (epstopdf)                    date: 2020-07-01 12:04:22
 (epstopdf)                    size: 146701 bytes
@@ -6368,7 +6355,7 @@ Package microtype Info: Character `―' is missing
 \openout2 = Chapters/Appendix-2.aux
  (./Chapters/Appendix-2.tex
 Appendix A.
-<gfx/Chapter-1/Controller_Logic.png, id=2481, 876.27374pt x 1424.32124pt>
+<gfx/Chapter-1/Controller_Logic.png, id=2492, 876.27374pt x 1424.32124pt>
 File: gfx/Chapter-1/Controller_Logic.png Graphic file (type png)
 <use gfx/Chapter-1/Controller_Logic.png>
 Package luatex.def Info: gfx/Chapter-1/Controller_Logic.png  used on input line 44.
@@ -6396,7 +6383,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/heatmap_eq.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf gfx/Chapter-3/heatmap_eq.eps>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf, id=2507, 572.1375pt x 192.72pt>
+<gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf, id=2518, 572.1375pt x 192.72pt>
 File: gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/heatmap_eq-eps-converted-to.pdf  used on input line 92.
@@ -6411,7 +6398,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/eqf.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/eqf-eps-converted-to.pdf gfx/Chapter-3/eqf.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/eqf-eps-converted-to.pdf, id=2520, 1161.33875pt x 610.28pt>
+<gfx/Chapter-3/eqf-eps-converted-to.pdf, id=2532, 1161.33875pt x 610.28pt>
 File: gfx/Chapter-3/eqf-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/eqf-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/eqf-eps-converted-to.pdf  used on input line 120.
@@ -6426,7 +6413,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/new_reward.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/new_reward-eps-converted-to.pdf gfx/Chapter-3/new_reward.eps>
 (epstopdf)             \includegraphics on input line 152.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/new_reward-eps-converted-to.pdf, id=2554, 317.185pt x 297.11pt>
+<gfx/Chapter-3/new_reward-eps-converted-to.pdf, id=2565, 317.185pt x 297.11pt>
 File: gfx/Chapter-3/new_reward-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/new_reward-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/new_reward-eps-converted-to.pdf  used on input line 152.
@@ -6441,7 +6428,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/location_senstiv.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/location_senstiv-eps-converted-to.pdf gfx/Chapter-3/location_senstiv.eps>
 (epstopdf)             \includegraphics on input line 161.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/location_senstiv-eps-converted-to.pdf, id=2583, 441.65pt x 328.22626pt>
+<gfx/Chapter-3/location_senstiv-eps-converted-to.pdf, id=2594, 441.65pt x 328.22626pt>
 File: gfx/Chapter-3/location_senstiv-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/location_senstiv-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/location_senstiv-eps-converted-to.pdf  used on input line 161.
@@ -6455,7 +6442,7 @@ Package epstopdf Info: Source file: <gfx/Chapter-3/b2b.eps>
 (epstopdf)             Command: <epstopdf --outfile=gfx/Chapter-3/b2b-eps-converted-to.pdf gfx/Chapter-3/b2b.eps>
 (epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
-<gfx/Chapter-3/b2b-eps-converted-to.pdf, id=2584, 587.19376pt x 454.69875pt>
+<gfx/Chapter-3/b2b-eps-converted-to.pdf, id=2595, 587.19376pt x 454.69875pt>
 File: gfx/Chapter-3/b2b-eps-converted-to.pdf Graphic file (type pdf)
 <use gfx/Chapter-3/b2b-eps-converted-to.pdf>
 Package luatex.def Info: gfx/Chapter-3/b2b-eps-converted-to.pdf  used on input line 169.
@@ -6833,15 +6820,15 @@ Here is how much of LuaTeX's memory you used:
  100000,2373549 words of node,token memory allocated
  10289 words of node memory still in use:
    17 hlist, 6 vlist, 2 rule, 16 disc, 1 local_par, 66 glue, 21 kern, 3 penalty, 2 sub_mlist, 10 margin_kern, 1010 glyph, 297 attribute, 141 glue_spec, 297 attribute_list, 3 write, 36 pdf_action, 2 pdf_colorstack nodes
-   avail lists: 1:8,2:1044,3:252,4:120,5:832,6:273,7:7148,8:158,9:453,10:26,11:610,12:1
+   avail lists: 1:8,2:1044,3:252,4:120,5:832,6:273,7:7148,8:158,9:453,10:25,11:610,12:1
  43585 multiletter control sequences out of 65536+600000
- 183 fonts using 57432895 bytes
+ 183 fonts using 57433067 bytes
  75i,23n,98p,9091b,3858s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-BoldItalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bolditalic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre-math/texgyrepagella-math.otf></usr/local/texlive/2018/texmf-dist/fonts/truetype/public/dejavu/DejaVuSansMono.ttf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-italic.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/tex-gyre/texgyrepagella-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/nowacki/iwona/Iwona-Regular.otf></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb>
-Output written on ClassicThesis.pdf (162 pages, 13874229 bytes).
+Output written on ClassicThesis.pdf (162 pages, 13915409 bytes).
 
-PDF statistics: 2924 PDF objects out of 2984 (max. 8388607)
- 2536 compressed objects within 26 object streams
+PDF statistics: 2935 PDF objects out of 2984 (max. 8388607)
+ 2547 compressed objects within 26 object streams
  627 named destinations out of 1000 (max. 131072)
  785 words of extra memory for PDF output out of 10000 (max. 100000000)
 

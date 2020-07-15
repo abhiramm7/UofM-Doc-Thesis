@@ -3,36 +3,38 @@
 %************************************************
 \section{Summary of Discoveries}
 
-The goal of this dissertation was to make fundamental discoveries that will inform the control of smart stormwater systems, specifically focusing on statistical learning approaches that can be used to generate safe and reliable control algorithms.
-To that end, a number of fundamental discoveries were made in each chapter: 
+This dissertation, using statistical learning methods, aimed to address the knowledge gaps to support the development of tools and algorithms for the safe and reliable control of stormwater systems.
+To that end, the following discoveries were made in each chapter:
 
 \begin{itemize}
-	\item \textbf{Chapter 2:} I have discovered that by controlling the hydrological responses in the stormwater basins the rate of removal of specific nutrients can be targeted. In this chapter I also develop a modular framework for simulating smart stormwater systems.
-	\item \textbf{Chapter 3:} I have discovered that the response of the stormwater systems can be precisely shaped by relying on the sensor data. I demonstrate this by shaping the response of 4 $km^2$ watershed by coodinating the control actions of two assets to realize a watershed scale control objective.
-	\item \textbf{Chapter 4:} I have demonstrated that deep reinforcement learning methods though show promise in the controlling stormwater systems, their performance is continent on the reward function, controller formulation, and choice of function approximator.
-	\item \textbf{Chapter 5:} I have dicoved that flow control objectives in stormwater system can be realized with out real-time control and introducted a Bayesian-Optimization based algorithm 
-	\item \textbf{Chapter 6:} I have introducted a python library for facilating the qualitative evalution of stormwater control algorithms. 
+	\item \textbf{Chapter 2:} I have discovered that the stormwater system's nutrient removal efficiency can be enhanced by controlling the hydrological behavior of stormwater basins in the network. I also introduce a modeling framework for simulating control in stormwater systems.
+	\item \textbf{Chapter 3:} I have discovered that a stormwater network's response can be characterized and precisely controlled using a wireless sensor-actuator network.  
+	\item \textbf{Chapter 4:} I have discovered that Reinforcement Learning-based algorithms can be adopted for designing stormwater controllers that do not require any explicit assumptions on the stormwater network's dynamics.
+	\item \textbf{Chapter 5:} I have discovered that the flow control objective in a stormwater network can be achieved by pre-configuring the network's controllable assets before a stormevent. I also discovered that a Bayesian Optimization-based methodology could be adopted for quantifying rainfall uncertainties associated with control decisions. 
+	\item \textbf{Chapter 6:} I have discovered that a quantitative evaluation of stormwater control algorithms is essential for analyzing their applicability and created an open-source Python library for facilitating it. 
 \end{itemize}
 
 \section{Future Directions}
 
 
-\noindent \textbf{Computer vision for hydrological monitoring}\\
-Dynamics that govern the flow of water in urban systems are highly complex and are modeled using a parametrized version of simplified Navier-Stokes equations.
-These model parameters require frequent calibration and validation to ensure that they accurately represent the physical system.
-Given the steep financial investment and technical expertise required for maintaining a sensor network of flow and depth sensors, high-resolution data necessary for calibrating these models is rarely available.
-Recent advances in electronics have made large scale deployment of cameras and edge processing financially viable, and computer vision methods have matured to a point where they can be reliably used for detection, segmentation, and tracking.
-By adopting these methods for monitoring hydrological phenomenon, a camera can be repurposed to act as a flow, water level, and rainfall sensor.
-Thus, creating an affordable alternative for acquiring high-resolution on-the-ground measurements.
-
+\textbf{Computer vision for hydrological monitoring}: Dynamics that govern water flow in urban systems are highly complex and are simulated using highly parameterized models~\cite{Rossman2010Storm5.1}.
+These models require frequent calibration and validation to ensure that they accurately represent the physical system~\cite{Rossman2010Storm5.1, national2009urban}.
+Given the steep financial investment and technical expertise required for maintaining sensor networks, high-resolution data necessary for calibrating these models is rarely available\cite{kerkez2016, Bartos_2018}.
+In the past decade, computer-vision methods have matured to a point where they can be reliably used for detection, segmentation, and tracking\cite{LeCun2015DeepLearning}.
+By adopting these methods for monitoring hydrological phenomena, a camera can simultaneously measure flows, water level, and rainfall, thus providing us with an affordable alternative for acquiring high-resolution data.
 
 \
 
-\noindent \textbf{Uncertainty quantification for the control of urban water networks}\\
-As the urban water infrastructure models become reliable, they can be leveraged to develop coordinated control strategies that enable infrastructure to reprogram itself in real-time to tackle dynamic weather conditions.
-A major barrier for the adoption of such an approach, is the uncertainty associated with the underlying model, sensors measurements, and weather forecasts that dictates the actions taken by the control algorithm.
-Quantifying these uncertainties will enable the decision makers to weigh the risks and rewards associated with control strategies and pick the one that benefits both the public and environment.
-Bayesian optimization, with Gaussian Processes at its core, is an effective approach for searching though the solution space to identify an optimal control strategy and estimate the uncertainty associated with the identified strategy.
-But the non-parametric nature of the Gaussian Processes limits the scalability of this approach.
-By replacing the Gaussian Processes with Bayesian Neural Networks and Deep Gaussian processes, I want to extend the Bayesian Optimization approach for quantifying the uncertainties in large scale urban water networks. 
-As a deliverable, I hope to create a open-source python toolbox that interfaces with the existing SWMM models to help the decision makers identify a control strategy and its associated uncertainty, for achieving a desired behavior in the urban water network.
+\textbf{Uncertainty quantification}: As the urban water infrastructure models become reliable, they can be leveraged to develop coordinated control strategies that enable infrastructure to reprogram itself to tackle dynamic weather conditions\cite{Mullapudi_Lewis_Gruden_Kerkez_2020}.
+A significant barrier to adopting such an approach is the uncertainty associated with the underlying model, sensors measurements, and weather forecasts that dictate the control algorithm's actions.
+Quantifying these uncertainties will enable the decision-makers to weigh the risks and rewards associated with control strategies and pick the one that benefits both the public and the environment\cite{sadler2019}.
+Recent studies have demonstrated the effectiveness of the Deep Gaussian Process in estimating uncertainties in large solutions spaces\cite{damianou2013deep}.
+Incorporating them into Bayesian Optimization-based control methodology might be a promising approach for quantifying the various inherent uncertainties in the stormwater systems.
+
+\
+
+Industries like autonomous driving have embraced wireless sensing and statistical learning approaches.
+However, its adoption in water systems has been limited. Given the number of such systems globally, even a marginal performance enhancement can have a significant positive impact on the environment.
+There is a vast disparity between the current state-of-art in urban water systems and the possibilities enabled by adopting these technologies.
+This massive potential for improvement, at a margin of the price of traditional solutions, has been the motivation for this dissertation.
+Though there are significant knowledge gaps that have to addressed before the merger of physical and digital water systems, the discoveries made in this dissertation, along with the algorithms and tools developed, stand to provide the foundation for developing a new generation of autonomous stormwater infrastructure.
