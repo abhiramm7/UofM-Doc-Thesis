@@ -590,7 +590,7 @@ While GA is also generalizable in similar terms, BO has demonstrably been more c
 % General Result
 Fig.~\ref{fig:uc-limits} illustrates the uncertainty quantified by the BO (blue shaded area) and compares it to the empirically computed uncertainty (orange shaded area) for a single basin in scenario theta.
 Though the uncertainties quantified by the BO does not precisely correspond to the empirically estimated values, they do closely align with them.
-BO uses ten times fewer samples than used for empirical estimation and assumes a specific kernel\footnote{Squared Expotential Kernel} to represent the relationship between the control decisions and their corresponding uncertainties.
+BO uses ten times fewer samples than used for empirical estimation and assumes a specific kernel\footnote{Squared Exponential Kernel} to represent the relationship between the control decisions and their corresponding uncertainties.
 Thus, it is intractable for the estimated uncertainty to exactly converge onto the empirically computed values.
 Having said that, MLH-GP much more accurately captures the underlying uncertainty than the GP (gray shaded area), which overestimates the uncertainty  (first row second column in Fig.~\ref{fig:uc-limits}).
 While GPs better estimate the uncertainty when the entire solution space is sampled uniformly, they still overestimate (gray area in the first row first column in Fig.~\ref{fig:uc-limits}) the uncertainty when compared to MLH-GP\@.
@@ -620,7 +620,7 @@ Furthermore, this objective function also enables us to analytically interpret h
 BO identifies control solutions solely based on the specific performance metrics, without the need for internal optimizer parameterization.
 Given the sole reliance on one metric, designing a performance metric that accurately and uniquely represents the desired controlled response is paramount.
 Building on our previous work~\cite{Mullapudi_Lewis_Gruden_Kerkez_2020}, this chapter's performance metrics were designed to accurately represent the desired control objective, to ensure that the BO will not be able to game the performance metric and identify a solution that minimizes the performance metric but results in an undesirable response in the stormwater network.
-When adopting BO to control new stormwater systems, performance metrics can be designed using any mathematical structure\footnote{Equations used in the performance metric can be exponential, polynomial, etc\ldots} as long as it accurately represents the desired responseand there does not exist a trivial solution that the BO can exploit.
+When adopting BO to control new stormwater systems, performance metrics can be designed using any mathematical structure\footnote{Equations used in the performance metric can be exponential, polynomial, etc\ldots} as long as it accurately represents the desired response and there does not exist a trivial solution that the BO can exploit.
 Performance metrics presented in this work can directly be translated for controlling other stormwater networks for the specific set of control objectives discussed in the chapter: maintaining flows and loading below a threshold.
 
 \
