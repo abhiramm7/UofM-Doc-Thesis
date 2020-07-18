@@ -1,4 +1,4 @@
-PWD /Users/abhiram/Desktop/thesis
+PWD /Users/abhiram/Archive/Dissertation/thesis
 INPUT /usr/local/texlive/2018/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./ClassicThesis.tex
 OUTPUT ClassicThesis.log
@@ -533,9 +533,9 @@ INPUT ./gfx/Chapter-4/bayesian_intro.eps
 INPUT ./gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/bayesian_intro-eps-converted-to.pdf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
-INPUT ./gfx/Chapter-4/performance.eps
-INPUT ./gfx/Chapter-4/performance-eps-converted-to.pdf
-INPUT ./gfx/Chapter-4/performance-eps-converted-to.pdf
+INPUT ./gfx/Chapter-4/performance_gamma.eps
+INPUT ./gfx/Chapter-4/performance_gamma-eps-converted-to.pdf
+INPUT ./gfx/Chapter-4/performance_gamma-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/generalizability_epsilon.eps
 INPUT ./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf
 INPUT ./gfx/Chapter-4/generalizability_epsilon-eps-converted-to.pdf

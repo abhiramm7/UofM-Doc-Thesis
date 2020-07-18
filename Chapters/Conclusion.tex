@@ -3,25 +3,30 @@
 %************************************************
 \section{Summary of Discoveries}
 
-This dissertation, using statistical learning methods, aimed to address the knowledge gaps to support the development of tools and algorithms for the safe and reliable control of stormwater systems.
+This dissertation, using statistical learning methods, aims to address the knowledge gaps to support the development of tools and algorithms for the safe and reliable control of stormwater systems.
 To that end, the following discoveries were made in each chapter:
 
 \begin{itemize}
-	\item \textbf{Chapter 2:} I have discovered that the stormwater system's nutrient removal efficiency can be enhanced by controlling the hydrological behavior of stormwater basins in the network. I also introduce a modeling framework for simulating control in stormwater systems.
-	\item \textbf{Chapter 3:} I have discovered that a stormwater network's response can be characterized and precisely controlled using a wireless sensor-actuator network.  
-	\item \textbf{Chapter 4:} I have discovered that Reinforcement Learning-based algorithms can be adopted for designing stormwater controllers that do not require any explicit assumptions on the stormwater network's dynamics.
-	\item \textbf{Chapter 5:} I have discovered that the flow control objectives in a stormwater network can be achieved by pre-configuring the network's controllable assets before a stormevent. I also discovered that a Bayesian Optimization-based methodology could be adopted for establishing bounds on the controller’s performance by quantifying the impacts of rainfall uncertainty. 
-	\item \textbf{Chapter 6:} I have discovered that a quantitative evaluation of stormwater control algorithms is essential for analyzing their applicability and created an open-source Python library for facilitating it. 
+	\item \textbf{Chapter 2:} I have discovered that the stormwater system's nutrient removal efficiency is enhanced by controlling the hydrological behavior of stormwater basins in the network. I also introduce a modeling framework for simulating control in stormwater systems.
+	\item \textbf{Chapter 3:} I have discovered that a stormwater network's response is effectively characterized and precisely controlled using a wireless sensor-actuator network.  
+	\item \textbf{Chapter 4:} I have discovered that Reinforcement Learning-based algorithms effectively derive controllers that do not require any explicit assumptions on the stormwater network's dynamics.
+	\item \textbf{Chapter 5:} I have discovered that the flow control objectives in a stormwater network are achieved by simply pre-configuring the network's controllable assets before a stormevent. I also discovered that a Bayesian Optimization-based methodology effectively establishes bounds on the controller’s performance by quantifying the impacts of rainfall uncertainty. 
+	\item \textbf{Chapter 6:} I have contributed an out-of-the-box and open-source framework to allow others to compare and analyze stormwater control algorithms. 
 \end{itemize}
 
 \section{Future Directions}
 
+Despite the discoveries made in this dissertation, much work remains to be done to solidify smart stormwater systems as a research field.
+Given the nascent nature of some of these ideas, this dissertation focused on early challenges, which can now be expanded to include a number of engaging topics.
+
+\
 
 \textbf{Computer vision for hydrological monitoring}: Dynamics that govern water flow in urban systems are highly complex and are simulated using highly parameterized models~\cite{Rossman2010Storm5.1}.
 These models require frequent calibration and validation to ensure that they accurately represent the physical system~\cite{Rossman2010Storm5.1, national2009urban}.
 Given the steep financial investment and technical expertise required for maintaining sensor networks, high-resolution data necessary for calibrating these models is rarely available\cite{kerkez2016, Bartos_2018}.
 In the past decade, computer-vision methods have matured to a point where they can be reliably used for detection, segmentation, and tracking\cite{LeCun2015DeepLearning}.
 By adopting these methods for monitoring hydrological phenomena, a camera can simultaneously measure flows, water level, and rainfall, thus providing an affordable alternative for acquiring high-resolution data.
+Investigating the role of computer vision for smart stormwater systems poses an exciting research frontier.
 
 \
 
@@ -29,11 +34,11 @@ By adopting these methods for monitoring hydrological phenomena, a camera can si
 A significant barrier to adopting such an approach is the uncertainty associated with the underlying model, sensors measurements, and weather forecasts that dictate the control algorithm's actions.
 Quantifying these uncertainties will enable the decision-makers to weigh the risks and rewards associated with control strategies and pick the one that benefits both the public and the environment\cite{sadler2019}.
 Recent studies have demonstrated the effectiveness of the Deep Gaussian Process in estimating uncertainties in large solutions spaces\cite{damianou2013deep}.
-Incorporating them as function approximators in the statistical learning-based stormwater control methodologies is a promising approach for quantifying the various inherent uncertainties in the stormwater systems.
+Incorporating the Deep Gaussian Processes as function approximators in the statistical learning-based stormwater control methodologies poses a promising approach for quantifying the various inherent uncertainties in the stormwater systems.
 
 \
 
-Industries like autonomous driving have embraced wireless sensing and statistical learning approaches.
+Many industries, such as those underpinning autonomous driving, have embraced wireless sensing and statistical learning approaches.
 However, its adoption in water systems has been limited. Given the number of such systems globally, even a marginal performance enhancement can have a significant positive impact on the environment.
 There is a vast disparity between the current state-of-art in urban water systems and the possibilities enabled by adopting these technologies.
 This massive potential for improvement, at a margin of the price of traditional solutions, has been the motivation for this dissertation.
