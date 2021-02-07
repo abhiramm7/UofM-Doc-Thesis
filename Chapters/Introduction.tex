@@ -47,7 +47,7 @@ Technologically, we are at a point where we can monitor and control these assets
 \begin{itemize}
 	\item We do not know how to design control algorithms that can target pollutants in stormwater runoff, nor do we have the simulation tools necessary for such studies.
 	\item We do not know to how to characterize the controllability of an urban watershed, especially in the context of water quality.
-	\item We do yet know how to synthesize reliable control algorithms for distributed stormwater assets without making explicit dynamical assumptions (e.g.\ linearity).
+	\item We do not yet know how to synthesize reliable control algorithms for distributed stormwater assets without making explicit dynamical assumptions (e.g.\ linearity).
 	\item We do not know how to quantify the uncertainty of rainfall in algorithms used in the control of stormwater systems.
 	\item We do not have open platforms for the systematic quantitative evaluation and comparison of different control algorithms.
 \end{itemize}
@@ -90,7 +90,7 @@ The modular simulation framework developed in this chapter has been the foundati
 \section{Chapter 3: Shaping streamflow in real-time using a sensor-actuator network}
 
 The primary objective of this chapter is to illustrate how data from a stormwater sensor network can be leveraged to precisely shape the hydrographs at the outlet of an urban watershed.
-Leveraging a wireless sensor-actuator network in the Ann Arbor~\cite{Bartos_2018}, we characterize the travel-times and magnitudes of flows resulting from a control system's actions.
+Leveraging a wireless sensor-actuator network in Ann Arbor~\cite{Bartos_2018}, we characterize the travel-times and magnitudes of flows resulting from a control system's actions.
 Based on this characterization, we formulate a series of experiments to illustrate how such an approach achieves flow control objectives.
 We create a flat hydrograph using a single control asset to illustrate the use of water level data in maintaining system-level flows below a desired stream erosion threshold.
 We also demonstrate the coordinated control of two controllable stormwater assets for shaping streamflow at the outlet of the watershed.
@@ -145,7 +145,7 @@ Finally, we propose a methodology for extending Bayesian Optimization's ability 
 This chapter's main contributions include a methodology for shaping stormwater flows and an algorithm that establishes bounds on the controller's performance by quantifying impacts of rainfall uncertainty.
 We also provide an open-source implementation of the controller that can be applied to virtually any stormwater network for which a physical model exists.
 
-\section[Chapter 6: \texttt{pystorms}]{Chapter 6: A simulation sandbox for the development and evaluation of stormwater control algorithms}
+\section{Chapter 6: A simulation sandbox for the development and evaluation of stormwater control algorithms}\sectionmark{Chapter-6: \texttt{pystorms}}
 
 Over the past decade, there has been a significant amount of work in the development of real-time control algorithms for stormwater systems~\cite{shishegar2018optimization, lund2018, Ocampo-Martinez_2015}.
 Most, if not all, of the proposed algorithms were evaluated on specific stormwater networks and perturbed by a particular set of storm events~\cite{lund2018}.
